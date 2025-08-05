@@ -1,0 +1,57 @@
+Term: Spring 2025
+
+Date: Apr 17
+Speaker: Mitchell Riley
+Title: Tiny Types and Cubical Type Theory
+YouTube_Link: 
+Slides_Link: 
+Abstract: I will present an extension of Martin-Löf Type Theory that contains a tiny object; a type for which there is an "amazing" right adjoint to the formation of function types as well as the expected left adjoint. A primary aim of the theory is to be simple enough to be used both by hand and in a (hypothetical) proof assistant. I will sketch a normalisation algorithm and discuss a few potential applications, in particular, to implementations of Cubical Type Theory.
+
+Date: Mar 6
+Speaker: Jonathan Weinberger
+Title: Directed univalence and the Yoneda embedding for synthetic ∞-categories
+YouTube_Link: https://www.youtube.com/watch?v=jCU-rSBnEac
+Slides_Link: hottestfiles/Weinberger-2025-03-06-HoTTEST.pdf
+Abstract: In this talk, I'll present recent results in synthetic ∞-category theory in an extension of homotopy type theory. An ∞-category is analogous to a 1-category, but with composition defined only up to homotopy. To reason about them in HoTT, Riehl and Shulman proposed simplicial HoTT, an extension by a directed interval, generating the shapes that model arrows and their composition.
+              To account for fundamental constructions like the opposite category or the maximal subgroupoid, we add further type formers as modalities using Gratzer-Kavvos-Nuyts-Birkedal's framework of multimodal dependent type theory (MTT).
+              I'll present the construction of the universe 𝒮 of small ∞-groupoids in that setting which we can show to be an ∞-category satisfying directed univalence. As an application, we can define various ∞-categories of interest in higher algebra such as ∞-monoids and ∞-groups. Furthermore, I'll show the construction of the fully functorial Yoneda embedding w.r.t. 𝒮 as well as the Yoneda lemma (which is hard to establish in set-theoretic foundations). 
+              If time permits, I will outline further developments in synthetic ∞-presheaf theory, namely first steps in the theory of Kan extensions, including a proof of Quillen's Theorem A and the properness of cocartesian fibrations.
+              The material is joint work with Daniel Gratzer und Ulrik Buchholtz (https://arxiv.org/abs/2407.09146, https://arxiv.org/abs/2501.13229).
+
+Date: Feb 20
+Speaker: Martín Hötzel Escardó
+Title: Lean4Lean: Injective Types
+YouTube_Link: https://www.youtube.com/watch?v=zRmbu5ro9Lc
+Slides_Link: hottestfiles/Escardo-2025-02-20-HoTTEST.pdf
+Abstract: In previous work, we established results about injective types in HoTT/UF, including characterizations, closure properties, and examples. In recent current work, in collaboration with Tom de Jong, we have developed more examples and counter-examples, as well as a better understanding of the landscape. In this talk I will present these old and new ideas.
+
+Date: Feb 6
+Speaker: Mario Carneiro
+Title: Lean4Lean: Towards a Verified Typechecker for Lean, in Lean
+YouTube_Link: https://www.youtube.com/watch?v=t0kHC0YxjLc
+Slides_Link: hottestfiles/Carneiro-2025-02-06-HoTTEST.pdf
+Abstract: This talk will present Lean4Lean, a project to construct a verified checker for the Lean theorem prover in the style of MetaCoq. It consists of a new "external verifier" for Lean, written in Lean. It is the first complete verifier for Lean 4 other than the reference implementation in C++ used by Lean itself, and the new verifier is competitive with the original, running between 20% and 50% slower and usable to verify all of Lean's mathlib library, forming an additional step in Lean's aim to self-host the full elaborator and compiler. The second part of the project concerns the type theory itself, and establishing its properties (in spite of several known negative results about the behavior of the type system), with the ultimate goal of being able to show that the verifier is correct to a specification of the type theory, and that the type theory is consistent relative to ZFC with countably many inaccessible cardinals. This work is still ongoing but we plan to use this project to help justify any future changes to the kernel and type theory and ensure unsoundness does not sneak in through either the abstract theory or implementation bugs.
+
+Term: Fall 2024
+
+Date: Dec 5
+Speaker: Paige North
+Title: Coinductive control of inductive data types
+YouTube_Link: https://www.youtube.com/watch?v=8nGTQZy37Q0
+Slides_Link: hottestfiles/North-2024-12-05-HoTTEST.pdf
+Abstract: In classical programming language theory, characterizing data types as initial algebras of an endofunctor that represents a specification of the data types is an important tool. In this work, we observe that the category of algebras of such an endofunctor is often enriched in its category of coalgebras. This enrichment carries strictly more information than the traditional, unenriched category. For example, when considering the endofunctor whose initial algebra is the natural numbers, we find that the enrichment encodes a notion of `partial' homomorphism, while the unenriched category encodes only `total' homomorphisms. We can also leverage this extra information to generalize the notion of initial algebras, following the theory of weighted limits. This is joint work with Maximilien Péroux and Lukas Mulder.
+
+Term: Winter 2024
+
+Date: May 2
+Speaker: Andreas Nuyts
+Title: Higher Pro-arrows: Towards a Model for Naturality Pretype Theory
+YouTube_Link: https://www.youtube.com/watch?v=jcaG18oicP8
+Slides_Link: hottestfiles/Nuyts-2024-05-02-HoTTEST.pdf
+Abstract: In systems with internal parametricity, we get propagation and preservation of relations through/by all functions for free. In HoTT, we get preservation of equivalences by all functions for free. In directed type theory, we get preservation of morphisms by all (covariant) functions for free.
+          None of these three properties by itself is satisfactory: if we weaken equivalences or morphisms to relations, we lose their computational behaviour. If we want to rely on preservation of non-invertible morphisms, we need our functions to be covariant. And finally, simply not every morphism/relation is an equivalence.
+          We set out to develop a type system that has all three preservation properties in an interactive manner, so that we can preserve isomorphisms when available, morphisms when covariant, and relations as a last resort. Such a system should provide us with functoriality (fmap), parametricity and naturality proofs for free. I call such a system "Naturality Type Theory".
+          In this first step, I consider Naturality *Pre*type Theory: I defer all considerations of fibrancy to intuition and future work. In particular, I do not yet worry too much about the specifics of composition of and transport along morphisms.
+          By instantiating parametrized systems such as Multimod(e/al) Type Theory (MTT) and the Modal Transpension System (MTraS), we can moreover separate concerns and only worry about the presheaf model at every mode, and the modalities that we can model as adjunctions between these presheaf models, leaving syntactic matters to research on MTT and MTraS.
+          The presheaf models are designed to accommodate yet-to-be-defined higher pro-arrow equipments, and can be invented in three ways: (1) as a higher-dimensional version of pro-arrow equipments, (2) as a heterogenization of Tamsamani &amp; Simpson's model of higher category theory, and (3) as a directification of Degrees of Relatedness.
+          In this talk, after motivating the subject, I intend to introduce the main ideas and then spiral towards the technical details, starting from the three existing settings/structures/models mentioned above.
