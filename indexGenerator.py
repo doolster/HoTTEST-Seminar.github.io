@@ -1,0 +1,162 @@
+from yattag import Doc, indent
+import os
+
+# Any new term types must be added to this dictionary for sorting
+termIDDict = { 'Spring': 'a', 'Fall': 'b'}
+monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
+
+class Talk:
+    def __init__(self, term, date, speaker, title, ytlink, slidelink, abstract):
+        self.term = term
+        self.termID = ''
+        self.date = date
+        self.dateID = ''
+        self.speaker = speaker
+        self.title = title
+        self.ytlink = ytlink
+        self.slidelink = slidelink
+        self.abstract = abstract
+
+# Given file name in the folder "TalkInfo", parses file into a Talk objects
+def readFile(fileName):
+    newTalk = Talk('', '', '', '', '', '', '')
+    with open('./TalkInfo/' + fileName, encoding='utf8') as f:
+        inAbstract = False
+        for line in f:
+            if line.lower().startswith('abstract:') or inAbstract:
+                if not inAbstract:
+                    newTalk.abstract = line[9:].strip() + '<br/>'
+                    inAbstract = True
+                else:
+                    newTalk.abstract += line.strip() + '<br/>'
+            elif line.lower().startswith('term:'):
+                newTalk.term = line[5:].strip()
+                newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
+            elif line.lower().startswith('date:'):
+                newTalk.date = line[5:].strip()
+                newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
+            elif line.lower().startswith('speaker:'):
+                newTalk.speaker = line[8:].strip()
+            elif line.lower().startswith('title:'):
+                newTalk.title = line[6:].strip()
+            elif line.lower().startswith('youtube:'):
+                newTalk.ytlink = line[8:].strip()
+            elif line.lower().startswith('slides:'):
+                newTalk.slidelink = line[7:].strip()
+            elif line == '':
+                pass
+            else:
+                print('Improperly formatted label in following line: ' + line)
+        newTalk.abstract = newTalk.abstract[:-5] # Removing superfluous breakline at end of abstract
+        f.close()
+        return newTalk
+
+# Putting all talks into an array
+talks = []
+for file in os.listdir('./TalkInfo'):
+    talks.append(readFile(file))
+
+# Labeling talks with their term and date
+pageInfo = {}
+for talk in talks:
+    if talk.termID not in pageInfo:
+        pageInfo[talk.termID] = { talk.dateID : talk }
+    else:
+        pageInfo[talk.termID][talk.dateID] = talk
+
+# Start creating HTML document
+doc, tag, text, line = Doc().ttl()
+
+docHead = """
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<base target="_blank">
+<title>HoTT Electronic Seminar</title>
+</head>
+<body>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
+    <div style="width: 300px;"></div>
+    <h1 style="flex: 1;text-align: center; margin: 0;">Homotopy Type Theory Electronic Seminar Talks</h1>
+    <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 300px;">
+</div>
+<hr style="border: 1px solid #888ebe;">
+<p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
+    Homotopy Type Theory Electronic Seminar Talks is a series of research talks by leading experts in Homotopy Type Theory. 
+    The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>. 
+    To attend a talk, please follow the instructions below.</p>
+<hr style="border: 1px solid #888ebe;">
+
+<h2>Essential Information</h2>
+<ul>
+    <li><strong>Time: </strong>Alternate Thursdays at 11:30 AM Eastern (60-minute talk + 30-minute discussion).</li>
+    <li><strong>Mailing list: </strong><a href="https://groups.google.com/forum/#!forum/hott-electronic-seminar-talks">HoTT Electronic Seminar Talks</a> (for updates).</li>
+    <li><strong>Google calendar: </strong><a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto">Seminar Calendar</a>.</li>
+    <li><strong>YouTube channel: </strong><a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a>.</li>
+    <li><strong>Organizers: </strong>
+        <a href="https://www.cs.cmu.edu/&#126;cangiuli/">Carlo Angiuli</a>, 
+        <a href="http://jdc.math.uwo.ca/">Dan Christensen</a>, 
+        <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>, and 
+        <a href="https://emilyriehl.github.io/">Emily Riehl</a>.</li>
+    <li><strong>Website by: </strong><a href="https://doolster.github.io/">Zack Dooley</a></li>
+</ul>
+
+<h2>How to Attend?</h2>
+<p>We are using <a href="http://zoom.us">Zoom</a>&#160;for the talks. Please install the software and make at least one test call before joining a talk. To join follow the link:</p>
+<p style="text-align: center;"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
+
+<div class="expand-all-container">
+    <button id="expand-all-btn" class="button expand-all">Expand Terms</button>
+</div>
+"""
+
+# Adding the static top of the page to doc (Title to "Expand All" button) (probably a better way to do this)
+doc.asis(docHead)
+
+# Loop through pageInfo to generate relevant HTML (sorting in reverse order by term)
+termIDs = list(pageInfo.keys())
+termIDs.sort(reverse=True)
+for termID in termIDs:
+    currentTerm = pageInfo[termID] # Dictionary of the current term
+    dateIDs = list(currentTerm.keys())
+    dateIDs.sort(reverse=True)
+    with tag('button', klass='accordion'):
+        text(currentTerm[dateIDs[0]].term)
+    with tag('div', klass='panel'):
+        with tag('table'):
+            with tag('tr'):
+                line('th', 'Date')
+                line('th', 'Speaker')
+                line('th', 'Talk Information')
+            for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
+                with tag('tr'):
+                    line('td', currentTerm[dateID].date, klass='date')
+                    line('td', currentTerm[dateID].speaker, klass='speaker')
+                    with tag('td'):
+                        with tag('p', klass='talk-title'):
+                            text(currentTerm[dateID].title)
+                            if currentTerm[dateID].ytlink != '':
+                                with tag('a', href=currentTerm[dateID].ytlink):
+                                    doc.stag('img', src='images/YouTube icon.webp', klass='icon')
+                            if currentTerm[dateID].slidelink != '':
+                                with tag('a', href=currentTerm[dateID].slidelink):
+                                    doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
+                        with tag('p', klass='abstract'):
+                            doc.asis(currentTerm[dateID].abstract)
+
+docFoot = """
+<script src="js/control.js"></script>
+
+</body>
+</html>
+"""
+
+# Add static end to doc and write doc to file
+doc.asis(docFoot)
+
+with open('index.html', 'w', encoding='utf8') as f:
+    f.write(indent(doc.getvalue()))
+f.close()
