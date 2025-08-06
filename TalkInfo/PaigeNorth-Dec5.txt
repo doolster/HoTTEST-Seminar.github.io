@@ -1,0 +1,7 @@
+Term: Fall 2024
+Date: Dec 5
+Speaker: Paige North
+Title: Coinductive control of inductive data types
+YouTube: https://www.youtube.com/watch?v=8nGTQZy37Q0
+Slides: hottestfiles/North-2024-12-05-HoTTEST.pdf
+Abstract: In classical programming language theory, characterizing data types as initial algebras of an endofunctor that represents a specification of the data types is an important tool. In this work, we observe that the category of algebras of such an endofunctor is often enriched in its category of coalgebras. This enrichment carries strictly more information than the traditional, unenriched category. For example, when considering the endofunctor whose initial algebra is the natural numbers, we find that the enrichment encodes a notion of `partial' homomorphism, while the unenriched category encodes only `total' homomorphisms. We can also leverage this extra information to generalize the notion of initial algebras, following the theory of weighted limits. This is joint work with Maximilien Péroux and Lukas Mulder.

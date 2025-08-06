@@ -1,0 +1,11 @@
+Term: Spring 2025
+Date: Mar 6
+Speaker: Jonathan Weinberger
+Title: Directed univalence and the Yoneda embedding for synthetic ∞-categories
+YouTube: https://www.youtube.com/watch?v=jCU-rSBnEac
+Slides: hottestfiles/Weinberger-2025-03-06-HoTTEST.pdf
+Abstract: In this talk, I'll present recent results in synthetic ∞-category theory in an extension of homotopy type theory. An ∞-category is analogous to a 1-category, but with composition defined only up to homotopy. To reason about them in HoTT, Riehl and Shulman proposed simplicial HoTT, an extension by a directed interval, generating the shapes that model arrows and their composition.
+              To account for fundamental constructions like the opposite category or the maximal subgroupoid, we add further type formers as modalities using Gratzer-Kavvos-Nuyts-Birkedal's framework of multimodal dependent type theory (MTT).
+              I'll present the construction of the universe 𝒮 of small ∞-groupoids in that setting which we can show to be an ∞-category satisfying directed univalence. As an application, we can define various ∞-categories of interest in higher algebra such as ∞-monoids and ∞-groups. Furthermore, I'll show the construction of the fully functorial Yoneda embedding w.r.t. 𝒮 as well as the Yoneda lemma (which is hard to establish in set-theoretic foundations). 
+              If time permits, I will outline further developments in synthetic ∞-presheaf theory, namely first steps in the theory of Kan extensions, including a proof of Quillen's Theorem A and the properness of cocartesian fibrations.
+              The material is joint work with Daniel Gratzer und Ulrik Buchholtz (https://arxiv.org/abs/2407.09146, https://arxiv.org/abs/2501.13229).

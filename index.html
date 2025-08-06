@@ -1,209 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<base target="_blank">
-<title>HoTT Electronic Seminar</title>
-</head>
-<body>
-
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
-  <div style="width: 300px;"></div>
-  <h1 style="flex: 1;text-align: center; margin: 0;">Homotopy Type Theory Electronic Seminar Talks</h1>
-  <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 300px;">
-</div>
-<hr style="border: 1px solid #888ebe;">
-<p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
-  Homotopy Type Theory Electronic Seminar Talks is a series of research talks by leading experts in Homotopy Type Theory. 
-  The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>. 
-  To attend a talk, please follow the instructions below.</p>
-<hr style="border: 1px solid #888ebe;">
-
-<h2>Essential Information</h2>
-<ul>
-  <li><span> <strong>Time:</strong>&#160;Alternate Thursdays at 11:30 AM Eastern (60-minute talk + 30-minute discussion). </span></li>
-  <li><strong>Mailing list:&#160;</strong> <a href="https://groups.google.com/forum/#!forum/hott-electronic-seminar-talks">HoTT Electronic Seminar Talks</a>&#160;(for updates) <span>.</span></li>
-  <li><span> <strong>Google calendar:</strong> <a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto">Seminar Calendar</a>. </span></li>
-  <li><span> <strong>YouTube channel:</strong> <a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a>. </span></li>
-  <li><span> <strong>Organizers: </strong>
-    <a href="https://www.cs.cmu.edu/&#126;cangiuli/">Carlo Angiuli</a>,&#160;
-    <a href="http://jdc.math.uwo.ca/">Dan Christensen</a>,&#160;
-    <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>, and 
-    <a href="https://emilyriehl.github.io/">Emily Riehl</a>. </span></li>
-  <li><strong>Website by: </strong><a href="https://doolster.github.io/">Zack Dooley</a></li>
-</ul>
-
-<h2><span>How to Attend?</span></h2>
-<p><span>We are using <a href="http://zoom.us">Zoom</a>&#160;for the talks. Please install the software and make at least one test call before joining a talk. To join follow the link: </span></p>
-<p style="text-align: center;"><span> <a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a> </span></p>
-
-<div class="expand-all-container">
-  <button id="expand-all-btn" class="button expand-all">Expand All</button>
-</div>
-
-<!--NEW ENTRY TEMPLATE --- Copy the following to add a new accordion menu for a new quarter, copy just the second <tr> element to add a new speaker to an existing table
-
-<button class="accordion">QUARTER 202X</button>
-<div class="panel">
-  <table>
-    <tr>
-        <th>Date</th>
-        <th>Speaker</th>
-        <th>Talk Information</th>
-    </tr>
-
-    <tr>
-        <td class="date">DATE</td>
-        <td class="speaker">SPEAKER</td>
-        <td>
-          <p class="talk-title">TITLE</p>
-          <p class="abstract">
-            ABSTRACT
-          </p>
-        </td>
-    </tr>
-
-  </table>
-</div>
-
-
-
-<button class="accordion">Spring 2025</button>
-<div class="panel">
-  <table>
-    <tr>
-        <th>Date</th>
-        <th>Speaker</th>
-        <th>Talk Information</th>
-    </tr>
-    <tr>
-        <td class="date">Apr 17</td>
-        <td class="speaker">Mitchell Riley</td>
-        <td>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <base target="_blank">
+    <title>HoTT Electronic Seminar</title>
+  </head>
+  <body>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
+      <div style="width: 300px;"></div>
+      <h1 style="flex: 1;text-align: center; margin: 0;">Homotopy Type Theory Electronic Seminar Talks</h1>
+      <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 300px;">
+    </div>
+    <hr style="border: 1px solid #888ebe;">
+    <p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
+    Homotopy Type Theory Electronic Seminar Talks is a series of research talks by leading experts in Homotopy Type Theory. 
+    The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>. 
+    To attend a talk, please follow the instructions below.</p>
+    <hr style="border: 1px solid #888ebe;">
+    <h2>Essential Information</h2>
+    <ul>
+      <li><strong>Time: </strong>Alternate Thursdays at 11:30 AM Eastern (60-minute talk + 30-minute discussion).</li>
+      <li><strong>Mailing list: </strong><a href="https://groups.google.com/forum/#!forum/hott-electronic-seminar-talks">HoTT Electronic Seminar Talks</a> (for updates).</li>
+      <li><strong>Google calendar: </strong><a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto">Seminar Calendar</a>.</li>
+      <li><strong>YouTube channel: </strong><a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a>.</li>
+      <li><strong>Organizers: </strong><a href="https://www.cs.cmu.edu/&#126;cangiuli/">Carlo Angiuli</a>, 
+        <a href="http://jdc.math.uwo.ca/">Dan Christensen</a>, 
+        <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>, and 
+        <a href="https://emilyriehl.github.io/">Emily Riehl</a>.</li>
+      <li>
+        <strong>Website by: </strong>
+        <a href="https://doolster.github.io/">Zack Dooley</a>
+      </li>
+    </ul>
+    <h2>How to Attend?</h2>
+    <p>We are using <a href="http://zoom.us">Zoom</a>&#160;for the talks. Please install the software and make at least one test call before joining a talk. To join follow the link:</p>
+    <p style="text-align: center;">
+      <a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a>
+    </p>
+    <div class="expand-all-container">
+      <button id="expand-all-btn" class="button expand-all">Expand Terms</button>
+    </div>
+    <button class="accordion">Spring 2025</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Speaker</th>
+          <th>Talk Information</th>
+        </tr>
+        <tr>
+          <td class="date">Apr 17</td>
+          <td class="speaker">Mitchell Riley</td>
+          <td>
             <p class="talk-title">Tiny Types and Cubical Type Theory</p>
-            <p class="abstract">
-              I will present an extension of Martin-Löf Type Theory that contains a tiny object; 
-              a type for which there is an "amazing" right adjoint to the formation of function 
-              types as well as the expected left adjoint. A primary aim of the theory is to be 
-              simple enough to be used both by hand and in a (hypothetical) proof assistant. 
-              I will sketch a normalisation algorithm and discuss a few potential applications, 
-              in particular, to implementations of Cubical Type Theory.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td class="date">Mar 6</td>
-        <td class="speaker">Jonathan Weinberger</td>
-        <td>
-            <p class="talk-title">Directed univalence and the Yoneda embedding for synthetic ∞-categories
-              <a href="https://www.youtube.com/watch?v=jCU-rSBnEac"><img class="icon" src="images/YouTube icon.webp"></a>
-              <a href="hottestfiles/Weinberger-2025-03-06-HoTTEST.pdf"><img class="icon" src="images/PDF_file_icon.png"></a></p>
-            <p class="abstract">
-              In this talk, I'll present recent results in synthetic ∞-category theory in an extension 
-              of homotopy type theory. An ∞-category is analogous to a 1-category, but with composition 
-              defined only up to homotopy. To reason about them in HoTT, Riehl and Shulman proposed 
-              simplicial HoTT, an extension by a directed interval, generating the shapes that model 
-              arrows and their composition.<br/>
-              To account for fundamental constructions like the opposite category or the maximal subgroupoid, 
-              we add further type formers as modalities using Gratzer-Kavvos-Nuyts-Birkedal's framework 
-              of multimodal dependent type theory (MTT).<br/>
-              I'll present the construction of the universe 𝒮 of small ∞-groupoids in that setting which 
-              we can show to be an ∞-category satisfying directed univalence. As an application, 
-              we can define various ∞-categories of interest in higher algebra such as ∞-monoids and ∞-groups. 
-              Furthermore, I'll show the construction of the fully functorial Yoneda embedding w.r.t. 𝒮 
-              as well as the Yoneda lemma (which is hard to establish in set-theoretic foundations). 
-              If time permits, I will outline further developments in synthetic ∞-presheaf theory, 
-              namely first steps in the theory of Kan extensions, including a proof of Quillen's Theorem A 
-              and the properness of cocartesian fibrations.<br/>
-              The material is joint work with Daniel Gratzer und Ulrik Buchholtz 
-              (<a href="https://arxiv.org/abs/2407.09146">https://arxiv.org/abs/2407.09146</a>,<span>&#160;</span>
-              <a href="https://arxiv.org/abs/2501.13229">https://arxiv.org/abs/2501.13229</a>).
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td class="date">Feb 20</td>
-        <td class="speaker">Mart&#237;n H&#246;tzel Escard&#243;</td>
-        <td>
-          <p class="talk-title">Injective types
-            <a href="https://www.youtube.com/watch?v=zRmbu5ro9Lc"><img class="icon" src="images/YouTube icon.webp"></a>
-            <a href="hottestfiles/Escardo-2025-02-20-HoTTEST.pdf"><img class="icon" src="images/PDF_file_icon.png"></a></p>
-          <p class="abstract">
-            In previous work, we established results about injective types in HoTT/UF, including characterizations, closure properties, and examples. In recent current work, in collaboration with Tom de Jong, we have developed more examples and counter-examples, as well as a better understanding of the landscape. In this talk I will present these old and new ideas.
-          </p>
-        </td>
-    </tr>
-    <tr>
-        <td class="date">Feb 6</td>
-        <td class="speaker">Mario Carneiro</td>
-        <td>
-            <p class="talk-title">Lean4Lean: Towards a Verified Typechecker for Lean, in Lean
-              <a href="https://www.youtube.com/watch?v=t0kHC0YxjLc"><img class="icon" src="images/YouTube icon.webp"></a>
-              <a href="hottestfiles/Carneiro-2025-02-06-HoTTEST.pdf"><img class="icon" src="images/PDF_file_icon.png"></a></p>
-            <p class="abstract">
-              This talk will present Lean4Lean, a project to construct a verified checker for the Lean theorem prover in the style of MetaCoq. It consists of a new &#8220;external verifier&#8221; for Lean, written in Lean. It is the first complete verifier for Lean 4 other than the reference implementation in C++ used by Lean itself, and the new verifier is competitive with the original, running between 20% and 50% slower and usable to verify all of Lean&#8217;s mathlib library, forming an additional step in Lean&#8217;s aim to self-host the full elaborator and compiler. The second part of the project concerns the type theory itself, and establishing its properties (in spite of several known negative results about the behavior of the type system), with the ultimate goal of being able to show that the verifier is correct to a specification of the type theory, and that the type theory is consistent relative to ZFC with countably many inaccessible cardinals. This work is still ongoing but we plan to use this project to help justify any future changes to the kernel and type theory and ensure unsoundness does not sneak in through either the abstract theory or implementation bugs.
-            </p>
-        </td>
-    </tr>
-  </table>
-</div>
-
-<button class="accordion">Fall 2024</button>
-<div class="panel">
-  <table>
-    <tr>
-        <th>Date</th>
-        <th>Speaker</th>
-        <th>Talk Information</th>
-    </tr>
-    <tr>
-        <td class="date">Dec 5</td>
-        <td class="speaker">Paige North</td>
-        <td>
-          <p class="talk-title">Coinductive control of inductive data types
-            <a href="https://www.youtube.com/watch?v=8nGTQZy37Q0"><img class="icon" src="images/YouTube icon.webp"></a>
-            <a href="hottestfiles/North-2024-12-05-HoTTEST.pdf"><img class="icon" src="images/PDF_file_icon.png"></a></p>
-          <p class="abstract">
-            In classical programming language theory, characterizing data types as initial algebras of an endofunctor that represents a specification of the data types is an important tool. In this work, we observe that the category of algebras of such an endofunctor is often enriched in its category of coalgebras. This enrichment carries strictly more information than the traditional, unenriched category. For example, when considering the endofunctor whose initial algebra is the natural numbers, we find that the enrichment encodes a notion of `partial' homomorphism, while the unenriched category encodes only `total' homomorphisms. We can also leverage this extra information to generalize the notion of initial algebras, following the theory of weighted limits. This is joint work with Maximilien P&#233;roux and Lukas Mulder.
-          </p>
-        </td>
-    </tr>
-  </table>
-</div>
-
-<button class="accordion">Winter 2024</button>
-<div class="panel">
-  <table>
-    <tr>
-        <th>Date</th>
-        <th>Speaker</th>
-        <th>Talk Information</th>
-    </tr>
-    <tr>
-      <td class="date">May 2</td>
-      <td class="speaker">Andreas Nuyts</td>
-      <td>
-        <p class="talk-title">Higher Pro-arrows: Towards a Model for Naturality Pretype Theory
-          <a href="https://www.youtube.com/watch?v=jcaG18oicP8"><img class="icon" src="images/YouTube icon.webp"></a>
-          <a href="hottestfiles/Nuyts-2024-05-02-HoTTEST.pdf"><img class="icon" src="images/PDF_file_icon.png"></a></p>
-        <p class="abstract">
-          In systems with internal parametricity, we get propagation and preservation of relations through/by all functions for free. In HoTT, we get preservation of equivalences by all functions for free. In directed type theory, we get preservation of morphisms by all (covariant) functions for free.<br/>
-          None of these three properties by itself is satisfactory: if we weaken equivalences or morphisms to relations, we lose their computational behaviour. If we want to rely on preservation of non-invertible morphisms, we need our functions to be covariant. And finally, simply not every morphism/relation is an equivalence.<br/>
-          We set out to develop a type system that has all three preservation properties in an interactive manner, so that we can preserve isomorphisms when available, morphisms when covariant, and relations as a last resort. Such a system should provide us with functoriality (fmap), parametricity and naturality proofs for free. I call such a system "Naturality Type Theory".<br/>
-          In this first step, I consider Naturality *Pre*type Theory: I defer all considerations of fibrancy to intuition and future work. In particular, I do not yet worry too much about the specifics of composition of and transport along morphisms.<br/>
-          By instantiating parametrized systems such as Multimod(e/al) Type Theory (MTT) and the Modal Transpension System (MTraS), we can moreover separate concerns and only worry about the presheaf model at every mode, and the modalities that we can model as adjunctions between these presheaf models, leaving syntactic matters to research on MTT and MTraS.<br/>
-          The presheaf models are designed to accommodate yet-to-be-defined higher pro-arrow equipments, and can be invented in three ways: (1) as a higher-dimensional version of pro-arrow equipments, (2) as a heterogenization of Tamsamani &amp; Simpson's model of higher category theory, and (3) as a directification of Degrees of Relatedness.<br/>
-          In this talk, after motivating the subject, I intend to introduce the main ideas and then spiral towards the technical details, starting from the three existing settings/structures/models mentioned above.
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
-
--->
-
-<script src="js/control.js"></script>
-
-</body>
+            <p class="abstract">I will present an extension of Martin-Löf Type Theory that contains a tiny object; a type for which there is an "amazing" right adjoint to the formation of function types as well as the expected left adjoint. A primary aim of the theory is to be simple enough to be used both by hand and in a (hypothetical) proof assistant. I will sketch a normalisation algorithm and discuss a few potential applications, in particular, to implementations of Cubical Type Theory.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Mar 6</td>
+          <td class="speaker">Jonathan Weinberger</td>
+          <td>
+            <p class="talk-title">Directed univalence and the Yoneda embedding for synthetic ∞-categories<a href="https://www.youtube.com/watch?v=jCU-rSBnEac"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Weinberger-2025-03-06-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="abstract">In this talk, I'll present recent results in synthetic ∞-category theory in an extension of homotopy type theory. An ∞-category is analogous to a 1-category, but with composition defined only up to homotopy. To reason about them in HoTT, Riehl and Shulman proposed simplicial HoTT, an extension by a directed interval, generating the shapes that model arrows and their composition.<br/>To account for fundamental constructions like the opposite category or the maximal subgroupoid, we add further type formers as modalities using Gratzer-Kavvos-Nuyts-Birkedal's framework of multimodal dependent type theory (MTT).<br/>I'll present the construction of the universe 𝒮 of small ∞-groupoids in that setting which we can show to be an ∞-category satisfying directed univalence. As an application, we can define various ∞-categories of interest in higher algebra such as ∞-monoids and ∞-groups. Furthermore, I'll show the construction of the fully functorial Yoneda embedding w.r.t. 𝒮 as well as the Yoneda lemma (which is hard to establish in set-theoretic foundations).<br/>If time permits, I will outline further developments in synthetic ∞-presheaf theory, namely first steps in the theory of Kan extensions, including a proof of Quillen's Theorem A and the properness of cocartesian fibrations.<br/>The material is joint work with Daniel Gratzer und Ulrik Buchholtz (https://arxiv.org/abs/2407.09146, https://arxiv.org/abs/2501.13229).</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Feb 20</td>
+          <td class="speaker">Martín Hötzel Escardó</td>
+          <td>
+            <p class="talk-title">Lean4Lean: Injective Types<a href="https://www.youtube.com/watch?v=zRmbu5ro9Lc"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Escardo-2025-02-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="abstract">In previous work, we established results about injective types in HoTT/UF, including characterizations, closure properties, and examples. In recent current work, in collaboration with Tom de Jong, we have developed more examples and counter-examples, as well as a better understanding of the landscape. In this talk I will present these old and new ideas.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Feb 6</td>
+          <td class="speaker">Mario Carneiro</td>
+          <td>
+            <p class="talk-title">Lean4Lean: Towards a Verified Typechecker for Lean, in Lean<a href="https://www.youtube.com/watch?v=t0kHC0YxjLc"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Carneiro-2025-02-06-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="abstract">This talk will present Lean4Lean, a project to construct a verified checker for the Lean theorem prover in the style of MetaCoq. It consists of a new "external verifier" for Lean, written in Lean. It is the first complete verifier for Lean 4 other than the reference implementation in C++ used by Lean itself, and the new verifier is competitive with the original, running between 20% and 50% slower and usable to verify all of Lean's mathlib library, forming an additional step in Lean's aim to self-host the full elaborator and compiler. The second part of the project concerns the type theory itself, and establishing its properties (in spite of several known negative results about the behavior of the type system), with the ultimate goal of being able to show that the verifier is correct to a specification of the type theory, and that the type theory is consistent relative to ZFC with countably many inaccessible cardinals. This work is still ongoing but we plan to use this project to help justify any future changes to the kernel and type theory and ensure unsoundness does not sneak in through either the abstract theory or implementation bugs.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button class="accordion">Fall 2024</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Speaker</th>
+          <th>Talk Information</th>
+        </tr>
+        <tr>
+          <td class="date">Dec 5</td>
+          <td class="speaker">Paige North</td>
+          <td>
+            <p class="talk-title">Coinductive control of inductive data types<a href="https://www.youtube.com/watch?v=8nGTQZy37Q0"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/North-2024-12-05-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="abstract">In classical programming language theory, characterizing data types as initial algebras of an endofunctor that represents a specification of the data types is an important tool. In this work, we observe that the category of algebras of such an endofunctor is often enriched in its category of coalgebras. This enrichment carries strictly more information than the traditional, unenriched category. For example, when considering the endofunctor whose initial algebra is the natural numbers, we find that the enrichment encodes a notion of `partial' homomorphism, while the unenriched category encodes only `total' homomorphisms. We can also leverage this extra information to generalize the notion of initial algebras, following the theory of weighted limits. This is joint work with Maximilien Péroux and Lukas Mulder.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button class="accordion">Spring 2024</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Speaker</th>
+          <th>Talk Information</th>
+        </tr>
+        <tr>
+          <td class="date">May 2</td>
+          <td class="speaker">Andreas Nuyts</td>
+          <td>
+            <p class="talk-title">Higher Pro-arrows: Towards a Model for Naturality Pretype Theory<a href="https://www.youtube.com/watch?v=jcaG18oicP8"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Nuyts-2024-05-02-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="abstract">In systems with internal parametricity, we get propagation and preservation of relations through/by all functions for free. In HoTT, we get preservation of equivalences by all functions for free. In directed type theory, we get preservation of morphisms by all (covariant) functions for free.<br/>None of these three properties by itself is satisfactory: if we weaken equivalences or morphisms to relations, we lose their computational behaviour. If we want to rely on preservation of non-invertible morphisms, we need our functions to be covariant. And finally, simply not every morphism/relation is an equivalence.<br/>We set out to develop a type system that has all three preservation properties in an interactive manner, so that we can preserve isomorphisms when available, morphisms when covariant, and relations as a last resort. Such a system should provide us with functoriality (fmap), parametricity and naturality proofs for free. I call such a system "Naturality Type Theory".<br/>In this first step, I consider Naturality *Pre*type Theory: I defer all considerations of fibrancy to intuition and future work. In particular, I do not yet worry too much about the specifics of composition of and transport along morphisms.<br/>By instantiating parametrized systems such as Multimod(e/al) Type Theory (MTT) and the Modal Transpension System (MTraS), we can moreover separate concerns and only worry about the presheaf model at every mode, and the modalities that we can model as adjunctions between these presheaf models, leaving syntactic matters to research on MTT and MTraS.<br/>The presheaf models are designed to accommodate yet-to-be-defined higher pro-arrow equipments, and can be invented in three ways: (1) as a higher-dimensional version of pro-arrow equipments, (2) as a heterogenization of Tamsamani &amp; Simpson's model of higher category theory, and (3) as a directification of Degrees of Relatedness.<br/>In this talk, after motivating the subject, I intend to introduce the main ideas and then spiral towards the technical details, starting from the three existing settings/structures/models mentioned above.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="js/control.js"></script>
+  </body>
 </html>

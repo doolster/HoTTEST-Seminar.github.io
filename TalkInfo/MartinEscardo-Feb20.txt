@@ -1,0 +1,7 @@
+Term: Spring 2025
+Date: Feb 20
+Speaker: Martín Hötzel Escardó
+Title: Lean4Lean: Injective Types
+YouTube: https://www.youtube.com/watch?v=zRmbu5ro9Lc
+Slides: hottestfiles/Escardo-2025-02-20-HoTTEST.pdf
+Abstract: In previous work, we established results about injective types in HoTT/UF, including characterizations, closure properties, and examples. In recent current work, in collaboration with Tom de Jong, we have developed more examples and counter-examples, as well as a better understanding of the landscape. In this talk I will present these old and new ideas.

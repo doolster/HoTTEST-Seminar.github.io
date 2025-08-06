@@ -1,0 +1,7 @@
+Term: Spring 2025
+Date: Apr 17
+Speaker: Mitchell Riley
+Title: Tiny Types and Cubical Type Theory
+YouTube: 
+Slides: 
+Abstract: I will present an extension of Martin-Löf Type Theory that contains a tiny object; a type for which there is an "amazing" right adjoint to the formation of function types as well as the expected left adjoint. A primary aim of the theory is to be simple enough to be used both by hand and in a (hypothetical) proof assistant. I will sketch a normalisation algorithm and discuss a few potential applications, in particular, to implementations of Cubical Type Theory.
