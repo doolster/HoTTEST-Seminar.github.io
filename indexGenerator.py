@@ -1,5 +1,5 @@
 from yattag import Doc, indent
-import os
+import os, re
 
 # Any new term types must be added to this dictionary for sorting
 termIDDict = { 'Spring': 'a', 'Fall': 'b'}
@@ -17,6 +17,15 @@ class Talk:
         self.slidelink = slidelink
         self.abstract = abstract
 
+# Function for formatting text with urls for html output
+def formatURLs(str):
+    newStr = str
+    # Probably far to complex regex for finding urls
+    urls = re.findall(r"""((?:(?:https|http)?:(?:/{1,3}|[a-z0-9%])|[a-z0-9.\-]+[.](?:com|org)/)(?:[^\s()<>{}\[\]]+|\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\))+(?:\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’])|(?:(?<!@)[a-z0-9]+(?:[.\-][a-z0-9]+)*[.](?:com|ac)\b/?(?!@)))""", str)
+    for url in urls:
+        newStr = newStr.replace(url, '<a href="' + url + '">' + url + "</a>")
+    return newStr
+
 # Given file name in the folder "TalkInfo", parses file into a Talk objects
 def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', '')
@@ -28,10 +37,10 @@ def readFile(fileName):
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
-                    newTalk.abstract = line[9:].strip() + '<br/>'
+                    newTalk.abstract = formatURLs(line[9:].strip()) + '<br/>'
                     inAbstract = True
                 else:
-                    newTalk.abstract += line + '<br/>'
+                    newTalk.abstract += formatURLs(line) + '<br/>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
