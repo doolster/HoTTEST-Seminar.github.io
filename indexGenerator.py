@@ -1,5 +1,5 @@
 from yattag import Doc, indent
-import os
+import os, re
 
 # Any new term types must be added to this dictionary for sorting
 termIDDict = { 'Spring': 'a', 'Fall': 'b'}
@@ -17,24 +17,42 @@ class Talk:
         self.slidelink = slidelink
         self.abstract = abstract
 
+# Function for formatting text with urls for html output
+def formatURLs(str):
+    newStr = str
+    # Probably far to complex regex for finding urls
+    urls = re.findall(r"""((?:(?:https|http)?:(?:/{1,3}|[a-z0-9%])|[a-z0-9.\-]+[.](?:com|org)/)(?:[^\s()<>{}\[\]]+|\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\))+(?:\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’])|(?:(?<!@)[a-z0-9]+(?:[.\-][a-z0-9]+)*[.](?:com|ac)\b/?(?!@)))""", str)
+    for url in urls:
+        newStr = newStr.replace(url, '<a href="' + url + '">' + url + "</a>")
+    return newStr
+
 # Given file name in the folder "TalkInfo", parses file into a Talk objects
 def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
         inAbstract = False
+        lineNumber = 0
         for line in f:
+            line = line.strip()
+            lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
-                    newTalk.abstract = line[9:].strip() + '<br/>'
+                    newTalk.abstract = formatURLs(line[9:].strip()) + '<br/>'
                     inAbstract = True
                 else:
-                    newTalk.abstract += line.strip() + '<br/>'
+                    newTalk.abstract += formatURLs(line) + '<br/>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
-                newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
+                if newTalk.term[:-5] in termIDDict:
+                    newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
+                else:
+                    raise Exception('Term type not found: new term types must be added to termIDDict for sorting')
             elif line.lower().startswith('date:'):
                 newTalk.date = line[5:].strip()
-                newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
+                if newTalk.date[:3] in monthDict:
+                    newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
+                else:
+                    raise Exception('Date entry ill-formed')
             elif line.lower().startswith('speaker:'):
                 newTalk.speaker = line[8:].strip()
             elif line.lower().startswith('title:'):
@@ -43,18 +61,33 @@ def readFile(fileName):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
                 newTalk.slidelink = line[7:].strip()
-            elif line == '':
+            elif line == '\n':
                 pass
             else:
-                print('Improperly formatted label in following line: ' + line)
+                raise Exception('Improperly formatted label in line ' + str(lineNumber) + ' of ' + fileName + ' "' + line + '"')
         newTalk.abstract = newTalk.abstract[:-5] # Removing superfluous breakline at end of abstract
         f.close()
         return newTalk
 
+# Function for testing if a talk object is missing any critical components
+def testTalk(talk):
+    if talk.date.strip() == '':
+        raise Exception('Talk missing date entry')
+    elif talk.term.strip() == '':
+        raise Exception('Talk on ' + talk.date + ' missing term entry')
+    elif talk.speaker.strip() == '':
+        raise Exception('Talk on ' + talk.date + ', ' + talk.term + ' missing speaker name')
+    elif talk.title.strip() == '':
+        raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing talk title')
+    elif talk.abstract.strip() == '':
+        raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing abstract')
+
 # Putting all talks into an array
 talks = []
 for file in os.listdir('./TalkInfo'):
-    talks.append(readFile(file))
+    newTalk = readFile(file)
+    testTalk(newTalk)
+    talks.append(newTalk)
 
 # Labeling talks with their term and date
 pageInfo = {}
@@ -109,7 +142,8 @@ docHead = """
 <p style="text-align: center;"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
 
 <div class="expand-all-container">
-    <button id="expand-all-btn" class="button expand-all">Expand Terms</button>
+    <button id="expand-term-btn" class="button expand-all">Expand Terms</button>
+    <button id="expand-abst-btn" class="button expand-all">Expand Abstracts</button>
 </div>
 """
 
