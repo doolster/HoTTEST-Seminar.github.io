@@ -34,6 +34,7 @@ THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an excepti
 
 THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
 <ul>
+  <li>File name</li>
   <li>Whitespace differences (either before or after lines, or between entry label and content)</li>
   <li>Capitolization</li>
   <li>Missing youtube/slide links</li>
