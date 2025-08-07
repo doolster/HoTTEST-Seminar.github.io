@@ -19,7 +19,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Show More/Less for last column
+// Show More/Less abstracts functionality
 document.querySelectorAll('.panel table').forEach(function(table) {
   // For each row except the header
   table.querySelectorAll('tr').forEach(function(row, idx) {
@@ -80,8 +80,8 @@ if (firstBtn) {
     }
 }
 
-// "Expand All" button functionality
-document.getElementById('expand-all-btn').addEventListener('click', function() {
+// "Expand Terms" button functionality
+document.getElementById('expand-term-btn').addEventListener('click', function() {
   for (i = 0; i < acc.length; i++) {
     if (!acc[i].classList.contains('active')) {
       var accPanel = acc[i].nextElementSibling;
@@ -89,6 +89,31 @@ document.getElementById('expand-all-btn').addEventListener('click', function() {
       acc[i].classList.toggle('active');
     }
   }
+});
+
+// "Expand Abstracts" button functionality
+document.getElementById('expand-abst-btn').addEventListener('click', function() {
+  for (i = 0; i < acc.length; i++) {
+    if (!acc[i].classList.contains('active')) {
+      var accPanel = acc[i].nextElementSibling;
+      accPanel.style.maxHeight = accPanel.scrollHeight + 'px';
+      acc[i].classList.toggle('active');
+    }
+  }
+  document.querySelectorAll('.talk-title').forEach((title) => {
+    var abst = title.nextSibling.nextSibling;
+    if (abst && abst.classList) {
+      abst.classList.add('expanded');
+      title.childNodes[0].src = 'images/retract-button.png';
+      // Update panel height if inside accordion
+      let panel = title.closest('.panel');
+      if (panel) {
+          requestAnimationFrame(function() {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          });
+      }
+    }
+  });
 });
 
 // Sets all links to "noreferrer"
