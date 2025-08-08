@@ -6,7 +6,7 @@ termIDDict = { 'Spring': 'a', 'Fall': 'b'}
 monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
 
 class Talk:
-    def __init__(self, term, date, speaker, school, title, ytlink, slidelink, abstract):
+    def __init__(self, term, date, speaker, school, title, ytlink, slides, abstract):
         self.term = term
         self.termID = ''
         self.date = date
@@ -15,7 +15,7 @@ class Talk:
         self.school = school
         self.title = title
         self.ytlink = ytlink
-        self.slidelink = slidelink
+        self.slides = slides
         self.abstract = abstract
 
 # Function for formatting text with urls for html output (UNUSED)
@@ -63,7 +63,7 @@ def readFile(fileName):
             elif line.lower().startswith('youtube:'):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
-                newTalk.slidelink = line[7:].strip()
+                newTalk.slides = line[7:].strip()
             elif line == '':
                 pass
             else:
@@ -186,8 +186,8 @@ for termID in termIDs:
                                 if talk.ytlink != '':
                                     with tag('a', href=talk.ytlink):
                                         doc.stag('img', src='images/YouTube icon.webp', klass='icon')
-                                if talk.slidelink != '':
-                                    with tag('a', href=talk.slidelink):
+                                if talk.slides != '':
+                                    with tag('a', href='hottestfiles/' + talk.slides):
                                         doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
                             with tag('p', klass='abstract'):
                                 doc.asis(talk.abstract)
