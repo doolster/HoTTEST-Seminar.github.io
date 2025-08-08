@@ -3,7 +3,7 @@ Date: May 2
 Speaker: Andreas Nuyts
 Title: Higher Pro-arrows: Towards a Model for Naturality Pretype Theory
 YouTube: https://www.youtube.com/watch?v=jcaG18oicP8
-Slides: hottestfiles/Nuyts-2024-05-02-HoTTEST.pdf
+Slides: Nuyts-2024-05-02-HoTTEST.pdf
 Abstract: In systems with internal parametricity, we get propagation and preservation of relations through/by all functions for free. In HoTT, we get preservation of equivalences by all functions for free. In directed type theory, we get preservation of morphisms by all (covariant) functions for free.
           None of these three properties by itself is satisfactory: if we weaken equivalences or morphisms to relations, we lose their computational behaviour. If we want to rely on preservation of non-invertible morphisms, we need our functions to be covariant. And finally, simply not every morphism/relation is an equivalence.
           We set out to develop a type system that has all three preservation properties in an interactive manner, so that we can preserve isomorphisms when available, morphisms when covariant, and relations as a last resort. Such a system should provide us with functoriality (fmap), parametricity and naturality proofs for free. I call such a system "Naturality Type Theory".
