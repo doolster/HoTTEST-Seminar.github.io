@@ -96,9 +96,12 @@ for file in os.listdir('./TalkInfo'):
 pageInfo = {}
 for talk in talks:
     if talk.termID not in pageInfo:
-        pageInfo[talk.termID] = { talk.dateID : talk }
+        pageInfo[talk.termID] = { talk.dateID : [talk] }
     else:
-        pageInfo[talk.termID][talk.dateID] = talk
+        if talk.dateID not in pageInfo[talk.termID]:
+            pageInfo[talk.termID][talk.dateID] = [talk]
+        else:
+            pageInfo[talk.termID][talk.dateID].append(talk)
 
 # Start creating HTML document
 doc, tag, text, line = Doc().ttl()
@@ -162,7 +165,7 @@ for termID in termIDs:
     dateIDs = list(currentTerm.keys())
     dateIDs.sort(reverse=True)
     with tag('button', klass='accordion'):
-        text(currentTerm[dateIDs[0]].term)
+        text(currentTerm[dateIDs[0]][0].term)
     with tag('div', klass='panel'):
         with tag('table'):
             with tag('tr'):
@@ -170,23 +173,24 @@ for termID in termIDs:
                 line('th', 'Speaker')
                 line('th', 'Talk Information')
             for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
-                with tag('tr'):
-                    line('td', currentTerm[dateID].date, klass='date')
-                    with tag('td', klass='speaker'):
-                        text(currentTerm[dateID].speaker)
-                        if currentTerm[dateID].school != '':
-                            line('div', currentTerm[dateID].school, klass='school')
-                    with tag('td'):
-                        with tag('p', klass='talk-title'):
-                            text(currentTerm[dateID].title)
-                            if currentTerm[dateID].ytlink != '':
-                                with tag('a', href=currentTerm[dateID].ytlink):
-                                    doc.stag('img', src='images/YouTube icon.webp', klass='icon')
-                            if currentTerm[dateID].slidelink != '':
-                                with tag('a', href=currentTerm[dateID].slidelink):
-                                    doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
-                        with tag('p', klass='abstract'):
-                            doc.asis(currentTerm[dateID].abstract)
+                for talk in currentTerm[dateID]:
+                    with tag('tr'):
+                        line('td', talk.date, klass='date')
+                        with tag('td', klass='speaker'):
+                            text(talk.speaker)
+                            if talk.school != '':
+                                line('div', talk.school, klass='school')
+                        with tag('td'):
+                            with tag('p', klass='talk-title'):
+                                text(talk.title)
+                                if talk.ytlink != '':
+                                    with tag('a', href=talk.ytlink):
+                                        doc.stag('img', src='images/YouTube icon.webp', klass='icon')
+                                if talk.slidelink != '':
+                                    with tag('a', href=talk.slidelink):
+                                        doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
+                            with tag('p', klass='abstract'):
+                                doc.asis(talk.abstract)
 
 docFoot = """
 <script src="js/control.js"></script>
