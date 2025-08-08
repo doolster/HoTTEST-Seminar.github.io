@@ -7,8 +7,8 @@ Title: TALK TITLE<br>
 YouTube: YOUTUBE LINK<br>
 Slides: SLIDE LINK<br>
 Abstract: ABSTRACT CONTENT<br>
-&ensp;ABSTRACT CONTENT<br>
-&ensp;...<br>
+ABSTRACT CONTENT<br>
+...<br>
 
 
 (new talk files should be added to the TalkInfo folder)<br>
@@ -21,7 +21,7 @@ NOTES:
   <li>TALK TITLE is the title of the talk.</li>
   <li>YOUTUBE LINK and SLIDE LINK are the relevant links, these are the only entries which are okay to leave empty.</li>
   <li>ABSTRACT CONTENT is the abstract, which should be split into lines for the desired paragraph breaks. The abstract can be as long as you would like, but it must always be the last entry.</li>
-  <li>URLs can be included in the abstract and will be automatically formatted into hyperlinks. HTML can be added to ABSTRACT CONTENT and will be rendered correctly, if so desired.</li>
+  <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, such as, if you want to include a hyperlink.</li>
 </ul>
 
 THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an exception):

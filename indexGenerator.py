@@ -6,18 +6,19 @@ termIDDict = { 'Spring': 'a', 'Fall': 'b'}
 monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
 
 class Talk:
-    def __init__(self, term, date, speaker, title, ytlink, slidelink, abstract):
+    def __init__(self, term, date, speaker, school, title, ytlink, slidelink, abstract):
         self.term = term
         self.termID = ''
         self.date = date
         self.dateID = ''
         self.speaker = speaker
+        self.school = school
         self.title = title
         self.ytlink = ytlink
         self.slidelink = slidelink
         self.abstract = abstract
 
-# Function for formatting text with urls for html output
+# Function for formatting text with urls for html output (UNUSED)
 def formatURLs(str):
     newStr = str
     # Probably far to complex regex for finding urls
@@ -28,7 +29,7 @@ def formatURLs(str):
 
 # Given file name in the folder "TalkInfo", parses file into a Talk objects
 def readFile(fileName):
-    newTalk = Talk('', '', '', '', '', '', '')
+    newTalk = Talk('', '', '', '', '', '', '', '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
         inAbstract = False
         lineNumber = 0
@@ -37,10 +38,10 @@ def readFile(fileName):
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
-                    newTalk.abstract = formatURLs(line[9:].strip()) + '<br/>'
+                    newTalk.abstract = line[9:].strip() + '<br/>'
                     inAbstract = True
                 else:
-                    newTalk.abstract += formatURLs(line) + '<br/>'
+                    newTalk.abstract += line + '<br/>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
@@ -55,13 +56,15 @@ def readFile(fileName):
                     raise Exception('Date entry ill-formed')
             elif line.lower().startswith('speaker:'):
                 newTalk.speaker = line[8:].strip()
+            elif line.lower().startswith('school:'):
+                newTalk.school = line[7:].strip()
             elif line.lower().startswith('title:'):
                 newTalk.title = line[6:].strip()
             elif line.lower().startswith('youtube:'):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
                 newTalk.slidelink = line[7:].strip()
-            elif line == '\n':
+            elif line == '':
                 pass
             else:
                 raise Exception('Improperly formatted label in line ' + str(lineNumber) + ' of ' + fileName + ' "' + line + '"')
@@ -107,18 +110,19 @@ docHead = """
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <base target="_blank">
-<title>HoTT Electronic Seminar</title>
+<title>HoTTEST</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.svg">
 </head>
 <body>
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
     <div style="width: 300px;"></div>
-    <h1 style="flex: 1;text-align: center; margin: 0;">Homotopy Type Theory Electronic Seminar Talks</h1>
-    <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 300px;">
+    <h1 style="flex: 1;text-align: center; margin: 0;">HoTTEST</h1>
+    <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 250px;">
 </div>
 <hr style="border: 1px solid #888ebe;">
 <p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
-    Homotopy Type Theory Electronic Seminar Talks is a series of research talks by leading experts in Homotopy Type Theory. 
+    Homotopy Type Theory Electronic Seminar Talks (HoTTEST) is a series of research talks by leading experts in Homotopy Type Theory. 
     The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>. 
     To attend a talk, please follow the instructions below.</p>
 <hr style="border: 1px solid #888ebe;">
@@ -168,7 +172,10 @@ for termID in termIDs:
             for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
                 with tag('tr'):
                     line('td', currentTerm[dateID].date, klass='date')
-                    line('td', currentTerm[dateID].speaker, klass='speaker')
+                    with tag('td', klass='speaker'):
+                        text(currentTerm[dateID].speaker)
+                        if currentTerm[dateID].school != '':
+                            line('div', currentTerm[dateID].school, klass='school')
                     with tag('td'):
                         with tag('p', klass='talk-title'):
                             text(currentTerm[dateID].title)

@@ -72,6 +72,12 @@ td:last-child .abstract {
   cursor: pointer;
   width:fit-content;
 }
+.speaker {
+  font-weight: bold;
+}
+.school {
+  font-weight: normal;
+}
 
 .abstract {
   height: 0px;
