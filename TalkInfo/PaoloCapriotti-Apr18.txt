@@ -1,0 +1,8 @@
+Term: Spring 2019
+Date: Apr 18	
+Speaker: Paolo Capriotti
+School: Technische Universität Darmstadt
+Title: Polynomial monads as opetopic types
+YouTube: https://www.youtube.com/watch?v=8P5bWQhKcG4
+Slides: Capriotti-2019-Apr-18-HoTTEST.pdf
+Abstract: In a previous HoTTEST talk, Eric Finster presented a coinductive definition of polynomial monads that should make it possible to formulate higher algebra internally in HoTT. In my talk, I will show how one can connect Finster's construction to the formalism of opetopes and opetopic objects, and its connection with the Baez-Dolan construction for polynomial monads. More precisely, I will give a reformulation of Finster's definition of polynomial monad in terms of opetopic types satisfying a kind of Segal condition. It will turn out that, once the basic notion of trees over a polynomial is established, Finster's coherence for magmas can be expressed purely in terms of polynomials and their maps. This should hopefully provide a first step towards comparing Finster's definition with the established ∞-categorical notion of polynomial monad.

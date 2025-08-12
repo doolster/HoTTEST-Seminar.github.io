@@ -1,0 +1,8 @@
+Term: HoTTEST Conference 2020
+Date: Jun 19
+Speaker: Michael Shulman
+School: 
+Title: Type-theoretic model toposes
+YouTube: https://www.youtube.com/watch?v=VVe6kBztnAs
+Slides: Shulman-2020-Jun-19-HoTTEST.pdf
+Abstract: Starting with the Awodey-Warren interpretation of identity types by path objects and Voevodsky's model of univalence in simplicial sets, various kinds of Quillen model categories have been used to interpret homotopy type theory.  A "type-theoretic model topos" is a Quillen model category that is optimal for this purpose in many respects.  On one hand, it has sufficient structure to interpret essentially all of "Book" HoTT, including in strict univalent universes and most higher inductive types.  On the other hand, it is sufficiently general that any Rezk-Lurie-Grothendieck (∞,1)-topos can be presented by a type-theoretic model topos.  This talk will sketch the definition of type-theoretic model topos and the proofs of these facts, including some variations of the definition that apply to models of cubical type theory.

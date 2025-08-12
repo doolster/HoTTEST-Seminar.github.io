@@ -43,4 +43,5 @@ THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
   <li>Capitalization</li>
   <li>Missing youtube link/slides/school</li>
   <li>Ordering of entries (besides "Abstract:" which must go last)</li>
+  <li>&gt; and &lt; symbols in abstract (these get automatically replaced with the appropriate characters for html generation)</li>
 </ul>

@@ -1,0 +1,8 @@
+Term: Spring 2023
+Date: Apr 6
+Speaker: Omar Antolín Camarena
+School: 
+Title: HoTT lessons for algebraic topologists
+YouTube: https://www.youtube.com/watch?v=J3fLtr_-IjY
+Slides:
+Abstract: While one can use HoTT to talk about topics in the traditional algebraic topology of spaces, the difference in language and culture leads people using HoTT to prefer some styles of argument that are less common in traditional algebraic topology. There are some habits of thought I think algebraic topologists can profitably adopt from HoTT and in this talk I'll present examples, chief among them, the willingness to pass freely from a type family to its dependent sum and back. This talk will be more philosophical than technical and is mostly intended as bait, to get experts in HoTT to teach me (decidedly a non-export!) more tricks I can profitably steal.

@@ -1,0 +1,9 @@
+Term: Fall 2018
+Date: Dec 6	
+Speaker: Eric Finster
+School: Inria - Rennes
+Title: Towards Higher Universal Algebra in Type Theory
+YouTube: https://www.youtube.com/watch?v=hlCVHVtAlqQ
+Slides: Finster-2018-Dec-06-HoTTEST.pdf
+Abstract: I will propose a definition of "coherent cartesian polynomial monad" in type theory.  Special cases of the proposal yield definitions of ∞-operads, ∞-categories and ∞-groupoids.  In addition, I describe a definition of coherent algebra over such a monad, leading to a proposed internal description of objects such as En-types and diagrams of types valued in the universe.
+I will report on progress towards formalizing the definition and suggest some constructions and applications making use of it. 

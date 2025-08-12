@@ -1,0 +1,10 @@
+Term: Spring 2020
+Date: Feb 6
+Speaker: Niels van der Weide
+School: Radboud University
+Title: Constructing 1-Truncated Finitary Higher Inductive Types as Groupoid Quotients
+YouTube: https://www.youtube.com/watch?v=sQhqQTMcMKw
+Slides: Weide-2020-Feb-06-HoTTEST.pdf
+Abstract: In homotopy type theory, one can define spaces, such as the spheres and torus, with higher inductive types (HITs). These types generalize inductive types by allowing constructors for (possibly higher) paths beside constructors for points.
+One scheme for HITs is defined by Dybjer and Moenclaey. It allows defining HITs by providing arities for constructors for the points, paths, and paths between paths. The arities are allowed to be recursive, but they have to be finitary.
+In this talk, we show how to interpet the HITs defined by Dybjer and Moenclaey as 1-types using the grorupoid quotient. Concretely, this means we construct finitary 1-truncated HITs as groupoid quotients within type theory.

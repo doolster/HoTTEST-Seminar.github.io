@@ -1,0 +1,10 @@
+Term: Spring 2021
+Date: Feb 25
+Speaker: Carlo Angiuli
+School: Carnegie Mellon University
+Title: Internalizing Representation Independence with Univalence
+YouTube: https://www.youtube.com/watch?v=e3wGUuAxfG8
+Slides: Angiuli-2021-Feb-25-HoTTEST.pdf
+Abstract: In programming language theory, the principle of representation independence states that programs indexed by structured types are invariant under a wide range of structure-preserving correspondences. The Structure Identity Principle (SIP) states that constructions in HoTT respect structured isomorphisms, but many instances of representation independence involve non-isomorphic types.
+In this talk, I will motivate representation independence, explain its connection to proof reuse and transfer, and recall the basics of cubical type theory and the SIP. Then, I will describe our recent work on a relational variant of the SIP that uses HIT quotients to improve representation independence scenarios into  structured isomorphisms and thence equalities of structured types. Our results are formalized in Cubical Agda.
+Joint work with Evan Cavallo, Anders Mörtberg, and Max Zeuner. Available at <a href="https://dl.acm.org/doi/10.1145/3434293">https://dl.acm.org/doi/10.1145/3434293</a>.

@@ -1,0 +1,9 @@
+Term: Spring 2018
+Date: Apr 12	
+Speaker: Michael Shulman
+School: University of San Diego
+Title: Type 2-theories
+YouTube: https://www.youtube.com/watch?v=hEhFeatKchQ
+Slides: Shulman-2018-Apr-12-HoTTEST.pdf
+Abstract: Homotopy type theory is hypothesized to be an internal language for (∞,1)-toposes.  However, recent developments suggest that more than this, what is needed is an internal language for collections of several (∞,1)-toposes together with functors between them, such as adjunctions, monads, comonads, non-cartesian monoidal structures, and so on.  For instance, a cohesive (∞,1)-topos comes with an adjoint triple of two monads and a comonad, while a tangent (∞,1)-topos comes with a monad that is also a comonad and also a non-cartesian "smash product" monoidal structure.
+Just as ordinary homotopy type theory is a "doctrine" or "2-theory" for (∞,1)-toposes, each such situation should come with its own "2-theory": a dependent type theory with extra information characterizing the additional structure.  But developing even one dependent type theory formally is a lot of work, so we would like a general framework and a general theorem that can then simply be specialized to all such 2-theories.  I will sketch such a framework, which is under development in joint work with Dan Licata and Mitchell Riley.

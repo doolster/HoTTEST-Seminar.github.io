@@ -1,0 +1,8 @@
+Term: Spring 2023
+Date: Mar 23 
+Speaker: Daniel Gratzer
+School: 
+Title: Modalities and (weak) dependent right adjoints
+YouTube: https://www.youtube.com/watch?v=pjk1odP-jgs
+Slides: Gratzer-2023-Mar-23-HoTTEST.pdf
+Abstract: To a first approximation, modal type theories aim to extend Martin-Loef type theory with a connective which is not invariant under substitution. Naively performing such an extension will cause the substitution lemma to fail and so each modal type theory must also modify MLTT's judgments in some manner. Each such modification changes and restricts contexts and substitutions to obtain a theory which admits both the modality and a substitution lemma. One such modification extends type theory with a dependent adjunction [Birkedal et al. 2020]. Essentially, modalities behave like right adjoints with an adjoint action on contexts. In this talk we propose a weakening of the notion of dependent adjunction as a unifying abstraction for several seemingly distinct modal type theories: dual-context, left division, and Fitch-style. We explore the resulting connections between MTT - a type theory based around weak DRAs - and these other theories.

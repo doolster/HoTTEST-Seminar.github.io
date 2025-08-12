@@ -1,0 +1,8 @@
+Term: HoTTEST Conference 2020
+Date: Jun 18
+Speaker: Mitchell Riley
+School: 
+Title: Synthetic Spectra via a Monadic and Comonadic Modality
+YouTube: https://www.youtube.com/watch?v=62HST7p-7hs
+Slides: Riley-2020-Jun-18-HoTTEST.pdf
+Abstract: "Spectra" are the central objects of study in stable homotopy theory, and it is easy to define them internally in HoTT as Ω-spectra: a spectrum is a sequence of types with an equivalence between each type and the loop-space of the next. Working with these spectra in type theory can be quite difficult, however. In this talk we describe an extension of HoTT intended to be modeled in the category of "parameterised spectra", where a modality is used to identify the types that correspond to individual spectra. A pair of axioms are considered that internalise some features of the intended model, and which fix the "homotopy groups" (appropriately defined) of the sphere spectrum to be the stable homotopy groups of the ordinary higher inductive spheres.

@@ -1,0 +1,8 @@
+Term: Fall 2022
+Date: Oct 6
+Speaker: Chris Grossack
+School: 
+Title: Where are the open sets? Comparing HoTT with Classical Topology
+YouTube: https://www.youtube.com/watch?v=syftUuf5Hpk
+Slides: Grossack-2022-Oct-06-HoTTEST.pdf
+Abstract: It's often said that Homotopy Type Theory is a synthetic description of homotopy theory, but how do we know that the theorems we prove in HoTT are true for mathematicians working classically? In this expository talk we will outline the relationship between HoTT and classical homotopy theory by first using the simplicial set semantics and then transporting along a certain equivalence between (the homotopy categories of) simplicial sets and topological spaces. We will assume no background besides some basic knowledge of HoTT and classical topology.

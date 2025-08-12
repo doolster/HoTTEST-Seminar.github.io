@@ -1,0 +1,12 @@
+Term: Spring 2023
+Date: Feb 23
+Speaker: Loïc Pujet
+School: 
+Title: Observational Type Theory meets CIC
+YouTube: https://www.youtube.com/watch?v=9VN-4DTPSHM
+Slides: Pujet-2023-Feb-23-HoTTEST.pdf
+Abstract: Observational Type Theory (OTT) extends dependent type theory with an equality that satisfies extensionality principles for functions and propositions, as well as quotient types. But unlike HoTT, the equality of OTT is a proposition that does not contain any higher structure. Thus, if HoTT is the language of infinity-groupoids, OTT is the language of propositions and sets. 
+In this talk I will go over the integration of OTT with the Calculus of Inductive Constructions—the theory of Coq—which supports both impredicative propositions and a large class of inductive types. 
+In order to obtain strong theoretical guarantees on our theory, I will explain how to build several models for OTT: one the one hand, models in set theory to establish consistency; and on the other hand, reducibility models to establish normalization, a type-checking algorithm, and bounds on its proof-theoretic strength. 
+Finally, I will discuss the use of OTT as an internal language for Grothendieck toposes and the principle of unique choice.This presentation is based on joint work with Nicolas Tabareau. 
+Most of the results that I will present have been formalized in Agda and Coq.

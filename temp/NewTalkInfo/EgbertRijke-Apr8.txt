@@ -1,0 +1,8 @@
+Term: Spring 2021
+Date: Apr 8
+Speaker: Egbert Rijke
+School: University of Ljubljana
+Title: A higher encode decode method
+YouTube: https://www.youtube.com/watch?v=KvHGds-AL8M
+Slides: Rijke-2021-Apr-08-HoTTEST.pdf
+Abstract: The Postnikov tower of a pointed type X induces a fiber sequence $K(G,n+1) -> \|X\|_{n+1} -> \|X\|_n$ for every n, where G is the (n+1)-st homotopy group of X. This fiber sequence suggests a general approach to computations of higher homotopy groups of types, by encoding a family of n-connected (n+1)-truncated types over the type $\|X\|_n$. While I do not yet have any finished computations of homotopy groups of types via this approach, it does suggest a fruitful line of research with interesting intermediate results.

@@ -1,0 +1,10 @@
+Term: Fall 2024
+Date: Sept 26
+Speaker: Reid Barton
+School: 
+Title: Directed aspects of condensed type theory
+YouTube: https://www.youtube.com/watch?v=0elJcaw5NWw
+Slides: Barton-2024-Sep-26-HoTTEST.pdf
+Abstract: Condensed mathematics is a recently-introduced setting for applying methods of higher category theory to objects of topological nature. The category Cond of condensed sets can be viewed as an approximation of the category of topological spaces by a topos. We identify two classes of maps of Cond, that we call "etale" and "proper", that correspond to local homeomorphisms and to proper maps of topological spaces respectively, and we propose type-theoretic axioms concerning these that express the sense in which Cond is a "category of spaces", and not only a "category of sets".
+The focus of this talk will be on the "directed path types" of a condensed set (or groupoid), which correspond to the specialization order on the points of a topological space, and are defined using the Sierpinski condensed set as "directed interval". Etale and proper maps have unique lifting properties with respect to the two endpoints of this interval, and so are analogous to left and right fibrations of simplicial spaces. The aim of the talk is to explain this (imperfect) analogy from both an external and an internal perspective, to try to shed light on possible relationships with recent and current work in simplicial and directed type theories.
+This talk is based on joint work with Johan Commelin.

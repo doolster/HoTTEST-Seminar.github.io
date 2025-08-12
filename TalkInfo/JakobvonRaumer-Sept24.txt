@@ -1,0 +1,10 @@
+Term: Fall 2020
+Date: Sept 24
+Speaker: Jakob von Raumer
+School: University of Nottingham
+Title: Coherence via Well-Foundedness
+YouTube: https://www.youtube.com/watch?v=5iAQ-JVdlmc
+Slides: von-Raumer-2020-Sep-24-HoTTEST.pdf
+Abstract: When mapping out of a quotient into a 1-type, we find ourselves in the situation of needing to prove that a function is coherent in the following way: All cycles in the relation we quotient by are mapped to refl. Proving statements about all cycles is notoriously difficult because it does not straightforwardly admit induction.
+In practice, we often take quotients by binary relations which resemble reduction relations, and as such are co-wellfounded and locally confluent. In this talk I will show that under these circumstances, we can find an induction principle which can then be used to tackle this kind of coherence problem in HoTT. The main part of the proof is a purely graph theoretic construction, independent from its use in HoTT.
+This is joint with Nicolai Kraus.

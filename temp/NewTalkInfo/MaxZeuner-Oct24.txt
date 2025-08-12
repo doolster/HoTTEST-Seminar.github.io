@@ -1,0 +1,8 @@
+Term: Fall 2024
+Date: Oct 24
+Speaker: Max Zeuner
+School: 
+Title: Univalent foundations of constructive algebraic geometry
+YouTube: https://www.youtube.com/watch?v=DJNisW5m1BA
+Slides: Zeuner-2024-Oct-24-HoTTEST.pdf
+Abstract: HoTT/UF aims not only to be framework for synthetic homotopy theory, but also a suitable foundation for "set-level" constructive mathematics. In this talk we want to support this claim by discussing how the basic theory of schemes, the fundamental notion of modern algebraic geometry, can be set up in HoTT/UF. The classical literature contains two different approaches to schemes: schemes as locally ringed spaces and schemes as functors. We will show how both of these can be made constructive and predicative and discuss what kind of issues arise when defining qcqs-schemes using either approach in HoTT/UF. Finally, we give a sketch of a univalent proof that the two constructive definitions coincide.

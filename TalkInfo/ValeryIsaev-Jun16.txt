@@ -1,0 +1,9 @@
+Term: HoTTEST Conference 2020
+Date: Jun 16
+Speaker: Valery Isaev
+School: 
+Title: Indexed Type Theories
+YouTube: https://www.youtube.com/watch?v=PzjmjIlc-kE
+Slides: Isaev-2020-Jun-16-HoTTEST.pdf
+Abstract: Indexed type theory is a version of homotopy type theory which represents indexed ∞-categories. It has two levels of types: the first level correspond to ordinary homotopy type theory and the second one represents indexed objects. Indexed type theories generalize other similar two-level systems such as a form of cohesive homotopy type theory and certain linear dependent type theories. It can be used to reason directly in ∞-categories which do not have all the structure required by homotopy type theory.
+In this talk, I define indexed type theory and describe various constructions in it including finite and infinite (co)limits and object classifiers. I will give several examples of models of indexed type theory including spectra and quasicategories. I will also prove a special case of the indexed adjoint functor theorem using the language of indexed type theories.

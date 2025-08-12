@@ -1,0 +1,9 @@
+Term: Fall 2020
+Date: Nov 5
+Speaker: Nima Rasekh
+School: École Polytechnique Fédérale de Lausanne
+Title: Filter Products and Elementary Models of Homotopy Type Theory
+YouTube: https://www.youtube.com/watch?v=Yk6yEv02PbY
+Slides: Rasekh-2020-Nov-05-HoTTEST.pdf
+Abstract: One important question in the study of homotopy type theory is the characterization of its models. A crucial step towards solving this problem was taken by Shulman, who proved that we can interpret homotopy type theory in every Grothendieck (∞,1)-topos.
+In this talk we want to show that his results can be generalized to certain (∞,1)-categories coming from filter products. We will use this result to construct new models of homotopy type theory that are not Grothendieck (∞,1)-toposes.

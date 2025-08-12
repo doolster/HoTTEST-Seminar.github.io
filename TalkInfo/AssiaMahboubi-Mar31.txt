@@ -1,0 +1,9 @@
+Term: Spring 2022
+Date: Mar 31	
+Speaker: Assia Mahboubi
+School: Inria, Nantes
+Title: Continuity in dependent type theory
+YouTube: 
+Slides: Mahboubi-2022-Mar-31-HoTTEST.pdf
+Abstract: (joint work with Pierre-Marie Pédrot and Martin Baillon)
+A result due to M. Escardó establishes the continuity of all functionals definable in Gödel's system T. In this talk, we discuss how to generalize the result to a richer, dependent type theory. Via the construction of a syntactic model, akin to the effectful forcing of Escardó's proof, we obtain an external proof of continuity for any functional |- f : (nat -&gt; nat) -&gt; nat definable in this type theory.

@@ -1,0 +1,8 @@
+Term: Spring 2018
+Date: May 24	
+Speaker: Thierry Coquand
+School: University of Gothenburg
+Title: A survey of constructive models of univalence
+YouTube: https://www.youtube.com/watch?v=fv_dcmcQec4&
+Slides: Coquand-2018-May-24-HoTTEST.pdf
+Abstract: I will try to survey what is known at this stage about constructive  models of univalence, and then some metatheoretical applications. Some of  these are: proof theoretic strength of the univalence axiom (with HITs), and   consistency of univalence with continuity principle and fan theorem, and  independence of the axiom of countable choice.

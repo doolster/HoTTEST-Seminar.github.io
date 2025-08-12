@@ -1,0 +1,15 @@
+Term: Fall 2019
+Date: Oct 9
+Speaker: Andrej Bauer
+School: University of Ljubljana
+Title: General type theories
+YouTube: https://www.youtube.com/watch?v=mdVmF9FB0LM
+Slides: Bauer-2019-Oct-09-HoTTEST.pdf
+Abstract: There are many variants of dependent type theory, but it is difficult to find a complete and exact account of what a type theory is, as a formal system. We shall give a precise definition of what a type theory is in general, as a formal system whose components are various syntactic entities. The syntax of terms and types is described by a signature. Arbitrary inference rules are too unwieldy, so we next identify two properties that an acceptable rule must have. We similarly study what makes a family of rules into an acceptable type theory. To test the quality of our definition we prove fundamental meta-theorems about general type theories:
+1. Presupposition theorem: if a judgement is derivable then so are its presuppositions.
+2. Uniqueness of typing: if a term has type A and type B then A and B are judgmentally equal.
+3. Elimination of substitution: every derivable judgement can be
+derived without the substitution rule.
+JOINT WORK WITH:
+Philipp Haselwarter (University of Ljubljana)
+Peter LeFanu Lumsdaine (Stockholm University)

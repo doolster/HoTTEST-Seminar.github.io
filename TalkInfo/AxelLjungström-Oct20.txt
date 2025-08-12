@@ -1,0 +1,8 @@
+Term: Fall 2022
+Date: Oct 20
+Speaker: Axel Ljungström
+School: 
+Title: Calculating a Brunerie Number
+YouTube: https://www.youtube.com/watch?v=MIMeQ88YMKI
+Slides: Ljungstrom-2022-Oct-20-HoTTEST.pdf
+Abstract: In his PhD thesis, Brunerie defined the notorious 'Brunerie number' -- an integer n such that the fourth homotopy group of the 3-sphere is isomorphic to Z/n. He then managed to, with a lot of machinery, prove that |n| = 2. In an ideal world, this part of the proof is unnecessary: the fact that |n| = 2 should follow immediately by normalising n in a constructive proof assistant like Cubical Agda. In the real world, however, it's not that easy: Cubical Agda is too slow. So we have two obvious choices: we either give up, or we formalise all of Brunerie's original proof (me and my supervisor, Anders Mörtberg, have accepted both options at different points in time). Recently, however, I found a third option: even though normalisation doesn't work, there is still a very direct way of showing that |n| = 2. In fact, with my definition of n, we can show that n = -2. In this talk, I will give a sketch of this argument. If time permits, I will mention why this argument also shows that the fourth homotopy group of the 3-sphere is a subgroup of Z/2.

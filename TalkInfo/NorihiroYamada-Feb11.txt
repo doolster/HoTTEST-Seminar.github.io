@@ -1,0 +1,8 @@
+Term: Spring 2021
+Date: Feb 11 
+Speaker: Norihiro Yamada
+School: University of Minnesota 
+Title: Game semantics of homotopy type theory
+YouTube: https://www.youtube.com/watch?v=uY5LubwJ1Xo
+Slides: Yamada-2021-Feb-11-HoTTEST.pdf
+Abstract: In this talk, I sketch my recent work on game semantics of homotopy type theory (HoTT). My aim is to extend the BHK-interpretation of Martin-Löf type theory to HoTT so that one can better understand HoTT as a foundation of constructive mathematics. In fact, this game semantics can be seen as a mathematical formalisation of the BHK-interpretation of HoTT: It interprets terms in HoTT as constructive "dialogical arguments" on the truths of formulas, i.e., constructive proofs, and in particular terms of Id-types as constructive proofs on the equality between constructive proofs. Further, the game semantics shows that the extension of HoTT by equational univalence, i.e., the judgemental equality between Id-type on a universe and type equivalence, is consistent, and Markov's principle is independent from this extended HoTT.

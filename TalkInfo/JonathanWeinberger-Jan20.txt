@@ -1,0 +1,13 @@
+Term: HoTTEST Event For Junior Researchers 2022
+Date: Jan 20
+Speaker: Jonathan Weinberger
+School: 
+Title: Synthetic fibered (∞,1)-category theory
+YouTube: https://www.youtube.com/watch?v=h-ou44Y7JRc
+Slides: Weinberger-2022-Jan-20-HoTTEST.pdf
+Abstract: As an alternative to set-theoretic foundations, homotopy type theory is a logical system which allows for reasoning about homotopical structures in an invariant and more intrinsic way.
+Specifically, for the case of higher categories there exists an extended framework, due to Riehl-Shulman, to develop (∞,1)-category theory synthetically. The idea is to work internally to simplicial spaces, where one can define predicates witnessing that a type is (complete) Segal. This had also independently been suggested by Joyal.
+Generalizing Riehl-Shulman’s previous work on synthetic discrete fibrations, we discuss the case of synthetic cartesian fibrations in this setting. In developing this theory, we are led by Riehl–Verity’s model-independent higher category theory, therefore adapting results from ∞-cosmos theory to the type-theoretic setting.
+If time permits, we’ll briefly point out further developments, e.g. the case of two-sided cartesian families, modeling (∞,1)-category-valued distributors.
+In fact, by Shulman’s recent work on strict universes, the theory at hand has semantics in Reedy fibrant simplicial diagrams in an arbitrary type-theoretic model topos, so all type-theoretically formulated results semantically translate to statements about internal (∞,1)-categories.
+This is based on joint work with Ulrik Buchholtz (<a href="https://arxiv.org/abs/2105.01724">https://arxiv.org/abs/2105.01724</a>) and the speaker’s recent PhD thesis.
