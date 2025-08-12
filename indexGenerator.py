@@ -89,9 +89,10 @@ def testTalk(talk):
 # Putting all talks into an array
 talks = []
 for file in os.listdir('./TalkInfo'):
-    newTalk = readFile(file)
-    testTalk(newTalk)
-    talks.append(newTalk)
+    if not (file.startswith('.') or file.endswith('~')): # Ignore files with unusual names (system generated, etc.)
+        newTalk = readFile(file)
+        testTalk(newTalk)
+        talks.append(newTalk)
 
 # Labeling talks with their term and date
 pageInfo = {}
