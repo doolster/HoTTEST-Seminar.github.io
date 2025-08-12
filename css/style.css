@@ -64,9 +64,14 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+td:first-child {
+  width: 6%;
+}
+td:nth-child(2) {
+  width: 15%;
+}
 td:last-child .abstract {
   max-width: 850px;
-  width: 100%;
   display: block;
   word-break: break-word;
   white-space: pre-line;
