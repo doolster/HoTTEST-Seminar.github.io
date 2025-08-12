@@ -47,13 +47,13 @@ def readFile(fileName):
                 if newTalk.term[:-5] in termIDDict:
                     newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
                 else:
-                    raise Exception('Term type not found: new term types must be added to termIDDict for sorting')
+                    raise Exception(fileName + ': Term type not found - new term types must be added to termIDDict for sorting')
             elif line.lower().startswith('date:'):
                 newTalk.date = line[5:].strip()
                 if newTalk.date[:3] in monthDict:
                     newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
                 else:
-                    raise Exception('Date entry ill-formed')
+                    raise Exception(fileName + ': Date entry ill-formed')
             elif line.lower().startswith('speaker:'):
                 newTalk.speaker = line[8:].strip()
             elif line.lower().startswith('school:'):
@@ -67,7 +67,7 @@ def readFile(fileName):
             elif line == '':
                 pass
             else:
-                raise Exception('Improperly formatted label in line ' + str(lineNumber) + ' of ' + fileName + ' "' + line + '"')
+                raise Exception(fileName + ': Improperly formatted label in line ' + str(lineNumber) + ' - "' + line + '"')
         newTalk.abstract = newTalk.abstract[:-5] # Removing superfluous breakline at end of abstract
         f.close()
         return newTalk
