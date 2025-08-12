@@ -257,16 +257,6 @@
           </td>
         </tr>
         <tr>
-          <td class="date">Feb 15</td>
-          <td class="speaker">Émile Oleon</td>
-          <td>
-            <p class="talk-title">Delooping cyclic groups with lens spaces in homotopy type theory<a href="https://www.youtube.com/watch?v=EJg8Mcxmbwg"><img src="images/YouTube icon.webp" class="icon" /></a></p>
-            <div class="abstract">
-              <p>In the setting of homotopy type theory, each type can be interpreted as a space. Moreover, given an element of a type, i.e. a point in the corresponding space, one can define another type which encodes the space of loops based at this point. In particular, when the type we started with is a groupoid, this loop space is always a group. Conversely, to every group we can associate a type (more precisely, a pointed connected groupoid) whose loop space is this group: this operation is called *delooping*. The generic procedures for constructing such deloopings of groups (based on torsors, or on descriptions of Eilenberg-MacLane spaces as higher inductive types) are unfortunately equipped with elimination principles which do not directly allow eliminating to arbitrary types, and are thus difficult to work with in practice. Here, we construct deloopings of the cyclic groups Z_m which are *cellular*, and thus do not suffer from this shortcoming. In order to do so, we provide type-theoretic implementations of *lens spaces*, which constitute an important family of spaces in algebraic topology. In some sense, this work generalizes the construction of real projective spaces by Buchholtz and Rijke in their LICS'17 paper, which handles the case m = 2, although the general setting requires more involved tools. Finally, we use this construction to also provide cellular descriptions of dihedral groups, and explain how we can hope to use those to compute the cohomology and higher actions of such groups.</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
           <td class="date">Feb 1</td>
           <td class="speaker">Urs Schreiber</td>
           <td>
@@ -466,20 +456,6 @@
         </tr>
         <tr>
           <td class="date">Dec 15</td>
-          <td class="speaker">Astra Kolomatskaia</td>
-          <td>
-            <p class="talk-title">Semi-Simplicial Types<a href="https://www.youtube.com/watch?v=fQv2FpeFxew"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Kolomatskaia-2022-Dec-15-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
-            <div class="abstract">
-              <p>This talk consists of two parts:</p>
-              <p>First, we explore just how far one can get to the goal of constructing semi-simplicial types in MLTT. When being first introduced to the problem, it strikes one that there is an evident pattern in simplex types. We codify this pattern using the notion of a simple inverse category and construct untyped syntactic expressions. A challenge is posed to the audience to construct typing derivations, hence "externally" constructing SSTs. Unfortunately, it seems that internalising typing derivations is not possible (HoTT can't eat itself).</p>
-              <p>Second, we propose a work in progress modification to MLTT that we expect to enable the construction of SSTs. We generalise from asking for a type of SSTs to asking for a type structure of SSTs, which includes every order of dependent/displayed SSTs. In this more general setting, the object "SST" acquires a universal property that can be expressed via the notion of non-Type-valued coinduction. We explain how this endows "SST" with a mapping-in universal property that enables extracting simplex types. To demonstrate the utility of this universal property, we construct the singular semi-simplicial types.</p>
-              <p>The second half of this talk consists of joint work with Michael Shulman.</p>
-              <p>A research write-up, along with associated Agda formalisation may be found in the following GitHub repository: <a href="https://github.com/FrozenWinters/SSTs">https://github.com/FrozenWinters/SSTs</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="date">Dec 15</td>
           <td class="speaker">Philipp Joram</td>
           <td>
             <p class="talk-title">Final Coalgebras of Analytic Functors in Homotopy Type Theory<a href="https://www.youtube.com/watch?v=nsgztQ5UbLw"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Joram-2022-Dec-15-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
@@ -494,6 +470,20 @@
               <p>[Kock (2012)]: <a href="https://doi.org/10.1016/j.entcs.2013.01.001">https://doi.org/10.1016/j.entcs.2013.01.001</a></p>
               <p>[Choudhury, Fiore (2021)]: <a href="https://arxiv.org/abs/2110.05412">https://arxiv.org/abs/2110.05412</a></p>
               <p>[Finster et al. (2021)]: <a href="https://arxiv.org/abs/2112.14050">https://arxiv.org/abs/2112.14050</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Dec 15</td>
+          <td class="speaker">Astra Kolomatskaia</td>
+          <td>
+            <p class="talk-title">Semi-Simplicial Types<a href="https://www.youtube.com/watch?v=fQv2FpeFxew"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Kolomatskaia-2022-Dec-15-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <div class="abstract">
+              <p>This talk consists of two parts:</p>
+              <p>First, we explore just how far one can get to the goal of constructing semi-simplicial types in MLTT. When being first introduced to the problem, it strikes one that there is an evident pattern in simplex types. We codify this pattern using the notion of a simple inverse category and construct untyped syntactic expressions. A challenge is posed to the audience to construct typing derivations, hence "externally" constructing SSTs. Unfortunately, it seems that internalising typing derivations is not possible (HoTT can't eat itself).</p>
+              <p>Second, we propose a work in progress modification to MLTT that we expect to enable the construction of SSTs. We generalise from asking for a type of SSTs to asking for a type structure of SSTs, which includes every order of dependent/displayed SSTs. In this more general setting, the object "SST" acquires a universal property that can be expressed via the notion of non-Type-valued coinduction. We explain how this endows "SST" with a mapping-in universal property that enables extracting simplex types. To demonstrate the utility of this universal property, we construct the singular semi-simplicial types.</p>
+              <p>The second half of this talk consists of joint work with Michael Shulman.</p>
+              <p>A research write-up, along with associated Agda formalisation may be found in the following GitHub repository: <a href="https://github.com/FrozenWinters/SSTs">https://github.com/FrozenWinters/SSTs</a></p>
             </div>
           </td>
         </tr>
@@ -574,6 +564,16 @@
         </tr>
         <tr>
           <td class="date">Oct 6</td>
+          <td class="speaker">Chris Grossack</td>
+          <td>
+            <p class="talk-title">Where are the open sets? Comparing HoTT with Classical Topology<a href="https://www.youtube.com/watch?v=syftUuf5Hpk"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Grossack-2022-Oct-06-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <div class="abstract">
+              <p>It's often said that Homotopy Type Theory is a synthetic description of homotopy theory, but how do we know that the theorems we prove in HoTT are true for mathematicians working classically? In this expository talk we will outline the relationship between HoTT and classical homotopy theory by first using the simplicial set semantics and then transporting along a certain equivalence between (the homotopy categories of) simplicial sets and topological spaces. We will assume no background besides some basic knowledge of HoTT and classical topology.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Oct 6</td>
           <td class="speaker">Amélia Liao</td>
           <td>
             <p class="talk-title">Univalent Category Theory<a href="https://www.youtube.com/watch?v=asY6dXkR2yg"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Liao-2022-Oct-06-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
@@ -582,16 +582,6 @@
               <p>A promising approach (Gray 1974; Di Liberti & Loregian 2019) is formal category theory: studying the properties of the bicategory of categories which make it possible to study category theory from a structural perspective.</p>
               <p>A different idea is to approach categories as groupoids with extra structure, something which finds itself naturally at home in HoTT, where "groupoids" are particular types. This approach lends itself particularly well to formalization in a proof assistant.</p>
               <p>In the context of Cubical Agda, we recap the basic theory of univalent categories (Ahrens, Kapulkin & Shulman 2013) and the move towards higher univalent category theory (Capriotti & Kraus 2017; Ahrens et all 2019), particularly the application of cubical syntax to fibred categories (following Sterling & Angiuli 2021; Ahrens & Lumsdaine 2017).</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="date">Oct 6</td>
-          <td class="speaker">Chris Grossack</td>
-          <td>
-            <p class="talk-title">Where are the open sets? Comparing HoTT with Classical Topology<a href="https://www.youtube.com/watch?v=syftUuf5Hpk"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Grossack-2022-Oct-06-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
-            <div class="abstract">
-              <p>It's often said that Homotopy Type Theory is a synthetic description of homotopy theory, but how do we know that the theorems we prove in HoTT are true for mathematicians working classically? In this expository talk we will outline the relationship between HoTT and classical homotopy theory by first using the simplicial set semantics and then transporting along a certain equivalence between (the homotopy categories of) simplicial sets and topological spaces. We will assume no background besides some basic knowledge of HoTT and classical topology.</p>
             </div>
           </td>
         </tr>
@@ -675,11 +665,14 @@
         </tr>
         <tr>
           <td class="date">Jan 20</td>
-          <td class="speaker">Andrew Swan</td>
+          <td class="speaker">Nima Rasekh</td>
           <td>
-            <p class="talk-title">Why cubical sets are different to simplicial sets<a href="https://www.youtube.com/watch?v=RqSoJrN4hO0"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Swan-2022-Jan-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="talk-title">Constructing Coproducts in locally Cartesian closed ∞-Categories<a href="https://www.youtube.com/watch?v=tSe85xp8lf0"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Rasekh-2022-Jan-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
             <div class="abstract">
-              <p>In the classical theory of simplicial sets and cubical sets there is an important class of maps known as Kan fibrations, which form part of a weak factorisation system on each category. There are several ways to define this class, amongst them "right lifting property against horn inclusions" and "right lifting property against pushout product of monomorphisms and endpoint inclusions." However in a constructive setting, the two definitions are not equivalent and while the latter definition is commonly used when working with cubical sets, only the former definition has been used in simplicial sets, in constructive mathematics. I'll give an explanation for this using a notion due to Shulman called "locally representable notion of fibred structure." Both definitions can be used to give a structured version of weak factorisation system, called algebraic weak factorisation system (awfs), where Kan fibrations are not just a class of maps, but a kind of algebraic structure that a map can possess. The awfs in cubical given by right lifting property against pushout product of monomorphisms and endpoint inclusion is locally representable, using the fact that in cubical sets the interval is tiny. I'll show however, that the corresponding awfs in simplicial sets is not locally representable.</p>
+              <p>While the original definition of an elementary topos assumed the existence of finite colimits, modern definitions avoid this assumption as, due to work of Mikkelsen and Pare, finite colimits can be recovered from the remaining axioms.</p>
+              <p>In recent years we have witnessed the rise of homotopical foundations in the form of homotopy type theory and elementary ∞-topos theory, which, analogous to elementary toposes, assume the existence of finite colimits. Given the historical trajectory we can ask ourselves whether we can again recover them from the other axioms.</p>
+              <p>In this work we take a first step towards addressing this problem by constructing an initial object and coproducts in a locally Cartesian closed ∞-category with subobject classifier, using ideas from type theory.</p>
+              <p>This is joint work with Jonas Frey.</p>
             </div>
           </td>
         </tr>
@@ -700,6 +693,16 @@
         </tr>
         <tr>
           <td class="date">Jan 20</td>
+          <td class="speaker">Andrew Swan</td>
+          <td>
+            <p class="talk-title">Why cubical sets are different to simplicial sets<a href="https://www.youtube.com/watch?v=RqSoJrN4hO0"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Swan-2022-Jan-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <div class="abstract">
+              <p>In the classical theory of simplicial sets and cubical sets there is an important class of maps known as Kan fibrations, which form part of a weak factorisation system on each category. There are several ways to define this class, amongst them "right lifting property against horn inclusions" and "right lifting property against pushout product of monomorphisms and endpoint inclusions." However in a constructive setting, the two definitions are not equivalent and while the latter definition is commonly used when working with cubical sets, only the former definition has been used in simplicial sets, in constructive mathematics. I'll give an explanation for this using a notion due to Shulman called "locally representable notion of fibred structure." Both definitions can be used to give a structured version of weak factorisation system, called algebraic weak factorisation system (awfs), where Kan fibrations are not just a class of maps, but a kind of algebraic structure that a map can possess. The awfs in cubical given by right lifting property against pushout product of monomorphisms and endpoint inclusion is locally representable, using the fact that in cubical sets the interval is tiny. I'll show however, that the corresponding awfs in simplicial sets is not locally representable.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Jan 20</td>
           <td class="speaker">Mitchell Riley</td>
           <td>
             <p class="talk-title">Linear Homotopy Type Theory<a href="https://www.youtube.com/watch?v=o2oWhHabjdM"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Riley-2022-Jan-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
@@ -710,26 +713,12 @@
           </td>
         </tr>
         <tr>
-          <td class="date">Jan 20</td>
-          <td class="speaker">Nima Rasekh</td>
-          <td>
-            <p class="talk-title">Constructing Coproducts in locally Cartesian closed ∞-Categories<a href="https://www.youtube.com/watch?v=tSe85xp8lf0"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Rasekh-2022-Jan-20-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
-            <div class="abstract">
-              <p>While the original definition of an elementary topos assumed the existence of finite colimits, modern definitions avoid this assumption as, due to work of Mikkelsen and Pare, finite colimits can be recovered from the remaining axioms.</p>
-              <p>In recent years we have witnessed the rise of homotopical foundations in the form of homotopy type theory and elementary ∞-topos theory, which, analogous to elementary toposes, assume the existence of finite colimits. Given the historical trajectory we can ask ourselves whether we can again recover them from the other axioms.</p>
-              <p>In this work we take a first step towards addressing this problem by constructing an initial object and coproducts in a locally Cartesian closed ∞-category with subobject classifier, using ideas from type theory.</p>
-              <p>This is joint work with Jonas Frey.</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
           <td class="date">Jan 13</td>
-          <td class="speaker">Martin Bidlingmaier</td>
+          <td class="speaker">Vikraman Choudhury</td>
           <td>
-            <p class="talk-title">The higher multiverse model<a href="https://www.youtube.com/watch?v=bx25nca1u68"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Bidlingmaier-2022-Jan-13-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <p class="talk-title">Symmetries in Reversible Programming: From Symmetric Rig Groupoids to Reversible Programming Languages<a href="https://www.youtube.com/watch?v=yGGRAQ_KkGw"><img src="images/YouTube icon.webp" class="icon" /></a></p>
             <div class="abstract">
-              <p>In categorical semantics, we are used to think of individual categories with suitable structure as models of type theory. For example, every locally cartesian closed (lcc) category constitutes a separate model of extenstional type theory, a separate mathematical universe. Instead, this talk is about 1-categorical and higher categorical multiverse models, which are models made up of all (small) models. Thus the idea is to think of the category of all categories with suitable structure as a model of type theory. For example, from this perspective, the category of all lcc categories is a model of extensional type theory, which contains as submodels each of the traditional models given by individual lcc categories.</p>
-              <p>As in ordinary categorical semantics, there are coherence problems to be solved to make this precise. Here the multiverse approach allows the use of model categorical (in the sense of Quillen) constructions such as algebraically (co)fibrant objects, which are otherwise inapplicable. These constructions can be combined into a new solution of the 1-categorical coherence problem. With some caveats, the technique is also applicable to the category of lcc ∞-categories. Here I will explain how a fragment of intensional dependent type theory can be interpreted in the category of lcc ∞-categories.</p>
+              <p>We show that the groupoid of finite types and equivalences can be presented as the free symmetric rig groupoid on zero generators, or equivalently, the free symmetric monoidal groupoid on one generator. Using this equivalence, we construct a fully abstract denotational semantics for a reversible programming language of finite types, reversible programs, and program equivalences. We show some applications of this semantics to perform normalisation-by-evaluation, verification, and synthesis of reversible boolean circuits. This is joint work with Jacek Karwowski and Amr Sabry.</p>
             </div>
           </td>
         </tr>
@@ -747,22 +736,23 @@
         </tr>
         <tr>
           <td class="date">Jan 13</td>
+          <td class="speaker">Martin Bidlingmaier</td>
+          <td>
+            <p class="talk-title">The higher multiverse model<a href="https://www.youtube.com/watch?v=bx25nca1u68"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Bidlingmaier-2022-Jan-13-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <div class="abstract">
+              <p>In categorical semantics, we are used to think of individual categories with suitable structure as models of type theory. For example, every locally cartesian closed (lcc) category constitutes a separate model of extenstional type theory, a separate mathematical universe. Instead, this talk is about 1-categorical and higher categorical multiverse models, which are models made up of all (small) models. Thus the idea is to think of the category of all categories with suitable structure as a model of type theory. For example, from this perspective, the category of all lcc categories is a model of extensional type theory, which contains as submodels each of the traditional models given by individual lcc categories.</p>
+              <p>As in ordinary categorical semantics, there are coherence problems to be solved to make this precise. Here the multiverse approach allows the use of model categorical (in the sense of Quillen) constructions such as algebraically (co)fibrant objects, which are otherwise inapplicable. These constructions can be combined into a new solution of the 1-categorical coherence problem. With some caveats, the technique is also applicable to the category of lcc ∞-categories. Here I will explain how a fragment of intensional dependent type theory can be interpreted in the category of lcc ∞-categories.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Jan 13</td>
           <td class="speaker">Tom de Jong</td>
           <td>
             <p class="talk-title">Order Theory and Propositional Resizing in HoTT/UF<a href="https://www.youtube.com/watch?v=Vqrt0OMRvaA"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Jong-2022-Jan-13-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
             <div class="abstract">
               <p>In this talk we describe the key result in our paper "Predicative Aspects of Order Theory in Univalent Foundations". Our work is predicative and constructive, meaning that we do not assume Voevodsky's propositional resizing axioms or excluded middle, respectively. Crudely formulated, our theorem says: Various kinds of posets can only be small in predicative HoTT/UF if they are trivial. In previous work, we observed that in HoTT/UF, the directed complete posets in the Scott model of PCF were large and the above result is telling us that this is unavoidable. We explain how to arrive at a precise formulation of our theorem, using a technical notion of a δ𝓤-complete poset and a generalization of Johnstone's notion of positivity for locales. It is worth remarking that the precise formulation is in the spirit of reverse mathematics: it is a theorem of HoTT/UF (as opposed to a metatheorem about HoTT/UF) and in particular does not make reference to models.</p>
               <p>This is joint work with my PhD supervisor Martín Escardó. The paper can be found here: <a href="https://doi.org/10.4230/LIPIcs.FSCD.2021.8">https://doi.org/10.4230/LIPIcs.FSCD.2021.8</a>.</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="date">Jan 13</td>
-          <td class="speaker">Vikraman Choudhury</td>
-          <td>
-            <p class="talk-title">Symmetries in Reversible Programming: From Symmetric Rig Groupoids to Reversible Programming Languages<a href="https://www.youtube.com/watch?v=yGGRAQ_KkGw"><img src="images/YouTube icon.webp" class="icon" /></a></p>
-            <div class="abstract">
-              <p>We show that the groupoid of finite types and equivalences can be presented as the free symmetric rig groupoid on zero generators, or equivalently, the free symmetric monoidal groupoid on one generator. Using this equivalence, we construct a fully abstract denotational semantics for a reversible programming language of finite types, reversible programs, and program equivalences. We show some applications of this semantics to perform normalisation-by-evaluation, verification, and synthesis of reversible boolean circuits. This is joint work with Jacek Karwowski and Amr Sabry.</p>
             </div>
           </td>
         </tr>
@@ -1077,6 +1067,16 @@
         </tr>
         <tr>
           <td class="date">Jun 18</td>
+          <td class="speaker">Mitchell Riley</td>
+          <td>
+            <p class="talk-title">Synthetic Spectra via a Monadic and Comonadic Modality<a href="https://www.youtube.com/watch?v=62HST7p-7hs"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Riley-2020-Jun-18-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
+            <div class="abstract">
+              <p>"Spectra" are the central objects of study in stable homotopy theory, and it is easy to define them internally in HoTT as Ω-spectra: a spectrum is a sequence of types with an equivalence between each type and the loop-space of the next. Working with these spectra in type theory can be quite difficult, however. In this talk we describe an extension of HoTT intended to be modeled in the category of "parameterised spectra", where a modality is used to identify the types that correspond to individual spectra. A pair of axioms are considered that internalise some features of the intended model, and which fix the "homotopy groups" (appropriately defined) of the sphere spectrum to be the stable homotopy groups of the ordinary higher inductive spheres.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="date">Jun 18</td>
           <td class="speaker">Anja Petković</td>
           <td>
             <p class="talk-title">Equality checking for Finitary type theories<a href="https://www.youtube.com/watch?v=yHjmPJuTvWM"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Petkovic-2020-Jun-18-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
@@ -1084,16 +1084,6 @@
               <p>Equality checking algorithms are essential components of proof assistants based on type theories, since they free users from the burden of proving judgemental equalities, and provide computation-by-normalization engines. Indeed, the type theories found in the most popular proof assistants are designed to provide such algorithms.</p>
               <p>However, in a proof assistant that supports arbitrary user-definable theories, such as Andromeda 2, there may not be an equality checking algorithm available in general.</p>
               <p>I will discuss the design of a user-extensible judgemental equality checking algorithm for finitary type theories that supports computation rules and extensionality rules. The user needs only provide the equality rules they wish to use, after which the algorithm devises an appropriate notion of normal form. We will also take a peek at how the implementation of the equality checking algorithm is used in the Andromeda 2 prover.</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="date">Jun 18</td>
-          <td class="speaker">Mitchell Riley</td>
-          <td>
-            <p class="talk-title">Synthetic Spectra via a Monadic and Comonadic Modality<a href="https://www.youtube.com/watch?v=62HST7p-7hs"><img src="images/YouTube icon.webp" class="icon" /></a><a href="hottestfiles/Riley-2020-Jun-18-HoTTEST.pdf"><img src="images/PDF_file_icon.png" class="icon" /></a></p>
-            <div class="abstract">
-              <p>"Spectra" are the central objects of study in stable homotopy theory, and it is easy to define them internally in HoTT as Ω-spectra: a spectrum is a sequence of types with an equivalence between each type and the loop-space of the next. Working with these spectra in type theory can be quite difficult, however. In this talk we describe an extension of HoTT intended to be modeled in the category of "parameterised spectra", where a modality is used to identify the types that correspond to individual spectra. A pair of axioms are considered that internalise some features of the intended model, and which fix the "homotopy groups" (appropriately defined) of the sphere spectrum to be the stable homotopy groups of the ordinary higher inductive spheres.</p>
             </div>
           </td>
         </tr>
