@@ -40,7 +40,6 @@ def readFile(fileName):
             line = line.strip()
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
-                line = line.replace('>', '&gt;').replace('<','&lt;') # Replacing characters that will cause problems with html
                 if not inAbstract:
                     newTalk.abstract = '<p>' + line[9:].strip() + '</p>'
                     inAbstract = True

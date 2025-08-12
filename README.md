@@ -34,6 +34,7 @@ THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an excepti
   <li>Improperly formatted term or date entries</li>
   <li>Missing entries (other than youtube link/pdf/school)</li>
   <li>"Abstract:" not being the last entry (the exception that will show up in this case is for missing entries of whatever was below "Abstract:")</li>
+  <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get following error: yattag.indentation.XMLTokenError) </li>
 </ul>
 
 THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
@@ -43,5 +44,4 @@ THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
   <li>Capitalization</li>
   <li>Missing youtube link/slides/school</li>
   <li>Ordering of entries (besides "Abstract:" which must go last)</li>
-  <li>&gt; and &lt; symbols in abstract (these get automatically replaced with the appropriate characters for html generation)</li>
 </ul>
