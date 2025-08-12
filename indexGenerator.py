@@ -31,17 +31,20 @@ def formatURLs(str):
 def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', '', '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
+        lines = f.readlines()
+        f.close()
+        lines = [x for x in lines if x.strip()] # Remove blank lines from files
         inAbstract = False
         lineNumber = 0
-        for line in f:
+        for line in lines:
             line = line.strip()
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
-                    newTalk.abstract = line[9:].strip() + '<br/>'
+                    newTalk.abstract = '<p>' + line[9:].strip() + '</p>'
                     inAbstract = True
                 else:
-                    newTalk.abstract += line + '<br/>'
+                    newTalk.abstract += '<p>' + line +'</p>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
@@ -68,8 +71,6 @@ def readFile(fileName):
                 pass
             else:
                 raise Exception(fileName + ': Improperly formatted label in line ' + str(lineNumber) + ' - "' + line + '"')
-        newTalk.abstract = newTalk.abstract[:-5] # Removing superfluous breakline at end of abstract
-        f.close()
         return newTalk
 
 # Function for testing if a talk object is missing any critical components
@@ -189,7 +190,7 @@ for termID in termIDs:
                                 if talk.slides != '':
                                     with tag('a', href='hottestfiles/' + talk.slides):
                                         doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
-                            with tag('p', klass='abstract'):
+                            with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
 
 docFoot = """
