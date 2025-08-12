@@ -1,8 +1,0 @@
-Term: HoTTEST Event For Junior Researchers 2022
-Date: Jan 13
-Speaker: Vikraman Choudhury
-School: 
-Title: Symmetries in Reversible Programming: From Symmetric Rig Groupoids to Reversible Programming Languages
-YouTube: https://www.youtube.com/watch?v=yGGRAQ_KkGw
-Slides:
-Abstract: We show that the groupoid of finite types and equivalences can be presented as the free symmetric rig groupoid on zero generators, or equivalently, the free symmetric monoidal groupoid on one generator. Using this equivalence, we construct a fully abstract denotational semantics for a reversible programming language of finite types, reversible programs, and program equivalences. We show some applications of this semantics to perform normalisation-by-evaluation, verification, and synthesis of reversible boolean circuits. This is joint work with Jacek Karwowski and Amr Sabry.

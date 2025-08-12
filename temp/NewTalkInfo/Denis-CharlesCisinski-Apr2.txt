@@ -1,8 +1,0 @@
-Term: Spring 2020
-Date: Apr 2
-Speaker: Denis-Charles Cisinski
-School: Universität Regensburg
-Title: Univalence of the universal coCartesian fibration
-YouTube: https://www.youtube.com/watch?v=OnMUka9bLAw
-Slides: Cisinski-2020-Apr-02-HoTTEST.pdf
-Abstract: The model of higher categories given by Joyal's model structure for quasi-categories has univalent universes of coCartesian fibrations. This subsumes the existence of univalent universes of Kan fibrations proved by Voevodsky. Furthermore, the existence of such universes can be used as an alternative to the yoga of homotopy coherent nerves to prove all the essential features of higher category theory, giving a (directed) type theoretic approach to the foundations of higher categories.

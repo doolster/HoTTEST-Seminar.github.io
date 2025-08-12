@@ -1,8 +1,0 @@
-Term: Spring 2019
-Date: Apr 4	
-Speaker: Joachim Kock
-School: Universitat Autonoma de Barcelona
-Title: ∞-operads as polynomial monads
-YouTube: https://www.youtube.com/watch?v=Ljfz83Q41vs
-Slides: Kock-2019-Apr-04-HoTTEST.pdf
-Abstract: I'll present a new model for ∞-operads, namely as analytic monads. This is joint work with David Gepner and Rune Haugseng. In the ∞-world (unlike what happens in the classical case), analytic functors are polynomial, and therefore the theory can be developed within the setting of polynomial functors. I'll talk about some of the features of this theory, trying to focus on aspects that might be of interest to type theory, in particular the construction of free monads, and the relevance of polynomial monads for the semantics of higher inductive types.

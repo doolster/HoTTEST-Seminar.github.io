@@ -1,9 +1,0 @@
-Term: Fall 2023
-Date: Dec 14
-Speaker: David Jaz Myers
-School: 
-Title: The Tangent Bundles of Spheres
-YouTube: https://www.youtube.com/watch?v=9T9B9XBjVpk
-Slides: Myers-2023-Dec-14-HoTTEST.pdf
-Abstract: jww Ulrik Buchholtz, Dan Christensen, and Egbert Rijke
-In this talk, we'll construct the tangent sphere bundles on the spheres using an inductive construction, and we'll use this construction to prove the Hairy Ball Theorem. We'll then compute the Euler class of the tangent sphere bundles with an explicit construction. Generalizing from this case, we'll define a preliminary notion of "homotopy manifold" and use an abstract lemma about pushout products to define the product of homotopy manifold structures. This will give us tangent bundles on products of spheres as well. All of this will take place in ordinary book HoTT, and a good deal of it has already been formalized in Coq.

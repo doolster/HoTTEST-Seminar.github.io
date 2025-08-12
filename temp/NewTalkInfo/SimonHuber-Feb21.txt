@@ -1,9 +1,0 @@
-Term: Spring 2019
-Date: Feb 21	
-Speaker: Simon Huber
-School: University of Gothenburg
-Title: Homotopy canonicity for cubical type theory
-YouTube: https://www.youtube.com/watch?v=Q7-I8Lh4-kg
-Slides: Huber-2019-Feb-21-HoTTEST.pdf
-Abstract: Cubical type theory provides a constructive justification of homotopy type theory and satisfies canonicity: every natural number is convertible to a numeral.  A crucial ingredient of cubical type theory is a path lifting operation which is explained computationally by induction on the type involving several non-canonical choices.  In this talk I will present why if we remove these equations for the path lifting operation from the system, we still retain homotopy canonicity: every natural number is path equal to a numeral.  The proof involves proof relevant computability predicates (also known as sconing) and doesn't involve a reduction relation.
-This is joint work with Thierry Coquand and Christian Sattler.

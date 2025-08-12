@@ -1,9 +1,0 @@
-Term: Spring 2024
-Date: Apr 11
-Speaker: Dan Christensen
-School: 
-Title: Sphere bundles and their invariants
-YouTube: https://www.youtube.com/watch?v=eMCaua5t2cA
-Slides: Christensen-2024-Apr-11-HoTTEST.pdf
-Abstract: Sphere bundles arise naturally in many contexts, often as the unit sphere bundles associated to vector bundles. For example, a manifold has a sphere bundle associated to its tangent bundle. In order to distinguish these bundles and to learn more about the manifolds, it's important to understand invariants of sphere bundles, such as the Euler class and the Thom class which live in cohomology groups. This talk will begin with a review of bundles and oriented bundles, and will then take a detour to discuss central types. We'll use central types to produce new models of Eilenberg-Mac Lane spaces. One of the themes of the talk will be that by using an appropriate model of an Eilenberg-Mac Lane space, we can give concrete descriptions of its H-space structure (which represents addition in cohomology) and of the cup product operation. Moreover, we'll show that by using these models, we can give very simple descriptions of the Euler class and Thom class of an oriented sphere bundle, and can prove theorems about them, such as the relationship between the two and the Whitney sum formula. I will also mention our work constructing the tangent sphere bundles of spheres and on the hairy ball theorem, which shows that the tangent sphere bundle of the n-sphere has a section if and only if n is odd.
-This is joint work with Ulrik Buchholtz, David Jaz Myers and Egbert Rijke, and most of our results have been formalized using the Coq-HoTT library.

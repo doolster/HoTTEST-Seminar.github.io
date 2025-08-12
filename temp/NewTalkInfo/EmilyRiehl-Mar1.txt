@@ -1,9 +1,0 @@
-Term: Spring 2018
-Date: Mar 1	
-Speaker: Emily Riehl
-School: Johns Hopkins University
-Title: The synthetic theory of  ∞-categories vs the synthetic theory of  ∞-categories
-YouTube: https://www.youtube.com/watch?v=ge-9m1SsEmc
-Slides: Riehl-2018-Mar-01-HoTTEST.pdf
-Abstract: Homotopy type theory provides a “synthetic” framework that is suitable for developing the theory of mathematical objects with natively homotopical content. A famous example is given by (∞,1)-categories — aka “∞-categories” — which are categories given by a collection of objects, a homotopy type of arrows between each pair, and a weak composition law. In this talk we’ll compare two “synthetic” developments of the theory of ∞-categories — the first (joint with Verity) using 2-category theory and the second (joint with Shulman) using a simplicial augmentation of homotopy type theory due to Shulman — by considering in parallel their treatment of the theory of adjunctions between ∞-categories. Afterwards, I hope to launch a discussion about what considerations might motivate the use of homotopy type theory in place of classical approaches to prove theorems in similar settings.
-Ideal background: some familiarity with notions of a (ordinary strict 1-)category, functor, natural transformation, and the definition of an adjunction involving a unit and a counit (just look these up on wikipedia). Plus standard type theory syntax and the intuitions from the Curry-Howard-Voevodsky correspondence. I’ll be talking about (∞,1)-categories but won’t assume familiarity with them.

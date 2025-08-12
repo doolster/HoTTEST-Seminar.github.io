@@ -1,9 +1,0 @@
-Term: Spring 2023
-Date: Jan 26
-Speaker: Johan Commelin
-School: 
-Title: Liquid Tensor Experiment
-YouTube: https://www.youtube.com/watch?v=gkeGLRrAkbY
-Slides: Commelin-2023-Jan-26-HoTTEST.pdf
-Abstract: In December 2020, Peter Scholze posed a challenge to formally verify the main theorem on liquid R-vector spaces, which is part of his joint work with Dustin Clausen on condensed mathematics. I took up this challenge with a team of mathematicians to verify the theorem in the Lean proof assistant. Half a year later, we reached a major milestone, and in the summer of 2022 we have completed the full challenge. 
-In this talk I will give a brief motivation for condensed/liquid mathematics, report on our experiences formalizing state-of-the-art research in mathematics, and discuss some new insights in the proof of the main theorem.

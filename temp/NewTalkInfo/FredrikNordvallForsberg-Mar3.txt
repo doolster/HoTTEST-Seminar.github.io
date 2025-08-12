@@ -1,9 +1,0 @@
-Term: Spring 2022
-Date: Mar 3	
-Speaker: Fredrik Nordvall Forsberg
-School: University of Strathclyde
-Title: Different Notions of Ordinals in Homotopy Type Theory
-YouTube: https://www.youtube.com/watch?v=8_3tLrrfrLY
-Slides: Forsberg-2022-Mar-03-HoTTEST.pdf
-Abstract: Ordinals are a powerful tool when justifying induction and recursion, proving that processes terminate, or in mathematics generally. In classical set theory, there are many equivalent ways to introduce them, but in a constructive setting, the different notions split apart, with different advantages and disadvantages for each. I will consider three different notions of ordinals in homotopy theory theory: a "syntactic" notation system based on Cantor normal forms, a quotient inductive-inductive type of Brouwer trees, and wellfounded extensional orders from the HoTT book. Although defined very differently, all three notions have properties expected of ordinals: their order relations are extensional and wellfounded (and thus support transfinite induction), and the usual arithmetic operations can be defined in each case. Furthermore, the notions are connected in the sense that there are structure preserving non-surjective embeddings of Cantor normal forms into Brouwer trees, and of Brouwer trees into wellfounded extensional orders.
-This is joint work with Nicolai Kraus and Chuangjie Xu.

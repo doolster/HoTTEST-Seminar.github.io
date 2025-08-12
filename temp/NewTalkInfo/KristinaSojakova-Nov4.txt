@@ -1,9 +1,0 @@
-Term: Fall 2021
-Date: Nov 4	
-Speaker: Kristina Sojakova
-School: Inria Paris 
-Title: Syllepsis in Homotopy Type Theory
-YouTube: https://www.youtube.com/watch?v=k07gFYzYvng
-Slides: Sojakova-2021-Nov-04-HoTTEST.pdf
-Abstract: It is well-known that in homotopy type theory (HoTT) one can prove the Eckmann-Hilton theorem: given two 2-loops based at the reflexivity path at an arbitrary point a : A, we have pq = qp. If we go one dimension higher, i.e., if p and q are 3-loops, we show that a property classically known as syllepsis also holds in HoTT: namely, the Eckmann-Hilton proof for q and p is the inverse of the Eckmann-Hilton proof for p and q.
-<a href="https://arxiv.org/abs/2107.14283v1">https://arxiv.org/abs/2107.14283v1</a>

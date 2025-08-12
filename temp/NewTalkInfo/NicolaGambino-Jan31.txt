@@ -1,8 +1,0 @@
-Term: Spring 2019
-Date: Jan 31	
-Speaker: Nicola Gambino
-School: University of Leeds
-Title: From algebraic weak factorisation systems to models of type theory
-YouTube: 
-Slides: Gambino-2019-Jan-31-HoTTEST.pdf
-Abstract: Algebraic weak factorisation systems are a refinement of the classical weak factorisation systems in which diagonal fillers are given by a prescribed algebraic structure. The notion of an algebraic weak factorisation system was introduced by Marco Grandis and Walter Tholen, and subsequently refined by Richard Garner, who then developed the theory in a series of joint papers with John Bourke. In this talk, I will explain general methods for constructing weak factorisation systems that can be used for defining models of dependent type theory satisfying all the required strictness conditions. This is based on joint work with Christian Sattler and subsequent work in the Leeds PhD thesis of Marco Larrea.

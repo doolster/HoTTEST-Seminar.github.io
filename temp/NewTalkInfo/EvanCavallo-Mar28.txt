@@ -1,9 +1,0 @@
-Term: Spring 2024
-Date: Mar 28
-Speaker: Evan Cavallo
-School: 
-Title: Why some cubical models don't present spaces
-YouTube: https://www.youtube.com/watch?v=P5LfVg4LHhk
-Slides: Cavallo-2024-Mar-28-HoTTEST.pdf
-Abstract: Historically, constructive cubical interpretations of HoTT interpret types as families equipped with an "open box-filling" operation, which ensures that identities in types can be interpreted as maps from an interval. This choice of structure was inspired by Kan's early work on cubical sets. However, cubical type theory inteprets in forms of cubical sets not considered by Kan, indeed rarely considered in the homotopy-theoretical literature. In these settings, it is a priori unclear whether a box-filling operation is really what should qualify a cubical set as a "space" in a standard sense. I'll present arguments that for many forms of cubical set used in interpretations of HoTT, this is in fact not the case. Concretely, we show that in these settings, Quillen model structures based on box-filling fibrations are not Quillen equivalent to model categories (such as the Kan-Quillen model structure on simplicial sets) which do present spaces.
-This is joint work with Christian Sattler.

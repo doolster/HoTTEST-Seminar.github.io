@@ -1,9 +1,0 @@
-Term: Fall 2018
-Date: Oct 11	
-Speaker: Kuen-Bang Hou (Favonia)
-School: University of Minnesota
-Title: Towards efficient cubical type theory
-YouTube: https://www.youtube.com/watch?v=9pc4QkMtrnQ
-Slides: Favonia-2018-Oct-11-HoTTEST.pdf
-Abstract: Cubical type theory attracted much attention in the homotopy type theory community because it achieved canonicity in the presence of univalence and higher inductive types. To date, there are many variants of cubical type theory and experimental proof assistants based on them.
-It may seem that the remaining task is to reconnect the syntax to standard models, but there are still numerous type-theoretic open problems arising from the concerns over efficiency and usability. In this talk, I will give an overview of several topics we are working on but not publicly presented before, including extension types, empty systems, the interplay between kinds and higher inductive types, and more!

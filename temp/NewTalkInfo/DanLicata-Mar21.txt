@@ -1,9 +1,0 @@
-Term: Spring 2019
-Date: Mar 21	
-Speaker: Dan Licata
-School: Wesleyan University 
-Title: A Fibrational Framework for Substructural and Modal Dependent Type Theories
-YouTube: https://www.youtube.com/watch?v=-DP0wY2FBs4
-Slides: Licata-2019-Mar-21-HoTTEST.pdf
-Abstract: (joint work with Mitchell Riley and Michael Shulman)
-Modal type theory extends type theory with additional unary type constructors, representing functors, monads, and comonads of various sorts.  For example, the modalities discussed in the HoTT book are idempotent monads, while some recent extensions of HoTT make use of idempotent comonads.  Modal types can be used to speak synthetically about topology and geometry, and also have been used in the internal language semantics of cubical type theories. Over the past few years, we have been working on a general framework for modal type theories. In this framework, specific type theories can be specified by a signature---for example, "type theory with an idempotent monad and an idempotent comonad which are themselves adjoint".  Given a signature, instantiating general inference rules provides a syntax for working with the desired modal types.  While the framework does not automatically produce ``optimized'' inference rules for a particular modal discipline (where structural rules are as admissible as possible), it does provide a syntactic setting for investigating such issues, including a general equational theory governing the placement of structural rules in types and in terms.  While this is still work in progress, we hope to give a categorical semantics to the entire framework at once, saving the work of considering each modal type theory individually.
