@@ -1,0 +1,12 @@
+Term: Spring 2018
+Date: Mar 29	
+Speaker: Ulrik Buchholtz
+School: Technische Universität Darmstadt
+Title: From Higher Groups to Homotopy Surfaces
+YouTube: https://www.youtube.com/watch?v=0UlLwf8ttUw
+Slides: Buchholtz-2018-Mar-29-HoTTEST.pdf
+Abstract: Homotopy type theory can be seen as a synthetic theory of infinity groupoids. From this perspective, the pointed, connected types represent infinity groups. The elements are those of the loop space, and the operations on identity types provide the higher group structure.
+In this talk, I'll explain what basic group theory looks like from this viewpoint. One aspect is that of categorifying ordinary group theory by using a univalent universe to present many groups. For example, the cyclic group on n elements is the loop space of the type of n-element sets equipped with a cyclic ordering.
+In the second half of the talk, I'll focus on the 2-dimensional orthogonal group, and use this to talk about the homotopy types of surfaces.
+The talk follows the synthetic approach to homotopy theory as developed in the HoTT book. Beyond that, a basic familiarity with ordinary group theory and the result on the classification of surfaces from topology will be helpful.
+Some of the material will be from arXiv<a href=":1802.04315">:1802.04315</a> (joint with Floris van Doorn and Egbert Rijke) and arXiv<a href=":1802.02191">:1802.02191</a> (joint with Favonia), and some material is brand new.

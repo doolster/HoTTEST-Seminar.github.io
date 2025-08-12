@@ -1,0 +1,9 @@
+Term: Spring 2023
+Date: Mar 9
+Speaker: Hoang Kim Nguyen
+School: 
+Title: Directed univalence in simplicial sets
+YouTube: https://www.youtube.com/watch?v=GgcJqzGvq80
+Slides: Nguyen-2023-Mar-09-HoTTEST.pdf
+Abstract: In this talk we will discuss directed univalence in simplicial sets and explain that the universal cocartesian fibration is indeed directed univalent. We further give a characterisation of directed univalent cocartesian fibrations, which explains that the domain of the universal left fibration embeds fully faithfully into the domain of the universal cocartesian fibration. 
+This is joint work with Denis-Charles Cisinski.

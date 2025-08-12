@@ -1,0 +1,8 @@
+Term: Spring 2019
+Date: May 2	
+Speaker: Mathieu Anel
+School: Carnegie Mellon University
+Title: Descent v. Univalence
+YouTube: https://www.youtube.com/watch?v=86s0BCB3HGo
+Slides: Anel-2019-May-02-HoTTEST.pdf
+Abstract: The purpose of the talk will be to explain the connection between the notion of descent, characteristic of infinity-topoi, and the notion of univalence, characteristic of homotopy type theory.

@@ -1,0 +1,9 @@
+Term: Spring 2019
+Date: Mar 7	
+Speaker: Evan Cavallo
+School: Carnegie Mellon University
+Title: Internal Parametricity and Cubical Type Theory
+YouTube: https://www.youtube.com/watch?v=0C06XYL2Oro
+Slides: Cavallo-2019-Mar-07-HoTTEST.pdf
+Abstract: A polymorphic function is intuitively said to be parametric when it behaves uniformly at all types. This concept was made precise by Reynolds, who defined parametric functions to be those with an action on relations and showed that all polymorphic functions definable in the simply-typed lambda-calculus are parametric. Recently, dependent type theories have been developed that internalize this property, which is known as parametricity; this work is closely connected to cubical type theory, both historically and methodologically. I'll discuss the similarities and differences between internally parametric and cubical type theory, the type theory we designed that combines the two, and potential applications to higher-dimensional theorem proving.
+This is joint work with Robert Harper, and details can be found in our preprint arXiv<a href=":1901.00489">:1901.00489</a>.

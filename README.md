@@ -32,15 +32,16 @@ THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an excepti
 <ul>
   <li>Misspelled line starters</li>
   <li>Improperly formatted term or date entries</li>
-  <li>Missing entries (other than youtube/pdf links)</li>
+  <li>Missing entries (other than youtube link/pdf/school)</li>
   <li>"Abstract:" not being the last entry (the exception that will show up in this case is for missing entries of whatever was below "Abstract:")</li>
+  <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get following error: yattag.indentation.XMLTokenError) </li>
 </ul>
 
 THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
 <ul>
   <li>File name</li>
-  <li>Whitespace differences (either before or after lines, or between entry label and content)</li>
-  <li>Capitolization</li>
+  <li>Whitespace differences (either before or after lines, between entry label and content, or general blank lines)</li>
+  <li>Capitalization</li>
   <li>Missing youtube link/slides/school</li>
   <li>Ordering of entries (besides "Abstract:" which must go last)</li>
 </ul>

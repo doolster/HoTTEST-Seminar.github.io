@@ -1,0 +1,10 @@
+Term: HoTTEST Event For Junior Researchers 2022
+Date: Jan 13
+Speaker: Thibaut Benjamin
+School: 
+Title: CaTT, a type theory to describe weak ω-categories
+YouTube: https://www.youtube.com/watch?v=Fn6NKrmyX08
+Slides: Benjamin-2022-Jan-13-HoTTEST.pdf
+Abstract: Weak ω-categories are more complicated to define than their undirected variants, the weak ω-groupoids. Not only do they carry less topological intuition, but the complexity of adding a preferred direction on each level affects all the higher levels and the increase of complexity quickly snowballs. It is still possible to give sensible definitions for these objects, but those require high level abstract machinery making any non trivial proof inside one of these definition almost untractable in practice.
+Homotopy type theory (HoTT) provides an efficient and primitive way of reasoning internally with weak ω-groupoids. In his thesis, Brunerie has extracted specifically a set of rules that span all the combinatorics of weak omega-groupoids, and showed that these rules are satisfied by HoTT. Although a primitive way to reason within weak ω-categories, like HoTT for the groupoids, is not known, we can still leverage Brunerie's approach to tackle the directed world.
+In this talk, I will present a joint work with Finster and Mimram, where we define a type theory à la Brunerie for weak ω-categories. I will show how to use this type theory in practice to carry proofs in the theory of weak omega-categories and present a proof assistant based off of these ideas. I will present a few syntactic considerations to improve the use of this proof assistant and discuss how they reveal a part of the structure of weak omega-categories.

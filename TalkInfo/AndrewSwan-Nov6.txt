@@ -1,0 +1,8 @@
+Term: Fall 2019
+Date: Nov 6
+Speaker: Andrew Swan
+School: Carnegie Mellon University
+Title: Choice, Collection and Covering in Cubical Sets
+YouTube: https://www.youtube.com/watch?v=r9KbEOzyr1g
+Slides: Swan-2019-Nov-06-HoTTEST.pdf
+Abstract: In homotopical models of type theory such as cubical sets, propositional truncation has a rich structure. Instead of "identifying points," as in more traditional interpretations of extensional type theory in regular locally cartesian closed categories, one inductively adds new paths, while keeping existing points separate. This extra structure can be particularly clearly exposed by exploiting the fact that cubical sets are valid in a constructive metatheory, and assuming Brouwer's continuity principle, which is an anti-classical axiom stating that all functions from Baire space to the naturals are continuous. In this setting even very weak versions of the axiom of choice, such as WISC and a version of countable choice due to Escardo and Knapp, turn out to be false in the cubical set model. I will also talk about some very weak consequences of countable choice that are false in the model. This includes countable versions of collection and fullness from set theory (providing a solution to exercise 10.12 of the HoTT book). I will also talk about a couple of examples from homotopy theory: the product of countably many copies of the circle is not covered by any hSet and there are examples of hSets that are not covered by any constant cubical set.

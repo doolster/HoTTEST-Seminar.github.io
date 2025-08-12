@@ -1,0 +1,9 @@
+Term: Fall 2019
+Date: Dec 11
+Speaker: Richard Garner
+School: Macquarie University
+Title: Polynomial comonads and comodules
+YouTube: https://www.youtube.com/watch?v=tW6HYnqn6eI
+Slides: Garner-2019-Dec-11-HoTTEST.pdf
+Abstract: To any locally cartesian closed category E one can associate a monoidal category Poly(E) of polynomials; it is (following von Glehn) the fibre over 1 of the free fibration with distributive sums and products on E, or equivalently (following Gambino and Kock) the category of polynomial endofunctors of E.
+A result of Ahman and Uustalu shows that comonoids in Poly(E) (i.e., polynomial comonads) are the same as internal categories in E. It is then natural to ask: what is the bicategory of comonoids and bicomodules in Poly(E)? The goal of this talk is to explain the (slightly surprising) answer.

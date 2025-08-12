@@ -1,6 +1,7 @@
 Term: Fall 2024
 Date: Dec 5
 Speaker: Paige North
+School: 
 Title: Coinductive control of inductive data types
 YouTube: https://www.youtube.com/watch?v=8nGTQZy37Q0
 Slides: North-2024-12-05-HoTTEST.pdf

@@ -1,0 +1,9 @@
+Term: Spring 2021
+Date: Mar 25
+Speaker: Håkon Robbestad Gylterud
+School: Universitetet i Bergen
+Title: Defining and relating theories
+YouTube: https://www.youtube.com/watch?v=8aTDEn2D2pA
+Slides: Gylterud-2021-Mar-25-HoTTEST.pdf
+Abstract: Since the advent of homotopy type theory, many different formal theories for HoTT (such variations of Martin-Löf’s theory, cubical type theory, ⋯) have joined the already plentiful ranks of formal theories. In this talk, we will try to outline a general, algebraic and combinatorial notion of formal theory – geared towards dependent type theories – based on work by Cartmell, Makkai and others.
+The notion of theory we present is being implemented in a software framework aimed at working with different theories and translations between them, called Myott. Thus, part of the presentation will focus on the Haskell implementation of the theoretical notions.

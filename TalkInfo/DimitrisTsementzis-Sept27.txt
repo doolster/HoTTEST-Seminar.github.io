@@ -1,0 +1,9 @@
+Term: Fall 2018
+Date: Sept 27	
+Speaker: Dimitris Tsementzis
+School: Rutgers University
+Title: First-Order Logic with Isomorphism
+YouTube: https://www.youtube.com/watch?v=9fK9eEMYjII
+Slides:
+Abstract: First-order logic with isomorphism (“FOLiso”) is a formal system which relates to HoTT and the Univalent Foundations in a similar way that first-order logic with equality relates to ZFC and set-theoretic foundations. In particular, FOLiso gives a precise framework in which to study “first-order" theories defined on homotopy types (e.g. precategories, univalent categories), just as first-order logic with equality gives a precise framework in which to study first-order structures and theories defined on sets. I will first introduce the syntax and proof system of FOLiso as an extension of M. Makkai’s FOLDS. Then I will define a semantics for FOLiso in terms of homotopy types and describe a proof of soundness and completeness for this semantics. I will conclude by sketching applications in various directions.
+(Most of the material is based on the preprint <a href="https://arxiv.org/abs/1603.03092">https://arxiv.org/abs/1603.03092</a> with quite a few new additions based on ongoing work.)

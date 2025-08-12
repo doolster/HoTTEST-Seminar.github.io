@@ -1,0 +1,9 @@
+Term: Spring 2024
+Date: Mar 14
+Speaker: Greta Coraglia
+School: 
+Title: On the fibration of algebras
+YouTube: https://www.youtube.com/watch?v=vUj0pqbLYqQ
+Slides: Coraglia-2024-Mar-14-HoTTEST.pdf
+Abstract: We study fibrations arising from indexed categories of the following form: for a parametric endofunctor, consider its category of algebras (or Kleisli/Eilenberg--Moore in the case of monads), then one can construct the (op)fibration having for base category that of parameters, so that each fiber is precisely the category of algebras on a given fixed parameter. Examples of such constructions arise in disparate areas of mathematics, and are unified by the intuition that the resulting total category is a form of "semidirect product" of the category of parameters, which acts on the category the parametric endofunctor is defined on. We discuss some properties and applications with respect to the categorical semantics of (co)induction. 
+This is part of a joint and ongoing work with D. Ahman, D. Castelnovo, F. Loregian, N. Martins-Ferreira, Ü. Reimaa.

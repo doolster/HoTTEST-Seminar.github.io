@@ -3,7 +3,7 @@ body {
   margin-bottom: 40px;
 }
 h1 {
-  font-size: 45px;
+  font-size: 70px;
 }
 h1, h2 {
   color: #6a71a3;
@@ -11,6 +11,10 @@ h1, h2 {
 .icon {
   width: 20px;
   margin: 0 2px 0 2px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .expand-all-container {
@@ -60,9 +64,14 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+td:first-child {
+  width: 6%;
+}
+td:nth-child(2) {
+  width: 15%;
+}
 td:last-child .abstract {
   max-width: 850px;
-  width: 100%;
   display: block;
   word-break: break-word;
   white-space: pre-line;

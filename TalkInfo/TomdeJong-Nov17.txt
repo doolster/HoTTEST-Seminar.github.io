@@ -1,0 +1,9 @@
+Term: Fall 2022
+Date: Nov 17
+Speaker: Tom de Jong
+School: 
+Title: Acyclic types and epimorphisms in HoTT
+YouTube: https://www.youtube.com/watch?v=vohAYPAAWxs
+Slides: Jong-2022-Nov-17-HoTTEST.pdf
+Abstract: It is well known that the epimorphisms in the category of sets are exactly the surjections. But what are the epimorphisms of types? Thinking of types as spaces, and following literature in algebraic topology, we characterise epimorphisms of types in HoTT as so-called acyclic maps. An acyclic map is a map whose fibres are acyclic types, and a type is acyclic if its suspension is contractible. We also consider a weaker notion: a type is k-acyclic (for k ≥ -2) if its suspension is k-connected. We show, for example, that the classifying type of a group G is 2-acyclic if and only if the group G is perfect, i.e. its abelianisation is trivial. Finally, we comment on the relations between acyclic and connected maps and sketch directions for future research.
+This is joint work with Ulrik Buchholtz and Egbert Rijke.

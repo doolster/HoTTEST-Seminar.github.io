@@ -1,0 +1,9 @@
+Term: Spring 2022
+Date: Feb 17	
+Speaker: Marcelo Fiore
+School: University of Cambridge
+Title: Mathematical and Computational Metatheory of Second-Order Algebraic Theories
+YouTube: https://www.youtube.com/watch?v=nP2J9SJ9DVM
+Slides: Fiore-2022-Feb-17-HoTTEST.pdf
+Abstract: I will present a further step in my ongoing research programme on Algebraic Type Theory, the overall aim of which is to develop a mathematical theory understanding type theories algebraically while supporting practical foundations. The talk will centre on Second-Order Algebraic Theories, which are equational presentations in languages with (first-order) algebraic type structure and (second-order) term structure with variable-binding operators and parametrised metavariables. Examples include: first-order logic, simply-typed computational calculi, and the calculus of partial differentiation.
+Specifically, I will present a new categorical model for Second-Order Algebraic Theories: it is based on indexed families and founded upon the initial-algebra approach. A main motivation for and crucial aspect of the mathematical theory is that it is directly programmable in languages supporting inductive families; and, indeed, was developed in unison with building a formally-verified computer implementation for second-order semantics, computation, and deduction. As such, the work resulted in a framework within the Agda proof assistant for the automatic generation of generic second-order abstract syntax and provably correct metaoperations for manipulating it; to wit, algebraic models together with compositional interpretations, capture-avoiding and metavariable substitution operations, and equational and/or rewriting reasoning. This is joint work with Dmitrij Szamozvancev; a paper, source code, documentation, and case studies are available at the project page <a href="https://www.cl.cam.ac.uk/~ds709/agda-soas/">https://www.cl.cam.ac.uk/~ds709/agda-soas/</a>.

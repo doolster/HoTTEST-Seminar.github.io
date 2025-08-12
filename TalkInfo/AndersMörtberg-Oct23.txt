@@ -1,0 +1,9 @@
+Term: Fall 2019
+Date: Oct 23
+Speaker: Anders Mörtberg
+School: Stockholm University
+Title: Unifying Cubical Models of Homotopy Type Theory
+YouTube: https://www.youtube.com/watch?v=KxQYT4SrENg
+Slides: Mortberg-2019-Oct-23-HoTTEST.pdf
+Abstract: (j.w.w. Evan Cavallo, Andrew Swan)
+In recent years a wide variety of constructive cubical models of homotopy type theory have been developed. These models all provide constructive meaning to the univalence axiom and higher inductive types, but how are they related? In the talk I will give an answer to this question in the form of a generalization that covers most of the cubical models. The crucial idea of this generalization is to weaken the notion of fibration from the cartesian cubical set model so that it is not necessary to assume that the diagonal on the interval is a cofibration. This notion of fibration also gives rise to a model structure, generalizing earlier work on constructing model structures from cubical models of homotopy type theory.

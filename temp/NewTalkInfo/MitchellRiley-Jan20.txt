@@ -1,0 +1,9 @@
+Term: HoTTEST Event For Junior Researchers 2022
+Date: Jan 20
+Speaker: Mitchell Riley
+School: 
+Title: Linear Homotopy Type Theory
+YouTube: https://www.youtube.com/watch?v=o2oWhHabjdM
+Slides: Riley-2022-Jan-20-HoTTEST.pdf
+Abstract: Some ∞-toposes support constructions that are inherently 'linear', such as the external smash product of parameterised spectra. These cannot be added axiomatically to ordinary HoTT, because there is no way to enforce this linearity: there are no restrictions on variable uses.
+This talk describes an extension of HoTT with linear tensor and hom type formers, as a kind of 'binary modality' and its right adjoint. Trying to stay compatible with existing results in HoTT naturally leads us to a novel kind of bunched dependent type theory. Our type theory is intended to be as human-usable as possible, with an eye towards synthetic stable homotopy theory.

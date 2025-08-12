@@ -1,0 +1,15 @@
+Term: Fall 2021
+Date: Oct 7	
+Speaker: Matthieu Sozeau
+School: Inria Nantes 
+Title: The MetaCoq Project
+YouTube: https://www.youtube.com/watch?v=azlhMVH1f98
+Slides: Sozeau-2021-Oct-07-HoTTEST.pdf
+Abstract: Proof assistants are getting more widespread use in research and industry to provide certified and independently checkable guarantees about theories, designs, systems and implementations. However, proof assistant implementations themselves are seldom formally verified, although they take a major share of the trusted code base in any such certification effort. In this area, proof assistants based on Higher-Order Logic enjoy stronger guarantees than the ones based on Dependent Type Theory, as self-certified implementations have been available for some years. One cause of this difference is the inherent complexity of dependent type theories together with their extensions with (co)-inductive types, universe polymorphism and complex sort or dimension systems. Another is the gap between theory on paper and practical implementations in efficient programming languages. In particular, an efficient implementation of definitional equality checking can be far away from its ideal specification.
+The MetaCoq project aims to tackle these difficulties in the case of the Coq proof assistant. It provides the first fully-certified realistic implementation of a type checker for the calculus underlying the Coq proof assistant. I will present how we refined the sometimes blurry, if not incorrect, specification and implementation of the system to produce:
+- A specification of Coq's syntax and type theory, the Polymorphic Cumulative Calculus of (Co)-Inductive Constructions (PCUIC)
+- A monad for the manipulation of raw syntax and interaction with the Coq system
+- A verification of PCUIC's metatheory, whose main results are the confluence of reduction, type preservation and principality of typing
+- A realistic, correct and complete type-checker for PCUIC
+Finally, I will focus on work in progress to relate the current specification of PCUIC to a presentation of type theory with typed equality.
+<a href="http://metacoq.github.io">http://metacoq.github.io</a>

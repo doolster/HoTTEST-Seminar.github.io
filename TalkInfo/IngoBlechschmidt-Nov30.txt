@@ -1,0 +1,11 @@
+Term: Fall 2023
+Date: Nov 30
+Speaker: Ingo Blechschmidt
+School: 
+Title: Towards multiversal modal operators for homotopy type theory 
+YouTube: https://www.youtube.com/watch?v=L6dKpt7UqX4
+Slides: Blechschmidt-2023-Nov-30-HoTTEST.pdf
+Abstract: Where do some of our most cherished inductive definitions come from? Which functions are we excluding when we form the type of all functions between two types? Does every field have an algebraic closure? 
+Inspired by the modal approach to the set-theoretic multiverse of Joel David Hamkins, Victoria Gitman and their collaborators, we aim to introduce the modal operators "everywhere" and "somewhere" to homotopy type theory, proposing a multiversal perspective on these motivating questions. 
+Unlike the set-theoretic role model, we focus less on exploring the range of foundational possibility and more on concrete applications in constructive mathematics, with the goal of porting results of classical mathematics to homotopy type theory. It will turn out that every field has an algebraic closure somewhere; that a transitive relation is well-founded iff nowhere there is an infinite descending chain; and that somewhere, the law of excluded middle holds. 
+This is ongoing joint work with Alexander Oldenziel and connected to the recent advances with type-theoretic presheaf models and sheaf models.

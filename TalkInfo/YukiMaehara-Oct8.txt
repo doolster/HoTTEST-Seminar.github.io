@@ -1,0 +1,9 @@
+Term: Fall 2020
+Date: Oct 8
+Speaker: Yuki Maehara
+School: Macquarie University 
+Title: A cubical model for weak ω-categories
+YouTube: https://www.youtube.com/watch?v=AIBTh7MIbew
+Slides: Maehara-2020-Oct-08-HoTTEST.pdf
+Abstract: A (strict) ω-category is usually defined as a globular set equipped with compositions. But one can instead consider cubical sets equipped with compositions, and Al-Agl, Brown and Steiner proved that these two notions give rise to equivalent categories. Steiner also showed that, in the cubical setting, the compositions may be encoded in a somewhat indirect manner using open boxes. In this joint project with Tim Campion and Chris Kapulkin, we modify this encoding and propose the resulting objects as a model for weak ω-categories (a.k.a. (∞,∞)-categories). We also construct the Gray tensor product and compare our model to a simplicial precursor, i.e. complicial sets.
+The aim of this talk is to illustrate the above paragraph with many pictures.

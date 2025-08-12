@@ -2,7 +2,7 @@ from yattag import Doc, indent
 import os, re
 
 # Any new term types must be added to this dictionary for sorting
-termIDDict = { 'Spring': 'a', 'Fall': 'b'}
+termIDDict = { 'Spring': 'b', 'Fall': 'd', 'HoTTEST Event For Junior Researchers': 'a', 'HoTTEST Conference' : 'c'}
 monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
 
 class Talk:
@@ -31,29 +31,32 @@ def formatURLs(str):
 def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', '', '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
+        lines = f.readlines()
+        f.close()
+        lines = [x for x in lines if x.strip()] # Remove blank lines from files
         inAbstract = False
         lineNumber = 0
-        for line in f:
+        for line in lines:
             line = line.strip()
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
-                    newTalk.abstract = line[9:].strip() + '<br/>'
+                    newTalk.abstract = '<p>' + line[9:].strip() + '</p>'
                     inAbstract = True
                 else:
-                    newTalk.abstract += line + '<br/>'
+                    newTalk.abstract += '<p>' + line +'</p>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
                     newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
                 else:
-                    raise Exception('Term type not found: new term types must be added to termIDDict for sorting')
+                    raise Exception(fileName + ': Term type not found - new term types must be added to termIDDict for sorting')
             elif line.lower().startswith('date:'):
                 newTalk.date = line[5:].strip()
                 if newTalk.date[:3] in monthDict:
                     newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
                 else:
-                    raise Exception('Date entry ill-formed')
+                    raise Exception(fileName + ': Date entry ill-formed')
             elif line.lower().startswith('speaker:'):
                 newTalk.speaker = line[8:].strip()
             elif line.lower().startswith('school:'):
@@ -67,9 +70,7 @@ def readFile(fileName):
             elif line == '':
                 pass
             else:
-                raise Exception('Improperly formatted label in line ' + str(lineNumber) + ' of ' + fileName + ' "' + line + '"')
-        newTalk.abstract = newTalk.abstract[:-5] # Removing superfluous breakline at end of abstract
-        f.close()
+                raise Exception(fileName + ': Improperly formatted label in line ' + str(lineNumber) + ' - "' + line + '"')
         return newTalk
 
 # Function for testing if a talk object is missing any critical components
@@ -88,9 +89,10 @@ def testTalk(talk):
 # Putting all talks into an array
 talks = []
 for file in os.listdir('./TalkInfo'):
-    newTalk = readFile(file)
-    testTalk(newTalk)
-    talks.append(newTalk)
+    if not (file.startswith('.') or file.endswith('~')): # Ignore files with unusual names (system generated, etc.)
+        newTalk = readFile(file)
+        testTalk(newTalk)
+        talks.append(newTalk)
 
 # Labeling talks with their term and date
 pageInfo = {}
@@ -189,7 +191,7 @@ for termID in termIDs:
                                 if talk.slides != '':
                                     with tag('a', href='hottestfiles/' + talk.slides):
                                         doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
-                            with tag('p', klass='abstract'):
+                            with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
 
 docFoot = """

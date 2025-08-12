@@ -1,0 +1,14 @@
+Term: Fall 2018
+Date: Oct 25	
+Speaker: Nicolai Kraus
+School: University of Nottingham
+Title: Some connections between open problems
+YouTube: https://www.youtube.com/watch?v=l8S0Ll4PhoI
+Slides: Kraus-2018-Oct-25-HoTTEST.pdf
+Abstract: I will give an overview of my plan to construct connections between   several unsolved questions. The following are important constructions   that we would like to perform internally in type theory:
+(1) a definition of semi-simplicial types;
+(2) developing a theory of infinity-categories;
+(3) homotopy type theory "eating itself";
+(4) a "minimal/optimal" principle of eliminating truncations;
+(5) showing that free higher groups over sets are sets, that the   suspension of a set is a 1-type, and variations/generalizations.
+My expectation is that, in type theories where (1) can be solved (e.g.   HTS and 2LTT), the other problems can be solved as well. I will outline  the progress that various members of the HoTT community have made on  some of the questions. The emphasis of the talk will be on a framework  for quotienting by "directed" equivalence relations which I have  developed to attack problem (5), together with partial results and why  (5) is related to (1).
