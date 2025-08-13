@@ -112,9 +112,10 @@ doc, tag, text, line = Doc().ttl()
 
 docHead = """
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <base target="_blank">
 <title>HoTTEST</title>
@@ -187,12 +188,13 @@ for termID in termIDs:
                         with tag('td'):
                             with tag('p', klass='talk-title'):
                                 text(talk.title)
+                                doc.asis('&nbsp;')
                                 if talk.ytlink != '':
                                     with tag('a', href=talk.ytlink):
-                                        doc.stag('img', src='images/YouTube icon.webp', klass='icon')
+                                        doc.stag('img', src='images/youtube.webp', klass='icon', alt='YouTube video')
                                 if talk.slides != '':
                                     with tag('a', href='hottestfiles/' + talk.slides):
-                                        doc.stag('img', src='images/PDF_file_icon.png', klass='icon')
+                                        doc.stag('img', src='images/pdf.png', klass='icon', alt='Slides')
                             with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
 

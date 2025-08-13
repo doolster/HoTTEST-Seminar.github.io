@@ -11,6 +11,7 @@ h1, h2 {
 .icon {
   width: 20px;
   margin: 0 2px 0 2px;
+  vertical-align: middle;
 }
 p {
   margin-top: 0;
@@ -45,6 +46,9 @@ p {
 }
 .active, .accordion:hover, .expand-all:hover {
   background-color: #6a71a3;
+}
+.active {
+  margin-bottom: 8px;
 }
 .panel {
   padding: 0 18px;
