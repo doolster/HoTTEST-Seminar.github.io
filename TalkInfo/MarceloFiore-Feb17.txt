@@ -1,5 +1,5 @@
 Term: Spring 2022
-Date: Feb 17	
+Date: Feb 17
 Speaker: Marcelo Fiore
 School: University of Cambridge
 Title: Mathematical and Computational Metatheory of Second-Order Algebraic Theories

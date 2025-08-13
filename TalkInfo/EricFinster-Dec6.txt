@@ -1,5 +1,5 @@
 Term: Fall 2018
-Date: Dec 6	
+Date: Dec 6
 Speaker: Eric Finster
 School: Inria - Rennes
 Title: Towards Higher Universal Algebra in Type Theory

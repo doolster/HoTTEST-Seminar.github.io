@@ -1,5 +1,5 @@
 Term: Fall 2021
-Date: Oct 7	
+Date: Oct 7
 Speaker: Matthieu Sozeau
 School: Inria Nantes 
 Title: The MetaCoq Project

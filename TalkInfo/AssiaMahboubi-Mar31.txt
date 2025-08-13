@@ -1,5 +1,5 @@
 Term: Spring 2022
-Date: Mar 31	
+Date: Mar 31
 Speaker: Assia Mahboubi
 School: Inria, Nantes
 Title: Continuity in dependent type theory

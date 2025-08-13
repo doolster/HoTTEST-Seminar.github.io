@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Mar 21	
+Date: Mar 21
 Speaker: Dan Licata
 School: Wesleyan University 
 Title: A Fibrational Framework for Substructural and Modal Dependent Type Theories

@@ -1,5 +1,5 @@
 Term: Spring 2022
-Date: Feb 3	
+Date: Feb 3
 Speaker: Jonas Frey
 School: Carnegie Mellon University
 Title: Characterizing clan-algebraic categories

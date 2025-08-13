@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: May 2	
+Date: May 2
 Speaker: Mathieu Anel
 School: Carnegie Mellon University
 Title: Descent v. Univalence

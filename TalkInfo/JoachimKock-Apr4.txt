@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Apr 4	
+Date: Apr 4
 Speaker: Joachim Kock
 School: Universitat Autonoma de Barcelona
 Title: ∞-operads as polynomial monads

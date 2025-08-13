@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: Mar 15	
+Date: Mar 15
 Speaker: Carlo Angiuli
 School: Carnegie Mellon University
 Title: Computational semantics of Cartesian cubical type theory

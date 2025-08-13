@@ -1,5 +1,5 @@
 Term: Fall 2021
-Date: Oct 21	
+Date: Oct 21
 Speaker: Hugo Moeneclaey
 School: IRIF Paris
 Title: Parametricity and cubes

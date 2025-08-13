@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: Mar 1	
+Date: Mar 1
 Speaker: Emily Riehl
 School: Johns Hopkins University
 Title: The synthetic theory of  ∞-categories vs the synthetic theory of  ∞-categories

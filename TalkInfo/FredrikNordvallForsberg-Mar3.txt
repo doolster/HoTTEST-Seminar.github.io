@@ -1,5 +1,5 @@
 Term: Spring 2022
-Date: Mar 3	
+Date: Mar 3
 Speaker: Fredrik Nordvall Forsberg
 School: University of Strathclyde
 Title: Different Notions of Ordinals in Homotopy Type Theory

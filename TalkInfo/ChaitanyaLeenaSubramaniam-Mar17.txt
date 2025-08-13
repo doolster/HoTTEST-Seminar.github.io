@@ -1,5 +1,5 @@
 Term: Spring 2022
-Date: Mar 17	
+Date: Mar 17
 Speaker: Chaitanya Leena Subramaniam
 School: University of San Diego
 Title: Dependently typed algebraic theories and their homotopy algebras

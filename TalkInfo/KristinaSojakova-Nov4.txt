@@ -1,5 +1,5 @@
 Term: Fall 2021
-Date: Nov 4	
+Date: Nov 4
 Speaker: Kristina Sojakova
 School: Inria Paris 
 Title: Syllepsis in Homotopy Type Theory

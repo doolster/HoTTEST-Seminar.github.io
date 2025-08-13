@@ -1,5 +1,5 @@
 Term: Fall 2018
-Date: Oct 11	
+Date: Oct 11
 Speaker: Kuen-Bang Hou (Favonia)
 School: University of Minnesota
 Title: Towards efficient cubical type theory

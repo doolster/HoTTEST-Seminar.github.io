@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Mar 7	
+Date: Mar 7
 Speaker: Evan Cavallo
 School: Carnegie Mellon University
 Title: Internal Parametricity and Cubical Type Theory

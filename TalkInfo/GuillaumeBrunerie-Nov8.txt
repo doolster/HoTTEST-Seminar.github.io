@@ -1,5 +1,5 @@
 Term: Fall 2018
-Date: Nov 8	
+Date: Nov 8
 Speaker: Guillaume Brunerie
 School: Stockholm University
 Title: Computer-generated proofs for the monoidal structure of the smash product
