@@ -4,7 +4,7 @@ Speaker: David Jaz Myers
 School: 
 Title: Higher Schreier Theory
 YouTube: https://www.youtube.com/watch?v=I7f2iJB52vo
-Slides: Myers-2020-Jun-16-HoTTEST.pdf
+Slides: Myers-2020-06-16-HoTTEST.pdf
 Abstract: In a 1926 article, Otto Schreier gave a classification of all extensions of a group G by a (non-abelian) group K. This classification of extensions has come to be known as Schreier theory, and has been reformulated many times by many authors since. Just as central extensions by an abelian group are classified by group cohomology in degree 2, Schreier theory can be seen as an example of a classification by non-abelian group cohomology.
 Higher Schreier theory concerns the classification of extensions of higher groups. Breen has generalized Schreier theory to sheaves of 2-groups. In this talk, we will give a proof of Schreier theory for oo-groups in homotopy type theory - and therefore for sheaves of ∞-groups by interpreting in various oo-toposes. Our main theorem is:
 Let G and K be ∞-groups. Then the type of extensions of G by K is equivalent to the type of actions of G on the delooping BK.

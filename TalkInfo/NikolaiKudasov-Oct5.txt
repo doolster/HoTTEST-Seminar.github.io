@@ -4,6 +4,6 @@ Speaker: Nikolai Kudasov
 School: 
 Title: Rzk proof assistant and simplicial HoTT formalization
 YouTube: https://www.youtube.com/watch?v=IMxPu2agUNo
-Slides: Kudasov-2023-Oct-05-HoTTEST.pdf
+Slides: Kudasov-2023-10-05-HoTTEST.pdf
 Abstract: Reasoning in higher category theory can be quite difficult and synthetic theories help internalise common arguments to simplify proofs. Synthetic theories also often admit automation in a form of proof assistants, which further help verify results with the help of the computer. Rzk is an experimental proof assistant for synthetic ∞-categories, based on the type theory with shapes by Emily Riehl and Michael Shulman [1], which in turn is an extension of homotopy type theory with a tope logic layer and extension types. In a joint work with Emily Riehl and Jonathan Weinberger, we formalize the ∞-categorical Yoneda lemma in Rzk. Thanks to synthetic theory, many constructions in the formalization are automatically natural or functorial. In this talk, I will present the basics of theorem proving in Rzk, and outline the main result of our formalization project. Additionally, I will talk briefly about the implementation of Rzk itself, plans for its development, and some ideas for implementing proof assistants based on dependent types in general.
 [1]: Emily Riehl & Michael Shulman. A type theory for synthetic ∞-categories. Higher Structures 1(1), 147-224. 2017. <a href="https://arxiv.org/abs/1705.07442">https://arxiv.org/abs/1705.07442</a>

@@ -4,5 +4,5 @@ Speaker: Ulrik Buchholtz
 School: TU Darmstadt
 Title: (Co)cartesian families in simplicial type theory
 YouTube: https://www.youtube.com/watch?v=TOGx2F-MLi0
-Slides: Buchholtz-2021-Apr-22-HoTTEST.pdf
+Slides: Buchholtz-2021-04-22-HoTTEST.pdf
 Abstract: Using Riehl–Shulman's simplicial type theory for synthetic higher category theory, I'll describe how to define and work with (co)cartesian families. These represent functors from a higher category to the category of categories. As an application, I'll derive a (dependent) Yoneda lemma for such families. This is joint work with Jonathan Weinberger.

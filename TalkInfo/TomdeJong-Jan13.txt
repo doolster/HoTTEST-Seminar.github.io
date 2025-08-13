@@ -4,6 +4,6 @@ Speaker: Tom de Jong
 School: 
 Title: Order Theory and Propositional Resizing in HoTT/UF 
 YouTube: https://www.youtube.com/watch?v=Vqrt0OMRvaA
-Slides: Jong-2022-Jan-13-HoTTEST.pdf
+Slides: Jong-2022-01-13-HoTTEST.pdf
 Abstract: In this talk we describe the key result in our paper "Predicative Aspects of Order Theory in Univalent Foundations". Our work is predicative and constructive, meaning that we do not assume Voevodsky's propositional resizing axioms or excluded middle, respectively. Crudely formulated, our theorem says: Various kinds of posets can only be small in predicative HoTT/UF if they are trivial. In previous work, we observed that in HoTT/UF, the directed complete posets in the Scott model of PCF were large and the above result is telling us that this is unavoidable. We explain how to arrive at a precise formulation of our theorem, using a technical notion of a δ𝓤-complete poset and a generalization of Johnstone's notion of positivity for locales. It is worth remarking that the precise formulation is in the spirit of reverse mathematics: it is a theorem of HoTT/UF (as opposed to a metatheorem about HoTT/UF) and in particular does not make reference to models.
 This is joint work with my PhD supervisor Martín Escardó. The paper can be found here: <a href="https://doi.org/10.4230/LIPIcs.FSCD.2021.8">https://doi.org/10.4230/LIPIcs.FSCD.2021.8</a>.

@@ -4,5 +4,5 @@ Speaker: Thorsten Altenkirch
 School: University of Nottingham
 Title: Towards higher models and syntax of type theory
 YouTube: https://www.youtube.com/watch?v=UgNYKxZKzsk
-Slides: Altenkirch-2018-May-10-HoTTEST.pdf
+Slides: Altenkirch-2018-05-10-HoTTEST.pdf
 Abstract: We (Ambrus Kaposi and myself) have defined the intrisic (no preterms) syntax of type theory in type theory using quotient inductive inductive types, that is set truncated higher inductive inductive types. Set truncation is necessary because we want to have decidability which we established using normalisation by evaluation. However, this stops us from defining any interesting semantic models, e.g. interpreting contexts as sets, types as families etc, because sets do not from a set (not for size reason but dimension). I suggest that we can overcome this problem by defining higher models of type theory and a higher syntax. I envisage that the higher syntax does form a set without being explicitely truncated, hence decability should still hold. In my talk I will describe the first steps towards this programme.

@@ -4,7 +4,7 @@ Speaker: Andrew Swan
 School: 
 Title: Double negation stable h-propositions in cubical sets
 YouTube: https://www.youtube.com/watch?v=lNNrmuUQzkw
-Slides: Swan-2023-Feb-09-HoTTEST.pdf
+Slides: Swan-2023-02-09-HoTTEST.pdf
 Abstract: In cubical sets there are two different notions of proposition. They are a locally cartesian closed category and so model of extensional type theory, in which the propositions are monomorphisms. They are also a model of HoTT into which we can interpret the definition of h-proposition. In general h-propositions can behave very differently to monomorphisms, when working in cubical sets in a constructive setting. Instead of thinking of them as spaces with at most one point, it is better to visualise them as spaces with possibly a lot of points, but with a path joining any two.
 Double negation stable h-propositions are an important subclass that are much better behaved then h-propositions in general. Unlike the general case, every double negation stable h-proposition in cubical sets is equivalent to a monomorphism. Using this we can construct a classifier for all double negation stable h-propositions in cubical sets and moreover describe it explicitly: it is the constant presheaf on the classifier for double negation stable monomorphisms in our metatheory. Although double negation stability is a somewhat restrictive condition, this classifier suffices for at least three important constructions: the Dedekind real numbers, 0-truncated double negation sheafification, and formulating and proving consistency of a version of extended Church's thesis (all partial functions are computable).
 There is a preprint about this work at <a href="https://arxiv.org/abs/2209.15035">https://arxiv.org/abs/2209.15035</a>.

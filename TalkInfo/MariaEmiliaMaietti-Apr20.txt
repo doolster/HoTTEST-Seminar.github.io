@@ -4,7 +4,7 @@ Speaker: Maria Emilia Maietti
 School: 
 Title: A comparison between the Minimalist Foundation and Homotopy Type Theory
 YouTube: https://www.youtube.com/watch?v=fO2FN47oB2Y
-Slides: Maietti-2023-Apr-20-HoTTEST.pdf
+Slides: Maietti-2023-04-20-HoTTEST.pdf
 Abstract: In this talk, I will outline the main common aspects and differences between the two-level Minimalist Foundation (for short MF) in [4] according to [3] and Homotopy Type Theory (HoTT) in [5].
 A crucial difference between the two foundations is that HoTT has the remarkable expressive power to interpret both levels of MF thanks to the presence of the Univalence Axiom and set quotients as described in [1].
 On the opposite, the Minimalist Foundation has a strictly predicative strength a' la Feferman as witnessed by the realizability interpretation in [2]. Moreover, thanks to the absence of choice principles (since existential quantifiers are defined primitively!) and exponentiation of functional relations, its classical version is compatible with classical predicativity a' la Weyl.

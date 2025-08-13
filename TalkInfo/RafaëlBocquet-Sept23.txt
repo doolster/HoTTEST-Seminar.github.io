@@ -4,6 +4,6 @@ Speaker: Rafaël Bocquet
 School: Eötvös Loránd University
 Title: Coherence of definitional equality in type theory
 YouTube: https://www.youtube.com/watch?v=WKCxBygnYqE
-Slides: Bocquet-2021-Sep-23-HoTTEST.pdf
+Slides: Bocquet-2021-09-23-HoTTEST.pdf
 Abstract: Hofmann has proven that the extension of intensional type theory (with Uniqueness of Identity Proofs) by the equality reflection rule is conservative. For HoTT or other type theories without UIP, we can consider extensions that replace some typal equalities by definitional equalities, such as the extension of HoTT by a strictly associative and unital addition on natural numbers. 
 In this talk I will show that conservativity holds whenever the base type theory satisfies "external univalence" and the definitional equalities added by the extension are coherent, that is when "every formal composition of these equalities is trivial." The formal statements of these conditions involve some type-theoretic infinity-categories, i.e. infinity-categories that are presented by models of type theory. 

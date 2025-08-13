@@ -4,5 +4,5 @@ Speaker: Eric Finster
 School: 
 Title: Weak Structures from Strict Ones
 YouTube: https://www.youtube.com/watch?v=wz3h59rnhOU
-Slides: Finster-2020-Jun-19-HoTTEST.pdf
+Slides: Finster-2020-06-19-HoTTEST.pdf
 Abstract: I will describe a technique for defining various weak higher structures by extending type theory with a universe of strict polynomial monads.  Furthermore, I will describe implementation of the proposed theory in Agda using rewrite rules.

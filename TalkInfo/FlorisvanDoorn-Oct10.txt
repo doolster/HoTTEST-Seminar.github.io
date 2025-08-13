@@ -4,7 +4,7 @@ Speaker: Floris van Doorn
 School: 
 Title: Formalizing a proof of Carleson's theorem
 YouTube: https://www.youtube.com/watch?v=vMEGU8fL1xM
-Slides: van-Doorn-2024-Oct-10-HoTTEST.pdf
+Slides: van-Doorn-2024-10-10-HoTTEST.pdf
 Abstract: A fundamental question in Fourier analysis is the Fourier inversion theorem, which states that for nice functions, applying the Fourier transform twice gives the original function back up to reversal. This is true for continuously differentiable functions, but the situation is a lot more subtle for e.g. continuous functions. In this case the Fourier transform might not be integrable, and one has to consider improper integrals. Moreover, this improper integral need not converge at every point, but in 1966 Lennart Carleson proved that it does converge at almost all points for functions on the real line. This result follows from the boundedness of the Carleson operator. Carleson's proof is famously hard to read, and there are no known easy proofs of this theorem.
 We have proven a generalization of the boundedness of the Carleson's operator in the setting of doubling metric measure spaces, and we are currently working on formalizing the entire proof in the proof assistant Lean, based on a detailed blueprint we wrote first. This advanced formalization is possible because of Lean's large mathematical library Mathlib.
 In this talk I will give an overview of the project including its practical aspects, as well as highlighting some other exciting projects around Mathlib. No background in Fourier analysis is assumed.

@@ -4,5 +4,5 @@ Speaker: Taichi Uemura
 School: 
 Title: Abstract type theories
 YouTube: https://www.youtube.com/watch?v=8o8cEUxWAjE
-Slides: Uemura-2020-Jun-17-HoTTEST.pdf
+Slides: Uemura-2020-06-17-HoTTEST.pdf
 Abstract: Many variants of dependent type theory admit the semantics based on categories with families (CwFs). I introduce an abstract notion of a type theory to give a unified account of the CwF-semantics of type theory. The key idea is to regard a CwF-model of a type theory as a functor to a presheaf category preserving certain structures. Basic results in the semantics of type theory are then stated and proved in a purely categorical way. In this talk I will explain motivations and intuitions behind my definition of a type theory.

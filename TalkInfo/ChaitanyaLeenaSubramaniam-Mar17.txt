@@ -4,7 +4,7 @@ Speaker: Chaitanya Leena Subramaniam
 School: University of San Diego
 Title: Dependently typed algebraic theories and their homotopy algebras
 YouTube: https://www.youtube.com/watch?v=NAT02hbwOUs
-Slides: Subramaniam-2022-Mar-17-HoTTEST.pdf
+Slides: Subramaniam-2022-03-17-HoTTEST.pdf
 Abstract: Dependently typed algebraic theories are a generalisation of ordinary multisorted algebraic theories (finite-product theories). When it comes to models valued in Set, they are just as expressive as essentially algebraic theories (finite-limit theories). They also combine well with homotopy theory, and have a canonical notion of model up-to-homotopy in spaces, or "homotopy algebra", via a left Bousfield localisation of a global model structure on simplicial presheaves.
 In this talk, I will consider dependently typed algebraic theories to be a strict subclass of contextual categories. With respect to models valued in Set, this strict subclass is nevertheless just as expressive as essentially algebraic theories. Moreover, contextual categories in this subclass have a nice description of their homotopy algebras, generalising a definition of homotopy algebras of ordinary algebraic theories due to Badzioch and Bergner.
 Homotopy algebras of ordinary algebraic theories enjoy a rigidification theorem stating that every homotopy algebra is weakly equivalent to a strict simplicial algebra. I will report on recent joint work with S. Henry showing that the same is true for homotopy algebras of dependently typed algebraic theories. This result uses a weak factorisation system introduced by Henry on the category of Set-models of a contextual category, as well as Henry's notion of weak model category. 

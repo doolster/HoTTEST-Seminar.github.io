@@ -4,7 +4,7 @@ Speaker: Guillaume Brunerie and Peter LeFanu Lumsdaine
 School: Stockholm University
 Title: Initiality for Martin-Löf type theory
 YouTube: https://www.youtube.com/watch?v=1ogUFFUfU_M
-Slides: Brunerie-2020-Sep-10-HoTTEST.pdf
+Slides: Brunerie-2020-09-10-HoTTEST.pdf
 Abstract: “Initiality” is the principle that the term model of some type theory should be an initial object in the category of models of that type theory.  Thomas Streicher gave a careful proof of initiality for the Calculus of Constructions in 1991.  Since then, initiality for more complex type theories (such as Martin-Löf type theory) has often been treated as established, as a straightforward extension of Streicher’s result, but never written up carefully for a larger theory.
 Around 2010, various researchers (notably Voevodsky) raised the question of whether these extensions really were sufficiently straightforward to consider them established without further proof.  Since then, views on the status of initiality have varied within the field; but the issue has been, at least, a frustrating unresolved point.
 In this talk, we present a proof of initiality for a full-featured Martin-Löf type theory.  The proof is formalised in Agda, to dispel any question of thoroughness (and also partly formalised in Coq), and is carefully designed for extensibility to other type theories.  The proof is based on Streicher’s, using some improvements of Hofmann and further refinements by the present authors.  The two formalisations present slightly different versions of the statement — using contextual categories in Agda, categories with attributes in Coq — but the core of the proof is parallel.

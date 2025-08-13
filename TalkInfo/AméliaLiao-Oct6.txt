@@ -4,7 +4,7 @@ Speaker: Amélia Liao
 School: 
 Title: Univalent Category Theory
 YouTube: https://www.youtube.com/watch?v=asY6dXkR2yg
-Slides: Liao-2022-Oct-06-HoTTEST.pdf
+Slides: Liao-2022-10-06-HoTTEST.pdf
 Abstract: Category theory is the study of structure across mathematics. Being a mathematical subject itself, category theory should also encompass the study of its own structural aspects.
 A promising approach (Gray 1974; Di Liberti & Loregian 2019) is formal category theory: studying the properties of the bicategory of categories which make it possible to study category theory from a structural perspective.
 A different idea is to approach categories as groupoids with extra structure, something which finds itself naturally at home in HoTT, where "groupoids" are particular types. This approach lends itself particularly well to formalization in a proof assistant.

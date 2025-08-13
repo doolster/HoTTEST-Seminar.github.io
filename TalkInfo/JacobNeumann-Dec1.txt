@@ -4,5 +4,5 @@ Speaker: Jacob Neumann
 School: 
 Title: (Co)ends and (Co)structure
 YouTube: https://www.youtube.com/watch?v=X4v5HnnF2-o
-Slides: Neumann-2022-Dec-01-HoTTEST.pdf
+Slides: Neumann-2022-12-01-HoTTEST.pdf
 Abstract: We explore the concepts of (co)ends and strong dinaturality in the setting of homotopy type theory, and articulate their connections to existing lines of work. Strong dinaturality is the appropriate generalization of the naturality conditions used by Awodey, Frey, and Speight to 'refine' System-F-style impredicative encodings of inductive types, and provides a convenient calculus for determining these conditions. Moreover, since strong dinaturality can be expressed using the category-theoretic notion of ends, there is an evident dualization using coends which allows for impredicative encodings of coinductive and existential types in homotopy type theory. We also discuss the connection between strong dinaturality and parametric polymorphism. For apparently all cases of interest, strong dinaturality articulates precisely (as a propositional equality) the naturality condition needed to restrict polymorphic types to only 'standard' values. We demonstrate this fact by calculating several of the 'free theorems' of Wadler in our strong dinaturality calculus.

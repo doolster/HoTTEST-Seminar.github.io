@@ -4,7 +4,7 @@ Speaker: Hugo Moeneclaey
 School: IRIF Paris
 Title: Parametricity and cubes
 YouTube: https://www.youtube.com/watch?v=79Ik6KkoZ-w
-Slides: Moeneclaey-2021-Oct-21-HoTTEST.pdf
+Slides: Moeneclaey-2021-10-21-HoTTEST.pdf
 Abstract: We report on our investigations linking parametricity and cubical structures. Our slogan is that cubical models of type theory are cofreely parametric.
 Using various notions of parametricity and of models of type theory, we will present the following as cofreely parametric:
 - Categories with Families (CwF) of semi-cubical types, with Pi-types and a universe.

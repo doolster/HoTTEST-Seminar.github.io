@@ -4,6 +4,6 @@ Speaker: Nima Rasekh
 School: MPI Bonn 
 Title: Algebraic Topology in an Elementary Higher Topos
 YouTube: https://www.youtube.com/watch?v=6fe7GjpSj6k
-Slides: Rasekh-2019-Feb-07-HoTTEST.pdf
+Slides: Rasekh-2019-02-07-HoTTEST.pdf
 Abstract: An elementary higher topos is a higher category which should sit at the intersection of three concepts: higher category theory, algebraic topology and homotopy type theory. The goal of this talk is to give concrete examples of these connections.
 In particular we show how every elementary higher topos has a natural number object, how this can be used to define truncations and how the existence of truncations implies the Blakers-Massey theorem.

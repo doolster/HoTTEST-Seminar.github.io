@@ -4,7 +4,7 @@ Speaker: Peter LeFanu Lumsdaine
 School: 
 Title: What are we thinking when we present a type theory? 
 YouTube: https://www.youtube.com/watch?v=kQe0knDuZqg
-Slides: Lumsdaine-2020-Jun-15-HoTTEST.pdf
+Slides: Lumsdaine-2020-06-15-HoTTEST.pdf
 Abstract: Presentations of dependent type theories, as traditionally written, are deceptively simple: a collection of rules specifying an inductively defined derivability relation on judgments (or some variation on such a setup).
 However, in writing these rules, we usually follow various guiding principles — or at least, we have these principles in mind, and depart from them only with good cause and extra care.  Some of these principles are (sometimes) explicitly stated: “all rules hold over an arbitrary ambient context”, for instance.  Other principles almost always remain implicit — “the rules are ordered, and each rule may make use of earlier-introduced constructions, but not later ones” — but become apparent through our reliance on them in later definitions and proofs.
 I will present a careful analysis of these implicit principles, and how they contribute to the well-behavedness properties we expect our type theories to enjoy.

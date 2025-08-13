@@ -4,5 +4,5 @@ Speaker: David Wärn
 School: 
 Title: Path spaces of pushouts via a zigzag construction
 YouTube: https://www.youtube.com/watch?v=Fn_n72tuCSk
-Slides: Warn-2023-Nov-16-HoTTEST.pdf
+Slides: Warn-2023-11-16-HoTTEST.pdf
 Abstract: Working in informal HoTT, we introduce the zigzag construction to describe path spaces of arbitrary pushouts as sequential colimits of pushouts. The construction is no more complicated than the James construction but much more general. By analysing this construction, we obtain direct proofs of the Blakers–Massey theorem, various results in combinatorial group theory, and the fact that any pushout of 0-types is a 1-type. The lattermost resolves an open problem in HoTT mentioned already in the HoTT book. While this talk will assume some familiarity with HoTT, the construction may be of interest to topologists more generally.

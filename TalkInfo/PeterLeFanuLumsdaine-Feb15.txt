@@ -4,7 +4,7 @@ Speaker: Peter LeFanu Lumsdaine
 School: Stockholm University
 Title: Inverse diagram models of type theory
 YouTube: https://www.youtube.com/watch?v=Td4UcFI76DM
-Slides: Lumsdaine-2018-Feb-15-HoTTEST.pdf
+Slides: Lumsdaine-2018-02-15-HoTTEST.pdf
 Abstract: Diagram models are a flexible tool for studying many logical systems: given a categorical model C and index category I, one hopes that the diagram category C I will again be a model.
 For the case of intensional type theory, this becomes a little tricky. Since most logical constructors (e.g. Σ-types, Id-types) are not provably strictly functorial, it is difficult to lift them from structure on C to structure in C I, for arbitrary I.
 However, in case I is an inverse category — roughly, something like the semi-simplicial category Δ I — this difficulty can be surmounted by taking the types of C I to be Reedy types, analogous to Reedy fibrations in homotopy theory.
