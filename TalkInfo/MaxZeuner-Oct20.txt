@@ -4,5 +4,5 @@ Speaker: Max Zeuner
 School: 
 Title: A univalent formalization of affine schemes
 YouTube: https://www.youtube.com/watch?v=nLP7GjL1Buc
-Slides: Zeuner-2022-Oct-20-HoTTEST.pdf
+Slides: Zeuner-2022-10-20-HoTTEST.pdf
 Abstract: Schemes are the corner stone of modern algebraic geometry and have been formalized in various proof assistants. However, the most prominent existing formalizations all follow the inherently non-constructive approach of Hartshorne's classic "Algebraic Geometry" textbook. Working in Cubical Agda, we want to give a constructive formalization of affine schemes in a univalent setting. We follow an approach due to Coquand, Lombardi and Schuster that uses a point-free description of the Zariski spectrum but otherwise proceeds by defining the structure sheaf on basic opens first and then lifting it to the whole spectrum. In this talk we will focus on the construction of the structure sheaf on basic opens as it is at this point that working in a univalent setting raises perhaps surprising issues while at the same time offering insightful solutions.

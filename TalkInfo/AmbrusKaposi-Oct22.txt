@@ -4,7 +4,7 @@ Speaker: Ambrus Kaposi
 School: Eötvös Loránd University
 Title: Quotient inductive-inductive types and higher friends
 YouTube: https://www.youtube.com/watch?v=a9_KjX1WM84
-Slides: Kaposi-2020-Oct-22-HoTTEST.pdf
+Slides: Kaposi-2020-10-22-HoTTEST.pdf
 Abstract: Quotient inductive-inductive types (QIITs) are generalisations of inductive types where we allow multiple sorts indexed over each other and we allow equality constructors. QIITs can also be seen as initial algebras for generalised algebraic theories.
 In this talk I will show a simple direct definition of QIITs, explain their categorical semantics and give a survey of the current results about existence of initial algebras.
 I will also describe two extensions: higher inductive-inductive types and higher order abstract syntax.

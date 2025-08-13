@@ -4,5 +4,5 @@ Speaker: Brandon Doherty
 School: 
 Title: Cubical models of (∞,1)-categories
 YouTube: https://www.youtube.com/watch?v=oouDvcwSVT8
-Slides: Doherty-2020-Jun-15-HoTTEST.pdf
+Slides: Doherty-2020-06-15-HoTTEST.pdf
 Abstract: We discuss the construction of a new model structure on the category of cubical sets with connections whose cofibrations are the monomorphisms and whose fibrant objects are defined by the right lifting property with respect to inner open boxes, the cubical analogue of inner horns. We also discuss the proof that this model structure is Quillen equivalent to the Joyal model structure on simplicial sets via the triangulation functor. This talk is based on joint work with Chris Kapulkin, Zachery Lindsey, and Christian Sattler, arXiv:2005.04853.

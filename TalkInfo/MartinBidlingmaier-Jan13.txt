@@ -4,6 +4,6 @@ Speaker: Martin Bidlingmaier
 School: 
 Title: The higher multiverse model
 YouTube: https://www.youtube.com/watch?v=bx25nca1u68
-Slides: Bidlingmaier-2022-Jan-13-HoTTEST.pdf
+Slides: Bidlingmaier-2022-01-13-HoTTEST.pdf
 Abstract: In categorical semantics, we are used to think of individual categories with suitable structure as models of type theory. For example, every locally cartesian closed (lcc) category constitutes a separate model of extenstional type theory, a separate mathematical universe. Instead, this talk is about 1-categorical and higher categorical multiverse models, which are models made up of all (small) models. Thus the idea is to think of the category of all categories with suitable structure as a model of type theory. For example, from this perspective, the category of all lcc categories is a model of extensional type theory, which contains as submodels each of the traditional models given by individual lcc categories.
 As in ordinary categorical semantics, there are coherence problems to be solved to make this precise. Here the multiverse approach allows the use of model categorical (in the sense of Quillen) constructions such as algebraically (co)fibrant objects, which are otherwise inapplicable. These constructions can be combined into a new solution of the 1-categorical coherence problem. With some caveats, the technique is also applicable to the category of lcc ∞-categories. Here I will explain how a fragment of intensional dependent type theory can be interpreted in the category of lcc ∞-categories.

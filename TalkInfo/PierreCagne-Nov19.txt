@@ -4,5 +4,5 @@ Speaker: Pierre Cagne
 School: Universitetet i Bergen
 Title: On the symmetries of the spheres in univalent foundations
 YouTube: https://www.youtube.com/watch?v=u8wuoq_MQz8
-Slides: Cagne-2020-Nov-19-HoTTEST.pdf
+Slides: Cagne-2020-11-19-HoTTEST.pdf
 Abstract: In this talk, I will present a joint work with Marc Bezem and Nicolai Kraus that explores the type of symmetries of the n-sphere (n&gt;0), i.e. the type Sn = Sn, in HoTT-UF. I will start by proving that S1=S1 is equivalent to S1+S1. From there, one can try to generalize the result in higher dimensions. I will treat the case n=2 in details and prove that S2=S2 has exactly two connected components, equivalent to one another, with explicit elements (through univalence) for each of the components. The shape of these components though is much more mysterious, but I will outline why we should not expect S2=S2 to be equivalent to S2+S2. From there, and if time permits, I will generalize further by induction on n, and show that Sn = Sn has exactly two connected components for higher n, and I will end on some insights about the shape of these components.

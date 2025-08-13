@@ -4,7 +4,7 @@ Speaker: Martín Hötzel Escardó
 School: University of Birmingham
 Title: Constructive mathematics in univalent type theory
 YouTube: https://www.youtube.com/watch?v=rM484kI7OAA
-Slides: Escardo-2018-Apr-26-HoTTEST.pdf
+Slides: Escardo-2018-04-26-HoTTEST.pdf
 Abstract: I want to share my experience of doing constructive mathematics in univalent type theory, compared to my previous experience in e.g. elementary-topos type theory (as in Lambek and Scott), Martin-Löf type theory, Bishop mathematics.
 In doing so, I want to compare the old topological view of types and functions in constructive mathematics with the new homotopical view of equality in type theory.
 There will be some new constructive theorems, too.

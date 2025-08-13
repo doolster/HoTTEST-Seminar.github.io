@@ -4,6 +4,6 @@ Speaker: Thierry Coquand
 School: Chalmers University
 Title: Sheaf models and constructive mathematics
 YouTube: https://www.youtube.com/watch?v=_H-CD4B8pLQ
-Slides: Coquand-2021-Jan-28-HoTTEST.pdf
+Slides: Coquand-2021-01-28-HoTTEST.pdf
 Abstract: In the first part of this talk, I will try to motivate why sheaf models are important for constructive mathematics on a specific example: the existence of the (separable) algebraic closure of a field.This is not trivial constructively since for an arbitrary field, it is in general not decidable if a given polynomial is irreducible or not.  One solution, going back to a short note of André Joyal "Les Théorèmes de Chevalley-Tarski et remarques sur l'algèbre constructive", is to use a suitable (effective) sheaf model in which we can build the algebraic closure. I will explain this model and how it can be used to compute with algebraic numbers.
 One would like to express such a model using the language of type theory, but this is problematic since the roots of a given polynomial cannot be expressed as a function of the coefficients, and we cannot use strong sum to express existence of roots. This motivates the second part of the talk, where I will present joint work with Fabian Ruch and Christian Sattler on how to extend such sheaf models to sheaf models of (univalent) type theory. One can then express and prove results such that the fact that any Gm-torsor is trivial and start to ask if one can force the line (algebraic closure) to be contractible.

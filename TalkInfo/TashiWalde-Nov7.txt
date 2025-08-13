@@ -4,7 +4,7 @@ Speaker: Tashi Walde
 School: 
 Title: An axiomatization of synthetic category theory
 YouTube: https://www.youtube.com/watch?v=fiKKDu2b22o
-Slides: Walde-2024-Nov-07-HoTTEST.pdf
+Slides: Walde-2024-11-07-HoTTEST.pdf
 Abstract: We propose an axiomatization of synthetic categories that allows to develop most of (infinity-)category theory from first principles, without relying on explicit set-theoretic models.
 We expect that such a synthetic theory can make it easier to practice (infinity-)category theory for non-experts and teach it to beginners; moreover, it lends itself to formalization in proof assistants.
 This talk is based on an ongoing long-term project with D.-C. Cisinski, B. Cnossen and K. Nguyen.

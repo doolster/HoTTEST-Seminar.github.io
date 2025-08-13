@@ -4,5 +4,5 @@ Speaker: Evan Cavallo
 School: 
 Title: Cubes with one connection and relative elegance
 YouTube: https://www.youtube.com/watch?v=CrcExHaMDfk
-Slides: Cavallo-2022-Nov-03-HoTTEST.pdf
+Slides: Cavallo-2022-11-03-HoTTEST.pdf
 Abstract: Given a cube category with cartesian structure (faces, degeneracies, diagonals, and permutations), we know that its category of presheaves supports (constructively!) both an interpretation of homotopy type theory and a compatible Quillen model structure. Here we consider the cube category with cartesian structure and one connection. I will present a proof that the model structure obtained for this cube category is Quillen equivalent to the Kan-Quillen model structure on simplicial sets. The obstacle to overcome is that this cube category is not a Reedy category: its morphisms do not factor into well-behaved "degeneracy" and "face" maps. We observe that it does, however, embed in a Reedy category in a nice way. We adapt the theory of so-called elegant Reedy categories to this relativized case, then use these results to prove the equivalence with simplicial sets. This is joint work with Christian Sattler.

@@ -178,7 +178,8 @@ for termID in termIDs:
                 line('th', 'Speaker')
                 line('th', 'Talk Information')
             for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
-                for talk in currentTerm[dateID]:
+                currentTerm[dateID].sort(key=lambda talk: talk.title)
+                for talk in currentTerm[dateID]: # Looping through all talks on a single day
                     with tag('tr'):
                         line('td', talk.date, klass='date')
                         with tag('td', klass='speaker'):

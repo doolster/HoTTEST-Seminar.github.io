@@ -4,7 +4,7 @@ Speaker: Raffael Stenzel
 School: Masaryk University 
 Title: Higher sites and their higher categorical logic
 YouTube: https://www.youtube.com/watch?v=hUJlK8XgZxQ
-Slides: Stenzel-2021-Nov-18-HoTTEST.pdf
+Slides: Stenzel-2021-11-18-HoTTEST.pdf
 Abstract: [In the following, read ``higher'' as ``(∞,1)-''.]
 It is a popular idiosyncrasy of higher toposes that, when defined in terms of Giraud-style axioms, a general representation result in terms of higher sheaf categories on a site appears to fail. Essentially, this discrepancy arises because ``sites'' here are implicitly understood to be higher categories equipped with proof-irrelevant (topo)logical data, while higher toposes are constructions within an intrinsically proof-relevant ambient world.
 In the first part of the talk, we use this intuition of ambient proof-relevance to further develop the characterization of higher toposes over a given higher base topos in terms of their associated left exact modalities (Appendix of [1], and [2]). We give a definition of higher sites respective a small higher base category C which expresses ``PreSh(C)-global localization'' in terms of ``C-indexed nullification'' with respect to an associated sheaf of ideals. In this context I will also mention how one can derive an associated notion of higher Lawvere-Tierney topology as well (which is work in progress).

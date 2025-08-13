@@ -4,7 +4,7 @@ Speaker: Jonas Frey
 School: Carnegie Mellon University
 Title: Characterizing clan-algebraic categories
 YouTube: https://www.youtube.com/watch?v=0SAQSx0vPmU
-Slides: Frey-2022-Feb-03-HoTTEST.pdf
+Slides: Frey-2022-02-03-HoTTEST.pdf
 Abstract: Clans provide a categorical notion of dependent algebraic theory that can be seen as syntax-free abstraction of Cartmell’s generalized algebraic theories and as such is closely related to concepts like contextual categories and categories with families.
 Viewed as algebraic theories, clans are equally expressive as finite-limit theories but contain more information: the same finite-limit theory can have representations by different clans, and in particular different clans can have the same category of Set-models. The additional information encoded in a clan T gives rise to a weak factorization system (E,F) on the locally finitely presentable category Mod(T) (first considered by Henry), from which the clan can be reconstructed up to Morita equivalence.
 In earlier work I conjectured a characterization of “clan-algebraic categories” -- i.e. lfp categories equipped with a wfs arising as models of a clan -- in terms of an exactness condition that generalizes an analogous characterization of categories of models of ordinary algebraic theories.

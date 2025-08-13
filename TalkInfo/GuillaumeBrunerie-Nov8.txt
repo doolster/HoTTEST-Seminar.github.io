@@ -4,6 +4,6 @@ Speaker: Guillaume Brunerie
 School: Stockholm University
 Title: Computer-generated proofs for the monoidal structure of the smash product
 YouTube: https://www.youtube.com/watch?v=JEUvWyd1mTk
-Slides: Brunerie-2018-Nov-08-HoTTEST.pdf
+Slides: Brunerie-2018-11-08-HoTTEST.pdf
 Abstract: The smash product is a very useful operation in algebraic topology and  it can be defined in HoTT as a certain higher inductive type. One of  its basic properties is the fact that it is a (1-coherent) monoidal  product on pointed types, but proving this fact turns out to be very  technical.
 I will present some work in progress aiming at proving it via some  form of higher dimensional rewriting and meta-programming. The idea is  to write an (untrusted) external program to generate a formal proof,  which can then be formally checked by a proof assistant.
