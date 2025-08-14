@@ -193,10 +193,10 @@ for termID in termIDs:
                                 with tag('span', klass='icons'):
                                     if talk.ytlink != '':
                                         with tag('a', href=talk.ytlink):
-                                            doc.stag('img', src='images/youtube.webp', alt='YouTube video')
+                                            doc.stag('img', src='images/youtube.webp', width='20', alt='YouTube video')
                                     if talk.slides != '':
                                         with tag('a', href='hottestfiles/' + talk.slides):
-                                            doc.stag('img', src='images/pdf.png', alt='Slides')
+                                            doc.stag('img', src='images/pdf.png', width='20', alt='Slides')
                             with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
 
