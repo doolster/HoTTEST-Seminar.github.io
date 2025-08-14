@@ -122,16 +122,17 @@ docHead = """
 <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
 </head>
 <body>
+<div id="container">
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
+<div id="title">
     <div style="width: 300px;"></div>
     <h1 style="flex: 1;text-align: center; margin: 0;">HoTTEST</h1>
-    <img src="images/Universal Cover.png" alt="Universal Cover of S^1" style="width: 250px;">
+    <img src="images/universal-cover.png" alt="Universal Cover of S^1" style="width: 250px;">
 </div>
 <hr style="border: 1px solid #888ebe;">
 <p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
-    Homotopy Type Theory Electronic Seminar Talks (HoTTEST) is a series of research talks by leading experts in Homotopy Type Theory. 
-    The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>. 
+    Homotopy Type Theory Electronic Seminar Talks (HoTTEST) is a series of research talks by leading experts in Homotopy Type Theory.
+    The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>.
     To attend a talk, please follow the instructions below.</p>
 <hr style="border: 1px solid #888ebe;">
 
@@ -142,9 +143,9 @@ docHead = """
     <li><strong>Google calendar: </strong><a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto">Seminar Calendar</a>.</li>
     <li><strong>YouTube channel: </strong><a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a>.</li>
     <li><strong>Organizers: </strong>
-        <a href="https://www.cs.cmu.edu/&#126;cangiuli/">Carlo Angiuli</a>, 
-        <a href="http://jdc.math.uwo.ca/">Dan Christensen</a>, 
-        <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>, and 
+        <a href="https://www.carloangiuli.com/">Carlo Angiuli</a>,
+        <a href="http://jdc.math.uwo.ca/">Dan Christensen</a>,
+        <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>, and
         <a href="https://emilyriehl.github.io/">Emily Riehl</a>.</li>
     <li><strong>Website by: </strong><a href="https://doolster.github.io/">Zack Dooley</a></li>
 </ul>
@@ -188,20 +189,21 @@ for termID in termIDs:
                                 line('div', talk.school, klass='school')
                         with tag('td'):
                             with tag('p', klass='talk-title'):
-                                text(talk.title)
-                                doc.asis('&nbsp;')
-                                if talk.ytlink != '':
-                                    with tag('a', href=talk.ytlink):
-                                        doc.stag('img', src='images/youtube.webp', klass='icon', alt='YouTube video')
-                                if talk.slides != '':
-                                    with tag('a', href='hottestfiles/' + talk.slides):
-                                        doc.stag('img', src='images/pdf.png', klass='icon', alt='Slides')
+                                text(talk.title, ' ')
+                                with tag('span', klass='icons'):
+                                    if talk.ytlink != '':
+                                        with tag('a', href=talk.ytlink):
+                                            doc.stag('img', src='images/youtube.webp', alt='YouTube video')
+                                    if talk.slides != '':
+                                        with tag('a', href='hottestfiles/' + talk.slides):
+                                            doc.stag('img', src='images/pdf.png', alt='Slides')
                             with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
 
 docFoot = """
 <script src="js/control.js"></script>
 
+</div>
 </body>
 </html>
 """
