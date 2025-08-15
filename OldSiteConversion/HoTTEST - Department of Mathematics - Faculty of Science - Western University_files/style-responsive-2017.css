@@ -1,0 +1,5996 @@
+/* Last update: Changed the link colours to make them AAA compliant with WCAG. Completed August 21, 2020. */
+/* Update: Added updates for triple-slider on July 15, 2016 */
+/* Update: Fixes to help Western meet AODA Level 2.0 AA requirements Completed August 13, 2013 */
+/******** END OF TEXT ************/
+/* CSS TABLE OF CONTENTS 1. RESET 2. TEXT 3. 960 4. SITE STYLES i) ALL PAGES ii) MEGA-NAV + MENU iii) FLEXSLIDER iv) TWITTER v) SPRYTABS vi) IE 5. PRINT 6. MOBILE 
+/* `XHTML, HTML4, HTML5 Reset ----------------------------------------------------------------------------------------------------*/
+ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+	 border: 0;
+	 margin: 0;
+	 padding: 0 
+}
+ html, body {
+	 background-color: #561b8d;
+}
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	 display: block 
+}
+ b, strong {
+	 font-weight: 700 
+}
+ img {
+	 color: transparent;
+	 vertical-align: middle;
+	 -ms-interpolation-mode: bicubic 
+}
+ ol, ul {
+	 list-style: none 
+}
+ li {
+	 display: list-item 
+}
+ table {
+	 border-collapse: collapse;
+	 border-spacing: 0 
+}
+/* Responsive styling applied to form inputs */
+ #required-requestor, #required-dept, #required-email, #required-title, #required-url, #required-managers, #required-description {
+	 margin-right: 10px;
+	 border: 1px solid #ccc;
+	 background: #f6f6f6;
+	 padding: 4px;
+	 font-size: medium;
+	 width: 96%;
+}
+ th, td, caption {
+	 font-weight: 400;
+	 vertical-align: top;
+	 text-align: left 
+}
+ q {
+	 quotes: none 
+}
+ q:before, q:after {
+	 content: none 
+}
+ sub, sup {
+	 line-height: 0;
+	 position: relative;
+	 vertical-align: baseline 
+}
+ sub {
+	 bottom: -.25em 
+}
+ sup {
+	 top: -.5em 
+}
+ svg {
+	 overflow: hidden 
+}
+/***** END OF RESET ***********/
+/******** START OF TEXT **********/
+ body {
+	 font: 14px/1.5 'Roboto', sans-serif 
+}
+ pre, code {
+	 font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace 
+}
+ hr {
+	 border: 0 #ccc solid;
+	 border-top-width: 1px;
+	 clear: both;
+	 height: 0 
+}
+ li {
+	 margin-left: 30px 
+}
+ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
+	 margin-bottom: 20px 
+}
+/************ END OF TEXT **********/
+/*********** START OF 960 ************/
+/* 960 Grid System ~ Core CSS. Learn more ~ https://960.gs/ Licensed under GPL and MIT. */
+ body {
+	 margin: 0 auto 
+}
+ .container_16, .container_12 {
+	 width: 100%;
+	 margin-left: 4%;
+	 margin-right: 4% 
+}
+ .grid_16, .grid_15, .grid_14, .grid_13, .grid_12, .grid_11, .grid_10, .grid_9, .grid_8, .grid_7, .grid_6, .grid_5, .grid_4, .grid_3, .grid_2, .grid_1 {
+	 display: inline;
+	 float: left;
+	 margin-left: 1%;
+	 margin-right: 1% 
+}
+ .container_16 .grid_4, .container_12 .grid_3 {
+	 width: 23% 
+}
+ .container_16 .grid_8, .container_12 .grid_6 {
+	 width: 48% 
+}
+ .container_16 .grid_12, .container_12 .grid_9 {
+	 width: calc(100% - 290px);
+}
+ .container_16 .grid_16, .container_12 .grid_12 {
+	 width: 100% 
+}
+ .alpha {
+	 margin-left: 0 
+}
+ .omega {
+	 margin-right: 0 
+}
+ .container_12 .grid_1 {
+	 width: 6.333% 
+}
+ .container_12 .grid_2 {
+	 width: 16.666%;
+	 text-align: left;
+}
+ .container_12 .grid_4 {
+	 width: 31.333% 
+}
+ .container_12 .grid_5 {
+	 width: 37.666% 
+}
+ .container_12 .grid_7 {
+	 width: 56.333% 
+}
+ .container_12 .grid_8 {
+	 width: 64.666% 
+}
+ .container_12 .grid_10 {
+	 width: 81.333% 
+}
+ .container_12 .grid_11 {
+	 width: 89.666% 
+}
+ .container_16 .grid_1 {
+	 width: 4.25% 
+}
+ .container_16 .grid_2 {
+	 width: 10.5% 
+}
+ .container_16 .grid_3 {
+	 width: 16.75% 
+}
+ .container_16 .grid_5 {
+	 width: 29.25% 
+}
+ .container_16 .grid_6 {
+	 width: 35.5% 
+}
+ .container_16 .grid_7 {
+	 width: 41.75% 
+}
+ .container_16 .grid_9 {
+	 width: 54.25% 
+}
+ .container_16 .grid_10 {
+	 width: 60.5% 
+}
+ .container_16 .grid_11 {
+	 width: 66.75% 
+}
+ .container_16 .grid_13 {
+	 width: 79.25% 
+}
+ .container_16 .grid_14 {
+	 width: 85.5% 
+}
+ .container_16 .grid_15 {
+	 width: 91.75% 
+}
+ .container_16 .prefix_4, .container_12 .prefix_3 {
+	 padding-left: 25% 
+}
+ .container_16 .prefix_8, .container_12 .prefix_6 {
+	 padding-left: 50% 
+}
+ .container_16 .prefix_12, .container_12 .prefix_9 {
+	 padding-left: 75% 
+}
+ .container_12 .prefix_1 {
+	 padding-left: 8.333% 
+}
+ .container_12 .prefix_2 {
+	 padding-left: 16.666% 
+}
+ .container_12 .prefix_4 {
+	 padding-left: 33.333% 
+}
+ .container_12 .prefix_5 {
+	 padding-left: 41.666% 
+}
+ .container_12 .prefix_7 {
+	 padding-left: 58.333% 
+}
+ .container_12 .prefix_8 {
+	 padding-left: 66.666% 
+}
+ .container_12 .prefix_10 {
+	 padding-left: 83.333% 
+}
+ .container_12 .prefix_11 {
+	 padding-left: 91.666% 
+}
+ .container_16 .prefix_1 {
+	 padding-left: 6.25% 
+}
+ .container_16 .prefix_2 {
+	 padding-left: 12.5% 
+}
+ .container_16 .prefix_3 {
+	 padding-left: 18.75% 
+}
+ .container_16 .prefix_5 {
+	 padding-left: 31.25% 
+}
+ .container_16 .prefix_6 {
+	 padding-left: 37.5% 
+}
+ .container_16 .prefix_7 {
+	 padding-left: 43.75% 
+}
+ .container_16 .prefix_9 {
+	 padding-left: 56.25% 
+}
+ .container_16 .prefix_10 {
+	 padding-left: 62.5% 
+}
+ .container_16 .prefix_11 {
+	 padding-left: 68.75% 
+}
+ .container_16 .prefix_13 {
+	 padding-left: 81.25% 
+}
+ .container_16 .prefix_14 {
+	 padding-left: 87.5% 
+}
+ .container_16 .prefix_15 {
+	 padding-left: 93.75% 
+}
+ .container_16 .suffix_4, .container_12 .suffix_3 {
+	 padding-right: 25% 
+}
+ .container_16 .suffix_8, .container_12 .suffix_6 {
+	 padding-right: 50% 
+}
+ .container_16 .suffix_12, .container_12 .suffix_9 {
+	 padding-right: 75% 
+}
+ .container_12 .suffix_1 {
+	 padding-right: 8.333% 
+}
+ .container_12 .suffix_2 {
+	 padding-right: 16.666% 
+}
+ .container_12 .suffix_4 {
+	 padding-right: 33.333% 
+}
+ .container_12 .suffix_5 {
+	 padding-right: 41.666% 
+}
+ .container_12 .suffix_7 {
+	 padding-right: 58.333% 
+}
+ .container_12 .suffix_8 {
+	 padding-right: 66.666% 
+}
+ .container_12 .suffix_10 {
+	 padding-right: 83.333% 
+}
+ .container_12 .suffix_11 {
+	 padding-right: 91.666% 
+}
+ .container_16 .suffix_1 {
+	 padding-right: 6.25% 
+}
+ .container_16 .suffix_2 {
+	 padding-right: 16.5% 
+}
+ .container_16 .suffix_3 {
+	 padding-right: 18.75% 
+}
+ .container_16 .suffix_5 {
+	 padding-right: 31.25% 
+}
+ .container_16 .suffix_6 {
+	 padding-right: 37.5% 
+}
+ .container_16 .suffix_7 {
+	 padding-right: 43.75% 
+}
+ .container_16 .suffix_9 {
+	 padding-right: 56.25% 
+}
+ .container_16 .suffix_10 {
+	 padding-right: 62.5% 
+}
+ .container_16 .suffix_11 {
+	 padding-right: 68.75% 
+}
+ .container_16 .suffix_13 {
+	 padding-right: 81.25% 
+}
+ .container_16 .suffix_14 {
+	 padding-right: 87.5% 
+}
+ .container_16 .suffix_15 {
+	 padding-right: 93.75% 
+}
+ html body * dd.clear, html body * li.clear, html body * div.clear, html body * span.clear {
+	 background: none;
+	 border: 0;
+	 float: none;
+	 font-size: 0;
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	 width: 0 
+}
+ html body * dd.clear, html body * li.clear, html body * div.clear, html body * span.clear, .clearfix:after {
+	 clear: both;
+	 visibility: hidden;
+	 height: 0 
+}
+ html body * dd.clear, html body * li.clear, html body * div.clear, html body * span.clear, .clearfix:after, .clearfix {
+	 display: block 
+}
+ .clearfix {
+	 display: inline-block 
+}
+ * html .clearfix {
+	 height: 1% 
+}
+ .container_12 .grid_9 {
+	 vertical-align: top;
+	 margin-right: 0;
+}
+ .container_12 .grid_12 {
+	 margin: 0 auto;
+	 text-align: left;
+}
+ #content.grid_12 {
+	 margin-left: 10px;
+	 max-width:1160px;
+}
+/************ SITE STYLES BEGIN HERE **************/
+/************* ALL PAGES ********************/
+ body {
+	 background: #eee;
+	/* background-image: none;
+	 background-repeat: no-repeat;
+	 background-position: 50% 0;
+	 */
+	 color: #444;
+	 font-size: 100%;
+	 height: 100%;
+}
+ .container_12, .container_16, .container_24 {
+	 background-color: #fff;
+	 background-repeat: repeat-y;
+	 margin: 0px auto;
+	 max-width: 100%;
+	 padding: 0;
+	 min-height: 100%;
+}
+ p {
+	 text-align: left;
+}
+ h1 {
+	 color: #561b8d;
+	 font-size: 2em;
+	 font-weight: 600;
+	 line-height: 1.2em;
+	 font-family: 'Rubik', sans-serif;
+	 padding: 0;
+	 margin: 5px 0 15px 0px;
+	 clear: both;
+}
+ h2 {
+	 color: #561b8d;
+	 font-size: 1.5em;
+	 font-family: 'Rubik', sans-serif;
+	 margin-bottom: 10px;
+	 line-height: 1.4em;
+}
+ h3 {
+	 color: #561b8d;
+	 font-size: 1.25em;
+	 font-family: 'Rubik', sans-serif;
+	 letter-spacing: 0.3px;
+	 margin: 5px 0 10px 0px;
+	 padding: 5px 5px 5px 0px;
+	 line-height: 1.4em;
+}
+ h4 {
+	 color: #561b8d;
+	 font-size: 1em;
+	 margin-bottom: 5px;
+	 font-weight: 400;
+}
+ a {
+	 color: #4502b1;
+	/* text-decoration: none;
+	 */
+	 text-decoration-color: #cfd6e2;
+}
+ a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ ul, li {
+	 /* line-height: 21px; */
+	 line-height: 1.5rem; /* Added to overcome fixed line-height issues in Siteimprove (MH 2022-01-04) */
+	 margin: 0;
+	 color: #222;
+}
+ ol {
+	 line-height: 21px;
+	 margin: 0;
+	 margin-left: 4%;
+	 color: #222;
+	 list-style-type: decimal;
+}
+ hr {
+	 margin: 10px auto;
+	 padding: 0px;
+	 width: 100%;
+}
+ .numberedlist {
+	 margin: 0px 0px 20px 60px;
+	 word-wrap: break-word;
+}
+ img {
+	 border: 0;
+	 max-width: 100%;
+}
+ img.image.staff-headshot-fix {
+	 width: 160px;
+}
+ .squarelist {
+	 list-style-type: square;
+	 margin: 0px 0px 20px 60px;
+}
+ .squarelist > li {
+	 line-height: 1.5;
+	 color: #444;
+}
+ .squarelist ul li {
+	 list-style-type: disc;
+	 margin: 0px 0px 0px 30px;
+}
+ .numberedlist ol li {
+	 list-style-type: lower-roman;
+	 margin: 0px 0px 0px 30px;
+}
+ .image {
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+}
+ .breadcrumbs {
+	 color: #777;
+	 text-align: left;
+	 margin: 6px 0 10px 10px;
+	 float: left;
+	 clear: both;
+	 display: block;
+	 line-height: 15px;
+}
+ .breadcrumbs li {
+	 background: url(https://www.uwo.ca/web_standards/img/icn/paper-transp-blue.png) no-repeat scroll right 1px;
+	 color: #666666;
+	 display: block;
+	 float: left;
+	 height: 15px;
+	 line-height: 15px;
+	 padding-right: 18px;
+	 font-size: 80%;
+}
+ .breadcrumbs li.last {
+	 background: none repeat scroll 0 0 transparent;
+	 margin-right: 0;
+	 padding-right: 0;
+}
+ .breadcrumbs li a {
+	 color: #333;
+	 display: block;
+	 float: left;
+	 line-height: 15px;
+	 text-decoration: none;
+}
+ .breadcrumbs li a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ #ribbon {
+	 padding: 2px;
+	 background-color: #4e2583;
+	 margin-bottom: 50px;
+}
+ #ribbon-inner {
+	 margin: 0 auto;
+	 padding-left: 20px;
+	 max-width: 1170px;
+}
+ #ribbon-inner ul {
+	 margin: 0 auto;
+}
+ #ribbon-inner li {
+	 display: block;
+	 float: left;
+	 margin-top: 8px;
+	 padding: 0;
+	 color: #dcdcdc;
+}
+ #ribbon-inner li.up {
+	 display: block;
+	 float: left;
+	 margin-top: 6px;
+	 padding: 0px 6px 0px 6px;
+	 text-shadow: 1px 1px 1px #fff;
+	 color: #999;
+}
+ #ribbon-inner li a {
+	 color: #4502b1;
+	 display: inline-block;
+	 position: relative;
+	 text-decoration: none;
+	 text-shadow: 1px 1px 1px #fff;
+	 text-transform: capitalize;
+	 font-weight: bold;
+}
+ #ribbon-inner li a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ .grid_3 li {
+	 margin: 0;
+	 padding: 7px 0;
+	 line-height: 1.5em; /* increased from 1.4 for AODA - JJ */
+	 color: #333;
+}
+/* Updated from HTML file */
+ #featurestory {
+	 border-top: 1px solid #bbb;
+	 padding-top: 10px;
+}
+ #featurestory .datestamp {
+	 font-weight: normal;
+	 color: #666;
+	 font-size: 90%;
+}
+ #tweet {
+	 font-size: 80%;
+}
+ #footer {
+	 background: #4F2683;
+	 margin-top: 0;
+	 padding: 10px 0;
+	 padding-bottom: 20px;
+	 font-size: 80%;
+	 width: 100%;
+	 margin: 0;
+	 border-top: 10px solid #cccccc;
+}
+ #footer p {
+	 color: #fff;
+	 margin: 0;
+	 padding: 0;
+}
+ #footer a {
+	 color: #fff;
+}
+ #footer a:hover {
+	 color: #fff;
+}
+ .footer-logos {
+	 float: none;
+	 margin-top: 5px;
+	 margin-left: 10px;
+}
+ .copyright {
+	 font-weight: bold;
+}
+ .footernavtitles {
+	 color: #fff;
+	 font-weight: bold;
+}
+ div.panelbck {
+	 background: #eee;
+	 -webkit-box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+	 -moz-box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+	 box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+ div.panel {
+	 padding: 10px 0px 30px 0px;
+	 margin: 0px auto;
+	 text-align: left;
+	 height: 130px;
+	 display: none;
+	 width: 1170px;
+}
+ div.panel ul {
+	 float: right;
+	 margin-top: 0px;
+	 margin-left: 0px;
+	 border-right: dotted #ccc 1px;
+}
+ div.panel li a {
+	 line-height: 10px;
+	 padding: 0 20px;
+	 color: #4502b1;
+	 margin-left: 5px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/icn/paper-transp.png);
+	 background-repeat: no-repeat;
+	 background-position: 6px 0px;
+}
+ div.panel li a:hover {
+	 color: #005a96;
+	 text-decoration: underline;
+}
+ #selected {
+	 font-weight: bold;
+	 border: 0;
+	 padding-top: 3px;
+}
+ div.calendarcontainer {
+	 width: 23%;
+	 display: inline;
+	 float: left;
+	 border-left: 1px solid #eee;
+	 border-right: 1px solid #eee;
+	 padding-left: 20px;
+	 margin-left: 10px;
+	 margin-right: 20px;
+	 padding-right: 20px;
+	 margin-bottom: 13px;
+}
+ div.calendarcontainer li {
+	 color: #333;
+	 line-height: 1.4em;
+	 margin: 0;
+	 padding: 7px 0;
+}
+ div.calendarcontainer li a {
+	 color: #4502b1;
+	 text-decoration: none;
+}
+ div.calendarcontainer li a:hover {
+	 color: #005a96;
+}
+ #random-fact {
+	 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+	 border: 1px solid #A5A5A5;
+	 box-shadow: 1px 1px 1px #fff, 0 0 6px #B0B0B0 inset;
+	 font-family: 'Roboto', sans-serif;
+	 padding: 15px;
+	 position: relative;
+	 margin-left: 0px;
+}
+ .grey-box {
+	 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+	 border: 1px solid #A5A5A5;
+	 box-shadow: 1px 1px 1px #fff, 0 0 6px #B0B0B0 inset;
+	 font-family: 'Roboto', sans-serif;
+	 padding: 15px;
+	 position: relative;
+	 margin-left: 0px;
+	 margin-bottom: 10px;
+}
+ .grey-box li {
+	 margin-left: 15px;
+}
+ #grey-bg {
+	 background-color: #F0F0F0;
+	/* background:url(http://communications.uwo.ca/comms-test/template2/img/footer-bg.jpg) 100% 10% no-repeat;
+	 border: 0 #ccc solid;
+	 border-top-width: 1px;
+	 */
+}
+ .connect {
+	 text-align: left;
+	 margin-top: 26px;
+	 margin-bottom: 5px;
+	 margin-left: 1%;
+}
+ .title-bar-purple {
+	 padding: 7px 0 7px 10px;
+	 text-transform: uppercase;
+	 border-bottom: 1px #bbb solid;
+	 color: #fff;
+	 background: #4e2583;
+}
+ .title-bar-grey {
+	 padding-bottom: 5px;
+	 width: 100%;
+	 margin-bottom: 15px;
+	 border-bottom: 3px solid #cccccc;
+}
+ .calendar-title {
+	 background: #eee;
+	 border-bottom: 1px #bbb solid;
+	 text-transform: uppercase;
+	 margin-top: 1px;
+	 padding: 8px 0 4px 12px;
+}
+ .faculty-title {
+	 margin: 0;
+	 padding: 10px 5px;
+	 background: #efefef;
+	 border: 1px solid #ccc;
+	 border-bottom: none;
+}
+ #flipjar {
+	 max-width: 1170px;
+	 margin: 0 auto;
+}
+ .flip {
+	 float: right;
+	 background-image: url("https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png");
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 margin-top: 2px;
+	 border-top: 0 solid #521e82;
+	 padding-bottom: 12px;
+	 cursor: pointer;
+}
+ .flip:hover {
+	 transition: border-top-width 0.2s linear 0s;
+	 -moz-transition: border-top-width 0.2s linear 0s;
+	 -webkit-transition: border-top-width 0.2s linear 0s;
+	 -o-transition: border-top-width 0.2s linear 0s;
+	 -ms-transition: border-top-width 0.2s linear 0s;
+	 border-top-width: 5px;
+}
+ a.homelink {
+	 float: right;
+	 padding: 7px 6px;
+	 font-weight: 400;
+}
+ div.lists {
+	 float: right;
+	 margin-top: 50px;
+}
+ .newslist li {
+	 border-top: 1px solid #ddd;
+	 padding: 7px;
+	 padding-left: 7px;
+	 background: transparent;
+	 margin-bottom: 5px;
+}
+ .newslist li a {
+	 color: #4502b1;
+}
+ .newslist li a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+/* INFO TEMPLATE */
+ .social-icon {
+	 float: left;
+	 margin-right: 7px;
+	 margin-top: 0px;
+	 background: none;
+	 width: 32px;
+}
+ #masthead {
+	 max-width: 1170px;
+	 margin: 0 auto;
+	 min-height: 90px;
+}
+ #flickr {
+	 margin: 0 25%;
+}
+/* EMERGENCY CONTROLS */
+ #alert {
+	 background: #f00505;
+	 border-bottom: 2px solid #ccc;
+	 border-top: 2px solid #e1bf04;
+	 padding: 11px 0;
+	 margin-bottom: 15px;
+}
+ #alert-inner {
+	 color: #fff;
+	 margin: auto;
+	 max-width: 960px;
+	 text-align: center;
+}
+ #alert-inner a {
+	 color: #fff;
+	 text-decoration: underline;
+}
+ #warning {
+	 background: #ffd800;
+	 border-bottom: 2px solid #ccc;
+	 border-top: 2px solid #d6b500;
+	 padding: 11px 0;
+	 margin-bottom: 15px;
+}
+ #warning-inner {
+	 color: #000;
+	 margin: auto;
+	 max-width: 960px;
+	 text-align: center;
+}
+ #warning-inner a {
+	 color: #000;
+	 text-decoration: underline;
+}
+/* FORM CONTROLS */
+ .entry-rbn {
+	 border: 1px solid #fff;
+	 padding: 4px;
+	 color: #666;
+	 background-color: rgba(255, 255, 255, .6);
+	 margin-left: 2px;
+	 margin-right: 2px;
+	 width: 90px;
+}
+ .entry-rbn-long {
+	 border: 1px solid #fff;
+	 padding: 4px;
+	 color: #666;
+	 background-color: rgba(255, 255, 255, .6);
+	 margin-left: 2px;
+	 margin-right: 2px;
+	 width: 194px;
+}
+.ribboninputcontainer .formbtn-rbn {
+	 background: #4f2d82;
+	 border: 1px solid #4f2d82;
+	 color: #fff !important;
+	 padding: 4px 10px;
+	 margin-left: 2px;
+	 margin-right: 2px;
+	 cursor: pointer;
+}
+ .formcontrol .entry, textfield {
+	 border: 1px solid #fff;
+	 padding: 4px;
+	 color: #666;
+	 background-color: rgba(255, 255, 255, .6);
+}
+ .formcontrol .formbtn {
+	 background: #4f2d82;
+	 border: 1px solid #4f2d82;
+	 color: #fff;
+	 padding: 4px 10px;
+}
+/* Gulnara updates*/
+ #left-sidebar {
+	 float: left;
+	 margin: 5px 10px;
+	 position: relative;
+	 width: 245px;
+}
+/* Alternative id for left-sidebar */
+ #left-sidebar-mobile {
+	 float: left;
+	 margin: 5px 10px;
+	 position: relative;
+	 width: 245px;
+}
+/* End alternative id for left-sidebar */
+ #leftnav {
+	 border-top: 1px dotted #E1E1E1;
+	 margin-bottom: 20px;
+}
+ #leftnav ul {
+	 margin-left: 0;
+}
+ #leftnav li {
+	 background: none repeat scroll 0 0 transparent;
+	 border-bottom: 1px dotted #E1E1E1;
+	 margin: 0;
+	 padding: 0;
+}
+ #leftnav li.current {
+	 background-color: #fff;
+	 border-top: 1px dotted #E1E1E1;
+	 border-bottom: 1px dotted #E1E1E1;
+	 color: #872c01;
+	 font-weight: 500;
+	 margin: -1px 0;
+}
+ #leftnav a {
+	 color: #4502b1;
+	 display: block;
+	 font-size: 110%;
+	 letter-spacing: 0.7px;
+	 padding: 8px 10px;
+	 text-decoration: none;
+}
+ #leftnav a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ #leftnav a.selected {
+	 background-color: #fff;
+	 border-top: 1px dotted #E1E1E1;
+	 border-bottom: 1px dotted #E1E1E1;
+	 color: #028feb;
+	 font-weight: 500;
+	 margin: -1px 0;
+}
+ #leftnav a.expanded {
+	 font-size: 90%;
+	 border-width: 1px 0;
+	 color: #4502b1;
+	 font-weight: 400;
+	 margin: -1px 0;
+}
+ #leftnav a.expanded {
+	 margin: -1px 0 8px;
+}
+ #leftnav a.selected.expanded {
+	 color: #4502b1;
+}
+ #leftnav a span {
+	 color: #999999;
+	 display: block;
+	 text-transform: uppercase;
+}
+ #leftnav a.selected span {
+	 color: #666666;
+}
+ #leftnav ul ul {
+	 margin: 0 0 5px 14px;
+}
+ #leftnav li li {
+	 border: medium none;
+	 margin: 0;
+	 padding: 0;
+}
+ #leftnav li li a {
+	 color: #4502b1;
+	 display: block;
+	 font-size: 90%;
+	 padding: 4px 10px;
+}
+ #leftnav li li a:hover {
+	 background: none repeat scroll 0 0 transparent;
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ #leftnav li li a.selected, #leftnav li li a.expanded {
+	 background: none repeat scroll 0 0 transparent;
+	 border: medium none;
+	 font-size: 90%;
+	 color: #807f83;
+	 font-weight: 400;
+	 margin: 0;
+}
+ #leftnav li li a.expanded {
+	 color: #4502b1;
+	 margin: 0;
+}
+ #leftnav li li a.selected.expanded {
+	 margin: 0;
+}
+ #leftnav ul ul ul {
+	 margin-bottom: 0;
+}
+ #leftnav li li li {
+	 font-size: 12px;
+	 line-height: 17px;
+}
+/* Adding left sidebar id for mobile views */
+ #leftnav-mobile {
+	 border-top: 1px dotted #E1E1E1;
+	 margin-bottom: 20px;
+}
+ #leftnav-mobile ul {
+	 margin-left: 0;
+}
+ #leftnav-mobile li {
+	 background: none repeat scroll 0 0 transparent;
+	 border-bottom: 1px dotted #E1E1E1;
+	 margin: 0;
+	 padding: 0;
+}
+ #leftnav-mobile li.current {
+	 background-color: #fff;
+	 border-top: 1px dotted #E1E1E1;
+	 border-bottom: 1px dotted #E1E1E1;
+	 color: #872c01;
+	 font-weight: 500;
+	 margin: -1px 0;
+}
+ #leftnav-mobile a {
+	 color: #4502b1;
+	 display: block;
+	 font-size: 110%;
+	 letter-spacing: 0.7px;
+	 padding: 8px 10px;
+	 text-decoration: none;
+}
+ #leftnav-mobile a:hover {
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ #leftnav-mobile a.selected {
+	 background-color: #fff;
+	 border-top: 1px dotted #E1E1E1;
+	 border-bottom: 1px dotted #E1E1E1;
+	 color: #028feb;
+	 font-weight: 500;
+	 margin: -1px 0;
+}
+ #leftnav-mobile a.expanded {
+	 font-size: 90%;
+	 border-width: 1px 0;
+	 color: #4502b1;
+	 font-weight: 400;
+	 margin: -1px 0;
+}
+ #leftnav-mobile a.expanded {
+	 margin: -1px 0 8px;
+}
+ #leftnav-mobile a.selected.expanded {
+	 color: #4502b1;
+}
+ #leftnav-mobile a span {
+	 color: #999999;
+	 display: block;
+	 text-transform: uppercase;
+}
+ #leftnav-mobile a.selected span {
+	 color: #666666;
+}
+ #leftnav-mobile ul ul {
+	 margin: 0 0 5px 14px;
+}
+ #leftnav-mobile li li {
+	 border: medium none;
+	 margin: 0;
+	 padding: 0;
+}
+ #leftnav-mobile li li a {
+	 color: #4502b1;
+	 display: block;
+	 font-size: 90%;
+	 padding: 4px 10px;
+}
+ #leftnav-mobile li li a:hover {
+	 background: none repeat scroll 0 0 transparent;
+	 color: #4502b1;
+	 text-decoration: underline;
+}
+ #leftnav-mobile li li a.selected, #leftnav-mobile li li a.expanded {
+	 background: none repeat scroll 0 0 transparent;
+	 border: medium none;
+	 font-size: 90%;
+	 color: #807f83;
+	 font-weight: 400;
+	 margin: 0;
+}
+ #leftnav-mobile li li a.expanded {
+	 color: #4502b1;
+	 margin: 0;
+}
+ #leftnav-mobile li li a.selected.expanded {
+	 margin: 0;
+}
+ #leftnav-mobile ul ul ul {
+	 margin-bottom: 0;
+}
+ #leftnav-mobile li li li {
+	 font-size: 12px;
+	 line-height: 17px;
+}
+/* End left sidebar id for mobile views */
+ #sidebar {
+	 background: none repeat scroll 0 0 #efefef;
+	 border: 1px solid #ddd;
+	 padding: 10px;
+	 position: relative;
+	 width: 245px;
+	 vertical-align: top;
+	 margin-left: 10px;
+	 margin-right: 0;
+	 margin-top: 5px;
+	 margin-bottom: 8px;
+}
+ .sidebar-title {
+	 border-bottom: 3px solid #561b8d;
+	 margin: 0px 0px 10px 0px;
+}
+ #sidebar li {
+	 color: #333;
+	 line-height: 21px;
+}
+/* 2017 CLASSES */
+ .caption-wrapper {
+	 position: absolute;
+	 bottom: 13px;
+	 width: 100%;
+	 left: 0;
+	 background-color: rgba(0, 0, 0, 1);
+}
+ .caption-wrapper-right {
+	 position: absolute;
+	 bottom: 13px;
+	 width: 45%;
+	 right: 0;
+	 background-color: rgba(0, 0, 0, .7);
+}
+ .caption-wrapper-left {
+	 position: absolute;
+	 bottom: 13px;
+	 width: 45%;
+	 left: 0;
+	 background-color: rgba(0, 0, 0, .7);
+}
+ p.photodescription {
+	 padding: 5px;
+	 color: #fff;
+	 margin: 0 0 0 5px;
+}
+ .content-bg {
+	 max-width: 100%;
+	 background-image: url(../img/bg-texture.png);
+	 background-repeat: repeat;
+}
+ .main-content {
+	 max-width: 1170px;
+	 margin: 0 auto;
+	 padding-top:20px;
+}
+ #lowlevel.main-content{
+	 min-height: 100vh;
+	 height: 100%;
+	 padding-top:10px;
+	 margin-bottom:25px;
+}
+ .contact-content {
+	 max-width: 1170px;
+	 margin: 0 auto;
+}
+ .social-content {
+	 max-width: 1170px;
+	 margin: 0 auto;
+	 padding-bottom: 15px;
+	 text-align: center;
+}
+ .social{
+	 float:none;
+	 margin: 0 auto;
+	 padding-left: 5px;
+	 padding-right: 5px;
+	 text-align: left;
+	 display: inline-block;
+	 vertical-align: top;
+	 max-width: 270px;
+	 width: calc(23% - 10px);
+}
+ .social-media{
+	 width: 20%;
+	 float: right;
+	 margin: 0 0 10px 0;
+}
+ #social-media-links{
+	 float:right;
+	 text-align: right;
+	 width: 100%;
+}
+ #social-media-links > a > img {
+	 float: none;
+}
+ #grey-background {
+	 background-color: rgb(251, 250, 248);
+}
+ .video-background-container{
+	/*width: 100%;
+	 max-height: 600px;
+	 */
+	 width: 100%;
+	 height: 31.25vw;
+	 max-height: 100vh;
+	 max-width: 426.67vh;
+	 overflow: hidden;
+	 background-color: #000000;
+	 position: relative;
+	 text-align: center;
+}
+ video {
+	 display: block;
+}
+ iframe {
+	 display: block;
+}
+ #video-background {
+	/*width: 100%;
+	 height: 100%;
+	 max-height: 100vh;
+	 max-width: 320vh;
+	 margin: 0 auto;
+	 position: relative;
+	 */
+	 position: absolute;
+	 width: 100%;
+	 top: -45%;
+	  position: absolute;
+  top: 0 !important;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+ .video-background-container iframe{
+	 width: 100%;
+	 height: 31.25vw;
+	 max-height: 100vh;
+	 max-width: 426.67vh;
+	 margin: 0 auto;
+	 position: relative;
+}
+ .quote {
+	 border-left: 10px solid #2196c5;
+	 margin: 0 50px 25px;
+	 font-family: 'Roboto';
+	 font-size: 1.5em;
+	 font-weight: 400;
+	 /* letter-spacing: 1px; - commented out by MH, Jan 11 2022 */
+	 line-height: 1.5em;
+	 padding: 1% 3%; /* added by MH, Jan 11 2022 as a test */
+	 /* padding-left: 25px; - commented out by MH, Jan 11 2022 to test % in line, above */
+	 color: #444444;
+}
+ .quote-left{
+	 border-top: 10px solid #2196c5;
+	 font-family: 'Roboto';
+	 font-size: 1.5em;
+	 font-weight: 400;
+	 /* letter-spacing: 1px; commented out by MH, Jan 11 2022 */
+	 line-height: 1.5em;
+	 /* padding: 25px 25px; commented out by MH, Jan 11 2022 */
+	 padding: 1% 3%; /* added Jan 11 2022 by MH */
+	 color: #444444;
+	 margin: 20px 50px 50px -150px;
+	 max-width: 250px;
+	 min-width: 250px;
+	 float: left;
+}
+ .quote-right{
+	 border-top: 10px solid #2196c5;
+	 font-family: 'Roboto';
+	 font-size: 1.5em;
+	 font-weight: 400;
+	 /* letter-spacing: 1px; commented out by MH, Jan 11 2022 */
+	 line-height: 1.5em;
+	 /* padding: 25px 25px; commented out by MH, Jan 11 2022 */
+	 padding: 1% 3%; /* added Jan 11 2022 by MH */
+	 color: #444444;
+	 margin: 20px -150px 50px 50px;
+	 max-width: 250px;
+	 min-width: 250px;
+	 float: right;
+}
+ .footer-logos > a > img{
+	 margin-top: 15px;
+}
+/* * Owl Carousel - Core */
+ .owl-carousel {
+	 display: none;
+	 width: 100%;
+	 -webkit-tap-highlight-color: transparent;
+	/* position relative and z-index fix webkit rendering fonts issue */
+	 position: relative;
+	 z-index: 1;
+}
+ .owl-carousel .owl-stage {
+	 position: relative;
+	 -ms-touch-action: pan-Y;
+	 -moz-backface-visibility: hidden;
+	/* fix firefox animation glitch */
+}
+ .owl-carousel .owl-stage:after {
+	 content: ".";
+	 display: block;
+	 clear: both;
+	 visibility: hidden;
+	 line-height: 0;
+	 height: 0;
+}
+ .owl-carousel .owl-stage-outer {
+	 position: relative;
+	 overflow: hidden;
+	/* fix for flashing background */
+	 -webkit-transform: translate3d(0px, 0px, 0px);
+}
+ .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+	 -webkit-backface-visibility: hidden;
+	 -moz-backface-visibility: hidden;
+	 -ms-backface-visibility: hidden;
+	 -webkit-transform: translate3d(0, 0, 0);
+	 -moz-transform: translate3d(0, 0, 0);
+	 -ms-transform: translate3d(0, 0, 0);
+}
+ .owl-carousel .owl-item {
+	 position: relative;
+	 min-height: 1px;
+	 float: left;
+	 -webkit-backface-visibility: hidden;
+	 -webkit-tap-highlight-color: transparent;
+	 -webkit-touch-callout: none;
+}
+ .owl-carousel .owl-item img {
+	 display: block;
+	 width: 100%;
+}
+ .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+	 display: none;
+}
+ .owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-dot {
+	 cursor: pointer;
+	/* cursor: hand;
+	 */
+	 background-color: transparent;
+	 position: absolute;
+	 top: 22%;
+	 right: -1.7%;
+	 -webkit-user-select: none;
+	 -khtml-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+	 background-color: rgba(78, 37, 131, 0.8);
+	 background-image: url(https://www.uwo.ca/web_standards/img/arrow-r.gif);
+	 background-size: 11px;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 border-radius: 45px 45px 45px 45px;
+	 width: 40px;
+	 height: 40px;
+}
+ .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-dot {
+	 cursor: pointer;
+	/* cursor: hand;
+	 */
+	 background-color: transparent;
+	 position: absolute;
+	 top: 22%;
+	 left: -1.4%;
+	 -webkit-user-select: none;
+	 -khtml-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+	 background-color: rgba(78, 37, 131, 0.8);
+	 background-image: url(https://www.uwo.ca/web_standards/img/arrow-l.gif);
+	 background-size: 16px;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 border-radius: 45px 45px 45px 45px;
+	 width: 40px;
+	 height: 40px;
+}
+ .owl-carousel.owl-loaded {
+	 display: block;
+}
+ .owl-carousel.owl-loading {
+	 opacity: 0;
+	 display: block;
+}
+ .owl-carousel.owl-hidden {
+	 opacity: 0;
+}
+ .owl-carousel.owl-refresh .owl-item {
+	 visibility: hidden;
+}
+ .owl-carousel.owl-drag .owl-item {
+	 -webkit-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+}
+ .owl-carousel.owl-grab {
+	 cursor: move;
+	 cursor: grab;
+}
+ .owl-carousel.owl-rtl {
+	 direction: rtl;
+}
+ .owl-carousel.owl-rtl .owl-item {
+	 float: right;
+}
+/* No Js */
+ .no-js .owl-carousel {
+	 display: block;
+}
+/* * Owl Carousel - Animate Plugin */
+ .owl-carousel .animated {
+	 animation-duration: 1000ms;
+	 animation-fill-mode: both;
+}
+ .owl-carousel .owl-animated-in {
+	 z-index: 0;
+}
+ .owl-carousel .owl-animated-out {
+	 z-index: 1;
+}
+ .owl-carousel .fadeOut {
+	 animation-name: fadeOut;
+}
+ @keyframes fadeOut {
+	 0% {
+		 opacity: 1;
+	}
+	 100% {
+		 opacity: 0;
+	}
+}
+/* * Owl Carousel - Auto Height Plugin */
+ .owl-height {
+	 transition: height 500ms ease-in-out;
+}
+/* * Owl Carousel - Lazy Load Plugin */
+ .owl-carousel .owl-item .owl-lazy {
+	 opacity: 0;
+	 transition: opacity 400ms ease;
+}
+ .owl-carousel .owl-item img.owl-lazy {
+	 transform-style: preserve-3d;
+}
+/* * Owl Carousel - Video Plugin */
+ .owl-carousel .owl-video-wrapper {
+	 position: relative;
+	 height: 100%;
+	 background: #000;
+}
+ .owl-carousel .owl-video-play-icon {
+	 position: absolute;
+	 height: 80px;
+	 width: 80px;
+	 left: 50%;
+	 top: 50%;
+	 margin-left: -40px;
+	 margin-top: -40px;
+	 background: url("owl.video.play.png") no-repeat;
+	 cursor: pointer;
+	 z-index: 1;
+	 -webkit-backface-visibility: hidden;
+	 transition: transform 100ms ease;
+}
+ .owl-carousel .owl-video-play-icon:hover {
+	 -ms-transform: scale(1.3, 1.3);
+	 transform: scale(1.3, 1.3);
+}
+ .owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon {
+	 display: none;
+}
+ .owl-carousel .owl-video-tn {
+	 opacity: 0;
+	 height: 100%;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: contain;
+	 transition: opacity 400ms ease;
+}
+ .owl-carousel .owl-video-frame {
+	 position: relative;
+	 z-index: 1;
+	 height: 100%;
+	 width: 100%;
+}
+/** * Owl Carousel v2.2.1 * Copyright 2013-2017 David Deutsch * Licensed under () */
+/* * Default theme - Owl Carousel CSS File */
+ .owl-theme .owl-nav {
+	 margin-top: 10px;
+	 text-align: center;
+	 -webkit-tap-highlight-color: transparent;
+}
+ .owl-theme .owl-nav [class*='owl-'] {
+	 color: #FFF;
+	 font-size: 14px;
+	 margin: 5px;
+	 padding: 4px 7px;
+	 background: #D6D6D6;
+	 display: inline-block;
+	 cursor: pointer;
+	 border-radius: 3px;
+}
+ .owl-theme .owl-nav [class*='owl-']:hover {
+	 background: #869791;
+	 color: #FFF;
+	 text-decoration: none;
+}
+ .owl-theme .owl-nav .disabled {
+	 opacity: 0.5;
+	 cursor: default;
+}
+ .owl-theme .owl-nav.disabled + .owl-dots {
+	 margin-top: 10px;
+}
+ .owl-theme .owl-dots {
+	 text-align: center;
+	 -webkit-tap-highlight-color: transparent;
+}
+ .owl-theme .owl-dots .owl-dot {
+	 display: inline-block;
+	 zoom: 1;
+	 *display: inline;
+}
+ .owl-theme .owl-dots .owl-dot span {
+	 width: 10px;
+	 height: 10px;
+	 margin: 5px 7px;
+	 background: #D6D6D6;
+	 display: block;
+	 -webkit-backface-visibility: visible;
+	 transition: opacity 200ms ease;
+	 border-radius: 30px;
+}
+ .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	 background: #869791;
+}
+ time.icon{
+	 font-size: 1.2em;
+	 display: block;
+	 position: relative;
+	 width: 3em;
+	 height: 3.5em;
+	 background-color: #fff;
+	/* margin: 2em auto;
+	 */
+	/* border-radius: 0.6em;
+	 */
+	 box-shadow: 0 1px 0 #444, 0 2px 0 #fff, 0 1px 0 #444, 0 1px 0 #fff, 0 1px 0 #444, 0 0 0 1px #444;
+	 overflow: hidden;
+	 -webkit-backface-visibility: hidden;
+	 -webkit-transform: rotate(0deg) skewY(0deg);
+	 -webkit-transform-origin: 50% 10%;
+	 transform-origin: 50% 10%;
+	 float: left;
+	 margin: 5px 10px 0 1px;
+}
+ time.icon * {
+	 display: block;
+	 width: 100%;
+	 font-size: 1em;
+	 font-style: normal;
+	 text-align: center;
+	 font-weight:normal;
+}
+ time.icon strong {
+	 position: absolute;
+	 top: 0;
+	 padding: 0.2em 0;
+	 color: #fff;
+	 background-color: #561b8d;
+	/* border-bottom: 1px dashed #eeeeee;
+	 */
+	 box-shadow: 0 2px 0 #eee;
+}
+ time.icon em {
+	 position: absolute;
+	 bottom: 0.3em;
+	 color: #444444;
+}
+ time.icon span {
+	 width: 100%;
+	 font-size:1.7em;
+	 letter-spacing: -0.05em;
+	 padding-top: 1.2em;
+	 color: #444444;
+	 font-weight: 600;
+}
+ .sidebar-event{
+	 width:100%;
+	 margin: 0 auto;
+	 margin-bottom: 4%;
+	 float: left;
+}
+/* Styling added by Travis */
+/************* INPUT FIELD STYLES ************/
+ .red {
+	 color: #FF0000;
+}
+ #timepicker {
+	 width: 70px;
+}
+ #addresspicker {
+	 width: 389px;
+}
+ label.error {
+	 float: none;
+	 color: red;
+	 padding-left: .5em;
+	 vertical-align: top;
+}
+ .fields {
+	 padding: 4px;
+	 margin-bottom: 15px;
+	 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+	 border: 1px solid #A5A5A5;
+}
+
+/* Added by JJ Apr 2023 */
+input[type="submit"], input[type="reset"] {
+    color: #000 !important;
+}
+ .fields.error {
+	 padding: 4px;
+	 margin-bottom: 15px;
+	 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+	 border: 1px solid #FF0000;
+}
+ .ui-datepicker-calendar span {
+	 color: #4502b1;
+}
+/* Search */
+ .search {
+	 float: right;
+	 padding-top: 25px;
+}
+ #searchfield {
+	 border: 1px solid #fff;
+	 padding: 4px;
+	 background-color: rgba(255, 255, 255, .6);
+	 font-size: 130%;
+	 width: 270px;
+}
+ #searchfield-cse {
+	 border: 1px solid #fff;
+	 padding: 9px 0 5px 0;
+	 background-color: rgba(255, 255, 255, .6);
+	 font-size: 100%;
+	 width: 270px;
+}
+ .search_btn {
+	 background: #ccc;
+	 color: #666;
+	 padding: 3px 10px;
+	 font-size: 130%;
+	 cursor: pointer;
+}
+ #department-searchfield {
+	 border: 1px solid #666;
+	 padding: 5px 4px;
+	 font-size: 90%;
+	 background: #eee;
+	 width: 165px;
+	/* Was 180px */
+}
+ .department-search {
+	 float: right;
+	 padding-bottom: 4px;
+	 display: block;
+}
+/* .department-search_btn {
+	 background: #ccc;
+	 color: #666;
+	 padding: 4px 4px;
+	 font-size: 1em;
+}
+*/
+ .department-search_btn {
+	 background: #ccc;
+	 border: none;
+	 font-weight: 500;
+	 color: #666;
+	 padding: 6px 5px;
+	 font-size: 1em;
+}
+ .department-search_btn:hover {
+	 background: #777;
+	 color: #fff;
+}
+ ::-webkit-input-placeholder {
+	 color: #666;
+}
+ :-moz-placeholder {
+	 color: #666;
+}
+ input:focus::-webkit-input-placeholder {
+	 color: transparent;
+}
+ input:focus:-moz-placeholder {
+	 color: transparent;
+}
+ .hidden {
+	 display: none;
+}
+/* Logo */
+ img.logo_img {
+	 margin: 0px 10px 20px 0px;
+}
+ img.tabrss {
+	 float: right;
+	 margin-top: 13px;
+	 margin-right: 5px;
+	 background: none;
+}
+ img.tabpgimg {
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 float: left;
+	 width: 140px;
+	 margin-right: 20px;
+	 margin-top: 10px;
+}
+ img.tabpgimg2 {
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 float: left;
+	 width: 100px;
+	 margin-right: 20px;
+	 margin-top: 10px;
+}
+ div#featurestory h2 {
+	 margin-bottom: 0;
+}
+ #header {
+	 padding: 0px;
+	 position: relative;
+	 margin-bottom: 10px;
+}
+ #header-overlay {
+	 background: rgba(255, 255, 255, 0.9);
+	 left: 0px;
+	 bottom: 0px;
+	 display: inline;
+	 padding: 10px;
+	 padding-left: 3%;
+	 padding-right: 3%;
+	 position: absolute;
+	 z-index: 1;
+	 height: auto;
+	 margin-bottom: 13px;
+	 width:94%;
+}
+ .header-name {
+	 color: #561b8d;
+	 display: block;
+	 font-size: 180%;
+	 font-weight: 500;
+	 line-height: 1em;
+	 height: auto;
+	 position: relative;
+	 min-width: 200px;
+	 width: auto;
+}
+ img.newsimg {
+	 float: left;
+	 margin-right: 15px;
+}
+ img.whatsonrss {
+	 float: right;
+	 margin-top: 12px;
+	 margin-right: 12px;
+}
+ #random-images {
+	 margin: 0;
+	 width: 220px;
+	 display: inline;
+	 float: left;
+	 padding: 0;
+}
+ div.ribboninputcontainer {
+	 border-right: 1px #888;
+	 padding: 10px 0;
+	 display: inline;
+	 float: left;
+}
+ .image-right {
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 float: right;
+	 margin-left: 10px;
+	 position: relative;
+	/* Added August 22, 2016 to repair captions */
+}
+ .image-center {
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 position: relative;
+	/* Added August 22, 2016 to repair captions */
+}
+ #sidebar > a > img.image-center-rsb{
+	 display: block;
+	 margin-right: auto;
+	 margin-left: auto;
+	 position: relative;
+}
+ .image-left {
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 float: left;
+	 margin-right: 10px;
+	/* Added July 8, 2016 */
+	/* max-width: 35%;
+	 */
+	 position: relative;
+	/* Added August 22, 2016 to repair captions */
+}
+/* SECONDARY PAGE */
+ .content-group {
+	 background: none repeat scroll 0 0 transparent;
+	 display: inline;
+	 float: left;
+	 padding: 5px;
+	 margin: 0px 10px 6px 0px;
+	/*added 6px bottom by Travis */
+	 width: 210px;
+	 color: #333;
+}
+/************ MEGA-NAV ********************/
+ #menu {
+	 list-style: none;
+	 width: 93.4%;
+	 height: 43px;
+	 z-index: 999;
+	 position: relative;
+	 background: #4f2683;
+	 margin: 0 auto 10px;
+	 padding: 0px 20px 0px 20px;
+	/* Background color and gradients */
+	 background: #4f2683;
+	 background: -moz-linear-gradient(top, #4f2e84, #380e6e);
+	 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4f2e84), to(#380e6e));
+	/* Borders */
+	 border: 1px solid #002232;
+	 -moz-box-shadow: inset 0px 0px 1px #edf9ff;
+	 -webkit-box-shadow: inset 0px 0px 1px #edf9ff;
+	 box-shadow: inset 0px 0px 1px #edf9ff;
+}
+ #menu li {
+	 float: left;
+	 display: block;
+	 text-align: center;
+	 position: relative;
+	 padding: 4px 20px 10px;
+	 margin: 7px 10px 0px 20px;
+	 border: none;
+	 outline: none;
+	 letter-spacing: 0.1px;
+}
+ #menu li.open {
+	 padding: 11px 20px 10px;
+	 background: #fff;
+	 margin: 0px 10px 0px 20px;
+	 outline: none;
+	 color: #222;
+}
+ #menu li a {
+	 font-size: 140%;
+	 color: #eee;
+	 display: block;
+	/* outline: 0;
+	 */
+	 text-decoration: none;
+	/* outline: none;
+	 */
+}
+ #menu li.open a {
+	 color: #333;
+}
+ .arrow-first {
+	 background: url("https://www.uwo.ca/web_standards/img/meganav/drop.png") no-repeat right 12px;
+}
+ .ex-link {
+	 background: url("https://www.uwo.ca/web_standards/img/meganav/ex-link.png") no-repeat right 10px;
+}
+ .first, .second, .third, .fourth, .fifth {
+	 margin: 10px auto;
+	 position: absolute;
+	 left: -999em;
+	/* Hides the drop down */
+	 text-align: left;
+	 padding: 15px 5px 5px 5px;
+	 border-style: none solid solid;
+	 border-width: medium 1px 1px;
+	 border-color: #d2d2d2;
+	 width: 927px;
+	/*margin-left: -22.7%;
+	 */
+	/*margin-left: -40px;
+	/* Gradient background */
+	 background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom;
+	 background-color: #fff;
+	/*transition: opacity 3s ease-out;
+	 -moz-transition: opacity 0s ease-in-out;
+	 -webkit-transition: opacity 0s ease-in-out;
+	 -o-transition: opacity 0s ease-in-out;
+	 -ms-transition: opacity 0s ease-in-out;
+	 transition-delay: .5s;
+	 -moz-transition-delay: .5s;
+	 -webkit-transition-delay: .5s;
+	 -o-transition-delay: .5s;
+	 -ms-transition: .5s;
+	 */
+}
+ .first {
+	/*margin-left: -22.7%;
+	 */
+	 margin-left: -40px;
+}
+ .second {
+	/*margin-left:-186%;
+	 */
+	 margin-left: -242px;
+}
+ .third {
+	/*margin-left:-293.5%;
+	 */
+	 margin-left: -402px;
+}
+ .fourth {
+	/*margin-left:-456%;
+	 */
+	 margin-left: -569px;
+}
+ .fifth {
+	/*margin-left:-478.5%;
+	 */
+	 margin-left: -750px;
+}
+ #menu li.open .first, #menu li.open .second, #menu li.open .third, #menu li.open .fourth, #menu li.open .fifth {
+	 left: -1px;
+	 top: auto;
+}
+ .col_1, .col_2, .col_3, .col_4, .col_5 {
+	 font-family: 'Rubik', sans-serif;
+	 display: block;
+	 float: left;
+	 position: relative;
+	 margin-left: 10px;
+	 margin-right: 10px;
+}
+ .col_1 {
+	 width: 210px;
+}
+ .col_2 {
+	 width: 300px;
+}
+ .col_3 {
+	 width: 410px;
+}
+ .col_4 {
+	 width: 930px;
+}
+ .col_5 {
+	 width: 930px;
+}
+ #menu ul li {
+	 line-height: 23px;
+	 font-size: 13px;
+	 text-align: left;
+	 text-shadow: 1px 1px 1px #fff;
+	 border-bottom-width: thin;
+	 border-bottom-style: dotted;
+	 border-bottom-color: #CCCCCC;
+	 margin-bottom: 5px;
+	 text-transform: none;
+}
+ #menu p {
+	 line-height: 23px;
+	 font-size: 13px;
+	 text-align: left;
+	 text-shadow: 1px 1px 1px #fff;
+	 margin-bottom: 5px;
+}
+ #menu h2 {
+	 border-bottom: 1px solid #999999;
+	 font-size: 14px;
+	 font-weight: 600;
+	 letter-spacing: 0.3px;
+	 line-height: 18px;
+	 margin: 0px 0 3px;
+	 padding: 0px 5px 5px 0px;
+	 text-transform: uppercase;
+}
+ #menu h4 {
+	 font-weight: 600;
+	 font-size: 13px;
+	 letter-spacing: 0.3px;
+	 line-height: 18px;
+	 margin: 5px 0 10px;
+	 padding: 5px 5px 5px 0px;
+}
+ #menu p, #menu h3, #menu ul li {
+	 line-height: 21px;
+	 text-align: left;
+	 text-shadow: 1px 1px 1px #fff;
+}
+ #menu li.open div a {
+	 font-size: 14px;
+	 color: #4502b1;
+}
+ #menu li.open div a:hover {
+	 color: #005a96;
+}
+ #menu li ul {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0 0 12px 0;
+}
+ #menu li ul li {
+	 font-family: 'Rubik', sans-serif;
+	 font-size: 12px;
+	 line-height: 28px;
+	 position: relative;
+	 text-shadow: 1px 1px 1px #fff;
+	 padding: 0;
+	 margin: 0;
+	 float: none;
+	 text-align: left;
+}
+ #menu li ul li:hover {
+	 background: none;
+	 padding: 0;
+	 margin: 0;
+}
+ #menu li .blue-box li {
+	 background: url(https://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 11px #015b86;
+	/* border: 1px solid #AAAAAA;
+	 */
+	 margin: 0 0 4px 0px;
+	 padding: 4px 5px 4px 20px;
+	 box-shadow: 0px 0px 1px #999;
+	 text-shadow: none;
+	 color: #fff;
+	 font-size: 13px;
+	 border: 0;
+}
+ #menu li .blue-box li a {
+	 color: #fff;
+}
+ #menu li .blue-box li:hover {
+	 background: url(https://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 11px #fff;
+	/* border: 1px solid #AAAAAA;
+	 */
+	 margin: 0 0 4px 0px;
+	 padding: 4px 5px 4px 20px;
+	 box-shadow: 0px 0px 1px #999;
+	 text-shadow: none;
+	 color: #fff;
+	 font-size: 13px;
+	 border: 0;
+}
+ #menu li .blue-box li:hover a {
+	 color: #4502b1;
+}
+ a.blue-box {
+	 background: url(https://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 7px #015b86;
+	/* border: 1px solid #AAAAAA;
+	 */
+	 margin: 0 0 4px 0px;
+	 padding: 4px 5px 4px 20px;
+	 box-shadow: 0px 0px 1px #999;
+	 text-shadow: none;
+	 color: #fff;
+	 display: block;
+	 font-size: 14px;
+	 border: 0;
+}
+ a.blue-box:hover {
+	 background: url(https://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 7px #fff;
+	 color: #005a96;
+	/* border: 1px solid #AAAAAA;
+	 */
+	 margin: 0 0 4px 0px;
+	 padding: 4px 5px 4px 20px;
+	 box-shadow: 1px 0px 1px #999;
+	 text-shadow: none;
+	 display: block;
+	 border: 0;
+}
+ .content-blue-box {
+	 width: 150px;
+	 float: right;
+	 margin-left: 10px;
+}
+/************ Columns ****************/
+ div.onecolumn {
+	 clear: both;
+	 display: inline-block;
+	 margin-bottom: 20px;
+}
+ div.left-2column, div.left-2column-respond {
+	 float: left;
+	 width: 48%;
+	 display: inline;
+	 clear: both;
+	 margin-bottom: 20px;
+}
+ div.right-2column, div.right-2column-respond {
+	 float: left;
+	 width: 48%;
+	 display: inline;
+	 border-left: 1px solid #ddd;
+	 padding-left: 10px;
+	 margin-left: 10px;
+	 margin-bottom: 20px;
+}
+ div.left-2column-faculty {
+	 float: left;
+	 width: 60%;
+	 display: inline;
+	 clear: both;
+	 margin-bottom: 20px;
+}
+ div.right-2column-faculty {
+	 float: left;
+	 width: 35%;
+	 display: inline;
+	 border-left: 1px solid #ddd;
+	 padding-left: 10px;
+	 margin-left: 10px;
+	 margin-bottom: 20px;
+}
+ div.left-3column {
+	 float: left;
+	 width: 31%;
+	 display: inline;
+	 clear: both;
+	 margin-bottom: 20px;
+}
+ div.center-3column {
+	 float: left;
+	 width: 31%;
+	 display: inline;
+	 border-left: 1px solid #ddd;
+	 padding-left: 10px;
+	 margin-left: 10px;
+	 margin-bottom: 20px;
+}
+ div.right-3column {
+	 float: left;
+	 width: 31%;
+	 display: inline;
+	 border-left: 1px solid #ddd;
+	 padding-left: 10px;
+	 margin-left: 10px;
+	 margin-bottom: 20px;
+}
+/************ FLEXSLIDER *******************/
+/* FlexSlider Necessary Styles *********************************/
+ .flexslider {
+	 width: 100%;
+	 margin: 0;
+	 padding: 0;
+	 z-index: 1;
+	 position: absolute;
+	 height: 100%;
+}
+ .flexslider .slides>li {
+	 display: none !important;
+}
+ .flexslider .slides>li.flex-active-slide {
+	 display: block !important;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+ .flexslider .slides img {
+	 width: 100%;
+	 display: block;
+}
+ .flex-pauseplay span {
+	 text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+ .slides:after {
+	 content: ".";
+	 display: block;
+	 border: none;
+	 clear: both;
+	 visibility: hidden;
+	 line-height: 0;
+	 height: 0;
+}
+ html[xmlns] .slides {
+	 display: block;
+}
+ * html .slides {
+	 height: 1%;
+}
+ #secondary-slider {
+	/* */
+	 margin-left: 12px;
+}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you * include js that eliminates this class on page load */
+ .no-js .slides>li:first-child {
+	 display: block;
+}
+/* FlexSlider Default Theme *********************************/
+ .flexslider {
+	 border: none;
+	/* background: #fff;
+	 */
+	 position: relative;
+	 -webkit-border-radius: 0px;
+	 -moz-border-radius: 0px;
+	 -o-border-radius: 0px;
+	 border-radius: 0px;
+	 zoom: 1;
+	 border-top-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 border-left-width: 0px;
+}
+ .flexslider .slides {
+	 zoom: 1;
+}
+ .flexslider .slides>li {
+	 position: relative;
+	 border: none;
+}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+ .flex-container {
+	 zoom: 1;
+	 position: relative;
+}
+ li img {
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 border: none;
+}
+ #triple-slider.flexslider .slides img, #secondary-slider.flexslider .slides img {
+	 max-width: 280px;
+	/* min-width: 150px;
+	 */
+}
+ #faculty-slider.flexslider .slides img {
+	 width: 100%;
+}
+ #faculty-slider.flexslider {
+	 max-width: 100%;
+}
+ #faculty-slider.flexslider .flex-control-nav {
+	 bottom: 27px;
+}
+/* Caption style */
+/* IE rgba() hack */
+/* Banner Caption/Subcaption */
+ .flex-caption-banner {
+	 background: none;
+	 -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+	 zoom: 1;
+}
+ .flex-caption-banner {
+	 width: 96%;
+	 padding: 2%;
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 background: rgba(0, 0, 0, .6);
+	 color: #fff;
+	 text-shadow: 0 -1px 0 rgba(0, 0, 0, .6);
+	 font-size: 110%;
+	 line-height: 18px;
+}
+ .flex-caption {
+	 background-color: rgba(0, 0, 0, 0.6);
+	 background-image: none;
+	 background-origin: padding-box;
+	 background-position-x: 0;
+	 background-position-y: 0;
+	 background-repeat: repeat;
+	 background-size: auto auto;
+	 padding-bottom: 2%;
+	 padding-left: 2%;
+	 padding-right: 2%;
+	 padding-top: 2%;
+	 line-height: 50px;
+	 overflow: hidden;
+	/* background-attachment: scroll;
+	 background-clip: border-box;
+	 background-color: rgba(0, 0, 0, 0.6);
+	 background-image: none;
+	 background-origin: padding-box;
+	 background-position-x: 0;
+	 background-position-y: 0;
+	 background-repeat: repeat;
+	 background-size: auto auto;
+	 line-height: 60px;
+	 padding-bottom: 2%;
+	 padding-left: 2%;
+	 padding-right: 2%;
+	 padding-top: 2%;
+	 display: inline-block;
+	 max-width: 400px;
+	 width: auto;
+	 font-family: "Rubik", sans-serif;
+	 font-size: 2em;
+	 position: absolute;
+	 color: rgb(255, 255, 255);
+	 text-decoration-color: currentcolor;
+	 text-decoration-line: none;
+	 text-decoration-style: solid;
+	 text-shadow: 1px 2px 1px rgb(34, 34, 34);
+	 margin-bottom: 0;
+	 font-family: "Rubik", sans-serif;
+	 font-size: 5em;
+	 position: absolute;
+	 color: rgb(255, 255, 255);
+	 text-decoration-color: currentcolor;
+	 text-decoration-line: none;
+	 text-decoration-style: solid;
+	 text-shadow: 1px 2px 1px rgb(34, 34, 34);
+	 margin-bottom: 0;
+	 */
+}
+ #left.flex-caption{
+	 position: absolute;
+	 left: 10%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+/* Controls placement of captions */
+ .right-caption {
+	 position: absolute;
+	 right: 10%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+ .center-caption {
+	 position: absolute;
+	 left: 30%;
+	 right: 30%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+ .left-caption {
+	 position: absolute;
+	 left: 10%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+ #right.flex-caption{
+	 position: absolute;
+	 right: 10%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+ #center.flex-caption{
+	 position: absolute;
+	 left: 30%;
+	 right: 30%;
+	 bottom: 10%;
+	 max-width: 40%;
+}
+ .flex-caption p{
+	 clear:both;
+	 float:left;
+	 margin: 0;
+}
+ .transparent-caption{
+	 font-size: 3em;
+	 color: rgb(255, 255, 255);
+	 font-family: "Rubik", sans-serif;
+	 text-decoration-color: currentcolor;
+	 text-decoration-line: none;
+	 text-decoration-style: solid;
+	 text-shadow: 1px 2px 1px rgb(34, 34, 34);
+	 margin-bottom: 0;
+}
+ .transparent-subcaption {
+	 font-size: 1.5em;
+	 color: rgb(255, 255, 255);
+	 font-family: "Rubik", sans-serif;
+	 color: rgb(255, 255, 255);
+	 text-decoration-color: currentcolor;
+	 text-decoration-line: none;
+	 text-decoration-style: solid;
+	 margin-bottom: 0;
+	 line-height: 30px;
+	 padding-top: 15px;
+}
+ .button-green {
+	 background: #00aa55;
+	 padding: 20px;
+	 font-size: medium;
+	 text-decoration: none;
+	 font-weight: 500;
+	 color: #fff;
+	 border: 0;
+}
+ .button-green:hover {
+	 background: #777;
+	 color: #fff;
+}
+ .button-purple {
+	 background: #5502de;
+	 padding: 20px;
+	 font-size: medium;
+	 text-decoration: none;
+	 color: #fff;
+	 border: 0;
+}
+ .button-purple:hover {
+	 background: #777;
+	 color: #fff;
+}
+/* Direction Nav */
+ .flex-direction-nav li a {
+	 margin: -15px 15px 0 15px;
+	 display: block;
+	 position: absolute;
+	 top: 50%;
+	 cursor: pointer;
+	 text-indent: -9999px;
+	 border: none;
+}
+ .flex-direction-nav li .flex-next {
+	 background-color: rgba(78, 37, 131, 0.8);
+	 background-image: url("https://www.uwo.ca/web_standards/img/arrow-r.gif");
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 border-radius: 40px 40px 40px 40px;
+	 display: block;
+	 height: 80px;
+	 right: 0;
+	 position: absolute;
+	 top: 45%;
+	 width: 80px;
+	 z-index: 10;
+}
+ .flex-direction-nav li .flex-prev {
+	 left: -20px;
+	 background-color: rgba(78, 37, 131, 0.8);
+	 background-image: url("https://www.uwo.ca/web_standards/img/arrow-l.gif");
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 border-radius: 40px 40px 40px 40px;
+	 display: block;
+	 height: 80px;
+	 left: 0;
+	 position: absolute;
+	 top: 45%;
+	 width: 80px;
+	 z-index: 10;
+}
+ .flex-direction-nav li .flex-disabled {
+	 opacity: 0;
+	 filter: alpha(opacity=30);
+	 cursor: default;
+}
+ #faculty-slider .flex-direction-nav .flex-next, #triple-slider .flex-direction-nav .flex-next, #secondary-slider .flex-direction-nav .flex-next {
+	 background-color: transparent;
+	 background-image: url("https://www.uwo.ca/web_standards/img/arrow-right.png");
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 display: block;
+	 height: 30px;
+	 left: 98%;
+	 position: absolute;
+	 top: 32%;
+	 width: 30px;
+	 z-index: 10;
+}
+/* Embedded slideshow fix */
+ #secondary-slider {
+	/* Responsive fix of the small slideshow when placed into the social bar of a page */
+	 width: 100%;
+	 margin: 0;
+}
+ #secondary-slider .flex-direction-nav .flex-next {
+	/* left:85%;
+	 */
+	 left: 80%;
+	 top: 100px;
+	/* background: orange;
+	 */
+}
+ #triple-slider .flex-direction-nav .flex-next {
+	/* left:85%;
+	 */
+	 left: 96.4%;
+	/* background: orange;
+	 */
+	 top: 50%;
+}
+/* End embedded slideshow fix */
+ #faculty-slider .flex-direction-nav .flex-prev, #triple-slider .flex-direction-nav .flex-prev, #secondary-slider .flex-direction-nav .flex-prev {
+	 background-color: transparent;
+	 background-image: url("https://www.uwo.ca/web_standards/img/arrow-left.png");
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 display: block;
+	 height: 30px;
+	 left: -4%;
+	 position: absolute;
+	 top: 32%;
+	 width: 30px;
+	 z-index: 10;
+}
+ #secondary-slider .flex-direction-nav .flex-prev {
+	/* left: -10%;
+	 */
+	 left: -4%;
+	 top: 100px;
+	/* background: yellow;
+	 */
+}
+ #triple-slider .flex-direction-nav .flex-prev {
+	/* left: -10%;
+	 */
+	 left: -5%;
+	/* background: yellow;
+	 */
+	 top: 50%;
+}
+ #secondary-slider ul {
+	 margin: 0;
+	 padding: 0;
+}
+ #secondary-slider li {
+	 padding: 0;
+	 margin: 0;
+}
+ #secondary-slider li p {
+	 text-align: center;
+}
+/* Control Nav */
+ .flex-control-nav {
+	 width: 9%;
+	/* Change from 12% to allow for 5 click dot overlay */
+	 position: absolute;
+	 padding-left: 87%;
+	 bottom: 10px;
+	 z-index: 4;
+}
+ .flex-control-nav li {
+	 margin: 0 0 0 5px;
+	 display: inline-block;
+	 zoom: 1;
+	 *display: inline;
+}
+ .flex-control-nav li:first-child {
+	 margin: 0;
+}
+ .flex-control-nav li a {
+	 width: 13px;
+	 height: 13px;
+	 display: block;
+	 background: url(https://www.uwo.ca/web_standards/flexslider/theme/bg_control_nav.png) no-repeat 0 0;
+	 cursor: pointer;
+	 text-indent: -9999px;
+}
+ .flex-control-nav li a:hover {
+	 background-position: 0 -13px;
+}
+ .flex-control-nav li a.flex-active {
+	 background-position: 0 -26px;
+	 cursor: default;
+}
+/***************** TWITTER FEED STYLES ************/
+ .tweet, .query {
+	 line-height: 1.5em;
+}
+ .tweet_list {
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow-y: hidden;
+	 background-color: #f8f8f8;
+}
+ .tweet_list .awesome, .tweet_list .epic {
+	 text-transform: uppercase;
+}
+ .tweet_list li {
+	 overflow-y: auto;
+	 overflow-x: hidden;
+	 padding: 10px;
+	 list-style-type: none;
+	 color: #333;
+	 font-size: 90%;
+	 line-height: 1.5em;
+}
+ .tweet_list li a {
+	 color: #4502b1;
+}
+ .tweet_list li a:hover {
+	 color: #005a96;
+}
+ .tweet_list .tweet_even {
+	 background-color: #f5f5f5;
+}
+ .tweet_list .tweet_avatar {
+	 padding-right: .5em;
+	 float: left;
+	 padding: 3px;
+	 background: #fff;
+	 margin-right: 5px;
+	 margin-bottom: 5px;
+	 border: 1px solid #ddd;
+}
+ .tweet_list .tweet_avatar img {
+	 vertical-align: middle;
+	 padding: 0;
+}
+/********* SPRY TABS ************/
+/* SpryTabbedPanels.css - version 0.6 - Spry Pre-Release 1.6.1 */
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+ .TabbedPanels {
+	 overflow: hidden;
+	 margin: 0px 10px;
+	 padding: 0px;
+	 clear: none;
+	 width: 47%;
+	/* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+	 float: left;
+	 margin-bottom: 13px;
+}
+ .TabbedPanelsTabGroup {
+	 margin: 0px;
+	 padding: 0px;
+}
+/* Updated from HTML file */
+ .TabbedPanelsTab {
+	 color: #4e2583;
+	 text-transform: uppercase;
+	 letter-spacing: 0.3px;
+	 position: relative;
+	 top: 2px;
+	 float: left;
+	 background-color: #eee;
+	 cursor: pointer;
+	 width: 40%;
+	 height: 35px;
+	 padding: 0px 10px;
+	 margin: 0px 8px;
+	 border-bottom: 1px solid #bbb;
+}
+ .TabbedPanelsTab h3 {
+	 padding: 3px 5px 5px 0;
+}
+ .TabbedPanelsTabHover {
+	 background-color: #ccc;
+	 border-bottom: 1px solid #ccc;
+	 padding: 0px 10px;
+}
+ .TabbedPanelsTabSelected {
+	 background-color: #fff;
+	 text-transform: uppercase;
+	 border-color: #bbb #bbb #fff #bbb;
+	 border-width: 1px;
+	 border-style: solid;
+	 outline: none;
+	 cursor: default;
+	 overflow: visible;
+}
+ .TabbedPanelsTab a {
+	 text-decoration: none;
+	 color: #4f2683;
+}
+/* Updated from HTML file */
+ .TabbedPanelsContentGroup {
+	 clear: both;
+	 background: #fff;
+	 background-color: #EEE;
+}
+ .TabbedPanelsContent {
+	 overflow: hidden;
+	 padding: 4px;
+}
+ .TabbedPanelsContentVisible {
+	 background-color: #fff;
+	 border: solid 1px #bbb;
+}
+ .TabbedPanels-wide {
+	 clear: none;
+	 float: left;
+	 margin: 0 10px;
+	 overflow: hidden;
+	 padding: 0;
+	 width: 99%;
+}
+ .TabbedPanelsContent-wide {
+	 overflow: hidden;
+	 padding: 10px;
+}
+/************ FEEDBACK *************/
+ .placeholder {
+	 color: #ccc;
+}
+/************* PRINT STYLES ******************/
+ @media print {
+	 body {
+		 background: #fff;
+		 width: 960px;
+		 border-top: none;
+	}
+	 .container_12 {
+		 margin-left: auto;
+		 margin-right: auto;
+		 width: 960px;
+		 box-shadow: none;
+	}
+	 #menu {
+		 display: none;
+	}
+	 .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+		 display: none;
+	}
+	 #random-images {
+		 display: none;
+	}
+	 .feedback {
+		 display: none;
+	}
+	 .form {
+		 display: none;
+	}
+	 .feedback .form {
+		 display: none;
+	}
+	 .breadcrumbs {
+		 display: none;
+		/* this */
+	}
+	 #ribbon {
+		 display: none;
+		/* this */
+	}
+	 #ribbon a {
+		 color: #000;
+	}
+	 #ribbon-inner li a {
+		 color: #000;
+	}
+	 #ribbon-inner li a:hover {
+		 color: #000;
+	}
+	 #footer {
+		 background: #fff;
+	}
+	 #footer p {
+		 color: #000;
+	}
+	 #footer a {
+		 color: #000;
+	}
+	 #footer a:hover {
+		 color: #000;
+	}
+	 div.panel {
+		 display: none;
+	}
+	 .grey-box {
+		 border: 1px solid #A5A5A5;
+	}
+	/*input {
+		 display: none;
+	}
+	 */
+	 .flip {
+		 display: none;
+	}
+	 .flipdepartment {
+		 display: none;
+	}
+	 #ribbon-inner li a {
+		 color: #000;
+	}
+	 #ribbon-inner li a:hover {
+		 color: #000;
+	}
+	 img.tabrss {
+		 display: none;
+	}
+	 .TabbedPanelsTabGroup {
+		 display: none;
+	}
+	 .search {
+		 display: none;
+	}
+	/********** MENU PRINT *************/
+	 #menu {
+		 background: none;
+		/* this */
+		 border: none;
+		/* this */
+	}
+	 menu li a {
+		 color: #000;
+		/* this */
+	}
+	 #menu li:hover a {
+		 color: #000;
+		/* this */
+	}
+	/************** SPRY TABS PRINT ************/
+	 .TabbedPanels {
+		 clear: none;
+		 float: left;
+		 margin: 0 10px;
+		 overflow: hidden;
+		 padding: 0;
+		 width: 415px;
+	}
+	 .TabbedPanelsTab {
+		 -moz-user-select: none;
+		 background-color: #eee;
+		 border: 1px solid #ddd;
+		 color: #4E2583;
+		 cursor: pointer;
+		 float: left;
+		 height: 35px;
+		 letter-spacing: 0.3px;
+		 list-style: none outside none;
+		 margin-bottom: 0;
+		 margin-right: 15px;
+		 margin-top: 0;
+		 padding: 0 10px;
+		 position: relative;
+		 text-align: left;
+		 text-transform: uppercase;
+		 top: 1px;
+		 width: 40%;
+	}
+}
+/*! * jQuery UI CSS Framework 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Theming/API */
+/* Layout helpers ----------------------------------*/
+ .ui-helper-hidden {
+	 display: none;
+}
+ .ui-helper-hidden-accessible {
+	 position: absolute !important;
+	 clip: rect(1px 1px 1px 1px);
+	 clip: rect(1px, 1px, 1px, 1px);
+}
+ .ui-helper-reset {
+	 margin: 0;
+	 padding: 0;
+	 border: 0;
+	 outline: 0;
+	 line-height: 1.3;
+	 text-decoration: none;
+	 font-size: 91%;
+	 list-style: none;
+}
+ .ui-helper-clearfix:before, .ui-helper-clearfix:after {
+	 content: "";
+	 display: table;
+}
+ .ui-helper-clearfix:after {
+	 clear: both;
+}
+ .ui-helper-clearfix {
+	 zoom: 1;
+}
+ .ui-helper-zfix {
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 position: absolute;
+	 opacity: 0;
+	 filter: Alpha(Opacity=0);
+}
+/* Interaction Cues ----------------------------------*/
+ .ui-state-disabled {
+	 cursor: default !important;
+}
+/* Icons ----------------------------------*/
+/* states and images */
+ .ui-icon {
+	 display: block;
+	 text-indent: -99999px;
+	 overflow: hidden;
+	 background-repeat: no-repeat;
+}
+/* Misc visuals ----------------------------------*/
+/* Overlays */
+ .ui-widget-overlay {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+}
+/*! * jQuery UI CSS Framework 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Theming/API * * To view and modify this theme, visit https://jqueryui.com/themeroller/?ffDefault=Arial&fwDefault=normal&fsDefault=1.1em&cornerRadius=0px&bgColorHeader=4f2683&bgTextureHeader=02_glass.png&bgImgOpacityHeader=20&borderColorHeader=a5a5a5&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=efefef&bgTextureContent=03_highlight_soft.png&bgImgOpacityContent=75&borderColorContent=a5a5a5&fcContent=333333&iconColorContent=4f2683&bgColorDefault=ffffff&bgTextureDefault=01_flat.png&bgImgOpacityDefault=75&borderColorDefault=a5a5a5&fcDefault=015b86&iconColorDefault=015b86&bgColorHover=4f2683&bgTextureHover=01_flat.png&bgImgOpacityHover=0&borderColorHover=028feb&fcHover=ffffff&iconColorHover=028feb&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=20&borderColorActive=028feb&fcActive=028feb&iconColorActive=028feb&bgColorHighlight=aee3ff&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=20&borderColorHighlight=028feb&fcHighlight=015b86&iconColorHighlight=028feb&bgColorError=fef1ec&bgTextureError=05_inset_soft.png&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px */
+/* Component containers ----------------------------------*/
+ .ui-widget {
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 1.1em;
+}
+ .ui-widget .ui-widget {
+	 font-size: 1em;
+}
+ .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	 font-family: 'Rubik', sans-serif;
+	 font-size: 1em;
+}
+ .ui-widget-content {
+	 border: 1px solid #a5a5a5;
+	 background: #efefef url(https://www.uwo.ca/web_standards/img/images/ui-bg_highlight-soft_75_efefef_1x100.png) 50% top repeat-x;
+	 color: #222;
+}
+ .ui-widget-content a {
+	 color: #222;
+}
+ .ui-widget-header {
+	 border: 1px solid #a5a5a5;
+	 background: #4f2683 url(https://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_4f2683_1x400.png) 50% 50% repeat-x;
+	 color: #fff;
+	 font-weight: bold;
+}
+ .ui-widget-header a {
+	 color: #fff;
+}
+/* Interaction states ----------------------------------*/
+ .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	 border: 1px solid #a5a5a5;
+	 background: #fff url(https://www.uwo.ca/web_standards/img/images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	 font-weight: normal;
+	 color: #015b86;
+}
+ .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	 color: #4502b1;
+	 text-decoration: none;
+}
+ .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	 border: 1px solid #028feb;
+	 background: #4f2683 url(https://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_4f2683_40x100.png) 50% 50% repeat-x;
+	 font-weight: normal;
+	 color: #fff;
+}
+ .ui-state-hover a, .ui-state-hover a:hover {
+	 color: #fff;
+	 text-decoration: none;
+}
+ .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	 border: 1px solid #028feb;
+	 background: #fff url(https://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_ffffff_1x400.png) 50% 50% repeat-x;
+	 font-weight: normal;
+	 color: #028feb;
+}
+ .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	 color: #028feb;
+	 text-decoration: none;
+}
+ .ui-widget :active {
+	 outline: none;
+}
+/* Interaction Cues ----------------------------------*/
+ .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	 border: 1px solid #028feb;
+	 background: #aee3ff url(https://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_aee3ff_1x400.png) 50% 50% repeat-x;
+	 color: #015b86;
+}
+ .ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+	 color: #4502b1;
+}
+ .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+	 border: 1px solid #cd0a0a;
+	 background: #fef1ec url(https://www.uwo.ca/web_standards/img/images/ui-bg_inset-soft_95_fef1ec_1x100.png) 50% bottom repeat-x;
+	 color: #cd0a0a;
+}
+ .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+	 color: #cd0a0a;
+}
+ .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+	 color: #cd0a0a;
+}
+ .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+	 font-weight: bold;
+}
+ .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+	 opacity: .7;
+	 filter: Alpha(Opacity=70);
+	 font-weight: normal;
+}
+ .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+	 opacity: .35;
+	 filter: Alpha(Opacity=35);
+	 background-image: none;
+}
+/* Icons ----------------------------------*/
+/* states and images */
+ .ui-icon {
+	 width: 16px;
+	 height: 16px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_4f2683_256x240.png);
+}
+ .ui-widget-content .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_4f2683_256x240.png);
+}
+ .ui-widget-header .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_ffffff_256x240.png);
+}
+ .ui-state-default .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_015b86_256x240.png);
+}
+ .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png);
+}
+ .ui-state-active .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png);
+}
+ .ui-state-highlight .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png);
+}
+ .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+	 background-image: url(https://www.uwo.ca/web_standards/img/images/ui-icons_cd0a0a_256x240.png);
+}
+/* positioning */
+ .ui-icon-carat-1-n {
+	 background-position: 0 0;
+}
+ .ui-icon-carat-1-ne {
+	 background-position: -16px 0;
+}
+ .ui-icon-carat-1-e {
+	 background-position: -32px 0;
+}
+ .ui-icon-carat-1-se {
+	 background-position: -48px 0;
+}
+ .ui-icon-carat-1-s {
+	 background-position: -64px 0;
+}
+ .ui-icon-carat-1-sw {
+	 background-position: -80px 0;
+}
+ .ui-icon-carat-1-w {
+	 background-position: -96px 0;
+}
+ .ui-icon-carat-1-nw {
+	 background-position: -112px 0;
+}
+ .ui-icon-carat-2-n-s {
+	 background-position: -128px 0;
+}
+ .ui-icon-carat-2-e-w {
+	 background-position: -144px 0;
+}
+ .ui-icon-triangle-1-n {
+	 background-position: 0 -16px;
+}
+ .ui-icon-triangle-1-ne {
+	 background-position: -16px -16px;
+}
+ .ui-icon-triangle-1-e {
+	 background-position: -32px -16px;
+}
+ .ui-icon-triangle-1-se {
+	 background-position: -48px -16px;
+}
+ .ui-icon-triangle-1-s {
+	 background-position: -64px -16px;
+}
+ .ui-icon-triangle-1-sw {
+	 background-position: -80px -16px;
+}
+ .ui-icon-triangle-1-w {
+	 background-position: -96px -16px;
+}
+ .ui-icon-triangle-1-nw {
+	 background-position: -112px -16px;
+}
+ .ui-icon-triangle-2-n-s {
+	 background-position: -128px -16px;
+}
+ .ui-icon-triangle-2-e-w {
+	 background-position: -144px -16px;
+}
+ .ui-icon-arrow-1-n {
+	 background-position: 0 -32px;
+}
+ .ui-icon-arrow-1-ne {
+	 background-position: -16px -32px;
+}
+ .ui-icon-arrow-1-e {
+	 background-position: -32px -32px;
+}
+ .ui-icon-arrow-1-se {
+	 background-position: -48px -32px;
+}
+ .ui-icon-arrow-1-s {
+	 background-position: -64px -32px;
+}
+ .ui-icon-arrow-1-sw {
+	 background-position: -80px -32px;
+}
+ .ui-icon-arrow-1-w {
+	 background-position: -96px -32px;
+}
+ .ui-icon-arrow-1-nw {
+	 background-position: -112px -32px;
+}
+ .ui-icon-arrow-2-n-s {
+	 background-position: -128px -32px;
+}
+ .ui-icon-arrow-2-ne-sw {
+	 background-position: -144px -32px;
+}
+ .ui-icon-arrow-2-e-w {
+	 background-position: -160px -32px;
+}
+ .ui-icon-arrow-2-se-nw {
+	 background-position: -176px -32px;
+}
+ .ui-icon-arrowstop-1-n {
+	 background-position: -192px -32px;
+}
+ .ui-icon-arrowstop-1-e {
+	 background-position: -208px -32px;
+}
+ .ui-icon-arrowstop-1-s {
+	 background-position: -224px -32px;
+}
+ .ui-icon-arrowstop-1-w {
+	 background-position: -240px -32px;
+}
+ .ui-icon-arrowthick-1-n {
+	 background-position: 0 -48px;
+}
+ .ui-icon-arrowthick-1-ne {
+	 background-position: -16px -48px;
+}
+ .ui-icon-arrowthick-1-e {
+	 background-position: -32px -48px;
+}
+ .ui-icon-arrowthick-1-se {
+	 background-position: -48px -48px;
+}
+ .ui-icon-arrowthick-1-s {
+	 background-position: -64px -48px;
+}
+ .ui-icon-arrowthick-1-sw {
+	 background-position: -80px -48px;
+}
+ .ui-icon-arrowthick-1-w {
+	 background-position: -96px -48px;
+}
+ .ui-icon-arrowthick-1-nw {
+	 background-position: -112px -48px;
+}
+ .ui-icon-arrowthick-2-n-s {
+	 background-position: -128px -48px;
+}
+ .ui-icon-arrowthick-2-ne-sw {
+	 background-position: -144px -48px;
+}
+ .ui-icon-arrowthick-2-e-w {
+	 background-position: -160px -48px;
+}
+ .ui-icon-arrowthick-2-se-nw {
+	 background-position: -176px -48px;
+}
+ .ui-icon-arrowthickstop-1-n {
+	 background-position: -192px -48px;
+}
+ .ui-icon-arrowthickstop-1-e {
+	 background-position: -208px -48px;
+}
+ .ui-icon-arrowthickstop-1-s {
+	 background-position: -224px -48px;
+}
+ .ui-icon-arrowthickstop-1-w {
+	 background-position: -240px -48px;
+}
+ .ui-icon-arrowreturnthick-1-w {
+	 background-position: 0 -64px;
+}
+ .ui-icon-arrowreturnthick-1-n {
+	 background-position: -16px -64px;
+}
+ .ui-icon-arrowreturnthick-1-e {
+	 background-position: -32px -64px;
+}
+ .ui-icon-arrowreturnthick-1-s {
+	 background-position: -48px -64px;
+}
+ .ui-icon-arrowreturn-1-w {
+	 background-position: -64px -64px;
+}
+ .ui-icon-arrowreturn-1-n {
+	 background-position: -80px -64px;
+}
+ .ui-icon-arrowreturn-1-e {
+	 background-position: -96px -64px;
+}
+ .ui-icon-arrowreturn-1-s {
+	 background-position: -112px -64px;
+}
+ .ui-icon-arrowrefresh-1-w {
+	 background-position: -128px -64px;
+}
+ .ui-icon-arrowrefresh-1-n {
+	 background-position: -144px -64px;
+}
+ .ui-icon-arrowrefresh-1-e {
+	 background-position: -160px -64px;
+}
+ .ui-icon-arrowrefresh-1-s {
+	 background-position: -176px -64px;
+}
+ .ui-icon-arrow-4 {
+	 background-position: 0 -80px;
+}
+ .ui-icon-arrow-4-diag {
+	 background-position: -16px -80px;
+}
+ .ui-icon-extlink {
+	 background-position: -32px -80px;
+}
+ .ui-icon-newwin {
+	 background-position: -48px -80px;
+}
+ .ui-icon-refresh {
+	 background-position: -64px -80px;
+}
+ .ui-icon-shuffle {
+	 background-position: -80px -80px;
+}
+ .ui-icon-transfer-e-w {
+	 background-position: -96px -80px;
+}
+ .ui-icon-transferthick-e-w {
+	 background-position: -112px -80px;
+}
+ .ui-icon-folder-collapsed {
+	 background-position: 0 -96px;
+}
+ .ui-icon-folder-open {
+	 background-position: -16px -96px;
+}
+ .ui-icon-document {
+	 background-position: -32px -96px;
+}
+ .ui-icon-document-b {
+	 background-position: -48px -96px;
+}
+ .ui-icon-note {
+	 background-position: -64px -96px;
+}
+ .ui-icon-mail-closed {
+	 background-position: -80px -96px;
+}
+ .ui-icon-mail-open {
+	 background-position: -96px -96px;
+}
+ .ui-icon-suitcase {
+	 background-position: -112px -96px;
+}
+ .ui-icon-comment {
+	 background-position: -128px -96px;
+}
+ .ui-icon-person {
+	 background-position: -144px -96px;
+}
+ .ui-icon-print {
+	 background-position: -160px -96px;
+}
+ .ui-icon-trash {
+	 background-position: -176px -96px;
+}
+ .ui-icon-locked {
+	 background-position: -192px -96px;
+}
+ .ui-icon-unlocked {
+	 background-position: -208px -96px;
+}
+ .ui-icon-bookmark {
+	 background-position: -224px -96px;
+}
+ .ui-icon-tag {
+	 background-position: -240px -96px;
+}
+ .ui-icon-home {
+	 background-position: 0 -112px;
+}
+ .ui-icon-flag {
+	 background-position: -16px -112px;
+}
+ .ui-icon-calendar {
+	 background-position: -32px -112px;
+}
+ .ui-icon-cart {
+	 background-position: -48px -112px;
+}
+ .ui-icon-pencil {
+	 background-position: -64px -112px;
+}
+ .ui-icon-clock {
+	 background-position: -80px -112px;
+}
+ .ui-icon-disk {
+	 background-position: -96px -112px;
+}
+ .ui-icon-calculator {
+	 background-position: -112px -112px;
+}
+ .ui-icon-zoomin {
+	 background-position: -128px -112px;
+}
+ .ui-icon-zoomout {
+	 background-position: -144px -112px;
+}
+ .ui-icon-search {
+	 background-position: -160px -112px;
+}
+ .ui-icon-wrench {
+	 background-position: -176px -112px;
+}
+ .ui-icon-gear {
+	 background-position: -192px -112px;
+}
+ .ui-icon-heart {
+	 background-position: -208px -112px;
+}
+ .ui-icon-star {
+	 background-position: -224px -112px;
+}
+ .ui-icon-link {
+	 background-position: -240px -112px;
+}
+ .ui-icon-cancel {
+	 background-position: 0 -128px;
+}
+ .ui-icon-plus {
+	 background-position: -16px -128px;
+}
+ .ui-icon-plusthick {
+	 background-position: -32px -128px;
+}
+ .ui-icon-minus {
+	 background-position: -48px -128px;
+}
+ .ui-icon-minusthick {
+	 background-position: -64px -128px;
+}
+ .ui-icon-close {
+	 background-position: -80px -128px;
+}
+ .ui-icon-closethick {
+	 background-position: -96px -128px;
+}
+ .ui-icon-key {
+	 background-position: -112px -128px;
+}
+ .ui-icon-lightbulb {
+	 background-position: -128px -128px;
+}
+ .ui-icon-scissors {
+	 background-position: -144px -128px;
+}
+ .ui-icon-clipboard {
+	 background-position: -160px -128px;
+}
+ .ui-icon-copy {
+	 background-position: -176px -128px;
+}
+ .ui-icon-contact {
+	 background-position: -192px -128px;
+}
+ .ui-icon-image {
+	 background-position: -208px -128px;
+}
+ .ui-icon-video {
+	 background-position: -224px -128px;
+}
+ .ui-icon-script {
+	 background-position: -240px -128px;
+}
+ .ui-icon-alert {
+	 background-position: 0 -144px;
+}
+ .ui-icon-info {
+	 background-position: -16px -144px;
+}
+ .ui-icon-notice {
+	 background-position: -32px -144px;
+}
+ .ui-icon-help {
+	 background-position: -48px -144px;
+}
+ .ui-icon-check {
+	 background-position: -64px -144px;
+}
+ .ui-icon-bullet {
+	 background-position: -80px -144px;
+}
+ .ui-icon-radio-off {
+	 background-position: -96px -144px;
+}
+ .ui-icon-radio-on {
+	 background-position: -112px -144px;
+}
+ .ui-icon-pin-w {
+	 background-position: -128px -144px;
+}
+ .ui-icon-pin-s {
+	 background-position: -144px -144px;
+}
+ .ui-icon-play {
+	 background-position: 0 -160px;
+}
+ .ui-icon-pause {
+	 background-position: -16px -160px;
+}
+ .ui-icon-seek-next {
+	 background-position: -32px -160px;
+}
+ .ui-icon-seek-prev {
+	 background-position: -48px -160px;
+}
+ .ui-icon-seek-end {
+	 background-position: -64px -160px;
+}
+ .ui-icon-seek-start {
+	 background-position: -80px -160px;
+}
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+ .ui-icon-seek-first {
+	 background-position: -80px -160px;
+}
+ .ui-icon-stop {
+	 background-position: -96px -160px;
+}
+ .ui-icon-eject {
+	 background-position: -112px -160px;
+}
+ .ui-icon-volume-off {
+	 background-position: -128px -160px;
+}
+ .ui-icon-volume-on {
+	 background-position: -144px -160px;
+}
+ .ui-icon-power {
+	 background-position: 0 -176px;
+}
+ .ui-icon-signal-diag {
+	 background-position: -16px -176px;
+}
+ .ui-icon-signal {
+	 background-position: -32px -176px;
+}
+ .ui-icon-battery-0 {
+	 background-position: -48px -176px;
+}
+ .ui-icon-battery-1 {
+	 background-position: -64px -176px;
+}
+ .ui-icon-battery-2 {
+	 background-position: -80px -176px;
+}
+ .ui-icon-battery-3 {
+	 background-position: -96px -176px;
+}
+ .ui-icon-circle-plus {
+	 background-position: 0 -192px;
+}
+ .ui-icon-circle-minus {
+	 background-position: -16px -192px;
+}
+ .ui-icon-circle-close {
+	 background-position: -32px -192px;
+}
+ .ui-icon-circle-triangle-e {
+	 background-position: -48px -192px;
+}
+ .ui-icon-circle-triangle-s {
+	 background-position: -64px -192px;
+}
+ .ui-icon-circle-triangle-w {
+	 background-position: -80px -192px;
+}
+ .ui-icon-circle-triangle-n {
+	 background-position: -96px -192px;
+}
+ .ui-icon-circle-arrow-e {
+	 background-position: -112px -192px;
+}
+ .ui-icon-circle-arrow-s {
+	 background-position: -128px -192px;
+}
+ .ui-icon-circle-arrow-w {
+	 background-position: -144px -192px;
+}
+ .ui-icon-circle-arrow-n {
+	 background-position: -160px -192px;
+}
+ .ui-icon-circle-zoomin {
+	 background-position: -176px -192px;
+}
+ .ui-icon-circle-zoomout {
+	 background-position: -192px -192px;
+}
+ .ui-icon-circle-check {
+	 background-position: -208px -192px;
+}
+ .ui-icon-circlesmall-plus {
+	 background-position: 0 -208px;
+}
+ .ui-icon-circlesmall-minus {
+	 background-position: -16px -208px;
+}
+ .ui-icon-circlesmall-close {
+	 background-position: -32px -208px;
+}
+ .ui-icon-squaresmall-plus {
+	 background-position: -48px -208px;
+}
+ .ui-icon-squaresmall-minus {
+	 background-position: -64px -208px;
+}
+ .ui-icon-squaresmall-close {
+	 background-position: -80px -208px;
+}
+ .ui-icon-grip-dotted-vertical {
+	 background-position: 0 -224px;
+}
+ .ui-icon-grip-dotted-horizontal {
+	 background-position: -16px -224px;
+}
+ .ui-icon-grip-solid-vertical {
+	 background-position: -32px -224px;
+}
+ .ui-icon-grip-solid-horizontal {
+	 background-position: -48px -224px;
+}
+ .ui-icon-gripsmall-diagonal-se {
+	 background-position: -64px -224px;
+}
+ .ui-icon-grip-diagonal-se {
+	 background-position: -80px -224px;
+}
+/* Misc visuals ----------------------------------*/
+/* Corner radius */
+ .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	 -moz-border-radius-topleft: 0px;
+	 -webkit-border-top-left-radius: 0px;
+	 -khtml-border-top-left-radius: 0px;
+	 border-top-left-radius: 0px;
+}
+ .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+	 -moz-border-radius-topright: 0px;
+	 -webkit-border-top-right-radius: 0px;
+	 -khtml-border-top-right-radius: 0px;
+	 border-top-right-radius: 0px;
+}
+ .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+	 -moz-border-radius-bottomleft: 0px;
+	 -webkit-border-bottom-left-radius: 0px;
+	 -khtml-border-bottom-left-radius: 0px;
+	 border-bottom-left-radius: 0px;
+}
+ .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	 -moz-border-radius-bottomright: 0px;
+	 -webkit-border-bottom-right-radius: 0px;
+	 -khtml-border-bottom-right-radius: 0px;
+	 border-bottom-right-radius: 0px;
+}
+/* Overlays */
+ .ui-widget-overlay {
+	 background: #aaaaaa url(https://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	 opacity: .30;
+	 filter: Alpha(Opacity=30);
+}
+ .ui-widget-shadow {
+	 margin: -8px 0 0 -8px;
+	 padding: 8px;
+	 background: #aaaaaa url(https://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	 opacity: .30;
+	 filter: Alpha(Opacity=30);
+	 -moz-border-radius: 8px;
+	 -khtml-border-radius: 8px;
+	 -webkit-border-radius: 8px;
+	 border-radius: 8px;
+}
+/*! * jQuery UI Resizable 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Resizable#theming */
+ .ui-resizable {
+	 position: relative;
+}
+ .ui-resizable-handle {
+	 position: absolute;
+	 font-size: 0.1px;
+	 display: block;
+}
+ .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+	 display: none;
+}
+ .ui-resizable-n {
+	 cursor: n-resize;
+	 height: 7px;
+	 width: 100%;
+	 top: -5px;
+	 left: 0;
+}
+ .ui-resizable-s {
+	 cursor: s-resize;
+	 height: 7px;
+	 width: 100%;
+	 bottom: -5px;
+	 left: 0;
+}
+ .ui-resizable-e {
+	 cursor: e-resize;
+	 width: 7px;
+	 right: -5px;
+	 top: 0;
+	 height: 100%;
+}
+ .ui-resizable-w {
+	 cursor: w-resize;
+	 width: 7px;
+	 left: -5px;
+	 top: 0;
+	 height: 100%;
+}
+ .ui-resizable-se {
+	 cursor: se-resize;
+	 width: 12px;
+	 height: 12px;
+	 right: 1px;
+	 bottom: 1px;
+}
+ .ui-resizable-sw {
+	 cursor: sw-resize;
+	 width: 9px;
+	 height: 9px;
+	 left: -5px;
+	 bottom: -5px;
+}
+ .ui-resizable-nw {
+	 cursor: nw-resize;
+	 width: 9px;
+	 height: 9px;
+	 left: -5px;
+	 top: -5px;
+}
+ .ui-resizable-ne {
+	 cursor: ne-resize;
+	 width: 9px;
+	 height: 9px;
+	 right: -5px;
+	 top: -5px;
+}
+/*! * jQuery UI Selectable 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Selectable#theming */
+ .ui-selectable-helper {
+	 position: absolute;
+	 z-index: 100;
+	 border: 1px dotted black;
+}
+/*! * jQuery UI Accordion 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Accordion#theming */
+/* IE/Win - Fix animation bug - #4615 */
+ .ui-accordion {
+	 width: 100%;
+	 padding-bottom: 20px;
+}
+ .ui-accordion .ui-accordion-header {
+	 cursor: pointer;
+	 position: relative;
+	 margin-top: 1px;
+	 margin-bottom: 0px;
+	 padding-top: 0px;
+	 padding-bottom: 0px;
+	 zoom: 1;
+}
+ .ui-accordion .ui-accordion-li-fix {
+	 display: inline;
+}
+ .ui-accordion .ui-accordion-header-active {
+	 border-bottom: 0 !important;
+}
+ .ui-accordion .ui-accordion-header a {
+	 display: block;
+	 font-size: 17px;
+	 padding: .4em .4em .4em 2.2em;
+}
+ .ui-accordion-icons .ui-accordion-header a {
+	 padding-left: 2.2em;
+}
+ .ui-accordion .ui-accordion-header .ui-icon {
+	 position: absolute;
+	 left: .5em;
+	 top: 50%;
+	 margin-top: -8px;
+}
+ .ui-accordion .ui-accordion-content {
+	 padding: 1em 2.2em;
+	 border-top: 0;
+	 margin-top: -2px;
+	 position: relative;
+	 top: 1px;
+	 margin-bottom: 2px;
+	 overflow: auto;
+	 display: none;
+	 zoom: 1;
+}
+ .ui-accordion .ui-accordion-content-active {
+	 display: block;
+}
+/* Accordion link style fix */
+ .ui-accordion .ui-accordion-content a {
+	 color: #4502b1;
+	 text-decoration: none;
+}
+ .ui-accordion .ui-accordion-content a:hover {
+	 color: #029feb;
+}
+/*! * jQuery UI Autocomplete 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Autocomplete#theming */
+ .ui-autocomplete {
+	 position: absolute;
+	 cursor: default;
+}
+/* workarounds */
+ * html .ui-autocomplete {
+	 width: 1px;
+}
+/* without this, the menu expands to 100% in IE6 */
+/* * jQuery UI Menu 1.8.21 * * Copyright 2010, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Menu#theming */
+ .ui-menu {
+	 list-style: none;
+	 padding: 2px;
+	 margin: 0;
+	 display: block;
+	 float: left;
+}
+ .ui-menu .ui-menu {
+	 margin-top: -3px;
+}
+ .ui-menu .ui-menu-item {
+	 margin: 0;
+	 padding: 0;
+	 zoom: 1;
+	 float: left;
+	 clear: left;
+	 width: 100%;
+}
+ .ui-menu .ui-menu-item a {
+	 text-decoration: none;
+	 display: block;
+	 padding: .2em .4em;
+	 line-height: 1.5;
+	 zoom: 1;
+}
+ .ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+	 font-weight: normal;
+	 margin: -1px;
+}
+/*! * jQuery UI Button 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Button#theming */
+ .ui-button {
+	 display: inline-block;
+	 position: relative;
+	 padding: 0;
+	 margin-right: .1em;
+	 text-decoration: none !important;
+	 cursor: pointer;
+	 text-align: center;
+	 zoom: 1;
+	 overflow: visible;
+}
+/* the overflow property removes extra width in IE */
+ .ui-button-icon-only {
+	 width: 2.2em;
+}
+/* to make room for the icon, a width needs to be set here */
+ button.ui-button-icon-only {
+	 width: 2.4em;
+}
+/* button elements seem to need a little more width */
+ .ui-button-icons-only {
+	 width: 3.4em;
+}
+ button.ui-button-icons-only {
+	 width: 3.7em;
+}
+/*button text element */
+ .ui-button .ui-button-text {
+	 display: block;
+	 line-height: 1.4;
+}
+ .ui-button-text-only .ui-button-text {
+	 padding: .4em 1em;
+}
+ .ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+	 padding: .4em;
+	 text-indent: -9999999px;
+}
+ .ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text {
+	 padding: .4em 1em .4em 2.1em;
+}
+ .ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text {
+	 padding: .4em 2.1em .4em 1em;
+}
+ .ui-button-text-icons .ui-button-text {
+	 padding-left: 2.1em;
+	 padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+ input.ui-button {
+	 padding: .4em 1em;
+}
+/*button icon element(s) */
+ .ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
+	 position: absolute;
+	 top: 50%;
+	 margin-top: -8px;
+}
+ .ui-button-icon-only .ui-icon {
+	 left: 50%;
+	 margin-left: -8px;
+}
+ .ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary {
+	 left: .5em;
+}
+ .ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+	 right: .5em;
+}
+ .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+	 right: .5em;
+}
+/*button sets*/
+ .ui-buttonset {
+	 margin-right: 7px;
+}
+ .ui-buttonset .ui-button {
+	 margin-left: 0;
+	 margin-right: -.3em;
+}
+/* workarounds */
+ button.ui-button::-moz-focus-inner {
+	 border: 0;
+	 padding: 0;
+}
+/* reset extra padding in Firefox */
+/*! * jQuery UI Dialog 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Dialog#theming */
+ .ui-dialog {
+	 position: absolute;
+	 padding: .2em;
+	 width: 300px;
+	 overflow: hidden;
+}
+ .ui-dialog .ui-dialog-titlebar {
+	 padding: .4em 1em;
+	 position: relative;
+}
+ .ui-dialog .ui-dialog-title {
+	 float: left;
+	 margin: .1em 16px .1em 0;
+}
+ .ui-dialog .ui-dialog-titlebar-close {
+	 position: absolute;
+	 right: .3em;
+	 top: 50%;
+	 width: 19px;
+	 margin: -10px 0 0 0;
+	 padding: 1px;
+	 height: 18px;
+}
+ .ui-dialog .ui-dialog-titlebar-close span {
+	 display: block;
+	 margin: 1px;
+}
+ .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+	 padding: 0;
+}
+ .ui-dialog .ui-dialog-content {
+	 position: relative;
+	 border: 0;
+	 padding: .5em 1em;
+	 background: none;
+	 overflow: auto;
+	 zoom: 1;
+}
+ .ui-dialog .ui-dialog-buttonpane {
+	 text-align: left;
+	 border-width: 1px 0 0 0;
+	 background-image: none;
+	 margin: .5em 0 0 0;
+	 padding: .3em 1em .5em .4em;
+}
+ .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	 float: right;
+}
+ .ui-dialog .ui-dialog-buttonpane button {
+	 margin: .5em .4em .5em 0;
+	 cursor: pointer;
+}
+ .ui-dialog .ui-resizable-se {
+	 width: 14px;
+	 height: 14px;
+	 right: 3px;
+	 bottom: 3px;
+}
+ .ui-draggable .ui-dialog-titlebar {
+	 cursor: move;
+}
+/*! * jQuery UI Slider 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Slider#theming */
+ .ui-slider {
+	 position: relative;
+	 text-align: left;
+}
+ .ui-slider .ui-slider-handle {
+	 position: absolute;
+	 z-index: 2;
+	 width: 1.2em;
+	 height: 1.2em;
+	 cursor: default;
+}
+ .ui-slider .ui-slider-range {
+	 position: absolute;
+	 z-index: 1;
+	 font-size: .7em;
+	 display: block;
+	 border: 0;
+	 background-position: 0 0;
+}
+ .ui-slider-horizontal {
+	 height: .8em;
+}
+ .ui-slider-horizontal .ui-slider-handle {
+	 top: -.3em;
+	 margin-left: -.6em;
+}
+ .ui-slider-horizontal .ui-slider-range {
+	 top: 0;
+	 height: 100%;
+}
+ .ui-slider-horizontal .ui-slider-range-min {
+	 left: 0;
+}
+ .ui-slider-horizontal .ui-slider-range-max {
+	 right: 0;
+}
+ .ui-slider-vertical {
+	 width: .8em;
+	 height: 100px;
+}
+ .ui-slider-vertical .ui-slider-handle {
+	 left: -.3em;
+	 margin-left: 0;
+	 margin-bottom: -.6em;
+}
+ .ui-slider-vertical .ui-slider-range {
+	 left: 0;
+	 width: 100%;
+}
+ .ui-slider-vertical .ui-slider-range-min {
+	 bottom: 0;
+}
+ .ui-slider-vertical .ui-slider-range-max {
+	 top: 0;
+}
+/*! * jQuery UI Tabs 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Tabs#theming */
+ .ui-tabs {
+	 position: relative;
+	 padding: .2em;
+	 zoom: 1;
+}
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+ .ui-tabs .ui-tabs-nav {
+	 margin: 0;
+	 padding: .2em .2em 0;
+}
+ .ui-tabs .ui-tabs-nav li {
+	 list-style: none;
+	 float: left;
+	 position: relative;
+	 top: 1px;
+	 margin: 0 .2em 1px 0;
+	 border-bottom: 0 !important;
+	 padding: 0;
+	 white-space: nowrap;
+}
+ .ui-tabs .ui-tabs-nav li a {
+	 float: left;
+	 padding: .5em 1em;
+	 text-decoration: none;
+}
+ .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	 margin-bottom: 0;
+	 padding-bottom: 1px;
+}
+ .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	 cursor: text;
+}
+ .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	 cursor: pointer;
+}
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+ .ui-tabs .ui-tabs-panel {
+	 display: block;
+	 border-width: 0;
+	 padding: 1em 1.4em;
+	 background: none;
+}
+ .ui-tabs .ui-tabs-hide {
+	 display: none !important;
+}
+/*! * jQuery UI Datepicker 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Datepicker#theming */
+ .ui-datepicker {
+	 width: 17em;
+	 padding: .2em .2em 0;
+	 display: none;
+}
+ .ui-datepicker .ui-datepicker-header {
+	 position: relative;
+	 padding: .2em 0;
+}
+ .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	 position: absolute;
+	 top: 2px;
+	 width: 1.8em;
+	 height: 1.8em;
+}
+ .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+	 top: 1px;
+}
+ .ui-datepicker .ui-datepicker-prev {
+	 left: 2px;
+}
+ .ui-datepicker .ui-datepicker-next {
+	 right: 2px;
+}
+ .ui-datepicker .ui-datepicker-prev-hover {
+	 left: 1px;
+}
+ .ui-datepicker .ui-datepicker-next-hover {
+	 right: 1px;
+}
+ .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+	 display: block;
+	 position: absolute;
+	 left: 50%;
+	 margin-left: -8px;
+	 top: 50%;
+	 margin-top: -8px;
+}
+ .ui-datepicker .ui-datepicker-title {
+	 margin: 0 2.3em;
+	 line-height: 1.8em;
+	 text-align: center;
+}
+ .ui-datepicker .ui-datepicker-title select {
+	 font-size: 1em;
+	 margin: 1px 0;
+}
+ .ui-datepicker select.ui-datepicker-month-year {
+	 width: 100%;
+}
+ .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	 width: 49%;
+}
+ .ui-datepicker table {
+	 width: 100%;
+	 font-size: .9em;
+	 border-collapse: collapse;
+	 margin: 0 0 .4em;
+}
+ .ui-datepicker th {
+	 padding: .7em .3em;
+	 text-align: center;
+	 font-weight: bold;
+	 border: 0;
+}
+ .ui-datepicker td {
+	 border: 0;
+	 padding: 1px;
+}
+ .ui-datepicker td span, .ui-datepicker td a {
+	 display: block;
+	 padding: .2em;
+	 text-align: right;
+	 text-decoration: none;
+}
+ .ui-datepicker .ui-datepicker-buttonpane {
+	 background-image: none;
+	 margin: .7em 0 0 0;
+	 padding: 0 .2em;
+	 border-left: 0;
+	 border-right: 0;
+	 border-bottom: 0;
+}
+ .ui-datepicker .ui-datepicker-buttonpane button {
+	 float: right;
+	 margin: .5em .2em .4em;
+	 cursor: pointer;
+	 padding: .2em .6em .3em .6em;
+	 width: auto;
+	 overflow: visible;
+}
+ .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	 float: left;
+}
+/* with multiple calendars */
+ .ui-datepicker.ui-datepicker-multi {
+	 width: auto;
+}
+ .ui-datepicker-multi .ui-datepicker-group {
+	 float: left;
+}
+ .ui-datepicker-multi .ui-datepicker-group table {
+	 width: 95%;
+	 margin: 0 auto .4em;
+}
+ .ui-datepicker-multi-2 .ui-datepicker-group {
+	 width: 50%;
+}
+ .ui-datepicker-multi-3 .ui-datepicker-group {
+	 width: 33.3%;
+}
+ .ui-datepicker-multi-4 .ui-datepicker-group {
+	 width: 25%;
+}
+ .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+	 border-left-width: 0;
+}
+ .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	 border-left-width: 0;
+}
+ .ui-datepicker-multi .ui-datepicker-buttonpane {
+	 clear: left;
+}
+ .ui-datepicker-row-break {
+	 clear: both;
+	 width: 100%;
+	 font-size: 0em;
+}
+/* RTL support */
+ .ui-datepicker-rtl {
+	 direction: rtl;
+}
+ .ui-datepicker-rtl .ui-datepicker-prev {
+	 right: 2px;
+	 left: auto;
+}
+ .ui-datepicker-rtl .ui-datepicker-next {
+	 left: 2px;
+	 right: auto;
+}
+ .ui-datepicker-rtl .ui-datepicker-prev:hover {
+	 right: 1px;
+	 left: auto;
+}
+ .ui-datepicker-rtl .ui-datepicker-next:hover {
+	 left: 1px;
+	 right: auto;
+}
+ .ui-datepicker-rtl .ui-datepicker-buttonpane {
+	 clear: right;
+}
+ .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	 float: left;
+}
+ .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+	 float: right;
+}
+ .ui-datepicker-rtl .ui-datepicker-group {
+	 float: right;
+}
+ .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+	 border-right-width: 0;
+	 border-left-width: 1px;
+}
+ .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	 border-right-width: 0;
+	 border-left-width: 1px;
+}
+/*! * jQuery UI Progressbar 1.8.21 * * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about) * Dual licensed under the MIT or GPL Version 2 licenses. * https://jquery.org/license * * https://docs.jquery.com/UI/Progressbar#theming */
+ .ui-progressbar {
+	 height: 2em;
+	 text-align: left;
+	 overflow: hidden;
+}
+ .ui-progressbar .ui-progressbar-value {
+	 margin: -1px;
+	 height: 100%;
+}
+/* * Timepicker stylesheet * Highly inspired from datepicker * FG - Nov 2010 - Web3R * * version 0.0.3 : Fixed some settings, more dynamic * version 0.0.4 : Removed width:100% on tables * version 0.1.1 : set width 0 on tables to fix an ie6 bug */
+ .ui-timepicker-inline {
+	 display: inline;
+}
+ #ui-timepicker-div {
+	 padding: 0.2em;
+	 background-color: #fff;
+}
+ .ui-timepicker-table {
+	 display: inline-table;
+	 width: 0;
+}
+ .ui-timepicker-table table {
+	 margin: 0.15em 0 0 0;
+	 border-collapse: collapse;
+}
+ .ui-timepicker-hours, .ui-timepicker-minutes {
+	 padding: 0.2em;
+}
+ .ui-timepicker-table .ui-timepicker-title {
+	 line-height: 1.8em;
+	 text-align: center;
+}
+ .ui-timepicker-table td {
+	 padding: 0.1em;
+	 width: 2.2em;
+}
+ .ui-timepicker-table th.periods {
+	 padding: 0.1em;
+	 width: 2.2em;
+}
+/* span for disabled cells */
+ .ui-timepicker-table td span {
+	 display: block;
+	 padding: 0.2em 0.3em 0.2em 0.5em;
+	 width: 1.2em;
+	 text-align: right;
+	 text-decoration: none;
+}
+/* anchors for clickable cells */
+ .ui-timepicker-table td a {
+	 display: block;
+	 padding: 0.2em 0.3em 0.2em 0.5em;
+	 width: 1.2em;
+	 cursor: pointer;
+	 text-align: right;
+	 text-decoration: none;
+}
+/* buttons and button pane styling */
+ .ui-timepicker .ui-timepicker-buttonpane {
+	 background-image: none;
+	 margin: .7em 0 0 0;
+	 padding: 0 .2em;
+	 border-left: 0;
+	 border-right: 0;
+	 border-bottom: 0;
+}
+ .ui-timepicker .ui-timepicker-buttonpane button {
+	 margin: .5em .2em .4em;
+	 cursor: pointer;
+	 padding: .2em .6em .3em .6em;
+	 width: auto;
+	 overflow: visible;
+}
+/* The close button */
+ .ui-timepicker .ui-timepicker-close {
+	 float: right 
+}
+/* the now button */
+ .ui-timepicker .ui-timepicker-now {
+	 float: left;
+}
+/* the deselect button */
+ .ui-timepicker .ui-timepicker-deselect {
+	 float: left;
+}
+/************ FEEDBACK *************/
+ .feedback {
+	 position: fixed;
+	 right: -481px;
+	 top: 220px;
+	 display: inline;
+	 overflow: hidden;
+	 z-index: 1000;
+}
+ .feedback a.open {
+	 display: block;
+	 height: 128px;
+	 width: 33px;
+	 float: left;
+	 cursor: pointer;
+	 background-image: url(https://www.uwo.ca/web_standards/img/feedback_btn.gif);
+	 background-repeat: no-repeat;
+	 margin-top: 15px;
+}
+ .close {
+	 float: right;
+	 display: inline-block;
+	 margin-right: 65px;
+	 cursor: pointer;
+}
+ .feedback .form {
+	 clear: both;
+	 height: 250px;
+	 width: 450px;
+	 border: 1px solid #dcdcdc;
+	 border-right: none;
+	 background: #fff;
+	 display: inline-block;
+	 padding: 15px;
+}
+ .feedback .form textarea {
+	 height: 115px;
+	 width: 372px;
+	 padding: 5px;
+}
+ .feedback .status {
+	 font-size: 16px;
+}
+ .feedback h2 {
+	 display: inline-block;
+}
+ .placeholder {
+	 color: #666666;
+}
+/************* CAROUSEL *************/
+ .credit {
+	 font-size: 9px;
+	 float: right;
+	 color: #ccc;
+	 margin: 2px 5px 2px 5px;
+	 margin-top: -30px;
+}
+ .pdf {
+	 list-style-image: url(https://www.uwo.ca/web_standards/img/icn/pdf-icon.png);
+}
+ .lock {
+	 list-style-image: url(https://www.uwo.ca/web_standards/img/icn/lock-icon.png);
+}
+ .movie {
+	 list-style-image: url(https://www.uwo.ca/web_standards/img/social/youtube_16.png);
+}
+ .word {
+	 list-style-image: url(https://www.uwo.ca/web_standards/img/icn/word-icon.png);
+}
+ #facebox {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 z-index: 1000;
+	 text-align: left;
+}
+ #facebox p {
+	 padding: 10px;
+}
+ #facebox table {
+	 margin-bottom: 0px;
+}
+ #facebox .popup {
+	 position: relative;
+	 border: 3px solid rgba(0, 0, 0, 0);
+	 -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+	 -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+	 box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+	 background: #ccc;
+}
+ #facebox .content {
+	 display: table;
+	 width: 370px;
+	 padding: 10px;
+	 background: #fff;
+}
+ #facebox .content>p:first-child {
+	 margin-top: 0;
+}
+ #facebox .content>p:last-child {
+	 margin-bottom: 0;
+}
+ #facebox .close {
+	 position: absolute;
+	 right: -80px;
+	 top: -16px;
+	 padding: 2px;
+}
+ #facebox .loading {
+	 text-align: center;
+}
+ #facebox .image {
+	 text-align: center;
+}
+ #facebox img {
+	 border: 0;
+	 margin: 0;
+}
+ #facebox_overlay {
+	 position: fixed;
+	 top: 0px;
+	 left: 0px;
+	 height: 100%;
+	 width: 100%;
+}
+ .facebox_hide {
+	 z-index: -100;
+}
+ .facebox_overlayBG {
+	 background-color: #000;
+	 z-index: 99;
+}
+ #email-form {
+	 padding: 20px;
+	 background: #f5f5f5;
+}
+ #email-form input, #email-form textarea, #email-form select {
+	 background: none repeat scroll 0 0 #CCCCCC;
+	 border: 1px solid #AAAAAA;
+	 margin-bottom: 10px;
+	 padding: 4px;
+}
+ .purp {
+	 background: #4F2D82 !important;
+	 color: #fff !important;
+	 border: #fff !important;
+}
+ #feed p {
+	 margin-bottom: 10px;
+	 font-weight: bold;
+}
+ #feed h3 {
+	 margin-bottom: 0px;
+	 padding-bottom: 0px;
+}
+ .inputlist input {
+	 display: block;
+	 width: 4%;
+	 float: left;
+}
+ .inputlist p {
+	 display: block;
+	 float: left;
+	 width: 94%;
+	 margin-bottom: 0px;
+}
+ .arrow-list li {
+	 background: url("https://www.uwo.ca/web_standards/img/icn/paper-transp.png") no-repeat scroll 2px 8px transparent;
+	 margin: 0;
+	 padding: 5px 0;
+	 padding-left: 15px;
+	 padding-right: 10px;
+	 line-height: 21px;
+	 color: #444;
+}
+ ul.bullet-list {
+	 list-style: initial;
+}
+ .arrow-list > li.h3 {
+	 background: url("https://www.uwo.ca/web_standards/img/icn/paper-transp.png") no-repeat scroll 0px 22px transparent;
+}
+ p.intro-paragraph {
+	 margin-top: 14px;
+	 font-size: 120%;
+}
+ .flickr-link {
+	 display: none;
+}
+ tbody {
+	 border: 1px solid #ccc;
+}
+ th {
+	 background: #dcdcdc;
+	 border: 1px solid #ccc;
+	 padding: 5px;
+	 font-weight: bold;
+}
+ td {
+	 border: 1px solid #ccc;
+	 padding: 5px;
+}
+ tr {
+	 border: 1px solid #ccc;
+}
+ table.no-borders tbody {
+	 border: none 
+}
+ table.no-borders th {
+	 background: #dcdcdc;
+	 border: none;
+	 padding: 5px;
+	 font-weight: bold;
+}
+ table.no-borders tr {
+	 border: none;
+}
+ table.no-borders td {
+	 border: none;
+	 padding: 5px;
+}
+ .obscure {
+	 position: absolute !important;
+	 clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	 clip: rect(1px, 1px, 1px, 1px);
+}
+ .menu-image {
+	 width: 210px;
+	 height: 145px;
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+}
+ .research-menu-image {
+	 float: left;
+	 margin-right: 10px;
+	 margin-top: 10px;
+	 width: 210px;
+	 height: 145px;
+	 padding-bottom: 13px;
+	 background-image: url(https://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+}
+ .stacked-logo-one {
+	 float: right;
+	 margin-top: 2px;
+}
+ .stacked-logo-two {
+	 float: right;
+	 margin-top: 16px;
+}
+ .EmergencyUpdate {
+	 float: left;
+	 margin-right: 2%;
+	 width: 40%;
+}
+ .EmergencyDescription {
+	 float: left;
+	 margin-right: 2%;
+	 width: 35%;
+}
+ .EmergencyInfo {
+	 float: left;
+	 width: 21%;
+}
+/* Controls the photo-based team page */
+ .headshot {
+	 margin-right: 30px;
+	 float: left;
+}
+ .teamgrid {
+	 padding: 15px 10px;
+	 float: left;
+	 width: 96%;
+	 border-top: 1px solid #eee;
+}
+/* Controls the width of the content columns as the page resizes to a default width */
+ .infoleft {
+	 float: left;
+	 width: 37%;
+	 margin-top: 10px;
+}
+ .inforight {
+	 float: right;
+	 margin-top: 10px;
+	 width: 25%;
+}
+/**************************** MOBILE STYLES ********************************/
+ #purple_2column {
+	 margin-right: 0;
+}
+/**hidden stuff**/
+ div.lists-2column {
+	 display: none;
+	 margin-top: 25px;
+}
+ div.lists-combo {
+	 display: none;
+	 margin-top: 25px;
+}
+ br.hiddenbreak {
+	 display: none;
+}
+ .hiddenclear {
+	 clear: both;
+	 display: none;
+}
+ .ie7-break {
+	 display: none;
+}
+ .top-nav {
+	 display: none;
+}
+ .initiatives {
+	 display: none;
+}
+ .bottom {
+	 display: none;
+}
+ .lists-select {
+	 display: none;
+}
+ .logins {
+	 display: none;
+}
+ .hiddenrange {
+	 display: none;
+}
+ div.right-2column-respond, div.left-2column-respond {
+	 display: none;
+}
+ .popular-select {
+	 display: none;
+}
+ ul#nav {
+	 display: none;
+}
+ #nav {
+	 list-style: none;
+	 color: #fff;
+	 text-transform: uppercase;
+}
+ #nav li {
+	 float: left;
+	 display: block;
+	 min-width: 100%;
+	 background: #4E2583;
+	 position: relative;
+	 z-index: 500;
+	 color: #fff;
+	 background: #4f2683;
+	 background: -moz-linear-gradient(top, #4f2e84, #380e6e);
+	 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4f2e84), to(#380e6e));
+	 border: 1px solid #ccc;
+	 -moz-box-shadow: inset 0px 0px 1px #edf9ff;
+	 -webkit-box-shadow: inset 0px 0px 1px #edf9ff;
+	 box-shadow: inset 0px 0px 1px #edf9ff;
+}
+ #nav li a {
+	 display: block;
+	 padding: 6px;
+	 font-weight: 700;
+	 height: 23px;
+	 text-decoration: none;
+	 color: #fff;
+	 max-width: 100%;
+	 background: url("https://www.uwo.ca/web_standards/img/meganav/drop.png") no-repeat scroll 97% center transparent;
+}
+/*#nav li a:hover {
+	 color:#005a96;
+	 background: url("https://www.uwo.ca/web_standards/img/meganav/drop-alt.png") no-repeat scroll 97% center #efefef;
+}
+ #nav a.selected {
+	 color:#f00;
+}
+ */
+ #nav li ul li a {
+	 background-image: none;
+	 color: #4502b1;
+}
+ #nav ul {
+	 position: absolute;
+	 left: 0;
+	 display: none;
+	 margin: 0 0 0 -1px;
+	 padding: 0;
+	 list-style: none;
+	 min-width: 100%;
+}
+ #nav ul li {
+	 max-width: 100%;
+	 float: left;
+	 background: #efefef;
+}
+/*#nav ul li :hover {
+	 background: #efefef;
+}
+ */
+ #nav ul a {
+	 display: block;
+	 padding: 8px 5px;
+	 color: #fff;
+}
+ #nav ul a:hover {
+	 text-decoration: none;
+}
+ #ribbon-outer {
+	 display: none;
+	 margin-left: 2%;
+	 max-width: 100%;
+}
+ #ribbon-outer li {
+	 display: block;
+	 float: left;
+	 margin-top: 8px;
+	 padding: 0;
+	 color: #dcdcdc;
+}
+ #ribbon-outer li.up {
+	 display: block;
+	 float: left;
+	 margin-top: 6px;
+	 padding: 0px 8px 0px 8px;
+	 text-shadow: 1px 1px 1px #fff;
+	 color: #999;
+}
+ #ribbon-outer li a {
+	 color: #4502b1;
+	 display: inline-block;
+	 position: relative;
+	 text-decoration: none;
+	 text-shadow: 1px 1px 1px #fff;
+	 text-transform: capitalize;
+}
+ #ribbon-outer li a:hover {
+	 color: #005a96;
+}
+/* Hides the Social Media icon block below initiatives while the page displays at full size */
+ .socialmobile {
+	 display: none;
+}
+ .ttl-svg {
+	width: 500px;
+}
+ .ttl-svg-stacked {
+	width: 220px;
+	 float: right;
+	 margin-top: 16px;
+}
+ @media screen and (max-width: 1448px) {
+	/* Quote Responsive */
+	 .quote-right{
+		 margin-right: 0px;
+		 margin-top: 5px;
+	}
+}
+ @media screen and (max-width: 1171px) {
+	 .footer-logos{
+		 margin-right: 10px;
+	}
+	 .social-media{
+		 margin-right: 10px;
+	}
+}
+ @media screen and (max-width: 1041px) {
+	 .flex-direction-nav li .flex-prev, .flex-direction-nav li .flex-next {
+		 display: none;
+	}
+	/* CAPTION RESPONSIVE */
+	 .flex-caption {
+		 font-size: 90%;
+	}
+	 .transparent-caption{
+		 line-height: 40px;
+	}
+	 .transparent-subcaption{
+		 line-height: 25px;
+		 padding-top: 10px;
+	}
+	 #left.flex-caption{
+		 right: 40%;
+		 max-width: 45%;
+	}
+	 #right.flex-caption{
+		 left: 40%;
+		 max-width: 45%;
+	}
+}
+ @media screen and (max-width: 1000px) {
+	 body {
+		 padding: 0px 0px 0px 0px;
+		 background-image: none;
+	}
+	 .first, .second, .third, .fourth, .fifth {
+		 display: none;
+	}
+	 #menu li .drop, .arrow-first, .ex-link {
+		 background: none;
+		 padding-right: 0px;
+	}
+	 #menu li a .drop, #menu li:hover .drop {
+		 background: none;
+		 padding-right: 0px;
+	}
+	 div.feedback {
+		 display: none;
+	}
+	 .flex-control-nav {
+		 display: none;
+	}
+	 .container_12, 
+	/* #masthead, */
+	 #flipjar, #ribbon-inner {
+		 max-width: 100%;
+		 margin: 0px;
+	}
+	 .container_12 {
+		 box-shadow: none;
+	}
+	 #ribbon-inner {
+		 padding-left: 1%;
+	}
+	 div.ribboninputcontainer {
+		 margin: 0px;
+		 padding-left: 1%;
+		 padding-right: 0px;
+	}
+	 div.panel {
+		 max-width: 100%;
+	}
+	 .lists-select .fields {
+		 width: 100%;
+	}
+	 .letstalk-caption {
+		 display: none;
+	}
+	 #masthead{
+		 overflow:hidden;
+	}
+}
+ @media screen and (max-width: 968px) {
+	 .content-group {
+		 width: 22%;
+	}
+}
+ @media screen and (max-width: 946px) {
+	 .first, .second, .third, .fourth, .fifth {
+		 display: none;
+	}
+	 #menu li .drop {
+		 background: none;
+		 padding-right: 0px;
+	}
+	 #menu li a .drop, #menu li:hover .drop {
+		 background: none;
+		 padding-right: 0px;
+	}
+	 div.lists {
+		 display: none;
+	}
+	 div.lists-2column {
+		 display: block;
+	}
+	 #menu li {
+		 margin: 7px 10px 0 10px;
+	}
+	 #menu li.open {
+		 margin: 0px 10px 0 10px;
+	}
+	 #random-image {
+		 display: none;
+	}
+	 #calendar-large {
+		 width: 30%;
+	}
+	 .TabbedPanels {
+		 width: 65%;
+	}
+	 #grey_2column {
+		 width: 65%;
+	}
+	 #purple_2column {
+		 width: 30%;
+	}
+	 div#youtube, div#twitter, div#flikr, div#social-links {
+		 width: 20%;
+	}
+	 br.hiddenbreak {
+		 display: block;
+		 clear: both;
+	}
+	 #sidebar {
+		 margin-left: 1%;
+		 width: 95%;
+	}
+	 div.left-2column-faculty {
+		 width: 99%;
+		 margin-left: .5% 
+	}
+	 div.right-2column-faculty {
+		 display: none;
+	}
+	 .container_12 .grid_9 {
+		 width: 97%;
+		 margin-left: 1.5%;
+	}
+	 .top {
+		 display: none;
+	}
+	 .bottom {
+		 display: block;
+	}
+	 #left-sidebar {
+		 width: 97%;
+	}
+	/* Adding unique id for left sidebar */
+	 #left-sidebar-mobile {
+		 width: 97%;
+	}
+	/* End unique id for left sidebar */
+	 .faculty-title {
+		 background: none;
+		 border: none;
+	}
+	 .slider-container, .profiles {
+		/* display:none;
+		 */
+	}
+	 .slider-container {
+		 margin: 0;
+		 padding: 0;
+	}
+	 .logins {
+		 display: block;
+	}
+	 div.responsive-hide {
+		/* Gets rid of Publications in sidebar on resize */
+		 display: none;
+	}
+	 div.stay-connected {
+		/* Gets rid of Publications in sidebar on resize */
+		 display: none;
+	}
+	 #faculty-slider {
+		 width: 100%;
+	}
+	 #menu {
+		 display: none;
+	}
+	 ul#nav {
+		 display: block;
+	}
+	/* Adjusts initiatives to display better at smaller sizes */
+	 #init1, #init2, #init3, #init4, #initlinks {
+		 width: 30%;
+		 display: inline;
+		 margin: 0 10px;
+	}
+	 #initlinks {
+		 border-top: 1px solid #bbb;
+		 width: 98%;
+	}
+	/* Embedded slideshow fix */
+	/* Causes the Next/Previous buttons to hide */
+	 #secondary-slider .flex-direction-nav .flex-next {
+		 visibility: hidden;
+	}
+	 #secondary-slider .flex-direction-nav .flex-prev {
+		 visibility: hidden;
+	}
+	 .container_12 .grid_12{
+		 clear:both;
+		 width:97%;
+		 margin-left:1.5%;
+		 margin-right:1.5%;
+		 margin-top:1.5%;
+	}
+	/* CAPTION RESPONSIVE */
+	 #left.flex-caption{
+		 position: initial;
+		 max-width: 96%;
+	}
+	 #center.flex-caption{
+		 position: initial;
+		 max-width: 96%;
+	}
+	 #right.flex-caption{
+		 position: initial;
+		 max-width: 96%;
+	}
+	 .flex-caption{
+		 font-size: 80%;
+		 background-color: #333;
+	}
+	 .transparent-subcaption {
+		 line-height: 20px;
+	}
+	 html, body{
+		 background-color:#eee;
+	}
+	/* Quote Responsive */
+	 .quote-left{
+		 margin-left: 0px;
+		 margin-top: 5px;
+	}
+	 #lowlevel.main-content{
+		 min-height: 100%;
+	}
+	 #content.grid_12{
+		 margin-left: 1.5%;
+	}
+	 #top.btn{
+		 position:inherit;
+		 max-width:30%;
+		 width:100%;
+		 margin-top:10px;
+		 margin-right:2%;
+		 text-align:center 
+	}
+	 #center.btn{
+		 position:inherit;
+		 max-width:30%;
+		 width:100%;
+		 margin-top:10px;
+		 text-align:center 
+	}
+	 #bottom.btn{
+		 position:inherit;
+		 max-width:30%;
+		 width:100%;
+		 margin-top:10px;
+		 margin-left:2%;
+		 text-align:center 
+	}
+}
+ @media screen and (max-width: 890px) {
+	 #menu li {
+		 margin: 7px 5px 0 5px;
+	}
+	 #menu li.open {
+		 margin: 0px 5px 0 5px;
+	}
+	 .container_12 .grid_3 {
+		 width: 40%;
+	}
+	 #connect {
+		 float: none;
+	}
+}
+ @media screen and (max-width: 848px) {
+	 #menu li {
+		 margin: 7px 6px 0 6px;
+		 padding: 4px 8px 10px;
+	}
+	 #menu li.open {
+		 margin: 0px 6px 0 6px;
+		 padding-left: 8px;
+		 padding-right: 8px;
+	}
+	 div.lists-combo {
+		 display: block;
+	}
+	 .newsimg {
+		 display: none;
+	}
+	 div#sidebar {
+		 width: 95%;
+	}
+	/* Embedded slideshow fix */
+	 #secondary-slider .flex-direction-nav .flex-next {
+		/* left:85%;
+		 */
+		 left: 85%;
+		/* background: blue;
+		 */
+	}
+	/* End embedded slideshow fix */
+	/* CAPTION RESPONSIVE */
+	 .flex-caption{
+		 font-size: 70%;
+	}
+}
+ @media screen and (max-width: 833px) {
+	 .content-group {
+		 width: 45%;
+	}
+	 .hiddenclear-faculty {
+		 clear: both;
+	}
+	 div.caption-wrapper {
+		 display: none;
+	}
+	 div.more-western {
+		 width: 100%;
+	}
+	 div.image-left {
+		/* width: 30.5%;
+		 */
+	}
+}
+ @media screen and (max-width: 777px) {
+	 div.lists-2column {
+		 display: none;
+	}
+	 .ttl-svg {
+		padding: 15px 0;
+	}
+	 .lists-select {
+		 display: block;
+		 margin-top: 35px;
+		 float: right;
+		 margin-right: 1%;
+	}
+	 .lists-select .fields, .popular-select .fields {
+		 padding: 4px;
+		 background-color: rgba(255, 255, 255, 0.6);
+		 border: 1px solid #fff;
+		 font-size: 130%;
+		 color: #666;
+	}
+	 .EmergencyUpdate {
+		 width: 100%;
+		 margin: 0;
+	}
+	 .EmergencyDescription {
+		 width: 100%;
+		 margin: 0;
+	}
+	 .EmergencyInfo {
+		 width: 100%;
+		 margin: 0;
+	}
+	 div#ribbon-outer {
+		 display: block;
+	}
+	 div#ribbon {
+		 display: none;
+	}
+	 div.panelbck {
+		 display: none;
+	}
+	 ul#nav {
+		 display: block;
+		 margin: 0px auto 20px auto;
+		 width: 100%;
+	}
+	 .container_12 .grid_12 {
+		 width: 97%;
+		 margin-left: 1.5%;
+	}
+	 .search {
+		 float: left;
+		 padding-top: 10px;
+		 margin: 6px 10px 10px 10px;
+		 text-align: left;
+	}
+	/* THE BREAK POINT FOR THE MENU TO BEGIN RESZING ul#menu {
+		 display: none;
+	}
+	 */
+	 div.flexslider {
+		 margin-top: 10px;
+	}
+	 img.logo_img {
+		 margin-top: 10px;
+		 margin-bottom: 0px;
+	}
+	 .breadcrumbs {
+		 padding-top: 8px;
+	}
+	 div.left-2column-respond, div.right-2column-respond {
+		 display: block;
+	}
+	 div.right-3column, div.center-3column, div.left-3column, div.left-2column, div.right-2column {
+		/* The original code hid these elements: display: none;
+		 */
+		 width: 100%;
+	}
+	 div.right-2column {
+		 border: 0;
+		 margin-left: -10px;
+	}
+	 img.image {
+		 width: 100%;
+	}
+	 #faculty-slider.flexslider .slides img {
+		 height: auto;
+		 max-height: 300px;
+	}
+	 .hiddenrange {
+		 display: block;
+	}
+	 .hidethisrange {
+		 display: none;
+	}
+	 div#sidebar {
+		 width: 95%;
+	}
+	 .search {
+		 float: left;
+		 margin-top: 6px;
+	}
+	/* Embedded slideshow fix */
+	 #secondary-slider .flex-direction-nav .flex-next {
+		/* left:85%;
+		 */
+		 left: 80%;
+		/* background: blue;
+		 */
+	}
+	/* Fixing the triple slideshow. At smaller sizes the 3up slides vanish and show only one at a time. */
+	 #triple-slider .flex-direction-nav .flex-next {
+		/* left: -10%;
+		 */
+		 left: 95%;
+		/* background: yellow;
+		 */
+	}
+	 #triple-slider.flexslider {
+		 width: 99.5%;
+	}
+	 #triple-slider.flexslider .img {
+		 width: 90%;
+	}
+	/* End embedded slideshow fix */
+	/* Fixed issue where borders persisted when pages with 3-col grids were resized down, July 13, 2016 */
+	 div.center-3column {
+		 border: 0;
+		 margin: 0;
+		 margin-bottom: 20px; /* Added March 22, 2022 */
+		 padding: 0;
+	}
+	 div.right-3column {
+		 border: 0;
+		 margin: 0;
+		 margin-bottom: 20px; /* Added March 22, 2022 */
+		 padding: 0;
+	}
+	 .triplesliderimage {
+		 width: 80%;
+	}
+	/* CAPTION RESPONSIVE */
+	 .flex-caption{
+		 font-size: 65%;
+	}
+	 .transparent-caption{
+		 line-height: 30px;
+	}
+	 #header-overlay{
+		 max-width: none;
+	}
+}
+ @media screen and (max-width: 743px) {
+	 #calendar-large {
+		 width: 97%;
+		 margin-left: 1.5%;
+	}
+	 .TabbedPanels {
+		 width: 97%;
+	}
+	 div#grey_2column {
+		 width: 97%;
+		 margin-left: 1.5%;
+	}
+	 div#purple_2column {
+		 width: 97%;
+		 margin-left: 1.5%;
+	}
+	/* Adjusts initiatives to display better at smaller sizes */
+	 #init1, #init2, #init3, #initlinks {
+		 width: 30%;
+		 display: inline;
+		 margin: 0 5px;
+	}
+	 #initlinks {
+		 border-top: 1px solid #bbb;
+		 width: 98%;
+	}
+	/* Controls the width of the content columns as the page resizes to a medium width */
+	 .infoleft {
+		 float: right;
+		 width: calc(98% - 150px);
+		 margin-top: 0;
+		 margin-left: 0;
+	}
+	 .inforight {
+		 float: right;
+		 margin-top: 0;
+		 margin-left: 0px;
+		 width: calc(98% - 150px);
+	}
+	 .stacked-logo-two {
+		/* Added to fix scaling issues of secondary, right-side logos in responsive design */
+		 display: none;
+	}
+	 .container_12 .grid_3 {
+		 width: 50%;
+	}
+	 #connect {
+		 float: none;
+	}
+	 .social-media{
+		 width: 35%;
+	}
+	 .container_12 .grid_6{
+		 width: 98%;
+		 margin-top: 1%;
+		 margin-bottom: 1%;
+	}
+	 .headshot{
+		 width: 150px;
+		 margin-right: 2%;
+		 margin-top: 0;
+	}
+	 table.no-borders td{
+		 padding-left: 0;
+	}
+}
+ @media screen and (max-width: 743px) {
+	 div#footer .grid_2 {
+		 display: none;
+	}
+	 div#footer .grid_3 {
+		 float: right;
+	}
+}
+ @media screen and (max-width: 600px) {
+	 .ttl-svg {
+		width:96%;
+		padding:15px 0;
+	}
+	 div.right-2column-respond, div.left-2column-respond {
+		 border-left: medium none;
+		 float: none;
+		 margin-left: 0;
+		 padding-left: 0;
+		 width: 97%;
+	}
+	 div#sidebar {
+		 width: 92%;
+	}
+	 div.ttl-page {
+		 width: 500px;
+	}
+	 .triplesliderpadding {
+	}
+	 .triplesliderimage {
+		 width: 80%;
+	}
+	 .flex-caption {
+		 font-size: 60%;
+	}
+	 .grid_4{
+		 width: 100% !important;
+		 margin-left: 0;
+		 margin-right: 0;
+	}
+	 tspan {
+		font-size:20px;
+	}
+	/* Controls the text size of SVG page titles */
+}
+ @media screen and (max-width: 586px) {
+	 div.container_12 {
+		 clear: both;
+	}
+	 .container_12 .grid_5 {
+		 width: 98%;
+	}
+	 img.logo_img {
+		 margin-top: 10px;
+		 margin-bottom: 0px;
+		 float: left;
+	}
+	 div.lists-select {
+		 margin: 15px 0px 0px 10px;
+		 float: left;
+		 clear: both;
+	}
+	 .popular-select {
+		 display: block;
+		 float: left;
+		 margin: 15px 0px 0px 10px;
+	}
+	 .lists-select .fields, .popular-select .fields {
+		 width: 140px;
+		 font-size: 110%;
+	}
+	 .search {
+		 margin: 6px 0px 10px 10px;
+		 padding: 0;
+		 float: left;
+		 text-align: left;
+		 clear: both;
+	}
+	 .search_btn {
+		 font-size: 110%;
+	}
+	 #searchfield {
+		 width: 221px;
+		 font-size: 110%;
+	}
+	 div#ribbon-outer {
+		 display: none;
+	}
+	 .TabbedPanelsTab {
+		 margin: 0px 2px;
+	}
+	 .TabbedPanelsTab h3 {
+		 font-size: 90%;
+	}
+	 .footer-logos {
+		 float: left;
+		 margin-top: 15px;
+		 margin-left: 10px;
+		 margin-right: 0px;
+	}
+	 #footer p {
+		 margin-left: 10px;
+	}
+	 .top-nav {
+		 display: block;
+		 margin-left: 15px;
+		 margin-bottom: 10px;
+		 font-weight: bold;
+	}
+	 .firstcategories {
+		 width: 40%;
+		 float: left;
+	}
+	 .secondcategories {
+		 width: 40%;
+		 float: right;
+	}
+	 a.content-blue-box {
+		 width: 150px;
+		 float: left;
+		 margin-right: 10px;
+	}
+	 .grid_3 {
+		/* Controls the position of social media blocks at smallest size */
+		 clear: left;
+		 width: 100%;
+	}
+	 .container_16 .grid_4, .container_12 .grid_3 {
+		/* Controls the size of SM blocks */
+		 width: 99%;
+		 margin-bottom: 10px;
+	}
+	/* Embedded slideshow fix */
+	/* Causes the Next/Previous arrows to reappear at smaller sizes */
+	 #secondary-slider .flex-direction-nav .flex-next {
+		 visibility: unset;
+		 left: 80.5%;
+	}
+	 #secondary-slider .flex-direction-nav .flex-prev {
+		 visibility: unset;
+		 left: -5%;
+	}
+	/* End embedded slideshow fix */
+	 .triplesliderimage {
+		 width: 80%;
+	}
+	 #masthead img {
+		 float:left;
+		 margin-left: 5px;
+	}
+	 .department-search{
+		 float:left;
+		 margin-left: 5px;
+		 clear: both;
+	}
+	 .social-media{
+		 width: 50%;
+		 margin: 20px 0 20px 1%;
+		 float: left;
+	}
+	 #social-media-links{
+		 float: left;
+		 margin-left: 10px;
+		 text-align: left;
+	}
+	 #social-media-links > p{
+		 margin-left: 0;
+	}
+	 .owl-carousel .owl-nav .owl-next{
+		 top: 35%;
+	}
+	 .owl-carousel .owl-nav .owl-prev{
+		 top: 35%;
+	}
+}
+ #tripleslider-ul {
+	 padding-left: 11px;
+	 padding-right: 7px;
+}
+ @media screen and (max-width: 510px) {
+	/* div#youtube, div#twitter, div#flikr, div#social-links {
+		 width: 97%;
+		 border-bottom:1px solid #ccc;
+	}
+	 */
+	 img.logo_img {
+		 margin-top: 10px;
+		 margin-bottom: 0px;
+		 margin-left: 10px;
+		 float: left;
+	}
+	 .breadcrumbs{
+		 margin-left: 5px;
+	}
+	 .content-group {
+		 width: 97%;
+		 margin-left: 1%;
+		 border-top: 1px solid #ccc;
+	}
+	 .tweet {
+		 margin-bottom: 10px;
+	}
+	 #social-links {
+		 border: none;
+	}
+	 .last {
+		 border: none;
+	}
+	 .triplesliderimage {
+		 width: 80%;
+	}
+	 #triple-slider .flex-direction-nav .flex-prev {
+		 display: none;
+	}
+	 #triple-slider .flex-direction-nav .flex-next {
+		 display: none;
+	}
+	 #tripleslider-ul {
+		 padding: 0;
+	}
+	/* End embedded slideshow fix */
+	/* CAPTION RESPONSIVE */
+	 .flex-caption{
+		 font-size: 50%;
+	}
+	 .transparent-subcaption{
+		 padding-top: 5px;
+	}
+	 .content-box{
+		 width: 97% !important;
+	}
+	 .social-media{
+		 width: 98%;
+		/* width:60%;
+		 */
+	}
+	 #top.btn{
+		 max-width:none;
+		 margin-right:0;
+		 margin-bottom:10px;
+		 width:96% 
+	}
+	 #center.btn{
+		 max-width:none;
+		 margin-bottom:10px;
+		 width:96% 
+	}
+	 #bottom.btn{
+		 max-width:none;
+		 margin-left:0;
+		 width:96% 
+	}
+}
+ @media screen and (max-width: 400px) {
+	 .initiatives {
+		 display: block;
+	}
+	 .TabbedPanelsTab {
+		 width: 38%;
+		 padding: 0 6px;
+	}
+	 .TabbedPanelsTab h3 {
+		 font-size: 90%;
+	}
+	 .hiddenclear {
+		 display: block;
+	}
+	 .TabbedPanels {
+		 margin-right: 0px;
+		 margin-left: 1.5%;
+	}
+	 img.logo_img {
+		 margin: 10px 0 0 10px;
+		/* Fixed smallest size bug - MH */
+	}
+	/* Adds social icons when on mobile devices */
+	 .socialmobile {
+		 display: block;
+		 width: 100%;
+		 background: transparent;
+		 margin-top: 10px;
+		 padding: 0;
+	}
+	 .socialmobile h3 {
+		 margin: 0;
+		 margin-bottom: 10px;
+	}
+	 .socialicon {
+		 display: inline;
+		 margin: 0 1%;
+	}
+	 #init1, #init2, #init3, #initlinks {
+		 width: 30%;
+		 display: inline;
+		 margin: 0 5px;
+	}
+	 #initlinks {
+		 border-top: 1px solid #bbb;
+		 width: 97%;
+	}
+	/* Embedded slideshow fix */
+	 #triple-slider .flex-direction-nav .flex-prev {
+		 display: none;
+	}
+	 #triple-slider .flex-direction-nav .flex-next {
+		 display: none;
+	}
+	/* End embedded slideshow fix */
+	 #tripleslider-ul {
+		 padding: 0;
+	}
+	 .headshot{
+		 width: 55%;
+	}
+	 .infoleft{
+		 margin: 0;
+		 width: 100%;
+		 float: left;
+	}
+	 .inforight{
+		 margin: 0;
+		 width: 100%;
+		 float: left;
+	}
+	 .owl-carousel .owl-nav .owl-next{
+		 top: 29%;
+	}
+	 .owl-carousel .owl-nav .owl-prev{
+		 top: 29%;
+	}
+}
+ @media screen and (max-width: 321px) {
+	 .triplesliderimage {
+		 width: 80%;
+	}
+}
+/* Controls the photo-based team page */
+ .teamgrid {
+	 padding: 15px 10px;
+	 float: left;
+	 width: 97%;
+	 border-top: 1px solid #eee;
+}
+/* Controls the right sidebar search div on department sites */
+ #right-sidebar-dept-search {
+	 margin: 0px;
+	 width: 230px;
+}
+/* Controls schema data in footer */
+ .hiddenSchema {
+	 display: none;
+}
+/* Fixes triple-slider by adjusting the padding of the ul and li objects */
+ .triplesliderpadding {
+	 padding: 0 0px;
+}
+/* Fixes spacing issue in tripleslider where <p> wouldn't conform to the width of its container */
+ .triplesliderpadding p {
+	 width: 90%;
+}
+/* Provided opportunity to remove shadows from images if needed */
+ .noshadow {
+	 background: none;
+	 padding: 0;
+	 margin: 0;
+}
+ .btn, .btn-primary, .btn-light, .btn-dark {
+	 padding: 6px 12px;
+	 font-size: 15px;
+	 font-weight: 500;
+	 line-height: 1.5;
+	 border: 0px;
+	 border-radius: 0px;
+	 display: inline-block;
+	 padding: 6px 12px;
+	 margin-bottom: 0;
+	 font-size: 14px;
+	 font-weight: 500;
+	 line-height: 1.42857143;
+	 text-align: center;
+	 white-space: nowrap;
+	 vertical-align: middle;
+	 -ms-touch-action: manipulation;
+	 touch-action: manipulation;
+	 cursor: pointer;
+	 -webkit-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+	 background-image: none;
+	 border: 1px solid transparent;
+	 border-radius: 4px;
+}
+ .btn-primary {
+	 background-color: #2196c5;
+	 color: #fff;
+	 border-color: #015b86;
+}
+ .btn-primary, .btn-light, .btn-dark {
+	 text-shadow: 0 0 0 transparent;
+	 box-shadow: inset 0 0 0 white, 0 0 0 transparent;
+	 text-decoration: none;
+	 text-transform: uppercase;
+	 letter-spacing: 1px;
+	 border-radius: 2px;
+	 border-color: #015b86;
+	 max-width: 100%;
+	 white-space: normal;
+}
+ .btn-light {
+	 background-color: #ffffff;
+	 color: #2196c5;
+}
+ .btn-dark {
+	 background-color: #015b86;
+	 color: #ffffff;
+}
+ button.btn.btn-primary:hover {
+	 background-color: #015b86;
+}
+ button.btn.btn-light:hover {
+	 color: #015b86;
+}
+ button.btn.btn-dark:hover {
+	 background-color: #2196c5;
+}
+ #top.btn{
+	 position:absolute;
+	 right:0;
+	 top:45%;
+	 z-index:5;
+	 width:200px;
+	 text-align:left;
+	 padding-left:15px 
+}
+ #center.btn{
+	 position:absolute;
+	 right:0;
+	 top:55%;
+	 z-index:5;
+	 width:200px;
+	 text-align:left;
+	 padding-left:15px 
+}
+ #bottom.btn{
+	 position:absolute;
+	 right:0;
+	 top:65%;
+	 z-index:5;
+	 width:200px;
+	 text-align:left;
+	 padding-left:15px 
+}
+ #main-slider>div>ul>li>a>.btn{
+	 display:none 
+}
+ #main-slider>div>ul>li.flex-active-slide>a>.btn{
+	 display:inline-block 
+}
+ .content-box {
+	 width:30%;
+	 float:left;
+	 box-sizing: border-box;
+	 position: relative;
+	 margin: 1.5%;
+	 padding: 20px;
+	 overflow: hidden;
+	 transition: box-shadow .2s ease-in-out;
+	 border-radius: 2px;
+	 box-shadow: 0 4px 16px -2px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.02);
+	 display: -ms-flexbox;
+	 display: flex;
+	 -ms-flex-direction: column;
+	 flex-direction: column;
+	 -ms-flex-pack: center;
+	 justify-content: center;
+}
+/* Customizes how the Google search field appears, added Nov 21, 2017 */
+ .btn_go {
+	border: 2px solid #bbb;
+	font-size:1em;
+	padding:5px;
+	background:#bbb;
+	color:#000;
+}
+ #search_field {
+	border: 1px solid #bbb;
+	font-size:1em;
+	padding:5px;
+	background:#777;
+	color:#000;
+}
+ #sidebar a:hover {
+	 text-decoration: underline;
+}
+ #footer a:hover {
+	 text-decoration-color: #fff;
+}
+ #footer a {
+	 text-decoration: underline;
+	 text-decoration-color: #8b71b7;
+}
+/* START, SVG TITLE RULES */
+ .pagetitle-container {
+	 width: 70%;
+	 margin: 0 auto;
+	 float: left;
+}
+ .pagetitle-container a:hover {
+	/* Forces this rule to apply to only the page title, no other links. */
+	 text-decoration:none;
+}
+ svg text {
+	/* stroke: none;
+	 */
+	 cursor: pointer;
+	 font-weight: 400;
+	 font-size:36px;
+	 font-family: 'Benton Sans', Arial, sans-serif;
+}
+/* END, SVG TITLE RULES */
+/* ADDING CONTENT SKIP */
+ a.offscreen {
+	 position:absolute;
+	 left:-1000px;
+	 top:-1000px;
+	 width:1px;
+	 height:1px;
+	 text-align: left;
+	 overflow:hidden;
+}
+ a.offscreen:focus, a.offscreen:active, a.offscreen:hover {
+	 position:absolute;
+	 left:0;
+	 top:0;
+	 width:auto;
+	 height:auto;
+	 overflow:visible;
+	 background-color:#FF3;
+	 border: 1px dotted #000;
+}
+/* END CONTENT SKIP */
+/* 2020 updates */
+/* Display Boxes - added by Jeff J */
+ .news-tags {
+	 font-size: 0.9em;
+	 color: #99A3A4;
+	 /* text-transform: uppercase; */
+	 font-weight: 500;
+	 font-family: Rubik;
+	 margin-bottom: 3%;
+}
+ .display-container {
+	 display: grid;
+	 grid-gap: 1.5%;
+	 /* margin-bottom:1.5%; Dec 6 2021 MH */ 
+	 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+ .display-box {
+	 margin: 1.5%;
+	 padding-bottom: 20px;
+	 overflow: hidden;
+	 transition: box-shadow .2s ease-in-out;
+	 border-radius: 2px;
+	 box-shadow: 0 4px 16px -2px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .02);
+	 position:relative;
+}
+ .display-box:hover .imageBackground {
+	 transform: scale(1.1);
+}
+ .display-box h1, .display-box h2, .display-box h3, .display-box h4, .display-box h5, .display-box h6 {
+	 padding: 20px;
+	 padding-bottom: 0;
+	 text-align: center;
+}
+ .outerImageBackground {
+	 height: 150px;
+	 overflow: hidden;
+}
+ .imageBackground {
+	 height: 100%;
+	 background-repeat: no-repeat !important;
+	 background-size: cover !important;
+	 background-position: center !important;
+	 transition: all .3s ease-in-out;
+}
+ a.divLink {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 text-decoration: none;
+	 z-index: 10;
+	 background-color: white;
+	 opacity: 0;
+	 filter: alpha(opacity=0);
+}
+ .desc p {
+	 color: black;
+	 text-align: center;
+	 padding: 20px;
+	 padding-top:0;
+	 margin-bottom:0;
+}
+@media (max-width: 768px) {
+  .display-container {
+    grid-column-gap: 1.5%;
+    grid-row-gap:0;
+  }
+}
+/* FW Container - added by Jeff J */
+.fw-container {
+	background-color:#F4F4F4; /* default */
+	padding-top:20px;
+	padding-bottom: 20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	/* width: 110vw; */
+	width: 100vw;
+	margin-left: calc(-50vw + 50% - 8px);
+	background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+}
+.fw-container .inside {
+	max-width:1160px;
+	margin: 0 auto;
+    left: 20px;
+    position: relative;
+}
+/* President Page - added by Jeff J */
+div.quote {
+    padding-bottom: 20px;
+    margin: 30px 30px 40px 30px;
+}
+h1#line {
+    margin: 0px 0px 0px 15px;
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    float: left;
+    background: #4f2683;
+    font-size: 1.4em;
+    font-weight: 400;
+    border-bottom: 1px dotted #17202A;
+    text-decoration: none;
+    color: #fff;
+}
+h1.line {
+    margin: 0px 0px 0px 15px;
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    float: left;
+    background: #4f2683;
+    font-size: 1.4em;
+    font-weight: 400;
+    border-bottom: 1px dotted #17202A;
+    text-decoration: none;
+    color: #fff;
+}
+.hr {
+    width: 95%;
+    height: 2.2em;
+    margin: 0px 10px 10px 35px;
+}
+.hr-top {
+    width: 100%;
+    border-bottom: 1px dotted #17202A;
+    height: 50%;
+}
+.hr-bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Responsive Table for Facilities Management - Added by JJ Sept 2021 */
+.table-responsive-fm {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
