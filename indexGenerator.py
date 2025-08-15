@@ -152,7 +152,7 @@ docHead = """
 
 <h2>How to Attend?</h2>
 <p>We are using <a href="https://zoom.us">Zoom</a> for the talks. Please install the software and make at least one test call before joining a talk. To join follow the link:</p>
-<p style="text-align: center;"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
+<p style="text-align: center; margin: 20px;"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
 
 <div class="expand-all-container">
     <button id="expand-term-btn" class="button expand-all">Expand Terms</button>
