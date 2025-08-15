@@ -6,7 +6,7 @@ Speaker: SPEAKER NAME<br>
 School: SCHOOL/INSTITUTION
 Title: TALK TITLE<br>
 YouTube: YOUTUBE LINK<br>
-Slides: SLIDE FILENAME<br>
+Slides: SLIDE_FILENAME_1 SLIDE_FILENAME_2 ... <br>
 Abstract: ABSTRACT CONTENT<br>
 ABSTRACT CONTENT<br>
 ...<br>
@@ -23,7 +23,7 @@ NOTES:
   <li>SCHOOL/INSTITUTION is the name of the name of the speaker's affiliation, this is okay to leave empty.</li>
   <li>TALK TITLE is the title of the talk.</li>
   <li>YOUTUBE LINK is the relevant links, this is okay to leave empty.</li>
-  <li>SLIDE FILENAME is the relevant filename (no "hottestfiles/" prefix necessary), this is okay to leave empty.</li>
+  <li>SLIDE_FILENAME_X are the relevant filenames (no "hottestfiles/" prefix necessary), multiple pdfs can be attached to a single talk and should be seperated by a single space. This is okay to leave empty.</li>
   <li>ABSTRACT CONTENT is the abstract, which should be split into lines for the desired paragraph breaks. The abstract can be as long as you would like, but it must always be the last entry.</li>
   <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, such as, if you want to include a hyperlink.</li>
 </ul>

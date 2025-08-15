@@ -31,7 +31,7 @@ def formatURLs(str):
 
 # Given file name in the folder "TalkInfo", parses file into a Talk objects
 def readFile(fileName):
-    newTalk = Talk('', '', '', '', '', '', '', '')
+    newTalk = Talk('', '', '', '', '', '', [], '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
         lines = f.readlines()
         f.close()
@@ -68,7 +68,7 @@ def readFile(fileName):
             elif line.lower().startswith('youtube:'):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
-                newTalk.slides = line[7:].strip()
+                newTalk.slides = line[7:].strip().split()
             elif line == '':
                 pass
             else:
@@ -194,8 +194,8 @@ for termID in termIDs:
                                     if talk.ytlink != '':
                                         with tag('a', href=talk.ytlink):
                                             doc.stag('img', src='images/youtube.webp', width='20', alt='YouTube video')
-                                    if talk.slides != '':
-                                        with tag('a', href='hottestfiles/' + talk.slides):
+                                    for slide in talk.slides:
+                                        with tag('a', href='hottestfiles/' + slide):
                                             doc.stag('img', src='images/pdf.png', width='20', alt='Slides')
                             with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)
