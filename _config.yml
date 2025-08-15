@@ -1,1 +1,1 @@
-exclude: ['README.md', 'TalkInfo', 'indexGenerator.py']
+exclude: ['README.md', 'TalkInfo', 'indexGenerator.py', OldSiteConversion]
