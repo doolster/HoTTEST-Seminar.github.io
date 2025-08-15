@@ -4,7 +4,7 @@ from yattag import Doc, indent
 import os, re
 
 # Any new term types must be added to this dictionary for sorting
-termIDDict = { 'Spring': 'b', 'Fall': 'd', 'HoTTEST Event For Junior Researchers': 'a', 'HoTTEST Conference' : 'c'}
+termIDDict = { 'Spring': 'b', 'Fall': 'd', 'HoTTEST Event For Junior Researchers': 'a', 'HoTTEST Conference' : 'c', 'HoTTEST Summer School' : 'c'}
 monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
 
 class Talk:
@@ -31,7 +31,7 @@ def formatURLs(str):
 
 # Given file name in the folder "TalkInfo", parses file into a Talk objects
 def readFile(fileName):
-    newTalk = Talk('', '', '', '', '', '', '', '')
+    newTalk = Talk('', '', '', '', '', '', [], '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
         lines = f.readlines()
         f.close()
@@ -68,7 +68,7 @@ def readFile(fileName):
             elif line.lower().startswith('youtube:'):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
-                newTalk.slides = line[7:].strip()
+                newTalk.slides = line[7:].strip().split()
             elif line == '':
                 pass
             else:
@@ -152,7 +152,7 @@ docHead = """
 
 <h2>How to Attend?</h2>
 <p>We are using <a href="https://zoom.us">Zoom</a> for the talks. Please install the software and make at least one test call before joining a talk. To join follow the link:</p>
-<p style="text-align: center; margin: 20px;"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://zoom.us/j/994874377&amp;source=gmail&amp;ust=1516649126192000&amp;usg=AFQjCNHCEHJZSi1kztYapVu1OwD5g_wJQg" href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
+<p style="text-align: center; margin: 20px;"><a href="https://zoom.us/j/994874377">https://zoom.us/j/994874377</a></p>
 
 <div class="expand-all-container">
     <button id="expand-term-btn" class="button expand-all">Expand Terms</button>
@@ -194,8 +194,8 @@ for termID in termIDs:
                                     if talk.ytlink != '':
                                         with tag('a', href=talk.ytlink):
                                             doc.stag('img', src='images/youtube.webp', width='20', alt='YouTube video')
-                                    if talk.slides != '':
-                                        with tag('a', href='hottestfiles/' + talk.slides):
+                                    for slide in talk.slides:
+                                        with tag('a', href='hottestfiles/' + slide):
                                             doc.stag('img', src='images/pdf.png', width='20', alt='Slides')
                             with tag('div', klass='abstract'):
                                 doc.asis(talk.abstract)

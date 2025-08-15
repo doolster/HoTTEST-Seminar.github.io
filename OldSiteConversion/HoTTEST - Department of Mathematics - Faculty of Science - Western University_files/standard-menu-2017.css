@@ -1,0 +1,560 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************ MEGA-NAV ********************/
+
+#menu {
+  list-style:none;
+  width:calc(100% - 2px);
+  z-index: 999;
+  height: 43px;
+  position: relative;
+  background: #4f2683;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  vertical-align: bottom;
+
+  /* Background color and gradients */
+  background: #4f2683;
+  background: -moz-linear-gradient(top, #4f2e84, #380e6e);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4f2e84), to(#380e6e));
+
+  /* Borders */
+  border: 1px solid #002232;
+  -moz-box-shadow:inset 0px 0px 1px #edf9ff;
+  -webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+  box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+#menu li {
+  float:left;
+  display:block;
+  text-align:center;
+  position:relative;
+  padding: 4px 10px 10px 12px;
+  margin:7px 10px 0px 20px;
+  border:none;
+  outline: none;
+  letter-spacing: 0.1px;
+}
+
+#menu li.small {
+  padding: 4px 4px 10px 4px;
+  margin:7px 0px 0px 10px;
+  letter-spacing: 0px;
+  font-size: 60%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+#menu li.medium {
+  padding: 4px 6px 10px 6px;
+  margin:7px 0px 0px 10px;
+  font-size: 70%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+#menu li.x-medium {
+  padding: 12px 20px 12px 20px;
+  margin:0px 0px 0px 20px;
+  font-size: 80%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+}
+
+#menu li.large {
+  padding: 11px 10px 10px 12px;
+  margin:0px 0px 0px 20px;
+  font-size: 70%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+#menu li.x-large {
+  padding: 11px 20px 10px 24px;
+  margin:0px 0px 0px 35px;
+  font-size: 90%;
+  text-transform: uppercase;
+    float: none;
+  display: inline-block;
+   font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+#menu li.schulich {
+  padding: 12px 12px 10px 10px;
+  margin:0px 0px 0px 10px;
+  font-size: 75%;
+  text-transform: uppercase;
+}
+#menu li.schulich-main {
+  padding: 11px 10px 10px 12px;
+  margin: 0 0 0 12px;
+  font-size: 70%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+}
+#menu li:hover {
+  padding: 11px 10px 11px 12px;
+  background: #fff;
+  margin:0px 10px 0px 20px;
+  outline: none;
+}
+
+#menu li:hover.small {
+  padding: 11px 4px 10px 4px;
+  margin:0px 0px 0px 10px;
+}
+
+#menu li:hover.medium {
+  padding: 11px 6px 10px 6px;
+  margin:0px 0px 0px 10px;
+}
+
+#menu li:hover.x-medium {
+  padding: 12px 20px 12px 20px;
+  margin:0px 0px 0px 20px;
+}
+
+#menu li:hover.large {
+  padding: 11px 10px 10px 12px;
+  margin:0px 0px 0px 20px;
+}
+
+#menu li:hover.x-large {
+  padding: 11px 20px 10px 24px;
+  margin:0px 0px 0px 35px;
+}
+
+#menu li:hover.schulich {
+  padding:12px 12px 10px 10px;
+  margin: 0px 0px 0px 10px;
+}
+
+#menu li:hover.schulich-main {
+  margin: 0 0 0 12px;
+  padding: 11px 10px 10px 12px;
+}
+
+#menu li a {
+  font-size:140%;
+  color: #EEEEEE;
+  display:block;
+/*  outline:0; */
+  text-decoration:none;
+/*  outline: none; */
+}
+
+#menu li:hover a {
+  color: #333333;
+}
+#menu li .drop {
+  padding-right: 18px;
+  margin-bottom: 2px;
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop.png") no-repeat right 8px;
+}
+#menu li:hover .drop {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop-alt.png") no-repeat right 7px;
+  margin-bottom: 2px;
+}
+
+#menu li .ex-link {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/ex-link.png") no-repeat right 6px;
+  margin-bottom: 2px;
+  padding-right: 18px;
+}
+
+#menu li:hover .ex-link {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/ex-link-alt.png") no-repeat right 5px;
+  margin-bottom: 2px;
+}
+
+#menu li.small .drop,#menu li.medium .drop {
+  padding-right: 15px;
+  margin-bottom: 2px;
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop.png") no-repeat right 8px;
+}
+#menu li:hover.small .drop,#menu li:hover.medium .drop {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop-alt.png") no-repeat right 7px;
+  margin-bottom: 2px;
+}
+
+#menu li.small .ex-link,#menu li.medium .ex-link {
+  padding-right: 15px;
+  margin-bottom: 2px;
+  background:url("https://www.uwo.ca/web_standards/img/meganav/ex-link.png") no-repeat right 5px;
+}
+#menu li:hover.small .ex-link,#menu li:hover.medium .ex-link {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/ex-link-alt.png") no-repeat right 4px;
+  margin-bottom: 2px;
+}
+
+.dropdown_1column,
+.dropdown_2columns,
+.dropdown_3columns,
+.dropdown_4columns,
+.dropdown_5columns {
+  margin:10px auto;
+  position:absolute;
+  left:-999em;
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  /* Gradient background */
+  /*  background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom;*/
+  background-color:#ffffff;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+.dropdown_1column {width: 220px;}
+.dropdown_2columns {width: 300px;}
+.dropdown_3columns {width: 420px;}
+.dropdown_4columns {width: 930px;}
+.dropdown_5columns {width: 930px;}
+
+#menu li:hover .dropdown_1column,
+#menu li:hover .dropdown_2columns,
+#menu li:hover .dropdown_3columns,
+#menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns {
+  left: -1px;
+  top:auto;
+  opacity: 1;
+  /* filter: alpha(opacity = 100); */
+}
+
+/******** MEGA-NAV CLASSES ***********/
+
+.first {
+  margin:10px auto;
+  position:absolute;
+  left:-999em; /* Hides the drop down */
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  width: 930px;
+  margin-left: -40px;
+
+  /* Gradient background */
+  /*background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom; */
+  background-color:#eee;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+.second {
+  margin:10px auto;
+  position:absolute;
+  left:-999em; /* Hides the drop down */
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  width: 930px;
+  margin-left:-242px;
+
+  /* Gradient background */
+  /* background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom; */
+  background-color:#eee;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+
+.third {
+  margin:10px auto;
+  position:absolute;
+  left:-999em; /* Hides the drop down */
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  width: 930px;
+  margin-left:-402px;
+
+  /* Gradient background */
+  /* background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom; */
+  background-color:#eee;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+
+.fourth {
+  margin:10px auto;
+  position:absolute;
+  left:-999em; /* Hides the drop down */
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  width: 930px;
+  margin-left:-569px;
+
+  /* Gradient background */
+  /* background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom; */
+  background-color:#eee;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+.fifth {
+  margin:10px auto;
+  position:absolute;
+  left:-999em; /* Hides the drop down */
+  text-align:left;
+  padding:15px 5px 5px 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  border-color:#d2d2d2;
+  opacity: 0;
+
+  width: 930px;
+  margin-left:-723px;
+
+  /* Gradient background */
+  /* background: url(https://www.uwo.ca/web_standards/img/meganav/bg.gif) no-repeat bottom; */
+  background-color:#eee;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out; /* Firefox 4 */
+  -webkit-transition: opacity 0s ease-in-out; /* Safari and Chrome */
+  -o-transition: opacity 0s ease-in-out; /* Opera */
+  -ms-transition: opacity 0s ease-in-out; /*IE*/
+  transition-delay: .5s;
+  -moz-transition-delay: .5s; /* Firefox 4 */
+  -webkit-transition-delay: .5s; /* Safari and Chrome */
+  -o-transition-delay: .5s; /* Opera */
+  -ms-transition: .5s;
+}
+
+#menu li:hover .first,
+#menu li:hover .second,
+#menu li:hover .third,
+#menu li:hover .fourth,
+#menu li:hover .fifth
+{
+  left: -1px;
+  top:auto;
+  opacity: 1;
+  /* filter: alpha(opacity = 100); */
+
+}
+
+/* end of mega-nav classes */
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+  font-family: Arial,Helvetica,sans-serif;
+  display:block;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.col_1 {width:210px;}
+.col_2 {width:300px;}
+.col_3 {width:410px;}
+.col_4 {width:930px;}
+.col_5 {width:930px;}
+
+#menu .menu_right {
+  float:right;
+  margin-right:0px;
+}
+
+#menu li:hover .align_right {
+  left:auto;
+  right:-1px;
+  top:auto;
+}
+
+#menu ul li {
+  line-height:23px;
+  font-size:13px;
+  text-align:left;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  border-bottom-width: thin;
+  border-bottom-style: dotted;
+  border-bottom-color: #CCCCCC;
+  margin-bottom:5px;
+  text-transform: none;
+}
+#menu p {
+  line-height:23px;
+  font-size:13px;
+  text-align:left;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  margin-bottom:5px;
+}
+#menu h2 {
+  border-bottom: 1px solid #999999;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  margin: 5px 0 10px;
+  padding: 5px 5px 5px 0px;
+  text-transform: uppercase;
+}
+#menu h2 hover a {
+  text-decoration:underline;
+}
+
+#menu h4 {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  margin: 5px 0 10px;
+  padding: 5px 5px 5px 0px;
+}
+
+#menu p, #menu h3, #menu ul li {
+  line-height: 21px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+
+#menu li:hover div a {
+  font-size:14px;
+  color:#015b86;
+}
+#menu li:hover div a:hover {
+  /*    color:#029feb; */
+  color:#005a96;
+}
+
+#menu li ul {
+  list-style:none;
+  padding:0;
+  margin:0 0 12px 0;
+}
+#menu li ul li {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size:12px;
+  line-height:18px;
+  position:relative;
+  text-shadow: 1px 1px 1px #ffffff;
+  padding:6px;
+  margin:0;
+  float:none;
+  text-align:left;
+}
+
+#menu li ul li:hover {
+  background:none;
+  padding:6px;
+  margin:0;
+  line-height:18px;
+}
+
+#menu .menu_right {
+  float:right;
+  margin-right:0px;
+}
+#menu li:hover .align_right {
+  left:auto;
+  right:-1px;
+  top:auto;
+}
+
+/*last menu item in blue*/
+/*works with medium class only*/
+#menu li.last {
+  padding: 11px 16px 9px 16px;
+  margin:0px 0px 0px 10px;
+  font-size: 70%;
+  text-transform: uppercase;
+  float: none;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	background-color: #015B86;
+}
+#menu li:hover.last {
+  padding: 11px 16px 10px 16px;
+  margin:0px 0px 0px 10px;
+  background-color: #ffffff;
+}
+#menu li.last .drop{
+  padding-right: 15px;
+  margin-bottom: 2px;
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop.png") no-repeat right 8px;
+}
+#menu li:hover.last .drop {
+  background:url("https://www.uwo.ca/web_standards/img/meganav/drop-alt.png") no-repeat right 7px;
+  margin-bottom: 2px;
+}
+/*END LAST NAV ITEM IN BLUE*/
+/*works with medium class only*/

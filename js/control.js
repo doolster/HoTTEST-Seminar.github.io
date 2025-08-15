@@ -52,17 +52,6 @@ document.querySelectorAll('.panel table').forEach(function(table) {
     });
 });
 
-// Add second slides PDF to special double talk: Sept 10, 2020 Guillaume Brunerie and Peter LeFanu Lumsdaine
-var PLSlides = document.createElement('a');
-PLSlides.href = 'hottestfiles/Lumsdaine-2020-09-10-HoTTEST.pdf'
-var pdfImg = document.createElement('img');
-pdfImg.src = 'images/PDF_file_icon.png';
-pdfImg.classList.add('icon');
-PLSlides.appendChild(pdfImg);
-var findSpecialTalk = document.evaluate("//p[contains(., 'Initiality for Martin-Löf type theory')]", document, null, XPathResult.ANY_TYPE, null );
-var specialTalk = findSpecialTalk.iterateNext();
-specialTalk.appendChild(PLSlides);
-
 // Stops icons from expanding abstract
 function stopEvent(event) { event.stopPropagation(); }
 document.querySelectorAll('.icon').forEach(function(icon) {

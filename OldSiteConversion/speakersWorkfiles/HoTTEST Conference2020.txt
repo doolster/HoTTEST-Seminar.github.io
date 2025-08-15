@@ -1,0 +1,91 @@
+Jun 15
+Brandon Doherty
+
+Cubical models of (∞,1)-categories
+https://www.youtube.com/watch?v=oouDvcwSVT8
+Doherty
+We discuss the construction of a new model structure on the category of cubical sets with connections whose cofibrations are the monomorphisms and whose fibrant objects are defined by the right lifting property with respect to inner open boxes, the cubical analogue of inner horns. We also discuss the proof that this model structure is Quillen equivalent to the Joyal model structure on simplicial sets via the triangulation functor. This talk is based on joint work with Chris Kapulkin, Zachery Lindsey, and Christian Sattler, arXiv:2005.04853.
+
+Jun 19
+Eric Finster
+
+Weak Structures from Strict Ones
+https://www.youtube.com/watch?v=wz3h59rnhOU
+Finster
+I will describe a technique for defining various weak higher structures by extending type theory with a universe of strict polynomial monads.  Furthermore, I will describe implementation of the proposed theory in Agda using rewrite rules.
+
+Jun 16
+Valery Isaev
+
+Indexed Type Theories
+https://www.youtube.com/watch?v=PzjmjIlc-kE
+Isaev
+Indexed type theory is a version of homotopy type theory which represents indexed ∞-categories. It has two levels of types: the first level correspond to ordinary homotopy type theory and the second one represents indexed objects. Indexed type theories generalize other similar two-level systems such as a form of cohesive homotopy type theory and certain linear dependent type theories. It can be used to reason directly in ∞-categories which do not have all the structure required by homotopy type theory.
+In this talk, I define indexed type theory and describe various constructions in it including finite and infinite (co)limits and object classifiers. I will give several examples of models of indexed type theory including spectra and quasicategories. I will also prove a special case of the indexed adjoint functor theorem using the language of indexed type theories.
+
+Jun 15
+Peter LeFanu Lumsdaine
+
+What are we thinking when we present a type theory? 
+https://www.youtube.com/watch?v=kQe0knDuZqg
+Lumsdaine
+Presentations of dependent type theories, as traditionally written, are deceptively simple: a collection of rules specifying an inductively defined derivability relation on judgments (or some variation on such a setup).
+However, in writing these rules, we usually follow various guiding principles — or at least, we have these principles in mind, and depart from them only with good cause and extra care.  Some of these principles are (sometimes) explicitly stated: “all rules hold over an arbitrary ambient context”, for instance.  Other principles almost always remain implicit — “the rules are ordered, and each rule may make use of earlier-introduced constructions, but not later ones” — but become apparent through our reliance on them in later definitions and proofs.
+I will present a careful analysis of these implicit principles, and how they contribute to the well-behavedness properties we expect our type theories to enjoy.
+(Based on joint work with Andrej Bauer and Philipp Haselwarter, forthcoming since 2016.)
+
+Jun 16
+David Jaz Myers
+
+Higher Schreier Theory
+https://www.youtube.com/watch?v=I7f2iJB52vo
+Myers
+In a 1926 article, Otto Schreier gave a classification of all extensions of a group G by a (non-abelian) group K. This classification of extensions has come to be known as Schreier theory, and has been reformulated many times by many authors since. Just as central extensions by an abelian group are classified by group cohomology in degree 2, Schreier theory can be seen as an example of a classification by non-abelian group cohomology.
+Higher Schreier theory concerns the classification of extensions of higher groups. Breen has generalized Schreier theory to sheaves of 2-groups. In this talk, we will give a proof of Schreier theory for oo-groups in homotopy type theory - and therefore for sheaves of ∞-groups by interpreting in various oo-toposes. Our main theorem is:
+Let G and K be ∞-groups. Then the type of extensions of G by K is equivalent to the type of actions of G on the delooping BK.
+One can immediately see the resemblence of this formulation of higher Schreier theory to the classification of split extensions of G by K by the homomorphic actions of G on K. We can derive this classification, and some others, as an immediate corollary.
+We will also discuss the notion of central extensions, and navigate some subtleties concerning the notion of centrality for higher groups.
+
+Jun 17
+Paige Randall North
+
+A Higher Structure Identity Principle
+https://www.youtube.com/watch?v=aDsY2j1bff4
+North
+The Structure Identity Principle (SIP) is an informal principle asserting that isomorphic structures are equal. In univalent foundations, the SIP can be formally stated and proved for a variety of mathematical structures. This means that any statement that can be expressed in univalent foundations is invariant under isomorphism, or, put differently, that only structural properties can be stated in univalent foundations.
+The SIP only applies to objects that naturally form a 1-category. In this talk, I will discuss a Higher Structure Identity Principle in univalent foundations for structures that naturally form a higher category (e.g., categories themselves).
+This is joint work with Benedikt Ahrens, Mike Shulman, and Dimitris Tsementzis.
+
+Jun 18
+Anja Petković
+
+Equality checking for Finitary type theories
+https://www.youtube.com/watch?v=yHjmPJuTvWM
+Petkovic
+Equality checking algorithms are essential components of proof assistants based on type theories, since they free users from the burden of proving judgemental equalities, and provide computation-by-normalization engines. Indeed, the type theories found in the most popular proof assistants are designed to provide such algorithms.
+However, in a proof assistant that supports arbitrary user-definable theories, such as Andromeda 2, there may not be an equality checking algorithm available in general.
+I will discuss the design of a user-extensible judgemental equality checking algorithm for finitary type theories that supports computation rules and extensionality rules. The user needs only provide the equality rules they wish to use, after which the algorithm devises an appropriate notion of normal form. We will also take a peek at how the implementation of the equality checking algorithm is used in the Andromeda 2 prover.
+
+Jun 18
+Mitchell Riley
+
+Synthetic Spectra via a Monadic and Comonadic Modality
+https://www.youtube.com/watch?v=62HST7p-7hs
+Riley
+"Spectra" are the central objects of study in stable homotopy theory, and it is easy to define them internally in HoTT as Ω-spectra: a spectrum is a sequence of types with an equivalence between each type and the loop-space of the next. Working with these spectra in type theory can be quite difficult, however. In this talk we describe an extension of HoTT intended to be modeled in the category of "parameterised spectra", where a modality is used to identify the types that correspond to individual spectra. A pair of axioms are considered that internalise some features of the intended model, and which fix the "homotopy groups" (appropriately defined) of the sphere spectrum to be the stable homotopy groups of the ordinary higher inductive spheres.
+
+Jun 19
+Michael Shulman
+
+Type-theoretic model toposes
+https://www.youtube.com/watch?v=VVe6kBztnAs
+Shulman
+Starting with the Awodey-Warren interpretation of identity types by path objects and Voevodsky's model of univalence in simplicial sets, various kinds of Quillen model categories have been used to interpret homotopy type theory.  A "type-theoretic model topos" is a Quillen model category that is optimal for this purpose in many respects.  On one hand, it has sufficient structure to interpret essentially all of "Book" HoTT, including in strict univalent universes and most higher inductive types.  On the other hand, it is sufficiently general that any Rezk-Lurie-Grothendieck (∞,1)-topos can be presented by a type-theoretic model topos.  This talk will sketch the definition of type-theoretic model topos and the proofs of these facts, including some variations of the definition that apply to models of cubical type theory.
+
+Jun 17
+Taichi Uemura
+
+Abstract type theories
+https://www.youtube.com/watch?v=8o8cEUxWAjE
+Uemura
+Many variants of dependent type theory admit the semantics based on categories with families (CwFs). I introduce an abstract notion of a type theory to give a unified account of the CwF-semantics of type theory. The key idea is to regard a CwF-model of a type theory as a functor to a presheaf category preserving certain structures. Basic results in the semantics of type theory are then stated and proved in a purely categorical way. In this talk I will explain motivations and intuitions behind my definition of a type theory.

@@ -1,0 +1,108 @@
+Dec 15
+Philipp Joram
+
+Final Coalgebras of Analytic Functors in Homotopy Type Theory
+https://www.youtube.com/watch?v=nsgztQ5UbLw
+Joram
+In set-theoretic foundations, the final coalgebra of a finitary functor can be constructed in (ω+ω) steps [Worrell (2005)]. For particular finitary functors, constructive proofs of this exist, and for polynomial functors it is known that the same can be done constructively in ω steps [Ahrens, Capriotti (2015)].
+Similarly, the intermediate class of analytic functors yields final coalgebras in ω steps when working classically. We are interested whether the same is true when working internally to HoTT. We focus our work on the finite multiset functor, a particular analytic functor.
+One approach is to directly work with a set-level definition of the functor. This involves proving that it preserves ω-limits. In general, this requires a form of countable choice, which nonetheless seems to be satisfied for the limits involved in the construction of the final coalgebra.
+We present an alternative construction following [Kock (2012)]. Here, we define a polynomial functor over a groupoid, and show that its pointwise set-trunctation is equivalent to the ordinary finite multiset functor. We construct its final coalgebra as an ω-limit, and show that it has as a fixed-point a type of finitely branching, non-wellfounded trees. While the truncation of this type of trees is a fixed-point of the ordinary multiset functor, proving that it is the largest fixed-point requires another choice principle.
+In the process, we give multiple formalizations of finite multisets in HoTT, one as type of lists modulo permutations, and another one as the HIT of the free commutative monoid, and connect these to prior work, e.g. [Choudhury, Fiore (2021)]. To overcome size-issues, we port [Finster et al. (2021)]'s axiomatization of a small type of finite sets and bijections to cubical Agda.
+[Ahrens, Capriotti (2015)]: #https://doi.org/10.4230/LIPIcs.TLCA.2015.17#
+[Worrell (2005)]: #https://doi.org/10.1016/j.tcs.2004.12.009#
+[Kock (2012)]: #https://doi.org/10.1016/j.entcs.2013.01.001#
+[Choudhury, Fiore (2021)]: #https://arxiv.org/abs/2110.05412#
+[Finster et al. (2021)]: #https://arxiv.org/abs/2112.14050#
+
+Dec 15
+Astra Kolomatskaia
+
+Semi-Simplicial Types
+https://www.youtube.com/watch?v=fQv2FpeFxew
+Kolomatskaia
+This talk consists of two parts:
+First, we explore just how far one can get to the goal of constructing semi-simplicial types in MLTT. When being first introduced to the problem, it strikes one that there is an evident pattern in simplex types. We codify this pattern using the notion of a simple inverse category and construct untyped syntactic expressions. A challenge is posed to the audience to construct typing derivations, hence "externally" constructing SSTs. Unfortunately, it seems that internalising typing derivations is not possible (HoTT can't eat itself).
+Second, we propose a work in progress modification to MLTT that we expect to enable the construction of SSTs. We generalise from asking for a type of SSTs to asking for a type structure of SSTs, which includes every order of dependent/displayed SSTs. In this more general setting, the object "SST" acquires a universal property that can be expressed via the notion of non-Type-valued coinduction. We explain how this endows "SST" with a mapping-in universal property that enables extracting simplex types. To demonstrate the utility of this universal property, we construct the singular semi-simplicial types.
+The second half of this talk consists of joint work with Michael Shulman.
+A research write-up, along with associated Agda formalisation may be found in the following GitHub repository: #https://github.com/FrozenWinters/SSTs#
+
+Dec 1
+Jacob Neumann
+
+(Co)ends and (Co)structure
+https://www.youtube.com/watch?v=X4v5HnnF2-o
+Neumann
+We explore the concepts of (co)ends and strong dinaturality in the setting of homotopy type theory, and articulate their connections to existing lines of work. Strong dinaturality is the appropriate generalization of the naturality conditions used by Awodey, Frey, and Speight to 'refine' System-F-style impredicative encodings of inductive types, and provides a convenient calculus for determining these conditions. Moreover, since strong dinaturality can be expressed using the category-theoretic notion of ends, there is an evident dualization using coends which allows for impredicative encodings of coinductive and existential types in homotopy type theory. We also discuss the connection between strong dinaturality and parametric polymorphism. For apparently all cases of interest, strong dinaturality articulates precisely (as a propositional equality) the naturality condition needed to restrict polymorphic types to only 'standard' values. We demonstrate this fact by calculating several of the 'free theorems' of Wadler in our strong dinaturality calculus.
+
+Nov 17
+Jarl G. Taxerås Flaten
+
+Central H-spaces and banded types
+https://www.youtube.com/watch?v=-7PG2bzseJI
+Flaten
+We give a simple description of the type of H-space structures on a pointed type A. If A is an H-space, we obtain an untruncated version of a formula of Arkowitz--Curjel and Copeland for counting H-space structures on a space. This formula underlies the classical computations of the number of H-space structures on various spaces. As an example, we easily deduce that the type of H-space structures on the 3-sphere is equivalent to the six-fold loop space of the 3-sphere.
+Our formula for the type of H-space structures on A leads us to define and study what we call "central" types, which are generalisations of Eilenberg--Mac Lane types. Central types admit a unique H-space structure which can be explicitly delooped by a tensor product of "types banded by A." Given an abelian group A, we iterate this process to give an independent construction of K(A,n) along with a description of its H-space structure that is useful for certain cohomology computations.
+These results are part of joint, ongoing work with Ulrik Buchholtz, Dan Christensen, David Jaz Myers, and Egbert Rijke. Most of the results have been formalized using the Coq-HoTT library.
+
+Nov 17
+Tom de Jong
+
+Acyclic types and epimorphisms in HoTT
+https://www.youtube.com/watch?v=vohAYPAAWxs
+Jong
+It is well known that the epimorphisms in the category of sets are exactly the surjections. But what are the epimorphisms of types? Thinking of types as spaces, and following literature in algebraic topology, we characterise epimorphisms of types in HoTT as so-called acyclic maps. An acyclic map is a map whose fibres are acyclic types, and a type is acyclic if its suspension is contractible. We also consider a weaker notion: a type is k-acyclic (for k ≥ -2) if its suspension is k-connected. We show, for example, that the classifying type of a group G is 2-acyclic if and only if the group G is perfect, i.e. its abelianisation is trivial. Finally, we comment on the relations between acyclic and connected maps and sketch directions for future research.
+This is joint work with Ulrik Buchholtz and Egbert Rijke.
+
+Nov 3
+Colin Zwanziger
+
+Hofmann-Streicher Universes via Coalgebra
+https://www.youtube.com/watch?v=UG0xwTNUplo
+Zwanziger
+Hofmann-Streicher universes (Hofmann and Streicher 1999) are a standard tool for modeling universes in presheaf models of dependent type theory. They have been used in the semantics of HoTT, e.g. in the cubical set model of Cohen et al. (2015).
+Hofmann and Streicher (op. cit.) noted that their approach to universes does not extend from presheaf models to arbitrary sheaf models. In this talk, we nevertheless extend the approach of Hofmann and Streicher to sheaf models *with enough points*. Consequently, we can handle many sheaf models without resorting to alternatives such as the stack semantics of Coquand et al. (2020). In particular, any model of sheaves on a topological space has enough points.
+Our approach will be to recover any sheaf model with enough points as a 'topos model of coalgebras' for an appropriate notion of comonad. This construction 'lifts' the universe in the topos model carrying the comonad to the sheaf model in question, yielding a Hofmann-Streicher universe. Our 'topos model of coalgebras' is a refinement of the well-known topos of coalgebras (Kock and Wraith 1971).
+
+Nov 3
+Evan Cavallo
+
+Cubes with one connection and relative elegance
+https://www.youtube.com/watch?v=CrcExHaMDfk
+Cavallo
+Given a cube category with cartesian structure (faces, degeneracies, diagonals, and permutations), we know that its category of presheaves supports (constructively!) both an interpretation of homotopy type theory and a compatible Quillen model structure. Here we consider the cube category with cartesian structure and one connection. I will present a proof that the model structure obtained for this cube category is Quillen equivalent to the Kan-Quillen model structure on simplicial sets. The obstacle to overcome is that this cube category is not a Reedy category: its morphisms do not factor into well-behaved "degeneracy" and "face" maps. We observe that it does, however, embed in a Reedy category in a nice way. We adapt the theory of so-called elegant Reedy categories to this relativized case, then use these results to prove the equivalence with simplicial sets. This is joint work with Christian Sattler.
+
+Oct 20
+Axel Ljungström
+
+Calculating a Brunerie Number
+https://www.youtube.com/watch?v=MIMeQ88YMKI
+Ljungstrom
+In his PhD thesis, Brunerie defined the notorious 'Brunerie number' -- an integer n such that the fourth homotopy group of the 3-sphere is isomorphic to Z/n. He then managed to, with a lot of machinery, prove that |n| = 2. In an ideal world, this part of the proof is unnecessary: the fact that |n| = 2 should follow immediately by normalising n in a constructive proof assistant like Cubical Agda. In the real world, however, it's not that easy: Cubical Agda is too slow. So we have two obvious choices: we either give up, or we formalise all of Brunerie's original proof (me and my supervisor, Anders Mörtberg, have accepted both options at different points in time). Recently, however, I found a third option: even though normalisation doesn't work, there is still a very direct way of showing that |n| = 2. In fact, with my definition of n, we can show that n = -2. In this talk, I will give a sketch of this argument. If time permits, I will mention why this argument also shows that the fourth homotopy group of the 3-sphere is a subgroup of Z/2.
+
+Oct 20
+Max Zeuner
+
+A univalent formalization of affine schemes
+https://www.youtube.com/watch?v=nLP7GjL1Buc
+Zeuner
+Schemes are the corner stone of modern algebraic geometry and have been formalized in various proof assistants. However, the most prominent existing formalizations all follow the inherently non-constructive approach of Hartshorne's classic "Algebraic Geometry" textbook. Working in Cubical Agda, we want to give a constructive formalization of affine schemes in a univalent setting. We follow an approach due to Coquand, Lombardi and Schuster that uses a point-free description of the Zariski spectrum but otherwise proceeds by defining the structure sheaf on basic opens first and then lifting it to the whole spectrum. In this talk we will focus on the construction of the structure sheaf on basic opens as it is at this point that working in a univalent setting raises perhaps surprising issues while at the same time offering insightful solutions.
+
+Oct 6
+Amélia Liao
+
+Univalent Category Theory
+https://www.youtube.com/watch?v=asY6dXkR2yg
+Liao
+Category theory is the study of structure across mathematics. Being a mathematical subject itself, category theory should also encompass the study of its own structural aspects.
+A promising approach (Gray 1974; Di Liberti & Loregian 2019) is formal category theory: studying the properties of the bicategory of categories which make it possible to study category theory from a structural perspective.
+A different idea is to approach categories as groupoids with extra structure, something which finds itself naturally at home in HoTT, where "groupoids" are particular types. This approach lends itself particularly well to formalization in a proof assistant.
+In the context of Cubical Agda, we recap the basic theory of univalent categories (Ahrens, Kapulkin & Shulman 2013) and the move towards higher univalent category theory (Capriotti & Kraus 2017; Ahrens et all 2019), particularly the application of cubical syntax to fibred categories (following Sterling & Angiuli 2021; Ahrens & Lumsdaine 2017).
+
+Oct 6
+Chris Grossack
+
+Where are the open sets? Comparing HoTT with Classical Topology
+https://www.youtube.com/watch?v=syftUuf5Hpk
+Grossack
+It's often said that Homotopy Type Theory is a synthetic description of homotopy theory, but how do we know that the theorems we prove in HoTT are true for mathematicians working classically? In this expository talk we will outline the relationship between HoTT and classical homotopy theory by first using the simplicial set semantics and then transporting along a certain equivalence between (the homotopy categories of) simplicial sets and topological spaces. We will assume no background besides some basic knowledge of HoTT and classical topology.

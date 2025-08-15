@@ -1,0 +1,76 @@
+Jan 13
+Thibaut Benjamin
+
+CaTT, a type theory to describe weak ω-categories
+https://www.youtube.com/watch?v=Fn6NKrmyX08
+Benjamin
+Weak ω-categories are more complicated to define than their undirected variants, the weak ω-groupoids. Not only do they carry less topological intuition, but the complexity of adding a preferred direction on each level affects all the higher levels and the increase of complexity quickly snowballs. It is still possible to give sensible definitions for these objects, but those require high level abstract machinery making any non trivial proof inside one of these definition almost untractable in practice.
+Homotopy type theory (HoTT) provides an efficient and primitive way of reasoning internally with weak ω-groupoids. In his thesis, Brunerie has extracted specifically a set of rules that span all the combinatorics of weak omega-groupoids, and showed that these rules are satisfied by HoTT. Although a primitive way to reason within weak ω-categories, like HoTT for the groupoids, is not known, we can still leverage Brunerie's approach to tackle the directed world.
+In this talk, I will present a joint work with Finster and Mimram, where we define a type theory à la Brunerie for weak ω-categories. I will show how to use this type theory in practice to carry proofs in the theory of weak omega-categories and present a proof assistant based off of these ideas. I will present a few syntactic considerations to improve the use of this proof assistant and discuss how they reveal a part of the structure of weak omega-categories.
+
+Jan 13
+Martin Bidlingmaier
+
+The higher multiverse model
+https://www.youtube.com/watch?v=bx25nca1u68
+Bidlingmaier
+In categorical semantics, we are used to think of individual categories with suitable structure as models of type theory. For example, every locally cartesian closed (lcc) category constitutes a separate model of extenstional type theory, a separate mathematical universe. Instead, this talk is about 1-categorical and higher categorical multiverse models, which are models made up of all (small) models. Thus the idea is to think of the category of all categories with suitable structure as a model of type theory. For example, from this perspective, the category of all lcc categories is a model of extensional type theory, which contains as submodels each of the traditional models given by individual lcc categories.
+As in ordinary categorical semantics, there are coherence problems to be solved to make this precise. Here the multiverse approach allows the use of model categorical (in the sense of Quillen) constructions such as algebraically (co)fibrant objects, which are otherwise inapplicable. These constructions can be combined into a new solution of the 1-categorical coherence problem. With some caveats, the technique is also applicable to the category of lcc ∞-categories. Here I will explain how a fragment of intensional dependent type theory can be interpreted in the category of lcc ∞-categories.
+
+Jan 13
+Vikraman Choudhury
+
+Symmetries in Reversible Programming: From Symmetric Rig Groupoids to Reversible Programming Languages
+https://www.youtube.com/watch?v=yGGRAQ_KkGw
+
+We show that the groupoid of finite types and equivalences can be presented as the free symmetric rig groupoid on zero generators, or equivalently, the free symmetric monoidal groupoid on one generator. Using this equivalence, we construct a fully abstract denotational semantics for a reversible programming language of finite types, reversible programs, and program equivalences. We show some applications of this semantics to perform normalisation-by-evaluation, verification, and synthesis of reversible boolean circuits. This is joint work with Jacek Karwowski and Amr Sabry.
+
+Jan 13
+Tom de Jong
+
+Order Theory and Propositional Resizing in HoTT/UF 
+https://www.youtube.com/watch?v=Vqrt0OMRvaA
+Jong
+In this talk we describe the key result in our paper "Predicative Aspects of Order Theory in Univalent Foundations". Our work is predicative and constructive, meaning that we do not assume Voevodsky's propositional resizing axioms or excluded middle, respectively. Crudely formulated, our theorem says: Various kinds of posets can only be small in predicative HoTT/UF if they are trivial. In previous work, we observed that in HoTT/UF, the directed complete posets in the Scott model of PCF were large and the above result is telling us that this is unavoidable. We explain how to arrive at a precise formulation of our theorem, using a technical notion of a δ𝓤-complete poset and a generalization of Johnstone's notion of positivity for locales. It is worth remarking that the precise formulation is in the spirit of reverse mathematics: it is a theorem of HoTT/UF (as opposed to a metatheorem about HoTT/UF) and in particular does not make reference to models.
+This is joint work with my PhD supervisor Martín Escardó. The paper can be found here: #https://doi.org/10.4230/LIPIcs.FSCD.2021.8#.
+
+Jan 20
+Nima Rasekh
+
+Constructing Coproducts in locally Cartesian closed ∞-Categories
+https://www.youtube.com/watch?v=tSe85xp8lf0
+Rasekh
+While the original definition of an elementary topos assumed the existence of finite colimits, modern definitions avoid this assumption as, due to work of Mikkelsen and Pare, finite colimits can be recovered from the remaining axioms. 
+In recent years we have witnessed the rise of homotopical foundations in the form of homotopy type theory and elementary ∞-topos theory, which, analogous to elementary toposes, assume the existence of finite colimits. Given the historical trajectory we can ask ourselves whether we can again recover them from the other axioms.
+In this work we take a first step towards addressing this problem by constructing an initial object and coproducts in a locally Cartesian closed ∞-category with subobject classifier, using ideas from type theory.
+This is joint work with Jonas Frey.
+
+Jan 20
+Mitchell Riley
+
+Linear Homotopy Type Theory
+https://www.youtube.com/watch?v=o2oWhHabjdM
+Riley
+Some ∞-toposes support constructions that are inherently 'linear', such as the external smash product of parameterised spectra. These cannot be added axiomatically to ordinary HoTT, because there is no way to enforce this linearity: there are no restrictions on variable uses.
+This talk describes an extension of HoTT with linear tensor and hom type formers, as a kind of 'binary modality' and its right adjoint. Trying to stay compatible with existing results in HoTT naturally leads us to a novel kind of bunched dependent type theory. Our type theory is intended to be as human-usable as possible, with an eye towards synthetic stable homotopy theory.
+
+Jan 20
+Andrew Swan
+
+Why cubical sets are different to simplicial sets
+https://www.youtube.com/watch?v=RqSoJrN4hO0
+Swan
+In the classical theory of simplicial sets and cubical sets there is an important class of maps known as Kan fibrations, which form part of a weak factorisation system on each category. There are several ways to define this class, amongst them "right lifting property against horn inclusions" and "right lifting property against pushout product of monomorphisms and endpoint inclusions." However in a constructive setting, the two definitions are not equivalent and while the latter definition is commonly used when working with cubical sets, only the former definition has been used in simplicial sets, in constructive mathematics. I'll give an explanation for this using a notion due to Shulman called "locally representable notion of fibred structure." Both definitions can be used to give a structured version of weak factorisation system, called algebraic weak factorisation system (awfs), where Kan fibrations are not just a class of maps, but a kind of algebraic structure that a map can possess. The awfs in cubical given by right lifting property against pushout product of monomorphisms and endpoint inclusion is locally representable, using the fact that in cubical sets the interval is tiny. I'll show however, that the corresponding awfs in simplicial sets is not locally representable.
+
+Jan 20
+Jonathan Weinberger
+
+Synthetic fibered (∞,1)-category theory
+https://www.youtube.com/watch?v=h-ou44Y7JRc
+Weinberger
+As an alternative to set-theoretic foundations, homotopy type theory is a logical system which allows for reasoning about homotopical structures in an invariant and more intrinsic way.
+Specifically, for the case of higher categories there exists an extended framework, due to Riehl-Shulman, to develop (∞,1)-category theory synthetically. The idea is to work internally to simplicial spaces, where one can define predicates witnessing that a type is (complete) Segal. This had also independently been suggested by Joyal.
+Generalizing Riehl-Shulman’s previous work on synthetic discrete fibrations, we discuss the case of synthetic cartesian fibrations in this setting. In developing this theory, we are led by Riehl–Verity’s model-independent higher category theory, therefore adapting results from ∞-cosmos theory to the type-theoretic setting.
+If time permits, we’ll briefly point out further developments, e.g. the case of two-sided cartesian families, modeling (∞,1)-category-valued distributors.
+In fact, by Shulman’s recent work on strict universes, the theory at hand has semantics in Reedy fibrant simplicial diagrams in an arbitrary type-theoretic model topos, so all type-theoretically formulated results semantically translate to statements about internal (∞,1)-categories.
+This is based on joint work with Ulrik Buchholtz (#https://arxiv.org/abs/2105.01724#) and the speaker’s recent PhD thesis.
