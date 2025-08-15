@@ -1,0 +1,78 @@
+May 24	
+Thierry Coquand
+University of Gothenburg
+A survey of constructive models of univalence
+https://www.youtube.com/watch?v=fv_dcmcQec4&
+Coquand
+I will try to survey what is known at this stage about constructive  models of univalence, and then some metatheoretical applications. Some of  these are: proof theoretic strength of the univalence axiom (with HITs), and   consistency of univalence with continuity principle and fan theorem, and  independence of the axiom of countable choice.
+
+May 10	
+Thorsten Altenkirch
+University of Nottingham
+Towards higher models and syntax of type theory
+https://www.youtube.com/watch?v=UgNYKxZKzsk
+Altenkirch
+We (Ambrus Kaposi and myself) have defined the intrisic (no preterms) syntax of type theory in type theory using quotient inductive inductive types, that is set truncated higher inductive inductive types. Set truncation is necessary because we want to have decidability which we established using normalisation by evaluation. However, this stops us from defining any interesting semantic models, e.g. interpreting contexts as sets, types as families etc, because sets do not from a set (not for size reason but dimension). I suggest that we can overcome this problem by defining higher models of type theory and a higher syntax. I envisage that the higher syntax does form a set without being explicitely truncated, hence decability should still hold. In my talk I will describe the first steps towards this programme.
+
+Apr 26
+Martín Hötzel Escardó
+University of Birmingham
+Constructive mathematics in univalent type theory
+https://www.youtube.com/watch?v=rM484kI7OAA
+Escardo
+I want to share my experience of doing constructive mathematics in univalent type theory, compared to my previous experience in e.g. elementary-topos type theory (as in Lambek and Scott), Martin-Löf type theory, Bishop mathematics.
+In doing so, I want to compare the old topological view of types and functions in constructive mathematics with the new homotopical view of equality in type theory.
+There will be some new constructive theorems, too.
+
+Apr 12	
+Michael Shulman
+University of San Diego
+Type 2-theories
+https://www.youtube.com/watch?v=hEhFeatKchQ
+Shulman
+Homotopy type theory is hypothesized to be an internal language for (∞,1)-toposes.  However, recent developments suggest that more than this, what is needed is an internal language for collections of several (∞,1)-toposes together with functors between them, such as adjunctions, monads, comonads, non-cartesian monoidal structures, and so on.  For instance, a cohesive (∞,1)-topos comes with an adjoint triple of two monads and a comonad, while a tangent (∞,1)-topos comes with a monad that is also a comonad and also a non-cartesian "smash product" monoidal structure.
+Just as ordinary homotopy type theory is a "doctrine" or "2-theory" for (∞,1)-toposes, each such situation should come with its own "2-theory": a dependent type theory with extra information characterizing the additional structure.  But developing even one dependent type theory formally is a lot of work, so we would like a general framework and a general theorem that can then simply be specialized to all such 2-theories.  I will sketch such a framework, which is under development in joint work with Dan Licata and Mitchell Riley.
+
+Mar 29	
+Ulrik Buchholtz
+Technische Universität Darmstadt
+From Higher Groups to Homotopy Surfaces
+https://www.youtube.com/watch?v=0UlLwf8ttUw
+Buchholtz
+Homotopy type theory can be seen as a synthetic theory of infinity groupoids. From this perspective, the pointed, connected types represent infinity groups. The elements are those of the loop space, and the operations on identity types provide the higher group structure.
+In this talk, I'll explain what basic group theory looks like from this viewpoint. One aspect is that of categorifying ordinary group theory by using a univalent universe to present many groups. For example, the cyclic group on n elements is the loop space of the type of n-element sets equipped with a cyclic ordering.
+In the second half of the talk, I'll focus on the 2-dimensional orthogonal group, and use this to talk about the homotopy types of surfaces.
+The talk follows the synthetic approach to homotopy theory as developed in the HoTT book. Beyond that, a basic familiarity with ordinary group theory and the result on the classification of surfaces from topology will be helpful.
+Some of the material will be from arXiv:1802.04315 (joint with Floris van Doorn and Egbert Rijke) and arXiv:1802.02191 (joint with Favonia), and some material is brand new.
+
+Mar 15	
+Carlo Angiuli
+Carnegie Mellon University
+Computational semantics of Cartesian cubical type theory
+https://www.youtube.com/watch?v=3iKwq9iRHWk
+Angiuli
+Dependent types are simultaneously a theory of constructive mathematics and a theory of computer programming: a proof of a proposition is at the same time a program that executes according to a specification. Homotopy type theory reveals a third aspect of dependent types, namely their role as an extensible formalism for reasoning synthetically about objects with homotopical structure.  Unfortunately, axiomatic formulations of univalence and higher inductive types disrupt the computational character of type theory, which pivots on a property called canonicity.
+I will discuss Cartesian cubical type theory, a univalent type theory in which the canonicity property holds, based on a judgmental notion of cubes with diagonals, faces, and degeneracies, and uniform Kan operations that compute according to their types. I will consider it primarily through the lens of its computational semantics, defined using a cubical generalization of the technique of logical relations, which licenses reading proofs as programs.
+This talk is based on joint work with Favonia and Robert Harper, described in arXiv:1712.01800. Some familiarity with the syntax and rules of type theory will be very helpful; I will not assume knowledge about computational semantics or logical relations.
+
+Mar 1	
+Emily Riehl
+Johns Hopkins University
+The synthetic theory of  ∞-categories vs the synthetic theory of  ∞-categories
+https://www.youtube.com/watch?v=ge-9m1SsEmc
+Riehl
+Homotopy type theory provides a “synthetic” framework that is suitable for developing the theory of mathematical objects with natively homotopical content. A famous example is given by (∞,1)-categories — aka “∞-categories” — which are categories given by a collection of objects, a homotopy type of arrows between each pair, and a weak composition law. In this talk we’ll compare two “synthetic” developments of the theory of ∞-categories — the first (joint with Verity) using 2-category theory and the second (joint with Shulman) using a simplicial augmentation of homotopy type theory due to Shulman — by considering in parallel their treatment of the theory of adjunctions between ∞-categories. Afterwards, I hope to launch a discussion about what considerations might motivate the use of homotopy type theory in place of classical approaches to prove theorems in similar settings.
+Ideal background: some familiarity with notions of a (ordinary strict 1-)category, functor, natural transformation, and the definition of an adjunction involving a unit and a counit (just look these up on wikipedia). Plus standard type theory syntax and the intuitions from the Curry-Howard-Voevodsky correspondence. I’ll be talking about (∞,1)-categories but won’t assume familiarity with them.
+
+Feb 15
+Peter LeFanu Lumsdaine
+Stockholm University
+Inverse diagram models of type theory
+https://www.youtube.com/watch?v=Td4UcFI76DM
+Lumsdaine
+Diagram models are a flexible tool for studying many logical systems: given a categorical model C and index category I, one hopes that the diagram category C I will again be a model.
+For the case of intensional type theory, this becomes a little tricky. Since most logical constructors (e.g. Σ-types, Id-types) are not provably strictly functorial, it is difficult to lift them from structure on C to structure in C I, for arbitrary I.
+However, in case I is an inverse category — roughly, something like the semi-simplicial category Δ I — this difficulty can be surmounted by taking the types of C I to be Reedy types, analogous to Reedy fibrations in homotopy theory.
+I will discuss the construction of these models (and slightly more general homotopical diagram models) in the setting of categories with attributes, along with the application of these models to the “homotopy theory of type theories”.
+The work of this talk is joint work with Chris Kapulkin, in arXiv:1610.00037 and a forthcoming companion article; see also Shulman arXiv:1203.3253 for a closely related construction.
+A basic familiarity with categorical models of type theory will be helpful, i.e. categories with attributes or similar; see #https://video-archive.fields.utoronto.ca/view/5057# for an introductory overview of these.

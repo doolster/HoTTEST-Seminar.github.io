@@ -1,0 +1,70 @@
+May 2
+Andreas Nuyts
+
+Higher Pro-arrows: Towards a Model for Naturality Pretype Theory
+https://www.youtube.com/watch?v=jcaG18oicP8
+Nuyts
+In systems with internal parametricity, we get propagation and preservation of relations through/by all functions for free. In HoTT, we get preservation of equivalences by all functions for free. In directed type theory, we get preservation of morphisms by all (covariant) functions for free.
+None of these three properties by itself is satisfactory: if we weaken equivalences or morphisms to relations, we lose their computational behaviour. If we want to rely on preservation of non-invertible morphisms, we need our functions to be covariant. And finally, simply not every morphism/relation is an equivalence.
+We set out to develop a type system that has all three preservation properties in an interactive manner, so that we can preserve isomorphisms when available, morphisms when covariant, and relations as a last resort. Such a system should provide us with functoriality (fmap), parametricity and naturality proofs for free. I call such a system "Naturality Type Theory".
+In this first step, I consider Naturality *Pre*type Theory: I defer all considerations of fibrancy to intuition and future work. In particular, I do not yet worry too much about the specifics of composition of and transport along morphisms.
+By instantiating parametrized systems such as Multimod(e/al) Type Theory (MTT) and the Modal Transpension System (MTraS), we can moreover separate concerns and only worry about the presheaf model at every mode, and the modalities that we can model as adjunctions between these presheaf models, leaving syntactic matters to research on MTT and MTraS.
+The presheaf models are designed to accommodate yet-to-be-defined higher pro-arrow equipments, and can be invented in three ways: (1) as a higher-dimensional version of pro-arrow equipments, (2) as a heterogenization of Tamsamani & Simpson's model of higher category theory, and (3) as a directification of Degrees of Relatedness.
+In this talk, after motivating the subject, I intend to introduce the main ideas and then spiral towards the technical details, starting from the three existing settings/structures/models mentioned above.
+
+Apr 11
+Dan Christensen
+
+Sphere bundles and their invariants
+https://www.youtube.com/watch?v=eMCaua5t2cA
+Christensen
+Sphere bundles arise naturally in many contexts, often as the unit sphere bundles associated to vector bundles. For example, a manifold has a sphere bundle associated to its tangent bundle. In order to distinguish these bundles and to learn more about the manifolds, it's important to understand invariants of sphere bundles, such as the Euler class and the Thom class which live in cohomology groups. This talk will begin with a review of bundles and oriented bundles, and will then take a detour to discuss central types. We'll use central types to produce new models of Eilenberg-Mac Lane spaces. One of the themes of the talk will be that by using an appropriate model of an Eilenberg-Mac Lane space, we can give concrete descriptions of its H-space structure (which represents addition in cohomology) and of the cup product operation. Moreover, we'll show that by using these models, we can give very simple descriptions of the Euler class and Thom class of an oriented sphere bundle, and can prove theorems about them, such as the relationship between the two and the Whitney sum formula. I will also mention our work constructing the tangent sphere bundles of spheres and on the hairy ball theorem, which shows that the tangent sphere bundle of the n-sphere has a section if and only if n is odd.
+This is joint work with Ulrik Buchholtz, David Jaz Myers and Egbert Rijke, and most of our results have been formalized using the Coq-HoTT library.
+
+Mar 28
+Evan Cavallo
+
+Why some cubical models don't present spaces
+https://www.youtube.com/watch?v=P5LfVg4LHhk
+Cavallo
+Historically, constructive cubical interpretations of HoTT interpret types as families equipped with an "open box-filling" operation, which ensures that identities in types can be interpreted as maps from an interval. This choice of structure was inspired by Kan's early work on cubical sets. However, cubical type theory inteprets in forms of cubical sets not considered by Kan, indeed rarely considered in the homotopy-theoretical literature. In these settings, it is a priori unclear whether a box-filling operation is really what should qualify a cubical set as a "space" in a standard sense. I'll present arguments that for many forms of cubical set used in interpretations of HoTT, this is in fact not the case. Concretely, we show that in these settings, Quillen model structures based on box-filling fibrations are not Quillen equivalent to model categories (such as the Kan-Quillen model structure on simplicial sets) which do present spaces.
+This is joint work with Christian Sattler.
+
+Mar 14
+Greta Coraglia
+
+On the fibration of algebras
+https://www.youtube.com/watch?v=vUj0pqbLYqQ
+Coraglia
+We study fibrations arising from indexed categories of the following form: for a parametric endofunctor, consider its category of algebras (or Kleisli/Eilenberg--Moore in the case of monads), then one can construct the (op)fibration having for base category that of parameters, so that each fiber is precisely the category of algebras on a given fixed parameter. Examples of such constructions arise in disparate areas of mathematics, and are unified by the intuition that the resulting total category is a form of "semidirect product" of the category of parameters, which acts on the category the parametric endofunctor is defined on. We discuss some properties and applications with respect to the categorical semantics of (co)induction. 
+This is part of a joint and ongoing work with D. Ahman, D. Castelnovo, F. Loregian, N. Martins-Ferreira, Ü. Reimaa.
+
+Feb 29
+Rafaël Bocquet
+
+Strict Rezk completions of models of HoTT and homotopy canonicity
+https://www.youtube.com/watch?v=aqFgtMQBAno
+Bocquet
+In this talk I'll present the main ideas of my new proof of homotopy canonicity for HoTT (see arXiv:2311.05849).
+Constructive models of HoTT, such as cubical set models, provide a computational interpretation of the univalence axiom. Homotopy canonicity, originally conjectured by Voevodsky, implies that the computational content of univalence can already be observed in the
+syntax.
+Canonicity results are usually proven using a sconing construction, gluing together the syntax and a semantic model. For homotopy canonicity, the semantic model should be a model of HoTT, say cubical sets. To carry out the sconing construction, the components of the base model should also be cubical sets with the correct higher dimensional structure. However the components of the syntax are only sets, which can be seen as discrete cubical sets, with the "wrong" higher dimensional structure.
+This can be solved by constructing the "strict Rezk completion" of the syntax, which is an equivalent model with the correct higher dimensional structure. Strict Rezk completions can be constructed in cartesian cubical sets.
+
+Feb 15
+Émile Oleon
+
+Delooping cyclic groups with lens spaces in homotopy type theory
+https://www.youtube.com/watch?v=EJg8Mcxmbwg
+
+In the setting of homotopy type theory, each type can be interpreted as a space. Moreover, given an element of a type, i.e. a point in the corresponding space, one can define another type which encodes the space of loops based at this point. In particular, when the type we started with is a groupoid, this loop space is always a group. Conversely, to every group we can associate a type (more precisely, a pointed connected groupoid) whose loop space is this group: this operation is called *delooping*. The generic procedures for constructing such deloopings of groups (based on torsors, or on descriptions of Eilenberg-MacLane spaces as higher inductive types) are unfortunately equipped with elimination principles which do not directly allow eliminating to arbitrary types, and are thus difficult to work with in practice. Here, we construct deloopings of the cyclic groups Z_m which are *cellular*, and thus do not suffer from this shortcoming. In order to do so, we provide type-theoretic implementations of *lens spaces*, which constitute an important family of spaces in algebraic topology. In some sense, this work generalizes the construction of real projective spaces by Buchholtz and Rijke in their LICS'17 paper, which handles the case m = 2, although the general setting requires more involved tools. Finally, we use this construction to also provide cellular descriptions of dihedral groups, and explain how we can hope to use those to compute the cohomology and higher actions of such groups.
+
+Feb 1
+Urs Schreiber
+
+Topological Quantum Programming via Linear Homotopy Types
+https://www.youtube.com/watch?v=Wnm3yCUzNb0
+Schreiber
+It is interesting to observe that a use-case of what deserves to be called genuine “homotopical computation” is secretly known: We showed in arXiv:2303.02382 (in print at Comm. Math. Phys., see #ncatlab.org/schreiber/show/TQC+in+HoTT#) that the specification of the logic gates envisioned in “topological quantum computation on anyons”, while intricate in traditional language, have a slick expression in HoTT, simply as transport of certain truncated dependent function types into Eilenberg-MacLane types. The mathematical theorems behind this are a remarkable result on conformal quantum field theory by Feigin, Schechtmann & Varchenko (1994) combined with our novel algebro-topological construction, lending itself to formalization in HoTT, of Gauss-Manin connections on fibrations of twisted cohomology groups.
+Generally, the relation between HoTT and quantum computation is closer than might be suspected: Adding rules meant to enforce interpretation of HoTT into infinity-topoi of parameterized module spectra (such as Riley’s *Linear HoTT*) naturally provides for an expressive certification-language for quantum programming with “dynamic lifting” of quantum measurement results (arXiv:2310.15735, #ncatlab.org/schreiber/show/Quantum+Monadology#), previously elusive but arguably necessary for any serious quantum computation.
+This is joint work with David J. Myers and Hisham Sati.

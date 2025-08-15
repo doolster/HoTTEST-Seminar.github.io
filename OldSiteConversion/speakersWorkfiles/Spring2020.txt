@@ -1,0 +1,54 @@
+Apr 16
+Matthew Weaver
+Princeton University
+A constructive model of directed univalence in bicubical sets
+https://www.youtube.com/watch?v=kkfNjqSx4Nw
+Weaver
+Directed type theory is an analogue of homotopy type theory where types represent ∞-categories, generalizing groupoids. A bisimplicial approach to directed type theory, developed by Riehl and Shulman, is based on equipping each type with both a notion of path and a Septarate notion of directed morphism. In this setting, a directed analogue of the univalence axiom asserts that there is a universe of covariant discrete fibrations whose directed morphisms correspond to functions—a higher-categorical analogue of the category of sets and functions. In this talk, I’ll present a constructive model of a directed type theory with directed univalence in bicubical, rather than bisimplicial, sets. We formalize much of this model using Agda as the internal language of a 1-topos, following Orton and Pitts. First, building on the cubical techniques used to give computational models of homotopy type theory, we show that there is a universe of covariant discrete fibrations, with a partial directed univalence principle asserting that functions are a retract of morphisms in this universe. To complete this retraction into an equivalence, we refine the universe of covariant fibrations using the constructive sheaf models by Coquand and Ruch. (Joint work with Dan Licata.)
+
+Apr 2
+Denis-Charles Cisinski
+Universität Regensburg
+Univalence of the universal coCartesian fibration
+https://www.youtube.com/watch?v=OnMUka9bLAw
+Cisinski
+The model of higher categories given by Joyal's model structure for quasi-categories has univalent universes of coCartesian fibrations. This subsumes the existence of univalent universes of Kan fibrations proved by Voevodsky. Furthermore, the existence of such universes can be used as an alternative to the yoga of homotopy coherent nerves to prove all the essential features of higher category theory, giving a (directed) type theoretic approach to the foundations of higher categories.
+
+Mar 19
+Jon Sterling
+Carnegie Mellon University
+Objective Metatheory of Dependent Type Theories
+https://www.youtube.com/watch?v=cyBn-lkvXTc
+Sterling
+What type theorists and other researchers in type theory have in common is that they study theorems that hold of the initial model of type theory; but type theorists especially emphasize the theorems whose statements are sufficiently non-type-theoretic that they need not be preserved by homomorphisms of models. These theorems, sometimes called "metatheorems" or "admissibilities", are the means by which we conceive and justify computerized implementations of type theory, including canonicity, normalization, and decidability of type checking and judgmental equality.
+The main tool for proving such theorems is Tait's method of computability, which has in the past several years been subject to a rapid campaign of rectification using the categorical language of Artin gluing. I will give an overview of this brave new "objective computability", emphasizing my recent joint work with Angiuli and Gratzer on a general gluing theorem for models of MLTT along flat functors into Grothendieck topoi, with an application to cubical type theory.
+
+Feb 20
+Karol Szumiło
+University of Leeds
+The Constructive Kan-Quillen Model Structure
+https://www.youtube.com/watch?v=xjghkPwLFTo
+Szumilo
+The classical Kan-Quillen model structure on the category of simplicial sets is a fundamental object in homotopy theory. Many proofs of its existence have been found, but (until recently) all of them relied on principles of classical logic: the law of excluded middle and the axiom of choice. For the purposes of interpretation of Homotopy Type Theory, such arguments were insufficient.
+A fully constructive proof is possible, but it requires a careful adjustment of the definitions of cofibrations and weak homotopy equivalences of simplicial sets. In the talk, I will outline one such constructive argument, explaining how various standard techniques of simplicial homotopy theory need to be adapted to constructive logic.
+This is joint work with Nicola Gambino and Christian Sattler, inspired by Simon Henry who was the first to obtain the result.
+
+Feb 6
+Niels van der Weide
+Radboud University
+Constructing 1-Truncated Finitary Higher Inductive Types as Groupoid Quotients
+https://www.youtube.com/watch?v=sQhqQTMcMKw
+Weide
+In homotopy type theory, one can define spaces, such as the spheres and torus, with higher inductive types (HITs). These types generalize inductive types by allowing constructors for (possibly higher) paths beside constructors for points.
+One scheme for HITs is defined by Dybjer and Moenclaey. It allows defining HITs by providing arities for constructors for the points, paths, and paths between paths. The arities are allowed to be recursive, but they have to be finitary.
+In this talk, we show how to interpet the HITs defined by Dybjer and Moenclaey as 1-types using the grorupoid quotient. Concretely, this means we construct finitary 1-truncated HITs as groupoid quotients within type theory.
+
+Jan 23
+Simon Henry
+University of Ottawa
+The language of a model category
+https://www.youtube.com/watch?v=7_X0qbSXlfk
+Henry
+I will explain how to any model category, one can associate a first order language which allows to formulate properties of its fibrant objects that are automatically invariant under homotopies and weak equivalences.
+For example, the special case of the folk model structure on Cat reproduce the well known result that a first order statement about categories not involving equality of objects is invariant under isomorphisms and equivalences of categories. The construction I will present generalizes this to any model category, for example to spaces or quasi-categories.
+Though it does not explicitly use it, this is strongly inspired from Makkai's FOLDS and shed a slightly new light on the connection between dependent type theory and homotopy theory.

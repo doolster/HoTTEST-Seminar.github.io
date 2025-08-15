@@ -1,0 +1,34 @@
+Apr 17
+Mitchell Riley
+
+Tiny Types and Cubical Type Theory
+
+Riley
+I will present an extension of Martin-Löf Type Theory that contains a tiny object; a type for which there is an "amazing" right adjoint to the formation of function types as well as the expected left adjoint. A primary aim of the theory is to be simple enough to be used both by hand and in a (hypothetical) proof assistant. I will sketch a normalisation algorithm and discuss a few potential applications, in particular, to implementations of Cubical Type Theory.
+
+Mar 6
+Jonathan Weinberger
+
+Directed univalence and the Yoneda embedding for synthetic ∞-categories
+https://www.youtube.com/watch?v=jCU-rSBnEac
+Weinberger
+In this talk, I'll present recent results in synthetic ∞-category theory in an extension of homotopy type theory. An ∞-category is analogous to a 1-category, but with composition defined only up to homotopy. To reason about them in HoTT, Riehl and Shulman proposed simplicial HoTT, an extension by a directed interval, generating the shapes that model arrows and their composition.
+To account for fundamental constructions like the opposite category or the maximal subgroupoid, we add further type formers as modalities using Gratzer-Kavvos-Nuyts-Birkedal's framework of multimodal dependent type theory (MTT).
+I'll present the construction of the universe 𝒮 of small ∞-groupoids in that setting which we can show to be an ∞-category satisfying directed univalence. As an application, we can define various ∞-categories of interest in higher algebra such as ∞-monoids and ∞-groups. Furthermore, I'll show the construction of the fully functorial Yoneda embedding w.r.t. 𝒮 as well as the Yoneda lemma (which is hard to establish in set-theoretic foundations). If time permits, I will outline further developments in synthetic ∞-presheaf theory, namely first steps in the theory of Kan extensions, including a proof of Quillen's Theorem A and the properness of cocartesian fibrations.
+The material is joint work with Daniel Gratzer und Ulrik Buchholtz (#https://arxiv.org/abs/2407.09146#, #https://arxiv.org/abs/2501.13229#).
+
+Feb 20
+Martín Hötzel Escardó
+
+Injective types
+https://www.youtube.com/watch?v=zRmbu5ro9Lc
+Escardo
+In previous work, we established results about injective types in HoTT/UF, including characterizations, closure properties, and examples. In recent current work, in collaboration with Tom de Jong, we have developed more examples and counter-examples, as well as a better understanding of the landscape. In this talk I will present these old and new ideas.
+
+Feb 6
+Mario Carneiro
+
+Lean4Lean: Towards a Verified Typechecker for Lean, in Lean
+https://www.youtube.com/watch?v=t0kHC0YxjLc
+Carneiro
+This talk will present Lean4Lean, a project to construct a verified checker for the Lean theorem prover in the style of MetaCoq. It consists of a new “external verifier” for Lean, written in Lean. It is the first complete verifier for Lean 4 other than the reference implementation in C++ used by Lean itself, and the new verifier is competitive with the original, running between 20% and 50% slower and usable to verify all of Lean’s mathlib library, forming an additional step in Lean’s aim to self-host the full elaborator and compiler. The second part of the project concerns the type theory itself, and establishing its properties (in spite of several known negative results about the behavior of the type system), with the ultimate goal of being able to show that the verifier is correct to a specification of the type theory, and that the type theory is consistent relative to ZFC with countably many inaccessible cardinals. This work is still ongoing but we plan to use this project to help justify any future changes to the kernel and type theory and ensure unsoundness does not sneak in through either the abstract theory or implementation bugs.

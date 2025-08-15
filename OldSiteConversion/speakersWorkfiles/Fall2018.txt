@@ -1,0 +1,68 @@
+Dec 6	
+Eric Finster
+Inria - Rennes
+Towards Higher Universal Algebra in Type Theory
+https://www.youtube.com/watch?v=hlCVHVtAlqQ
+Finster
+I will propose a definition of "coherent cartesian polynomial monad" in type theory.  Special cases of the proposal yield definitions of ∞-operads, ∞-categories and ∞-groupoids.  In addition, I describe a definition of coherent algebra over such a monad, leading to a proposed internal description of objects such as En-types and diagrams of types valued in the universe.
+I will report on progress towards formalizing the definition and suggest some constructions and applications making use of it. 
+
+Nov 22	
+Floris van Doorn
+University of Pittsburgh
+Towards Spectral Sequences for Homology
+https://www.youtube.com/watch?v=Q3zaqeKhUKg
+van-Doorn
+Spectral sequences form a powerful tool which can be used to compute homotopy, homology and cohomology groups of a wide variety of spaces. We have constructed two important spectral sequences in homotopy type theory, the Atiyah-Hirzebruch and Serre spectral sequences for cohomology. These spectral sequences have analogues for homology, but they have not been constructed in HoTT yet. However, many parts of our construction could be reused to construct the corresponding spectral sequences for homology.
+In this talk I will introduce spectral sequences and review the spectral sequences we have constructed and some of their applications. Furthermore, I will describe what parts are still missing to construct the Atiyah-Hirzebruch and Serre spectral sequences for homology.
+The construction of the spectral sequences for cohomology is joint work with Jeremy Avigad, Steve Awodey, Ulrik Buchholtz, Egbert Rijke and Mike Shulman.
+
+Nov 8	
+Guillaume Brunerie
+Stockholm University
+Computer-generated proofs for the monoidal structure of the smash product
+https://www.youtube.com/watch?v=JEUvWyd1mTk
+Brunerie
+The smash product is a very useful operation in algebraic topology and  it can be defined in HoTT as a certain higher inductive type. One of  its basic properties is the fact that it is a (1-coherent) monoidal  product on pointed types, but proving this fact turns out to be very  technical.
+I will present some work in progress aiming at proving it via some  form of higher dimensional rewriting and meta-programming. The idea is  to write an (untrusted) external program to generate a formal proof,  which can then be formally checked by a proof assistant.
+
+Oct 25	
+Nicolai Kraus
+University of Nottingham
+Some connections between open problems
+https://www.youtube.com/watch?v=l8S0Ll4PhoI
+Kraus
+I will give an overview of my plan to construct connections between   several unsolved questions. The following are important constructions   that we would like to perform internally in type theory:
+(1) a definition of semi-simplicial types;
+(2) developing a theory of infinity-categories;
+(3) homotopy type theory "eating itself";
+(4) a "minimal/optimal" principle of eliminating truncations;
+(5) showing that free higher groups over sets are sets, that the   suspension of a set is a 1-type, and variations/generalizations.
+My expectation is that, in type theories where (1) can be solved (e.g. HTS and 2LTT), the other problems can be solved as well. I will outline  the progress that various members of the HoTT community have made on  some of the questions. The emphasis of the talk will be on a framework  for quotienting by "directed" equivalence relations which I have  developed to attack problem (5), together with partial results and why  (5) is related to (1).
+
+Oct 11	
+Kuen-Bang Hou (Favonia)
+University of Minnesota
+Towards efficient cubical type theory
+https://www.youtube.com/watch?v=9pc4QkMtrnQ
+Favonia
+Cubical type theory attracted much attention in the homotopy type theory community because it achieved canonicity in the presence of univalence and higher inductive types. To date, there are many variants of cubical type theory and experimental proof assistants based on them.
+It may seem that the remaining task is to reconnect the syntax to standard models, but there are still numerous type-theoretic open problems arising from the concerns over efficiency and usability. In this talk, I will give an overview of several topics we are working on but not publicly presented before, including extension types, empty systems, the interplay between kinds and higher inductive types, and more!
+
+Sept 27	
+Dimitris Tsementzis
+Rutgers University
+First-Order Logic with Isomorphism
+https://www.youtube.com/watch?v=9fK9eEMYjII
+
+First-order logic with isomorphism (“FOLiso”) is a formal system which relates to HoTT and the Univalent Foundations in a similar way that first-order logic with equality relates to ZFC and set-theoretic foundations. In particular, FOLiso gives a precise framework in which to study “first-order" theories defined on homotopy types (e.g. precategories, univalent categories), just as first-order logic with equality gives a precise framework in which to study first-order structures and theories defined on sets. I will first introduce the syntax and proof system of FOLiso as an extension of M. Makkai’s FOLDS. Then I will define a semantics for FOLiso in terms of homotopy types and describe a proof of soundness and completeness for this semantics. I will conclude by sketching applications in various directions.
+(Most of the material is based on the preprint #https://arxiv.org/abs/1603.03092# with quite a few new additions based on ongoing work.)
+
+Sept 20	
+Andy Pitts
+University of Cambridge
+Axiomatizing Cubical Sets Models of Univalent Foundations
+https://www.youtube.com/watch?v=sy1-toqYRrk
+Pitts
+The constructive model of Homotopy Type Theory introduced by Cohen-Coquand-Huber-Mörtberg in 2015 (building on the work of Bezem-Coquand-Huber in 2013) uses a particular presheaf topos of cubical sets.  Since its introduction, much effort has been expended to analyse, simplify and generalize what makes this model of the univalence axiom tick, using a variety of techniques. In this talk I will describe an axiomatic approach -- the isolation of a few elementary axioms about an interval and a universe of fillable shapes that allow a univalent universe to be constructed. Not all the axioms are visible in the original work; and the axioms can be satisfied in toposes other than the original presheaf topos of cubical sets.  The axioms and constructions can almost be expressed in Extensional Martin-Löf Type Theory, except that the global nature of some of them leads to the use of a modal extension of that language.
+This is joint work with Ian Orton, Dan Licata and Bas Spitters.

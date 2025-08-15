@@ -1,0 +1,58 @@
+Dec 14
+David Jaz Myers
+
+The Tangent Bundles of Spheres
+https://www.youtube.com/watch?v=9T9B9XBjVpk
+Myers
+jww Ulrik Buchholtz, Dan Christensen, and Egbert Rijke
+In this talk, we'll construct the tangent sphere bundles on the spheres using an inductive construction, and we'll use this construction to prove the Hairy Ball Theorem. We'll then compute the Euler class of the tangent sphere bundles with an explicit construction. Generalizing from this case, we'll define a preliminary notion of "homotopy manifold" and use an abstract lemma about pushout products to define the product of homotopy manifold structures. This will give us tangent bundles on products of spheres as well. All of this will take place in ordinary book HoTT, and a good deal of it has already been formalized in Coq.
+
+Nov 30
+Ingo Blechschmidt
+
+Towards multiversal modal operators for homotopy type theory 
+https://www.youtube.com/watch?v=L6dKpt7UqX4
+Blechschmidt
+Where do some of our most cherished inductive definitions come from? Which functions are we excluding when we form the type of all functions between two types? Does every field have an algebraic closure? 
+Inspired by the modal approach to the set-theoretic multiverse of Joel David Hamkins, Victoria Gitman and their collaborators, we aim to introduce the modal operators "everywhere" and "somewhere" to homotopy type theory, proposing a multiversal perspective on these motivating questions. 
+Unlike the set-theoretic role model, we focus less on exploring the range of foundational possibility and more on concrete applications in constructive mathematics, with the goal of porting results of classical mathematics to homotopy type theory. It will turn out that every field has an algebraic closure somewhere; that a transitive relation is well-founded iff nowhere there is an infinite descending chain; and that somewhere, the law of excluded middle holds. 
+This is ongoing joint work with Alexander Oldenziel and connected to the recent advances with type-theoretic presheaf models and sheaf models.
+
+Nov 16
+David Wärn
+
+Path spaces of pushouts via a zigzag construction
+https://www.youtube.com/watch?v=Fn_n72tuCSk
+Warn
+Working in informal HoTT, we introduce the zigzag construction to describe path spaces of arbitrary pushouts as sequential colimits of pushouts. The construction is no more complicated than the James construction but much more general. By analysing this construction, we obtain direct proofs of the Blakers–Massey theorem, various results in combinatorial group theory, and the fact that any pushout of 0-types is a 1-type. The lattermost resolves an open problem in HoTT mentioned already in the HoTT book. While this talk will assume some familiarity with HoTT, the construction may be of interest to topologists more generally.
+
+Nov 2
+Elisabeth Stenholm
+
+Non-wellfounded sets in Homotopy Type Theory
+https://www.youtube.com/watch?v=ALj5hOmwXps
+Stenholm
+In 1978 Aczel gave a model of constructive set theory (CZF), which includes theaxiom of foundation, in Martin-Löf type theory (MLTT) [1]. Then, in 1989, Lindström gave a different model, also in MLTT, of constructive set theory, butwith foundation replaced by Aczel's anti-foundation axiom (AFA) [2]. Both of these models were setoid based. Starting from Aczel's 1978 model of well-founded sets, Gylterud defined a subtype of the type Aczel used. This subtype is in fact the initial algebra of the (restricted) powerset functor, and thus also forms a model of constructive set theory, but one where equality is interpreted as the identity type [3]. 
+In this work, we dualise the construction of Gylterud, to obtain a model of non-wellfounded sets, where equality is interpreted as the identity type, as opposed to Lindström's model. The expectation was that the dualised construction would be the terminal coalgebra of the powerset functor, in which case it would be a model of CZF⁻ together with AFA. It turns out, however, that it is not the terminal coalgebra of the powerset functor. But all is not lost, for it is a fixed point of the functor, and in addition, it is terminal with respect to embeddings. This gives us instead a model of CZF⁻ together with Scott's anti-foundation axiom.
+[1]: P. Aczel, “The Type Theoretic Interpretation of Constructive Set Theory,” in Studies in Logic and the Foundations of Mathematics, vol. 96, A. Macintyre, L. Pacholski, and J. Paris, Eds., in Logic Colloquium ’77, vol. 96. , Elsevier,1978, pp. 55–66. doi: 10.1016/S0049-237X(08)71989-X.
+[2]: I. Lindström, “A Construction of Non-Well-Founded Sets within Martin-Löf’s Type Theory,” The Journal of Symbolic Logic, vol. 54, no. 1, pp. 57–64, 1989,doi: 10.2307/2275015.
+[3]: H. R. Gylterud, “From Multisets to Sets in Homotopy Type Theory,” The Journal of Symbolic Logic, vol. 83, no. 3, pp. 1132–1146, Sep. 2018, doi:10.1017/jsl.2017.84.
+
+Oct 19
+Felix Cherubini
+
+A Foundation for Synthetic Algebraic Geometry
+https://www.youtube.com/watch?v=lp4kcmQ0ueY
+Cherubini
+In this [1] joint work with Thierry Coquand and Matthias Hutzler, we develop a foundation for a synthetic treatment of algebraic geometry, which is much in the same spirit as synthetic differential geometry. The language we use for the synthetic reasoning is homotopy type theory together with a postulated ring and three axioms. Two of the axioms were already present in previous work of Blechschmidt and a weaker variant already in work of Kock.
+Our third axiom, which we call "Zariski-local choice", postulates a local-triviality with respect to a topology called the Zariski-topology. Using this axiom, it is possible to compute cohomology groups which we define using internal Eilenbeg-MacLane spaces. In the talk, I will explain this central new feature of our setup and conclude with an overview of recent results in synthetic algebraic geometry.
+[1] #https://felix-cherubini.de/iag.pdf# 
+
+Oct 5
+Nikolai Kudasov
+
+Rzk proof assistant and simplicial HoTT formalization
+https://www.youtube.com/watch?v=IMxPu2agUNo
+Kudasov
+Reasoning in higher category theory can be quite difficult and synthetic theories help internalise common arguments to simplify proofs. Synthetic theories also often admit automation in a form of proof assistants, which further help verify results with the help of the computer. Rzk is an experimental proof assistant for synthetic ∞-categories, based on the type theory with shapes by Emily Riehl and Michael Shulman [1], which in turn is an extension of homotopy type theory with a tope logic layer and extension types. In a joint work with Emily Riehl and Jonathan Weinberger, we formalize the ∞-categorical Yoneda lemma in Rzk. Thanks to synthetic theory, many constructions in the formalization are automatically natural or functorial. In this talk, I will present the basics of theorem proving in Rzk, and outline the main result of our formalization project. Additionally, I will talk briefly about the implementation of Rzk itself, plans for its development, and some ideas for implementing proof assistants based on dependent types in general.
+[1]: Emily Riehl & Michael Shulman. A type theory for synthetic ∞-categories. Higher Structures 1(1), 147-224. 2017. #https://arxiv.org/abs/1705.07442#

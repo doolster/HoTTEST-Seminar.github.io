@@ -1,0 +1,47 @@
+Mar 31	
+Assia Mahboubi
+Inria, Nantes
+Continuity in dependent type theory
+
+Mahboubi
+(joint work with Pierre-Marie Pédrot and Martin Baillon)
+A result due to M. Escardó establishes the continuity of all functionals definable in Gödel's system T. In this talk, we discuss how to generalize the result to a richer, dependent type theory. Via the construction of a syntactic model, akin to the effectful forcing of Escardó's proof, we obtain an external proof of continuity for any functional |- f : (nat -> nat) -> nat definable in this type theory.
+
+Mar 17	
+Chaitanya Leena Subramaniam
+University of San Diego
+Dependently typed algebraic theories and their homotopy algebras
+https://www.youtube.com/watch?v=NAT02hbwOUs
+Subramaniam
+Dependently typed algebraic theories are a generalisation of ordinary multisorted algebraic theories (finite-product theories). When it comes to models valued in Set, they are just as expressive as essentially algebraic theories (finite-limit theories). They also combine well with homotopy theory, and have a canonical notion of model up-to-homotopy in spaces, or "homotopy algebra", via a left Bousfield localisation of a global model structure on simplicial presheaves.
+In this talk, I will consider dependently typed algebraic theories to be a strict subclass of contextual categories. With respect to models valued in Set, this strict subclass is nevertheless just as expressive as essentially algebraic theories. Moreover, contextual categories in this subclass have a nice description of their homotopy algebras, generalising a definition of homotopy algebras of ordinary algebraic theories due to Badzioch and Bergner.
+Homotopy algebras of ordinary algebraic theories enjoy a rigidification theorem stating that every homotopy algebra is weakly equivalent to a strict simplicial algebra. I will report on recent joint work with S. Henry showing that the same is true for homotopy algebras of dependently typed algebraic theories. This result uses a weak factorisation system introduced by Henry on the category of Set-models of a contextual category, as well as Henry's notion of weak model category. 
+
+Mar 3	
+Fredrik Nordvall Forsberg
+University of Strathclyde
+Different Notions of Ordinals in Homotopy Type Theory
+https://www.youtube.com/watch?v=8_3tLrrfrLY
+Forsberg
+Ordinals are a powerful tool when justifying induction and recursion, proving that processes terminate, or in mathematics generally. In classical set theory, there are many equivalent ways to introduce them, but in a constructive setting, the different notions split apart, with different advantages and disadvantages for each. I will consider three different notions of ordinals in homotopy theory theory: a "syntactic" notation system based on Cantor normal forms, a quotient inductive-inductive type of Brouwer trees, and wellfounded extensional orders from the HoTT book. Although defined very differently, all three notions have properties expected of ordinals: their order relations are extensional and wellfounded (and thus support transfinite induction), and the usual arithmetic operations can be defined in each case. Furthermore, the notions are connected in the sense that there are structure preserving non-surjective embeddings of Cantor normal forms into Brouwer trees, and of Brouwer trees into wellfounded extensional orders.
+This is joint work with Nicolai Kraus and Chuangjie Xu.
+
+Feb 17	
+Marcelo Fiore
+University of Cambridge
+Mathematical and Computational Metatheory of Second-Order Algebraic Theories
+https://www.youtube.com/watch?v=nP2J9SJ9DVM
+Fiore
+I will present a further step in my ongoing research programme on Algebraic Type Theory, the overall aim of which is to develop a mathematical theory understanding type theories algebraically while supporting practical foundations. The talk will centre on Second-Order Algebraic Theories, which are equational presentations in languages with (first-order) algebraic type structure and (second-order) term structure with variable-binding operators and parametrised metavariables. Examples include: first-order logic, simply-typed computational calculi, and the calculus of partial differentiation.
+Specifically, I will present a new categorical model for Second-Order Algebraic Theories: it is based on indexed families and founded upon the initial-algebra approach. A main motivation for and crucial aspect of the mathematical theory is that it is directly programmable in languages supporting inductive families; and, indeed, was developed in unison with building a formally-verified computer implementation for second-order semantics, computation, and deduction. As such, the work resulted in a framework within the Agda proof assistant for the automatic generation of generic second-order abstract syntax and provably correct metaoperations for manipulating it; to wit, algebraic models together with compositional interpretations, capture-avoiding and metavariable substitution operations, and equational and/or rewriting reasoning. This is joint work with Dmitrij Szamozvancev; a paper, source code, documentation, and case studies are available at the project page #https://www.cl.cam.ac.uk/~ds709/agda-soas/#.
+
+Feb 3	
+Jonas Frey
+Carnegie Mellon University
+Characterizing clan-algebraic categories
+https://www.youtube.com/watch?v=0SAQSx0vPmU
+Frey
+Clans provide a categorical notion of dependent algebraic theory that can be seen as syntax-free abstraction of Cartmell’s generalized algebraic theories and as such is closely related to concepts like contextual categories and categories with families.
+Viewed as algebraic theories, clans are equally expressive as finite-limit theories but contain more information: the same finite-limit theory can have representations by different clans, and in particular different clans can have the same category of Set-models. The additional information encoded in a clan T gives rise to a weak factorization system (E,F) on the locally finitely presentable category Mod(T) (first considered by Henry), from which the clan can be reconstructed up to Morita equivalence.
+In earlier work I conjectured a characterization of “clan-algebraic categories” -- i.e. lfp categories equipped with a wfs arising as models of a clan -- in terms of an exactness condition that generalizes an analogous characterization of categories of models of ordinary algebraic theories.
+In this talk I give a proof of this conjecture, and illustrate the exactness condition by means of examples.

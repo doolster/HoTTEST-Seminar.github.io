@@ -1,0 +1,71 @@
+Dec 2
+Taichi Uemura
+Stockholm University
+∞-type theories and internal language conjectures
+https://www.youtube.com/watch?v=DY42DgCxQls
+Uemura
+HoTT is expected to give internal languages for elementary ∞-toposes. As the first step towards this goal, Kapulkin and Lumsdaine made a precise formulation of the conjecture that dependent type theory with intensional identity types gives internal languages for finitely complete ∞-categories. This simple version of the internal language conjecture is still difficult due to the coherence problem. In ∞-categories, most equations hold up to homotopies, but type theories have a stricter notion of equality, judgmental equality.
+In this talk, we introduce an ∞-dimensional generalization of type theories which we call ∞-type theories to prove Kapulkin and Lumsdaine's conjecture. An ∞-type theory is like a type theory, but judgmental equality behaves like homotopies rather than strict equality, so there is no coherence problem between ∞-type theories and ∞-categories. The internal language conjecture is then reduced to a coherence problem between the type theory and a suitable ∞-type theory. We solve the new coherence problem by developing a splitting technique for models of the ∞-type theory.
+An advantage of our approach is that one can easily formulate internal language conjectures for richer type theories, for example type theories with function types, inductive types, and universes. Any internal language conjecture is then reduced to a coherence problem between a type theory and an ∞-type theory. Unfortunately, we have not yet found a general solution to the coherence problem (the splitting technique we present only works for intensional identity types). If time permits, we will discuss possible approaches to the general coherence problem.
+Joint work with Hoang Kim Nguyen. 
+
+Nov 18	
+Raffael Stenzel
+Masaryk University 
+Higher sites and their higher categorical logic
+https://www.youtube.com/watch?v=hUJlK8XgZxQ
+Stenzel
+[In the following, read ``higher'' as ``(∞,1)-''.]
+It is a popular idiosyncrasy of higher toposes that, when defined in terms of Giraud-style axioms, a general representation result in terms of higher sheaf categories on a site appears to fail. Essentially, this discrepancy arises because ``sites'' here are implicitly understood to be higher categories equipped with proof-irrelevant (topo)logical data, while higher toposes are constructions within an intrinsically proof-relevant ambient world.
+In the first part of the talk, we use this intuition of ambient proof-relevance to further develop the characterization of higher toposes over a given higher base topos in terms of their associated left exact modalities (Appendix of [1], and [2]). We give a definition of higher sites respective a small higher base category C which expresses ``PreSh(C)-global localization'' in terms of ``C-indexed nullification'' with respect to an associated sheaf of ideals. In this context I will also mention how one can derive an associated notion of higher Lawvere-Tierney topology as well (which is work in progress).
+In the second part of the talk, we take a look at examples of such higher sites which are derived from classical examples considered in ordinary categorical logic. We will do so by simply ignoring the artificial propositional truncations implicit to these examples in the ordinary setting, and hence move away from the classical sheaf condition towards more general colimit-preserving properties. Such, so I hope, may be useful in the future for the study of the higher categorical semantics of intensional type theories.
+[1] Rijke, Shulman, Spitters - Modalities in Homotopy Type Theory
+[2] Anel, Biedermann, Finster, Joyal - Higher Sheaves
+
+Nov 4	
+Kristina Sojakova
+Inria Paris 
+Syllepsis in Homotopy Type Theory
+https://www.youtube.com/watch?v=k07gFYzYvng
+Sojakova
+It is well-known that in homotopy type theory (HoTT) one can prove the Eckmann-Hilton theorem: given two 2-loops based at the reflexivity path at an arbitrary point a : A, we have pq = qp. If we go one dimension higher, i.e., if p and q are 3-loops, we show that a property classically known as syllepsis also holds in HoTT: namely, the Eckmann-Hilton proof for q and p is the inverse of the Eckmann-Hilton proof for p and q.
+#https://arxiv.org/abs/2107.14283v1#
+
+Oct 21	
+Hugo Moeneclaey
+IRIF Paris
+Parametricity and cubes
+https://www.youtube.com/watch?v=79Ik6KkoZ-w
+Moeneclaey
+We report on our investigations linking parametricity and cubical structures. Our slogan is that cubical models of type theory are cofreely parametric.
+Using various notions of parametricity and of models of type theory, we will present the following as cofreely parametric:
+- Categories with Families (CwF) of semi-cubical types, with Pi-types and a universe.
+- Categories of cubical object, for any kind of cubes.
+- CwF of setoids (here seen as 1-dimensional Kan objects), with a univalent universe of propositions.
+- Clans of Reedy fibrant objects (work in progress).
+- Tribes of Kan cubical objects (work in progress).
+We will introduce a notion called interpretation, used to build these cofree objects.
+
+Oct 7	
+Matthieu Sozeau
+Inria Nantes 
+The MetaCoq Project
+https://www.youtube.com/watch?v=azlhMVH1f98
+Sozeau
+Proof assistants are getting more widespread use in research and industry to provide certified and independently checkable guarantees about theories, designs, systems and implementations. However, proof assistant implementations themselves are seldom formally verified, although they take a major share of the trusted code base in any such certification effort. In this area, proof assistants based on Higher-Order Logic enjoy stronger guarantees than the ones based on Dependent Type Theory, as self-certified implementations have been available for some years. One cause of this difference is the inherent complexity of dependent type theories together with their extensions with (co)-inductive types, universe polymorphism and complex sort or dimension systems. Another is the gap between theory on paper and practical implementations in efficient programming languages. In particular, an efficient implementation of definitional equality checking can be far away from its ideal specification.
+The MetaCoq project aims to tackle these difficulties in the case of the Coq proof assistant. It provides the first fully-certified realistic implementation of a type checker for the calculus underlying the Coq proof assistant. I will present how we refined the sometimes blurry, if not incorrect, specification and implementation of the system to produce:
+- A specification of Coq's syntax and type theory, the Polymorphic Cumulative Calculus of (Co)-Inductive Constructions (PCUIC)
+- A monad for the manipulation of raw syntax and interaction with the Coq system
+- A verification of PCUIC's metatheory, whose main results are the confluence of reduction, type preservation and principality of typing
+- A realistic, correct and complete type-checker for PCUIC
+Finally, I will focus on work in progress to relate the current specification of PCUIC to a presentation of type theory with typed equality.
+#http://metacoq.github.io#
+
+Sept 23	
+Rafaël Bocquet
+Eötvös Loránd University
+Coherence of definitional equality in type theory
+https://www.youtube.com/watch?v=WKCxBygnYqE
+Bocquet
+Hofmann has proven that the extension of intensional type theory (with Uniqueness of Identity Proofs) by the equality reflection rule is conservative. For HoTT or other type theories without UIP, we can consider extensions that replace some typal equalities by definitional equalities, such as the extension of HoTT by a strictly associative and unital addition on natural numbers. 
+In this talk I will show that conservativity holds whenever the base type theory satisfies "external univalence" and the definitional equalities added by the extension are coherent, that is when "every formal composition of these equalities is trivial." The formal statements of these conditions involve some type-theoretic infinity-categories, i.e. infinity-categories that are presented by models of type theory. 

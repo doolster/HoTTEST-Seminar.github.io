@@ -1,0 +1,48 @@
+Dec 11
+Richard Garner
+Macquarie University
+Polynomial comonads and comodules
+https://www.youtube.com/watch?v=tW6HYnqn6eI
+Garner
+To any locally cartesian closed category E one can associate a monoidal category Poly(E) of polynomials; it is (following von Glehn) the fibre over 1 of the free fibration with distributive sums and products on E, or equivalently (following Gambino and Kock) the category of polynomial endofunctors of E.
+A result of Ahman and Uustalu shows that comonoids in Poly(E) (i.e., polynomial comonads) are the same as internal categories in E. It is then natural to ask: what is the bicategory of comonoids and bicomodules in Poly(E)? The goal of this talk is to explain the (slightly surprising) answer.
+
+Nov 20
+Benno van den Berg
+University of Amsterdam
+Uniform Kan fibrations in simplicial sets
+https://www.youtube.com/watch?v=5Mgau0Uh8IM
+Berg
+An important question in homotopy type theory is whether the existence of a model of univalent type theory in simplicial sets (and a model structure) can be proven constructively (say, in CZF with some inaccessibles). One approach would be to take the usual definition of a (trivial) Kan fibration as one's starting point and see how far one gets: this is the approach followed by Henry, Gambino, Szumilo and Sattler in recent work. It turns out that you can get quite far, but some issues remain (especially around the interpretation of Pi-types and coherence). Together with Eric Faber, I am pursuing a different approach in which we add uniformity conditions to the notion of a Kan fibration (as in the cubical sets model). The idea is that classically these conditions can always be satisfied, but not necessarily constructively. This has also been tried by Gambino and Sattler in earlier work, but in our view there are quite a few conditions missing in their definition of a uniform Kan fibration. In this talk, I will try to explain what our definition is, why we believe our definition is better (the idea is that we can prove, constructively, that it is "local"), and how far we are right now. 
+
+Nov 6
+Andrew Swan
+Carnegie Mellon University
+Choice, Collection and Covering in Cubical Sets
+https://www.youtube.com/watch?v=r9KbEOzyr1g
+Swan
+In homotopical models of type theory such as cubical sets, propositional truncation has a rich structure. Instead of "identifying points," as in more traditional interpretations of extensional type theory in regular locally cartesian closed categories, one inductively adds new paths, while keeping existing points separate. This extra structure can be particularly clearly exposed by exploiting the fact that cubical sets are valid in a constructive metatheory, and assuming Brouwer's continuity principle, which is an anti-classical axiom stating that all functions from Baire space to the naturals are continuous. In this setting even very weak versions of the axiom of choice, such as WISC and a version of countable choice due to Escardo and Knapp, turn out to be false in the cubical set model. I will also talk about some very weak consequences of countable choice that are false in the model. This includes countable versions of collection and fullness from set theory (providing a solution to exercise 10.12 of the HoTT book). I will also talk about a couple of examples from homotopy theory: the product of countably many copies of the circle is not covered by any hSet and there are examples of hSets that are not covered by any constant cubical set.
+
+Oct 23
+Anders Mörtberg
+Stockholm University
+Unifying Cubical Models of Homotopy Type Theory
+https://www.youtube.com/watch?v=KxQYT4SrENg
+Mortberg
+(j.w.w. Evan Cavallo, Andrew Swan)
+In recent years a wide variety of constructive cubical models of homotopy type theory have been developed. These models all provide constructive meaning to the univalence axiom and higher inductive types, but how are they related? In the talk I will give an answer to this question in the form of a generalization that covers most of the cubical models. The crucial idea of this generalization is to weaken the notion of fibration from the cartesian cubical set model so that it is not necessary to assume that the diagonal on the interval is a cofibration. This notion of fibration also gives rise to a model structure, generalizing earlier work on constructing model structures from cubical models of homotopy type theory.
+
+Oct 9
+Andrej Bauer
+University of Ljubljana
+General type theories
+https://www.youtube.com/watch?v=mdVmF9FB0LM
+Bauer
+There are many variants of dependent type theory, but it is difficult to find a complete and exact account of what a type theory is, as a formal system. We shall give a precise definition of what a type theory is in general, as a formal system whose components are various syntactic entities. The syntax of terms and types is described by a signature. Arbitrary inference rules are too unwieldy, so we next identify two properties that an acceptable rule must have. We similarly study what makes a family of rules into an acceptable type theory. To test the quality of our definition we prove fundamental meta-theorems about general type theories:
+1. Presupposition theorem: if a judgement is derivable then so are its presuppositions.
+2. Uniqueness of typing: if a term has type A and type B then A and B are judgmentally equal.
+3. Elimination of substitution: every derivable judgement can be
+derived without the substitution rule.
+JOINT WORK WITH:
+Philipp Haselwarter (University of Ljubljana)
+Peter LeFanu Lumsdaine (Stockholm University)

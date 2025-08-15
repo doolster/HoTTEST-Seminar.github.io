@@ -1,0 +1,70 @@
+Dec 3
+Jamie Vicary
+University of Cambridge
+A type theory for strictly unital infinity-categories
+https://www.youtube.com/watch?v=TSCggv_YE7M
+Vicary
+Finster and Mimram recently introduced the simple type theory Catt [1], in which terms correspond to cells of a free weak infinity-category on a finite signature. (Alternatively, these terms can be thought of as inhabitants of a directed path type.) We give a decision procedure for determining when two terms are the same "up to units", which we add to the type theory as a definitional equality [2]. This yields a new, strong definition of strictly unital infinity-category, and gives a new type theory Catt_u in which homotopically complex path type inhabitants can be directly constructed, with a vast reduction in complexity compared to the base
+type theory. We give some illustrated examples, and speculate about future applications of these ideas to make path types in homotopy type theory easier to handle.
+[1] Eric Finster and Samuel Mimram (2017), "A Type Theoretical Definition of Weak \omega-Categories",
+#http://arxiv.org/abs/1706.02866#.
+[2] Eric Finster, David Reutter and Jamie Vicary (2020), "A Type Theory for Strictly Unital \infty-Categories",
+#http://arxiv.org/abs/2007.08307#.
+
+Nov 19
+Pierre Cagne
+Universitetet i Bergen
+On the symmetries of the spheres in univalent foundations
+https://www.youtube.com/watch?v=u8wuoq_MQz8
+Cagne
+In this talk, I will present a joint work with Marc Bezem and Nicolai Kraus that explores the type of symmetries of the n-sphere (n>0), i.e. the type Sn = Sn, in HoTT-UF. I will start by proving that S1=S1 is equivalent to S1+S1. From there, one can try to generalize the result in higher dimensions. I will treat the case n=2 in details and prove that S2=S2 has exactly two connected components, equivalent to one another, with explicit elements (through univalence) for each of the components. The shape of these components though is much more mysterious, but I will outline why we should not expect S2=S2 to be equivalent to S2+S2. From there, and if time permits, I will generalize further by induction on n, and show that Sn = Sn has exactly two connected components for higher n, and I will end on some insights about the shape of these components.
+
+Nov 5
+Nima Rasekh
+École Polytechnique Fédérale de Lausanne
+Filter Products and Elementary Models of Homotopy Type Theory
+https://www.youtube.com/watch?v=Yk6yEv02PbY
+Rasekh
+One important question in the study of homotopy type theory is the characterization of its models. A crucial step towards solving this problem was taken by Shulman, who proved that we can interpret homotopy type theory in every Grothendieck (∞,1)-topos.
+In this talk we want to show that his results can be generalized to certain (∞,1)-categories coming from filter products. We will use this result to construct new models of homotopy type theory that are not Grothendieck (∞,1)-toposes.
+
+Oct 22
+Ambrus Kaposi
+Eötvös Loránd University
+Quotient inductive-inductive types and higher friends
+https://www.youtube.com/watch?v=a9_KjX1WM84
+Kaposi
+Quotient inductive-inductive types (QIITs) are generalisations of inductive types where we allow multiple sorts indexed over each other and we allow equality constructors. QIITs can also be seen as initial algebras for generalised algebraic theories.
+In this talk I will show a simple direct definition of QIITs, explain their categorical semantics and give a survey of the current results about existence of initial algebras.
+I will also describe two extensions: higher inductive-inductive types and higher order abstract syntax.
+Joint work with Thorsten Altenkirch, Rafaël Bocquet, András Kovács, and Xie Zongpu.
+
+Oct 8
+Yuki Maehara
+Macquarie University 
+A cubical model for weak ω-categories
+https://www.youtube.com/watch?v=AIBTh7MIbew
+Maehara
+A (strict) ω-category is usually defined as a globular set equipped with compositions. But one can instead consider cubical sets equipped with compositions, and Al-Agl, Brown and Steiner proved that these two notions give rise to equivalent categories. Steiner also showed that, in the cubical setting, the compositions may be encoded in a somewhat indirect manner using open boxes. In this joint project with Tim Campion and Chris Kapulkin, we modify this encoding and propose the resulting objects as a model for weak ω-categories (a.k.a. (∞,∞)-categories). We also construct the Gray tensor product and compare our model to a simplicial precursor, i.e. complicial sets.
+The aim of this talk is to illustrate the above paragraph with many pictures.
+
+Sept 24
+Jakob von Raumer
+University of Nottingham
+Coherence via Well-Foundedness
+https://www.youtube.com/watch?v=5iAQ-JVdlmc
+von-Raumer
+When mapping out of a quotient into a 1-type, we find ourselves in the situation of needing to prove that a function is coherent in the following way: All cycles in the relation we quotient by are mapped to refl. Proving statements about all cycles is notoriously difficult because it does not straightforwardly admit induction.
+In practice, we often take quotients by binary relations which resemble reduction relations, and as such are co-wellfounded and locally confluent. In this talk I will show that under these circumstances, we can find an induction principle which can then be used to tackle this kind of coherence problem in HoTT. The main part of the proof is a purely graph theoretic construction, independent from its use in HoTT.
+This is joint with Nicolai Kraus.
+
+Sept 10
+Guillaume Brunerie and Peter LeFanu Lumsdaine
+Stockholm University
+Initiality for Martin-Löf type theory
+https://www.youtube.com/watch?v=1ogUFFUfU_M
+Brunerie
+“Initiality” is the principle that the term model of some type theory should be an initial object in the category of models of that type theory.  Thomas Streicher gave a careful proof of initiality for the Calculus of Constructions in 1991.  Since then, initiality for more complex type theories (such as Martin-Löf type theory) has often been treated as established, as a straightforward extension of Streicher’s result, but never written up carefully for a larger theory.
+Around 2010, various researchers (notably Voevodsky) raised the question of whether these extensions really were sufficiently straightforward to consider them established without further proof.  Since then, views on the status of initiality have varied within the field; but the issue has been, at least, a frustrating unresolved point.
+In this talk, we present a proof of initiality for a full-featured Martin-Löf type theory.  The proof is formalised in Agda, to dispel any question of thoroughness (and also partly formalised in Coq), and is carefully designed for extensibility to other type theories.  The proof is based on Streicher’s, using some improvements of Hofmann and further refinements by the present authors.  The two formalisations present slightly different versions of the statement — using contextual categories in Agda, categories with attributes in Coq — but the core of the proof is parallel.
+Joint work with Menno de Boer and Anders Mörtberg.

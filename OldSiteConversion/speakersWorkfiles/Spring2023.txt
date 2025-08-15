@@ -1,0 +1,70 @@
+Apr 20
+Maria Emilia Maietti
+
+A comparison between the Minimalist Foundation and Homotopy Type Theory
+https://www.youtube.com/watch?v=fO2FN47oB2Y
+Maietti
+In this talk, I will outline the main common aspects and differences between the two-level Minimalist Foundation (for short MF) in [4] according to [3] and Homotopy Type Theory (HoTT) in [5].
+A crucial difference between the two foundations is that HoTT has the remarkable expressive power to interpret both levels of MF thanks to the presence of the Univalence Axiom and set quotients as described in [1].
+On the opposite, the Minimalist Foundation has a strictly predicative strength a' la Feferman as witnessed by the realizability interpretation in [2]. Moreover, thanks to the absence of choice principles (since existential quantifiers are defined primitively!) and exponentiation of functional relations, its classical version is compatible with classical predicativity a' la Weyl.
+[1] Contente, M., Maietti, M.E.: The Compatibility of the Minimalist Foundation with Homotopy Type Theory. March 2023. Arxiv #https://arxiv.org/abs/2207.03802#
+[2] H. Ishihara, Maietti, M.E., Maschio S., Streicher T.: Consistency of the intensional level of the Minimalist Foundation with Church’s thesis and axiom of choice. Archive for Mathematical Logic 57, 873–888 (2018)
+[3] Maietti, M.E., Sambin, G.: Toward a minimalist foundation for constructive mathematics. In: L. Crosilla and P. Schuster (ed.) From Sets and Types to Topology and Analysis: Practicable Foundations for Constructive Mathematics, no. 48 in Oxford Logic Guides,pp. 91-114. Oxford University Press (2005)
+[4] Maietti, M.E.: A minimalist two-level foundation for constructive mathematics. Annals of Pure and Applied Logic 160(3), 319-354 (2009)
+[5] Univalent Foundations Program. Homotopy Type Theory: Univalent Foundations of Mathematics. #https://homotopytypetheory.org/book#, Institute for Advanced Study, 2013.
+
+Apr 6
+Omar Antolín Camarena
+
+HoTT lessons for algebraic topologists
+https://www.youtube.com/watch?v=J3fLtr_-IjY
+
+While one can use HoTT to talk about topics in the traditional algebraic topology of spaces, the difference in language and culture leads people using HoTT to prefer some styles of argument that are less common in traditional algebraic topology. There are some habits of thought I think algebraic topologists can profitably adopt from HoTT and in this talk I'll present examples, chief among them, the willingness to pass freely from a type family to its dependent sum and back. This talk will be more philosophical than technical and is mostly intended as bait, to get experts in HoTT to teach me (decidedly a non-export!) more tricks I can profitably steal.
+
+Mar 23 
+Daniel Gratzer
+
+Modalities and (weak) dependent right adjoints
+https://www.youtube.com/watch?v=pjk1odP-jgs
+Gratzer
+To a first approximation, modal type theories aim to extend Martin-Loef type theory with a connective which is not invariant under substitution. Naively performing such an extension will cause the substitution lemma to fail and so each modal type theory must also modify MLTT's judgments in some manner. Each such modification changes and restricts contexts and substitutions to obtain a theory which admits both the modality and a substitution lemma. One such modification extends type theory with a dependent adjunction [Birkedal et al. 2020]. Essentially, modalities behave like right adjoints with an adjoint action on contexts. In this talk we propose a weakening of the notion of dependent adjunction as a unifying abstraction for several seemingly distinct modal type theories: dual-context, left division, and Fitch-style. We explore the resulting connections between MTT - a type theory based around weak DRAs - and these other theories.
+
+Mar 9
+Hoang Kim Nguyen
+
+Directed univalence in simplicial sets
+https://www.youtube.com/watch?v=GgcJqzGvq80
+Nguyen
+In this talk we will discuss directed univalence in simplicial sets and explain that the universal cocartesian fibration is indeed directed univalent. We further give a characterisation of directed univalent cocartesian fibrations, which explains that the domain of the universal left fibration embeds fully faithfully into the domain of the universal cocartesian fibration. 
+This is joint work with Denis-Charles Cisinski.
+
+Feb 23
+Loïc Pujet
+
+Observational Type Theory meets CIC
+https://www.youtube.com/watch?v=9VN-4DTPSHM
+Pujet
+Observational Type Theory (OTT) extends dependent type theory with an equality that satisfies extensionality principles for functions and propositions, as well as quotient types. But unlike HoTT, the equality of OTT is a proposition that does not contain any higher structure. Thus, if HoTT is the language of infinity-groupoids, OTT is the language of propositions and sets. 
+In this talk I will go over the integration of OTT with the Calculus of Inductive Constructions—the theory of Coq—which supports both impredicative propositions and a large class of inductive types. 
+In order to obtain strong theoretical guarantees on our theory, I will explain how to build several models for OTT: one the one hand, models in set theory to establish consistency; and on the other hand, reducibility models to establish normalization, a type-checking algorithm, and bounds on its proof-theoretic strength. 
+Finally, I will discuss the use of OTT as an internal language for Grothendieck toposes and the principle of unique choice.This presentation is based on joint work with Nicolas Tabareau. 
+Most of the results that I will present have been formalized in Agda and Coq.
+
+Feb 9
+Andrew Swan
+
+Double negation stable h-propositions in cubical sets
+https://www.youtube.com/watch?v=lNNrmuUQzkw
+Swan
+In cubical sets there are two different notions of proposition. They are a locally cartesian closed category and so model of extensional type theory, in which the propositions are monomorphisms. They are also a model of HoTT into which we can interpret the definition of h-proposition. In general h-propositions can behave very differently to monomorphisms, when working in cubical sets in a constructive setting. Instead of thinking of them as spaces with at most one point, it is better to visualise them as spaces with possibly a lot of points, but with a path joining any two.
+Double negation stable h-propositions are an important subclass that are much better behaved then h-propositions in general. Unlike the general case, every double negation stable h-proposition in cubical sets is equivalent to a monomorphism. Using this we can construct a classifier for all double negation stable h-propositions in cubical sets and moreover describe it explicitly: it is the constant presheaf on the classifier for double negation stable monomorphisms in our metatheory. Although double negation stability is a somewhat restrictive condition, this classifier suffices for at least three important constructions: the Dedekind real numbers, 0-truncated double negation sheafification, and formulating and proving consistency of a version of extended Church's thesis (all partial functions are computable).
+There is a preprint about this work at #https://arxiv.org/abs/2209.15035#.
+
+Jan 26
+Johan Commelin
+
+Liquid Tensor Experiment
+https://www.youtube.com/watch?v=gkeGLRrAkbY
+Commelin
+In December 2020, Peter Scholze posed a challenge to formally verify the main theorem on liquid R-vector spaces, which is part of his joint work with Dustin Clausen on condensed mathematics. I took up this challenge with a team of mathematicians to verify the theorem in the Lean proof assistant. Half a year later, we reached a major milestone, and in the summer of 2022 we have completed the full challenge. 
+In this talk I will give a brief motivation for condensed/liquid mathematics, report on our experiences formalizing state-of-the-art research in mathematics, and discuss some new insights in the proof of the main theorem.

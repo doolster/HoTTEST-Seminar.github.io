@@ -1,0 +1,67 @@
+May 2	
+Mathieu Anel
+Carnegie Mellon University
+Descent v. Univalence
+https://www.youtube.com/watch?v=86s0BCB3HGo
+Anel
+The purpose of the talk will be to explain the connection between the notion of descent, characteristic of infinity-topoi, and the notion of univalence, characteristic of homotopy type theory.
+
+Apr 18	
+Paolo Capriotti
+Technische Universität Darmstadt
+Polynomial monads as opetopic types
+https://www.youtube.com/watch?v=8P5bWQhKcG4
+Capriotti
+In a previous HoTTEST talk, Eric Finster presented a coinductive definition of polynomial monads that should make it possible to formulate higher algebra internally in HoTT. In my talk, I will show how one can connect Finster's construction to the formalism of opetopes and opetopic objects, and its connection with the Baez-Dolan construction for polynomial monads. More precisely, I will give a reformulation of Finster's definition of polynomial monad in terms of opetopic types satisfying a kind of Segal condition. It will turn out that, once the basic notion of trees over a polynomial is established, Finster's coherence for magmas can be expressed purely in terms of polynomials and their maps. This should hopefully provide a first step towards comparing Finster's definition with the established ∞-categorical notion of polynomial monad.
+
+Apr 4	
+Joachim Kock
+Universitat Autonoma de Barcelona
+∞-operads as polynomial monads
+https://www.youtube.com/watch?v=Ljfz83Q41vs
+Kock
+I'll present a new model for ∞-operads, namely as analytic monads. This is joint work with David Gepner and Rune Haugseng. In the ∞-world (unlike what happens in the classical case), analytic functors are polynomial, and therefore the theory can be developed within the setting of polynomial functors. I'll talk about some of the features of this theory, trying to focus on aspects that might be of interest to type theory, in particular the construction of free monads, and the relevance of polynomial monads for the semantics of higher inductive types.
+
+Mar 21	
+Dan Licata
+Wesleyan University 
+A Fibrational Framework for Substructural and Modal Dependent Type Theories
+https://www.youtube.com/watch?v=-DP0wY2FBs4
+Licata
+(joint work with Mitchell Riley and Michael Shulman)
+Modal type theory extends type theory with additional unary type constructors, representing functors, monads, and comonads of various sorts.  For example, the modalities discussed in the HoTT book are idempotent monads, while some recent extensions of HoTT make use of idempotent comonads.  Modal types can be used to speak synthetically about topology and geometry, and also have been used in the internal language semantics of cubical type theories. Over the past few years, we have been working on a general framework for modal type theories. In this framework, specific type theories can be specified by a signature---for example, "type theory with an idempotent monad and an idempotent comonad which are themselves adjoint".  Given a signature, instantiating general inference rules provides a syntax for working with the desired modal types.  While the framework does not automatically produce ``optimized'' inference rules for a particular modal discipline (where structural rules are as admissible as possible), it does provide a syntactic setting for investigating such issues, including a general equational theory governing the placement of structural rules in types and in terms.  While this is still work in progress, we hope to give a categorical semantics to the entire framework at once, saving the work of considering each modal type theory individually.
+
+Mar 7	
+Evan Cavallo
+Carnegie Mellon University
+Internal Parametricity and Cubical Type Theory
+https://www.youtube.com/watch?v=0C06XYL2Oro
+Cavallo
+A polymorphic function is intuitively said to be parametric when it behaves uniformly at all types. This concept was made precise by Reynolds, who defined parametric functions to be those with an action on relations and showed that all polymorphic functions definable in the simply-typed lambda-calculus are parametric. Recently, dependent type theories have been developed that internalize this property, which is known as parametricity; this work is closely connected to cubical type theory, both historically and methodologically. I'll discuss the similarities and differences between internally parametric and cubical type theory, the type theory we designed that combines the two, and potential applications to higher-dimensional theorem proving.
+This is joint work with Robert Harper, and details can be found in our preprint arXiv:1901.00489.
+
+Feb 21	
+Simon Huber
+University of Gothenburg
+Homotopy canonicity for cubical type theory
+https://www.youtube.com/watch?v=Q7-I8Lh4-kg
+Huber
+Cubical type theory provides a constructive justification of homotopy type theory and satisfies canonicity: every natural number is convertible to a numeral.  A crucial ingredient of cubical type theory is a path lifting operation which is explained computationally by induction on the type involving several non-canonical choices.  In this talk I will present why if we remove these equations for the path lifting operation from the system, we still retain homotopy canonicity: every natural number is path equal to a numeral.  The proof involves proof relevant computability predicates (also known as sconing) and doesn't involve a reduction relation.
+This is joint work with Thierry Coquand and Christian Sattler.
+
+Feb 7	
+Nima Rasekh
+MPI Bonn 
+Algebraic Topology in an Elementary Higher Topos
+https://www.youtube.com/watch?v=6fe7GjpSj6k
+Rasekh
+An elementary higher topos is a higher category which should sit at the intersection of three concepts: higher category theory, algebraic topology and homotopy type theory. The goal of this talk is to give concrete examples of these connections.
+In particular we show how every elementary higher topos has a natural number object, how this can be used to define truncations and how the existence of truncations implies the Blakers-Massey theorem.
+
+Jan 31	
+Nicola Gambino
+University of Leeds
+From algebraic weak factorisation systems to models of type theory
+
+Gambino
+Algebraic weak factorisation systems are a refinement of the classical weak factorisation systems in which diagonal fillers are given by a prescribed algebraic structure. The notion of an algebraic weak factorisation system was introduced by Marco Grandis and Walter Tholen, and subsequently refined by Richard Garner, who then developed the theory in a series of joint papers with John Bourke. In this talk, I will explain general methods for constructing weak factorisation systems that can be used for defining models of dependent type theory satisfying all the required strictness conditions. This is based on joint work with Christian Sattler and subsequent work in the Leeds PhD thesis of Marco Larrea.

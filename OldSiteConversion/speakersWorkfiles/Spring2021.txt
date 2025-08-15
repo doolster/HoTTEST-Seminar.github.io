@@ -1,0 +1,61 @@
+Apr 22
+Ulrik Buchholtz
+TU Darmstadt
+(Co)cartesian families in simplicial type theory
+https://www.youtube.com/watch?v=TOGx2F-MLi0
+Buchholtz
+Using Riehl–Shulman's simplicial type theory for synthetic higher category theory, I'll describe how to define and work with (co)cartesian families. These represent functors from a higher category to the category of categories. As an application, I'll derive a (dependent) Yoneda lemma for such families. This is joint work with Jonathan Weinberger.
+
+Apr 8
+Egbert Rijke
+University of Ljubljana
+A higher encode decode method
+https://www.youtube.com/watch?v=KvHGds-AL8M
+Rijke
+The Postnikov tower of a pointed type X induces a fiber sequence $K(G,n+1) -> \|X\|_{n+1} -> \|X\|_n$ for every n, where G is the (n+1)-st homotopy group of X. This fiber sequence suggests a general approach to computations of higher homotopy groups of types, by encoding a family of n-connected (n+1)-truncated types over the type $\|X\|_n$. While I do not yet have any finished computations of homotopy groups of types via this approach, it does suggest a fruitful line of research with interesting intermediate results.
+
+Mar 25
+Håkon Robbestad Gylterud
+Universitetet i Bergen
+Defining and relating theories
+https://www.youtube.com/watch?v=8aTDEn2D2pA
+Gylterud
+Since the advent of homotopy type theory, many different formal theories for HoTT (such variations of Martin-Löf’s theory, cubical type theory, ⋯) have joined the already plentiful ranks of formal theories. In this talk, we will try to outline a general, algebraic and combinatorial notion of formal theory – geared towards dependent type theories – based on work by Cartmell, Makkai and others.
+The notion of theory we present is being implemented in a software framework aimed at working with different theories and translations between them, called Myott. Thus, part of the presentation will focus on the Haskell implementation of the theoretical notions.
+
+Mar 11
+Andrea Vezzosi
+IT University of Copehagen
+Cubical Agda and its Extensions
+https://www.youtube.com/watch?v=9RFt1Q2pHE8
+Vezzosi
+Cubical Agda is a dependently typed language with Univalence and Higher Inductive Types based on Cubical Type Theory. In this talk we will see how its features interact with pattern matching, copatterns, and interactive development. 
+We will then introduce the universe of non-fibrant types, where the  interval of cubical type theory lives, and which will let us talk  about strict equality from within the type theory. 
+Finally we will see the extension with a modality for guarded recursion, providing a type-based approach to productivity of corecursive definitions and an abstract way to construct step-indexed models of programming languages. 
+
+Feb 25
+Carlo Angiuli
+Carnegie Mellon University
+Internalizing Representation Independence with Univalence
+https://www.youtube.com/watch?v=e3wGUuAxfG8
+Angiuli
+In programming language theory, the principle of representation independence states that programs indexed by structured types are invariant under a wide range of structure-preserving correspondences. The Structure Identity Principle (SIP) states that constructions in HoTT respect structured isomorphisms, but many instances of representation independence involve non-isomorphic types.
+In this talk, I will motivate representation independence, explain its connection to proof reuse and transfer, and recall the basics of cubical type theory and the SIP. Then, I will describe our recent work on a relational variant of the SIP that uses HIT quotients to improve representation independence scenarios into  structured isomorphisms and thence equalities of structured types. Our results are formalized in Cubical Agda.
+Joint work with Evan Cavallo, Anders Mörtberg, and Max Zeuner. Available at #https://dl.acm.org/doi/10.1145/3434293#.
+
+Feb 11 
+Norihiro Yamada
+University of Minnesota 
+Game semantics of homotopy type theory
+https://www.youtube.com/watch?v=uY5LubwJ1Xo
+Yamada
+In this talk, I sketch my recent work on game semantics of homotopy type theory (HoTT). My aim is to extend the BHK-interpretation of Martin-Löf type theory to HoTT so that one can better understand HoTT as a foundation of constructive mathematics. In fact, this game semantics can be seen as a mathematical formalisation of the BHK-interpretation of HoTT: It interprets terms in HoTT as constructive "dialogical arguments" on the truths of formulas, i.e., constructive proofs, and in particular terms of Id-types as constructive proofs on the equality between constructive proofs. Further, the game semantics shows that the extension of HoTT by equational univalence, i.e., the judgemental equality between Id-type on a universe and type equivalence, is consistent, and Markov's principle is independent from this extended HoTT.
+
+Jan 28
+Thierry Coquand
+Chalmers University
+Sheaf models and constructive mathematics
+https://www.youtube.com/watch?v=_H-CD4B8pLQ
+Coquand
+In the first part of this talk, I will try to motivate why sheaf models are important for constructive mathematics on a specific example: the existence of the (separable) algebraic closure of a field.This is not trivial constructively since for an arbitrary field, it is in general not decidable if a given polynomial is irreducible or not.  One solution, going back to a short note of André Joyal "Les Théorèmes de Chevalley-Tarski et remarques sur l'algèbre constructive", is to use a suitable (effective) sheaf model in which we can build the algebraic closure. I will explain this model and how it can be used to compute with algebraic numbers.
+One would like to express such a model using the language of type theory, but this is problematic since the roots of a given polynomial cannot be expressed as a function of the coefficients, and we cannot use strong sum to express existence of roots. This motivates the second part of the talk, where I will present joint work with Fabian Ruch and Christian Sattler on how to extend such sheaf models to sheaf models of (univalent) type theory. One can then express and prove results such that the fact that any Gm-torsor is trivial and start to ask if one can force the line (algebraic closure) to be contractible.
