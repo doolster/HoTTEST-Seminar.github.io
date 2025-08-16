@@ -5,7 +5,7 @@ import os, re
 
 # Any new term types must be added to this dictionary for sorting
 termIDDict = { 'Spring': 'b', 'Fall': 'd', 'HoTTEST Event For Junior Researchers': 'a', 'HoTTEST Conference' : 'c', 'HoTTEST Summer School' : 'c'}
-monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': '10', 'Nov': '11', 'Dec': '12' }
+monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': 'a', 'Nov': 'b', 'Dec': 'c' }
 
 class Talk:
     def __init__(self, term, date, speaker, school, title, ytlink, slides, abstract):
