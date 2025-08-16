@@ -108,18 +108,6 @@
             <th>Talk Information</th>
           </tr>
           <tr>
-            <td class="date">Sept 26</td>
-            <td class="speaker">Reid Barton</td>
-            <td>
-              <p class="talk-title">Directed aspects of condensed type theory <span class="icons"><a href="https://www.youtube.com/watch?v=0elJcaw5NWw"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Barton-2024-09-26-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
-              <div class="abstract">
-                <p>Condensed mathematics is a recently-introduced setting for applying methods of higher category theory to objects of topological nature. The category Cond of condensed sets can be viewed as an approximation of the category of topological spaces by a topos. We identify two classes of maps of Cond, that we call "etale" and "proper", that correspond to local homeomorphisms and to proper maps of topological spaces respectively, and we propose type-theoretic axioms concerning these that express the sense in which Cond is a "category of spaces", and not only a "category of sets".</p>
-                <p>The focus of this talk will be on the "directed path types" of a condensed set (or groupoid), which correspond to the specialization order on the points of a topological space, and are defined using the Sierpinski condensed set as "directed interval". Etale and proper maps have unique lifting properties with respect to the two endpoints of this interval, and so are analogous to left and right fibrations of simplicial spaces. The aim of the talk is to explain this (imperfect) analogy from both an external and an internal perspective, to try to shed light on possible relationships with recent and current work in simplicial and directed type theories.</p>
-                <p>This talk is based on joint work with Johan Commelin.</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
             <td class="date">Dec 5</td>
             <td class="speaker">Paige North</td>
             <td>
@@ -173,6 +161,18 @@
                 <p>We have proven a generalization of the boundedness of the Carleson's operator in the setting of doubling metric measure spaces, and we are currently working on formalizing the entire proof in the proof assistant Lean, based on a detailed blueprint we wrote first. This advanced formalization is possible because of Lean's large mathematical library Mathlib.</p>
                 <p>In this talk I will give an overview of the project including its practical aspects, as well as highlighting some other exciting projects around Mathlib. No background in Fourier analysis is assumed.</p>
                 <p>This is joint work with Lars Becker, Leo Diedering, Asgar Jamneshan, Rajula Srivastava, Jeremy Tan, Christoph Thiele and others.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 26</td>
+            <td class="speaker">Reid Barton</td>
+            <td>
+              <p class="talk-title">Directed aspects of condensed type theory <span class="icons"><a href="https://www.youtube.com/watch?v=0elJcaw5NWw"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Barton-2024-09-26-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
+              <div class="abstract">
+                <p>Condensed mathematics is a recently-introduced setting for applying methods of higher category theory to objects of topological nature. The category Cond of condensed sets can be viewed as an approximation of the category of topological spaces by a topos. We identify two classes of maps of Cond, that we call "etale" and "proper", that correspond to local homeomorphisms and to proper maps of topological spaces respectively, and we propose type-theoretic axioms concerning these that express the sense in which Cond is a "category of spaces", and not only a "category of sets".</p>
+                <p>The focus of this talk will be on the "directed path types" of a condensed set (or groupoid), which correspond to the specialization order on the points of a topological space, and are defined using the Sierpinski condensed set as "directed interval". Etale and proper maps have unique lifting properties with respect to the two endpoints of this interval, and so are analogous to left and right fibrations of simplicial spaces. The aim of the talk is to explain this (imperfect) analogy from both an external and an internal perspective, to try to shed light on possible relationships with recent and current work in simplicial and directed type theories.</p>
+                <p>This talk is based on joint work with Johan Commelin.</p>
               </div>
             </td>
           </tr>
@@ -468,11 +468,11 @@
                 <p>One approach is to directly work with a set-level definition of the functor. This involves proving that it preserves ω-limits. In general, this requires a form of countable choice, which nonetheless seems to be satisfied for the limits involved in the construction of the final coalgebra.</p>
                 <p>We present an alternative construction following [Kock (2012)]. Here, we define a polynomial functor over a groupoid, and show that its pointwise set-trunctation is equivalent to the ordinary finite multiset functor. We construct its final coalgebra as an ω-limit, and show that it has as a fixed-point a type of finitely branching, non-wellfounded trees. While the truncation of this type of trees is a fixed-point of the ordinary multiset functor, proving that it is the largest fixed-point requires another choice principle.</p>
                 <p>In the process, we give multiple formalizations of finite multisets in HoTT, one as type of lists modulo permutations, and another one as the HIT of the free commutative monoid, and connect these to prior work, e.g. [Choudhury, Fiore (2021)]. To overcome size-issues, we port [Finster et al. (2021)]'s axiomatization of a small type of finite sets and bijections to cubical Agda.</p>
-                <p>[Ahrens, Capriotti (2015)]: https://doi.org/10.4230/LIPIcs.TLCA.2015.17</p>
-                <p>[Worrell (2005)]: https://doi.org/10.1016/j.tcs.2004.12.009</p>
-                <p>[Kock (2012)]: https://doi.org/10.1016/j.entcs.2013.01.001</p>
-                <p>[Choudhury, Fiore (2021)]: https://arxiv.org/abs/2110.05412</p>
-                <p>[Finster et al. (2021)]: https://arxiv.org/abs/2112.14050</p>
+                <p>[Ahrens, Capriotti (2015)]: <a href="https://doi.org/10.4230/LIPIcs.TLCA.2015.17">https://doi.org/10.4230/LIPIcs.TLCA.2015.17</a></p>
+                <p>[Worrell (2005)]: <a href="https://doi.org/10.1016/j.tcs.2004.12.009">https://doi.org/10.1016/j.tcs.2004.12.009</a></p>
+                <p>[Kock (2012)]: <a href="https://doi.org/10.1016/j.entcs.2013.01.001">https://doi.org/10.1016/j.entcs.2013.01.001</a></p>
+                <p>[Choudhury, Fiore (2021)]: <a href="https://arxiv.org/abs/2110.05412">https://arxiv.org/abs/2110.05412</a></p>
+                <p>[Finster et al. (2021)]: <a href="https://arxiv.org/abs/2112.14050">https://arxiv.org/abs/2112.14050</a></p>
               </div>
             </td>
           </tr>
@@ -486,7 +486,7 @@
                 <p>First, we explore just how far one can get to the goal of constructing semi-simplicial types in MLTT. When being first introduced to the problem, it strikes one that there is an evident pattern in simplex types. We codify this pattern using the notion of a simple inverse category and construct untyped syntactic expressions. A challenge is posed to the audience to construct typing derivations, hence "externally" constructing SSTs. Unfortunately, it seems that internalising typing derivations is not possible (HoTT can't eat itself).</p>
                 <p>Second, we propose a work in progress modification to MLTT that we expect to enable the construction of SSTs. We generalise from asking for a type of SSTs to asking for a type structure of SSTs, which includes every order of dependent/displayed SSTs. In this more general setting, the object "SST" acquires a universal property that can be expressed via the notion of non-Type-valued coinduction. We explain how this endows "SST" with a mapping-in universal property that enables extracting simplex types. To demonstrate the utility of this universal property, we construct the singular semi-simplicial types.</p>
                 <p>The second half of this talk consists of joint work with Michael Shulman.</p>
-                <p>A research write-up, along with associated Agda formalisation may be found in the following GitHub repository: https://github.com/FrozenWinters/SSTs</p>
+                <p>A research write-up, along with associated Agda formalisation may be found in the following GitHub repository: <a href="https://github.com/FrozenWinters/SSTs">https://github.com/FrozenWinters/SSTs</a></p>
               </div>
             </td>
           </tr>
@@ -790,17 +790,6 @@
             <th>Talk Information</th>
           </tr>
           <tr>
-            <td class="date">Sept 23</td>
-            <td class="speaker">Rafaël Bocquet<div class="school">Eötvös Loránd University</div></td>
-            <td>
-              <p class="talk-title">Coherence of definitional equality in type theory <span class="icons"><a href="https://www.youtube.com/watch?v=WKCxBygnYqE"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Bocquet-2021-09-23-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
-              <div class="abstract">
-                <p>Hofmann has proven that the extension of intensional type theory (with Uniqueness of Identity Proofs) by the equality reflection rule is conservative. For HoTT or other type theories without UIP, we can consider extensions that replace some typal equalities by definitional equalities, such as the extension of HoTT by a strictly associative and unital addition on natural numbers.</p>
-                <p>In this talk I will show that conservativity holds whenever the base type theory satisfies "external univalence" and the definitional equalities added by the extension are coherent, that is when "every formal composition of these equalities is trivial." The formal statements of these conditions involve some type-theoretic infinity-categories, i.e. infinity-categories that are presented by models of type theory.</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
             <td class="date">Dec 2</td>
             <td class="speaker">Taichi Uemura<div class="school">Stockholm University</div></td>
             <td>
@@ -874,6 +863,17 @@
                 <p>
                   <a href="http://metacoq.github.io">http://metacoq.github.io</a>
                 </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 23</td>
+            <td class="speaker">Rafaël Bocquet<div class="school">Eötvös Loránd University</div></td>
+            <td>
+              <p class="talk-title">Coherence of definitional equality in type theory <span class="icons"><a href="https://www.youtube.com/watch?v=WKCxBygnYqE"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Bocquet-2021-09-23-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
+              <div class="abstract">
+                <p>Hofmann has proven that the extension of intensional type theory (with Uniqueness of Identity Proofs) by the equality reflection rule is conservative. For HoTT or other type theories without UIP, we can consider extensions that replace some typal equalities by definitional equalities, such as the extension of HoTT by a strictly associative and unital addition on natural numbers.</p>
+                <p>In this talk I will show that conservativity holds whenever the base type theory satisfies "external univalence" and the definitional equalities added by the extension are coherent, that is when "every formal composition of these equalities is trivial." The formal statements of these conditions involve some type-theoretic infinity-categories, i.e. infinity-categories that are presented by models of type theory.</p>
               </div>
             </td>
           </tr>
@@ -974,31 +974,6 @@
             <th>Talk Information</th>
           </tr>
           <tr>
-            <td class="date">Sept 24</td>
-            <td class="speaker">Jakob von Raumer<div class="school">University of Nottingham</div></td>
-            <td>
-              <p class="talk-title">Coherence via Well-Foundedness <span class="icons"><a href="https://www.youtube.com/watch?v=5iAQ-JVdlmc"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/von-Raumer-2020-09-24-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
-              <div class="abstract">
-                <p>When mapping out of a quotient into a 1-type, we find ourselves in the situation of needing to prove that a function is coherent in the following way: All cycles in the relation we quotient by are mapped to refl. Proving statements about all cycles is notoriously difficult because it does not straightforwardly admit induction.</p>
-                <p>In practice, we often take quotients by binary relations which resemble reduction relations, and as such are co-wellfounded and locally confluent. In this talk I will show that under these circumstances, we can find an induction principle which can then be used to tackle this kind of coherence problem in HoTT. The main part of the proof is a purely graph theoretic construction, independent from its use in HoTT.</p>
-                <p>This is joint with Nicolai Kraus.</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="date">Sept 10</td>
-            <td class="speaker">Guillaume Brunerie and Peter LeFanu Lumsdaine<div class="school">Stockholm University</div></td>
-            <td>
-              <p class="talk-title">Initiality for Martin-Löf type theory <span class="icons"><a href="https://www.youtube.com/watch?v=1ogUFFUfU_M"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Brunerie-2020-09-10-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a><a href="hottestfiles/Lumsdaine-2020-09-10-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
-              <div class="abstract">
-                <p>“Initiality” is the principle that the term model of some type theory should be an initial object in the category of models of that type theory.  Thomas Streicher gave a careful proof of initiality for the Calculus of Constructions in 1991.  Since then, initiality for more complex type theories (such as Martin-Löf type theory) has often been treated as established, as a straightforward extension of Streicher’s result, but never written up carefully for a larger theory.</p>
-                <p>Around 2010, various researchers (notably Voevodsky) raised the question of whether these extensions really were sufficiently straightforward to consider them established without further proof.  Since then, views on the status of initiality have varied within the field; but the issue has been, at least, a frustrating unresolved point.</p>
-                <p>In this talk, we present a proof of initiality for a full-featured Martin-Löf type theory.  The proof is formalised in Agda, to dispel any question of thoroughness (and also partly formalised in Coq), and is carefully designed for extensibility to other type theories.  The proof is based on Streicher’s, using some improvements of Hofmann and further refinements by the present authors.  The two formalisations present slightly different versions of the statement — using contextual categories in Agda, categories with attributes in Coq — but the core of the proof is parallel.</p>
-                <p>Joint work with Menno de Boer and Anders Mörtberg.</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
             <td class="date">Dec 3</td>
             <td class="speaker">Jamie Vicary<div class="school">University of Cambridge</div></td>
             <td>
@@ -1006,10 +981,8 @@
               <div class="abstract">
                 <p>Finster and Mimram recently introduced the simple type theory Catt [1], in which terms correspond to cells of a free weak infinity-category on a finite signature. (Alternatively, these terms can be thought of as inhabitants of a directed path type.) We give a decision procedure for determining when two terms are the same "up to units", which we add to the type theory as a definitional equality [2]. This yields a new, strong definition of strictly unital infinity-category, and gives a new type theory Catt_u in which homotopically complex path type inhabitants can be directly constructed, with a vast reduction in complexity compared to the base</p>
                 <p>type theory. We give some illustrated examples, and speculate about future applications of these ideas to make path types in homotopy type theory easier to handle.</p>
-                <p>[1] Eric Finster and Samuel Mimram (2017), "A Type Theoretical Definition of Weak \omega-Categories",</p>
-                <p><a href="http://arxiv.org/abs/1706.02866">http://arxiv.org/abs/1706.02866</a>.</p>
-                <p>[2] Eric Finster, David Reutter and Jamie Vicary (2020), "A Type Theory for Strictly Unital \infty-Categories",</p>
-                <p><a href="http://arxiv.org/abs/2007.08307">http://arxiv.org/abs/2007.08307</a>.</p>
+                <p>[1] Eric Finster and Samuel Mimram (2017), "A Type Theoretical Definition of Weak \omega-Categories", <a href="http://arxiv.org/abs/1706.02866">http://arxiv.org/abs/1706.02866</a>.</p>
+                <p>[2] Eric Finster, David Reutter and Jamie Vicary (2020), "A Type Theory for Strictly Unital \infty-Categories", <a href="http://arxiv.org/abs/2007.08307">http://arxiv.org/abs/2007.08307</a>.</p>
               </div>
             </td>
           </tr>
@@ -1055,6 +1028,31 @@
               <div class="abstract">
                 <p>A (strict) ω-category is usually defined as a globular set equipped with compositions. But one can instead consider cubical sets equipped with compositions, and Al-Agl, Brown and Steiner proved that these two notions give rise to equivalent categories. Steiner also showed that, in the cubical setting, the compositions may be encoded in a somewhat indirect manner using open boxes. In this joint project with Tim Campion and Chris Kapulkin, we modify this encoding and propose the resulting objects as a model for weak ω-categories (a.k.a. (∞,∞)-categories). We also construct the Gray tensor product and compare our model to a simplicial precursor, i.e. complicial sets.</p>
                 <p>The aim of this talk is to illustrate the above paragraph with many pictures.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 24</td>
+            <td class="speaker">Jakob von Raumer<div class="school">University of Nottingham</div></td>
+            <td>
+              <p class="talk-title">Coherence via Well-Foundedness <span class="icons"><a href="https://www.youtube.com/watch?v=5iAQ-JVdlmc"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/von-Raumer-2020-09-24-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
+              <div class="abstract">
+                <p>When mapping out of a quotient into a 1-type, we find ourselves in the situation of needing to prove that a function is coherent in the following way: All cycles in the relation we quotient by are mapped to refl. Proving statements about all cycles is notoriously difficult because it does not straightforwardly admit induction.</p>
+                <p>In practice, we often take quotients by binary relations which resemble reduction relations, and as such are co-wellfounded and locally confluent. In this talk I will show that under these circumstances, we can find an induction principle which can then be used to tackle this kind of coherence problem in HoTT. The main part of the proof is a purely graph theoretic construction, independent from its use in HoTT.</p>
+                <p>This is joint with Nicolai Kraus.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 10</td>
+            <td class="speaker">Guillaume Brunerie and Peter LeFanu Lumsdaine<div class="school">Stockholm University</div></td>
+            <td>
+              <p class="talk-title">Initiality for Martin-Löf type theory <span class="icons"><a href="https://www.youtube.com/watch?v=1ogUFFUfU_M"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Brunerie-2020-09-10-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a><a href="hottestfiles/Lumsdaine-2020-09-10-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
+              <div class="abstract">
+                <p>“Initiality” is the principle that the term model of some type theory should be an initial object in the category of models of that type theory.  Thomas Streicher gave a careful proof of initiality for the Calculus of Constructions in 1991.  Since then, initiality for more complex type theories (such as Martin-Löf type theory) has often been treated as established, as a straightforward extension of Streicher’s result, but never written up carefully for a larger theory.</p>
+                <p>Around 2010, various researchers (notably Voevodsky) raised the question of whether these extensions really were sufficiently straightforward to consider them established without further proof.  Since then, views on the status of initiality have varied within the field; but the issue has been, at least, a frustrating unresolved point.</p>
+                <p>In this talk, we present a proof of initiality for a full-featured Martin-Löf type theory.  The proof is formalised in Agda, to dispel any question of thoroughness (and also partly formalised in Coq), and is carefully designed for extensibility to other type theories.  The proof is based on Streicher’s, using some improvements of Hofmann and further refinements by the present authors.  The two formalisations present slightly different versions of the statement — using contextual categories in Agda, categories with attributes in Coq — but the core of the proof is parallel.</p>
+                <p>Joint work with Menno de Boer and Anders Mörtberg.</p>
               </div>
             </td>
           </tr>
@@ -1431,27 +1429,6 @@
             <th>Talk Information</th>
           </tr>
           <tr>
-            <td class="date">Sept 27</td>
-            <td class="speaker">Dimitris Tsementzis<div class="school">Rutgers University</div></td>
-            <td>
-              <p class="talk-title">First-Order Logic with Isomorphism <span class="icons"><a href="https://www.youtube.com/watch?v=9fK9eEMYjII"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a></span></p>
-              <div class="abstract">
-                <p>First-order logic with isomorphism (“FOLiso”) is a formal system which relates to HoTT and the Univalent Foundations in a similar way that first-order logic with equality relates to ZFC and set-theoretic foundations. In particular, FOLiso gives a precise framework in which to study “first-order" theories defined on homotopy types (e.g. precategories, univalent categories), just as first-order logic with equality gives a precise framework in which to study first-order structures and theories defined on sets. I will first introduce the syntax and proof system of FOLiso as an extension of M. Makkai’s FOLDS. Then I will define a semantics for FOLiso in terms of homotopy types and describe a proof of soundness and completeness for this semantics. I will conclude by sketching applications in various directions.</p>
-                <p>(Most of the material is based on the preprint <a href="https://arxiv.org/abs/1603.03092">https://arxiv.org/abs/1603.03092</a> with quite a few new additions based on ongoing work.)</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="date">Sept 20</td>
-            <td class="speaker">Andy Pitts<div class="school">University of Cambridge</div></td>
-            <td>
-              <p class="talk-title">Axiomatizing Cubical Sets Models of Univalent Foundations <span class="icons"><a href="https://www.youtube.com/watch?v=sy1-toqYRrk"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Pitts-2018-09-20-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
-              <div class="abstract">
-                <p>The constructive model of Homotopy Type Theory introduced by Cohen-Coquand-Huber-Mörtberg in 2015 (building on the work of Bezem-Coquand-Huber in 2013) uses a particular presheaf topos of cubical sets.  Since its introduction, much effort has been expended to analyse, simplify and generalize what makes this model of the univalence axiom tick, using a variety of techniques. In this talk I will describe an axiomatic approach -- the isolation of a few elementary axioms about an interval and a universe of fillable shapes that allow a univalent universe to be constructed. Not all the axioms are visible in the original work; and the axioms can be satisfied in toposes other than the original presheaf topos of cubical sets.  The axioms and constructions can almost be expressed in Extensional Martin-Löf Type Theory, except that the global nature of some of them leads to the use of a modal extension of that language.  This is joint work with Ian Orton, Dan Licata and Bas Spitters.</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
             <td class="date">Dec 6</td>
             <td class="speaker">Eric Finster<div class="school">Inria - Rennes</div></td>
             <td>
@@ -1509,6 +1486,28 @@
               <div class="abstract">
                 <p>Cubical type theory attracted much attention in the homotopy type theory community because it achieved canonicity in the presence of univalence and higher inductive types. To date, there are many variants of cubical type theory and experimental proof assistants based on them.</p>
                 <p>It may seem that the remaining task is to reconnect the syntax to standard models, but there are still numerous type-theoretic open problems arising from the concerns over efficiency and usability. In this talk, I will give an overview of several topics we are working on but not publicly presented before, including extension types, empty systems, the interplay between kinds and higher inductive types, and more!</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 27</td>
+            <td class="speaker">Dimitris Tsementzis<div class="school">Rutgers University</div></td>
+            <td>
+              <p class="talk-title">First-Order Logic with Isomorphism <span class="icons"><a href="https://www.youtube.com/watch?v=9fK9eEMYjII"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a></span></p>
+              <div class="abstract">
+                <p>First-order logic with isomorphism (“FOLiso”) is a formal system which relates to HoTT and the Univalent Foundations in a similar way that first-order logic with equality relates to ZFC and set-theoretic foundations. In particular, FOLiso gives a precise framework in which to study “first-order" theories defined on homotopy types (e.g. precategories, univalent categories), just as first-order logic with equality gives a precise framework in which to study first-order structures and theories defined on sets. I will first introduce the syntax and proof system of FOLiso as an extension of M. Makkai’s FOLDS. Then I will define a semantics for FOLiso in terms of homotopy types and describe a proof of soundness and completeness for this semantics. I will conclude by sketching applications in various directions.</p>
+                <p>(Most of the material is based on the preprint <a href="https://arxiv.org/abs/1603.03092">https://arxiv.org/abs/1603.03092</a> with quite a few new additions based on ongoing work.)</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">Sept 20</td>
+            <td class="speaker">Andy Pitts<div class="school">University of Cambridge</div></td>
+            <td>
+              <p class="talk-title">Axiomatizing Cubical Sets Models of Univalent Foundations <span class="icons"><a href="https://www.youtube.com/watch?v=sy1-toqYRrk"><img src="images/youtube.webp" width="20" alt="YouTube video" /></a><a href="hottestfiles/Pitts-2018-09-20-HoTTEST.pdf"><img src="images/pdf.png" width="20" alt="Slides" /></a></span></p>
+              <div class="abstract">
+                <p>The constructive model of Homotopy Type Theory introduced by Cohen-Coquand-Huber-Mörtberg in 2015 (building on the work of Bezem-Coquand-Huber in 2013) uses a particular presheaf topos of cubical sets.  Since its introduction, much effort has been expended to analyse, simplify and generalize what makes this model of the univalence axiom tick, using a variety of techniques. In this talk I will describe an axiomatic approach -- the isolation of a few elementary axioms about an interval and a universe of fillable shapes that allow a univalent universe to be constructed. Not all the axioms are visible in the original work; and the axioms can be satisfied in toposes other than the original presheaf topos of cubical sets.  The axioms and constructions can almost be expressed in Extensional Martin-Löf Type Theory, except that the global nature of some of them leads to the use of a modal extension of that language.</p>
+                <p>This is joint work with Ian Orton, Dan Licata and Bas Spitters.</p>
               </div>
             </td>
           </tr>
